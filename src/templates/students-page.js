@@ -10,7 +10,6 @@ export const StudentsPageTemplate = ({
   description,
   students,
 }) => {
-  console.log(students)
   return (
   <div className="content">
     <div
@@ -125,6 +124,7 @@ export const studentsPageQuery = graphql`
           company
           role
           description
+          altImage
           image {
             childImageSharp {
               fluid(maxWidth: 300, quality: 80) {
@@ -132,7 +132,6 @@ export const studentsPageQuery = graphql`
               }
             }
           }
-          altImage
         }
       }
     }
