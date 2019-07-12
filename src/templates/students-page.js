@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Students from '../components/Students'
 
 export const StudentsPageTemplate = ({
   image,
@@ -9,8 +10,7 @@ export const StudentsPageTemplate = ({
   heading,
   description,
   students,
-}) => {
-  return (
+}) => (
   <div className="content">
     <div
       className="full-width-image-container margin-top-0"
@@ -43,32 +43,14 @@ export const StudentsPageTemplate = ({
           </div>
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <div className="columns">
-                {
-                  students.length > 0 && students.map((student, i) => (
-                    <div key={i} className="column is-4 is-multiline">
-                      <img
-                        src={`${!!student.image.childImageSharp ? student.image.childImageSharp.fluid.src : student.image}`}
-                        alt={student.altImage}
-                      />
-                      <p>
-                        {student.fullName}<br/>
-                        {student.master}<br/>
-                        {student.company}<br/>
-                        {student.role}<br/>
-                        {student.description}<br/>
-                      </p>
-                    </div>
-                  ))
-                }
-              </div>
+              <Students students={students} />
             </div>
           </div>
         </div>
       </div>
     </section>
   </div>
-)}
+)
 
 StudentsPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
