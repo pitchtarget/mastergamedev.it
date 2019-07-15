@@ -41,11 +41,7 @@ export const PartnersPageTemplate = ({
               <p>{description}</p>
             </div>
           </div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <Partners partners={partners} />
-            </div>
-          </div>
+          <Partners partners={partners} />
         </div>
       </div>
     </section>

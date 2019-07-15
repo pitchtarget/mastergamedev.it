@@ -23,7 +23,7 @@ partners:
     link: www.mircocotugno.com
     description: Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum. Etiam habebis sem dicantur magna mollis euismod.
   - name: Company name 2
-    main: false
+    main: true
     image: /img/partner-img.png
     altImage: partner
     link: www.mircocotugno.com
@@ -47,7 +47,7 @@ partners:
     link: www.mircocotugno.com
     description: Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum. Etiam habebis sem dicantur magna mollis euismod.
   - name: Company name 6
-    main: false
+    main: true
     image: /img/partner-img.png
     altImage: partner
     link: www.mircocotugno.com
@@ -59,13 +59,13 @@ partners:
     link: www.mircocotugno.com
     description: Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum. Etiam habebis sem dicantur magna mollis euismod.
   - name: Company name 8
-    main: false
+    main: true
     image: /img/partner-img.png
     altImage: partner
     link: www.mircocotugno.com
     description: Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum. Etiam habebis sem dicantur magna mollis euismod.
   - name: Company name 9
-    main: false
+    main: true
     image: /img/partner-img.png
     altImage: partner
     link: www.mircocotugno.com
@@ -78,6 +78,54 @@ partners:
     description: Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum. Etiam habebis sem dicantur magna mollis euismod.
   - name: Company name 11
     main: false
+    image: /img/partner-img.png
+    altImage: partner
+    link: www.mircocotugno.com
+    description: Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum. Etiam habebis sem dicantur magna mollis euismod.
+  - name: Company name 12
+    main: true
+    image: /img/partner-img.png
+    altImage: partner
+    link: www.mircocotugno.com
+    description: Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum. Etiam habebis sem dicantur magna mollis euismod.
+  - name: Company name 13
+    main: true
+    image: /img/partner-img.png
+    altImage: partner
+    link: www.mircocotugno.com
+    description: Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum. Etiam habebis sem dicantur magna mollis euismod.
+  - name: Company name 14
+    main: false
+    image: /img/partner-img.png
+    altImage: partner
+    link: www.mircocotugno.com
+    description: Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum. Etiam habebis sem dicantur magna mollis euismod.
+  - name: Company name 15
+    main: false
+    image: /img/partner-img.png
+    altImage: partner
+    link: www.mircocotugno.com
+    description: Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum. Etiam habebis sem dicantur magna mollis euismod.
+  - name: Company name 16
+    main: true
+    image: /img/partner-img.png
+    altImage: partner
+    link: www.mircocotugno.com
+    description: Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum. Etiam habebis sem dicantur magna mollis euismod.
+  - name: Company name 17
+    main: true
+    image: /img/partner-img.png
+    altImage: partner
+    link: www.mircocotugno.com
+    description: Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum. Etiam habebis sem dicantur magna mollis euismod.
+  - name: Company name 18
+    main: true
+    image: /img/partner-img.png
+    altImage: partner
+    link: www.mircocotugno.com
+    description: Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum. Etiam habebis sem dicantur magna mollis euismod.
+  - name: Company name 19
+    main: true
     image: /img/partner-img.png
     altImage: partner
     link: www.mircocotugno.com

@@ -6,6 +6,7 @@ import { v4 } from 'uuid'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import PartnerCard from '../components/cards/partnerCard'
 
 export const IndexPageTemplate = ({
   image,
@@ -17,7 +18,7 @@ export const IndexPageTemplate = ({
   intro,
   partners,
   }) => {
-    const filteredPartners = partners.filter(partner => partner.main )
+    const filteredPartners = partners.filter(partner => partner.main)
     return (
       <div>
         <div
@@ -91,11 +92,14 @@ export const IndexPageTemplate = ({
                         <p>{description}</p>
                       </div>
                     </div>
-                    { filteredPartners.length > 0 && filteredPartners.map( partner => {
-                        return (
-                          <div key={v4()}>{partner.name}</div>
-                      )})
-                    }
+                    <div className="columns is-centered" style={{overflow: "scroll"}}>
+                      { filteredPartners.length > 0 && filteredPartners.map( partner => (
+                          <div className="column">
+                            <PartnerCard key={v4()} partner={partner}/>
+                          </div>
+                        ))
+                      }
+                    </div>
                     <Features gridItems={intro.blurbs} />
                     <div className="columns">
                       <div className="column is-12 has-text-centered">
