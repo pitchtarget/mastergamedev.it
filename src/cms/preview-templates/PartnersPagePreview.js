@@ -5,7 +5,6 @@ import { PartnersPageTemplate } from '../../templates/partners-page'
 const PartnersPagePreview = ({ entry, getAsset }) => {
   const entryPartners = entry.getIn(['data', 'partners'])
   const partners = entryPartners ? entryPartners.toJS() : []
-  console.log(entryPartners)
 
   return (
     <PartnersPageTemplate
@@ -13,7 +12,7 @@ const PartnersPagePreview = ({ entry, getAsset }) => {
       title={entry.getIn(['data', 'title'])}
       heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
-      partners={{ partners }}
+      partners={partners}
     />
   )
 }
