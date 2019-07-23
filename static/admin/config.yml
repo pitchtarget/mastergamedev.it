@@ -78,3 +78,9 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
           - {label: Partners, name: partners, widget: list, fields: [{label: Full name, name: name, widget: string}, {label: Image, name: image, widget: image, default: /img/student-img.png}, {label: "Alt image", name: altImage, widget: string}, {label: Description, name: description, widget: markdown}, {label: "Link", name: link, widget: string}, {label: "Show in home", name: main, widget: boolean}]}
+      - file: "src/pages/teachers/index.md"
+        label: "Teachers page"
+        name: "teachers"
+        fields:
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "teachers-page"}
+          - {label: Teachers, name: teachers, widget: list, fields: [{label: Full name, name: fullName, widget: string}, {label: Image, name: image, widget: image, default: /img/student-img.png}, {label: "Alt image", name: altImage, widget: string}, {label: Link, name: link, widget: string}, {label: Role, name: role, widget: string}, {label: Biography, name: bio, widget: markdown}]}
