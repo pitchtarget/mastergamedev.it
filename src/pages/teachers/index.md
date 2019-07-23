@@ -1,5 +1,5 @@
 ---
-templateKey: 'teachers-page'
+templateKey: 'teachers'
 teachers:
   - fullName: Nome Cognome
     role: animazione di qualcosa

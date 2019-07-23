@@ -68,19 +68,24 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
           - {label: Students, name: students, widget: list, fields: [{label: Full name, name: fullName, widget: string}, {label: Image, name: image, widget: image, default: /img/student-img.png}, {label: "Alt image", name: altImage, widget: string}, {label: Master, name: master, widget: number, default: 2010, valueType: int, min: 2010, max: 2030}, {label: Company, name: company, widget: string}, {label: Role, name: role, widget: string},{label: Description, name: description, widget: markdown}]}
-      - file: "src/pages/partners/index.md"
-        label: "Partners page"
-        name: "partners"
+      - file: "src/pages/school/index.md"
+        label: "School page"
+        name: "school"
         fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "partners-page"}
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "school-page"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
+      - file: "src/pages/partners/index.md"
+        label: "Partners list"
+        name: "partners"
+        fields:
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "partners"}
           - {label: Partners, name: partners, widget: list, fields: [{label: Full name, name: name, widget: string}, {label: Image, name: image, widget: image, default: /img/student-img.png}, {label: "Alt image", name: altImage, widget: string}, {label: Description, name: description, widget: markdown}, {label: "Link", name: link, widget: string}, {label: "Show in home", name: main, widget: boolean}]}
       - file: "src/pages/teachers/index.md"
-        label: "Teachers page"
+        label: "Teachers list"
         name: "teachers"
         fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "teachers-page"}
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "teachers"}
           - {label: Teachers, name: teachers, widget: list, fields: [{label: Full name, name: fullName, widget: string}, {label: Image, name: image, widget: image, default: /img/student-img.png}, {label: "Alt image", name: altImage, widget: string}, {label: Link, name: link, widget: string}, {label: Role, name: role, widget: string}, {label: Biography, name: bio, widget: markdown}]}

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { v4 } from 'uuid'
 import TeacherCard from '../components/cards/teacherCard'
 
-const Teachers = ({ teachers }) => {
+export const Teachers = ({ teachers }) => {
   return (
     <div className="columns is-multiline">
       {teachers.length > 0 && teachers.map(teacher => {
@@ -29,4 +29,10 @@ Teachers.propTypes = {
   ),
 }
 
-export default Teachers
+const TeachersGrid = ({ teachers }) => {
+  return (
+    <Teachers teachers={teachers}/>
+  )
+}
+
+export default TeachersGrid
