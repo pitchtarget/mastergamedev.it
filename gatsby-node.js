@@ -29,7 +29,14 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    // Filter out the menu so we don't create pages for those
+    const posts = result.data.allMarkdownRemark.edges.filter(edge => {
+      if (edge.node.frontmatter.templateKey === "teachers-page") {
+        return false;
+      } else {
+        return result.data.allMarkdownRemark.edges;
+      }
+    });
 
     posts.forEach(edge => {
       const id = edge.node.id

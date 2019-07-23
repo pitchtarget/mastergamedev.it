@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import { PartnersPageTemplate } from '../../templates/partners-page'
 
 const PartnersPagePreview = ({ entry, getAsset }) => {
+  const entryTeachers = entry.getIn(['data', 'teachers'])
+  const teachers = entryTeachers ? entryTeachers.toJS() : []
+
   const entryPartners = entry.getIn(['data', 'partners'])
   const partners = entryPartners ? entryPartners.toJS() : []
 
@@ -13,6 +16,7 @@ const PartnersPagePreview = ({ entry, getAsset }) => {
       heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
       partners={partners}
+      teachers={teachers}
     />
   )
 }
