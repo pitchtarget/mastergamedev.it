@@ -1,16 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { PartnersPageTemplate } from '../../templates/partners-page'
+import { SchoolPageTemplate } from '../../templates/school-page'
 
-const PartnersPagePreview = ({ entry, getAsset }) => {
-  const entryTeachers = entry.getIn(['data', 'teachers'])
-  const teachers = entryTeachers ? entryTeachers.toJS() : []
-
+const SchoolPagePreview = ({ entry, getAsset }) => {
   const entryPartners = entry.getIn(['data', 'partners'])
   const partners = entryPartners ? entryPartners.toJS() : []
 
+  const entryteachers = entry.getIn(['data', 'teachers'])
+  const teachers = entryteachers ? entryteachers.toJS() : []
+
   return (
-    <PartnersPageTemplate
+    <SchoolPageTemplate
       image={entry.getIn(['data', 'image'])}
       title={entry.getIn(['data', 'title'])}
       heading={entry.getIn(['data', 'heading'])}
@@ -21,11 +21,11 @@ const PartnersPagePreview = ({ entry, getAsset }) => {
   )
 }
 
-PartnersPagePreview.propTypes = {
+SchoolPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   getAsset: PropTypes.func,
 }
 
-export default PartnersPagePreview
+export default SchoolPagePreview

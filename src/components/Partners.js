@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { v4 } from 'uuid'
 import PartnerCard from '../components/cards/partnerCard'
 
-const Partners = ({ partners }) => {
+export const Partners = ({ partners }) => {
   return (
     <div className="columns is-multiline">
       {partners.length > 0 && partners.map(partner => {
@@ -28,4 +28,9 @@ Partners.propTypes = {
   ),
 }
 
-export default Partners
+const PartnersGrid = ({ partners }) => (
+  <Partners partners={partners}/>
+)
+
+
+export default PartnersGrid

@@ -1,14 +1,5 @@
 ---
-templateKey: 'partners-page'
-path: /partners
-title: Partners page
-image: /img/jumbotron.jpg
-heading: We work with
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+templateKey: 'partners'
 partners:
   - name: Company name
     main: false

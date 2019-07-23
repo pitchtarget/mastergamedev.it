@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Partners from '../components/Partners'
-import Teachers from '../components/Teachers'
+import PartnersGrid from '../components/Partners'
+import TeachersGrid from '../components/Teachers'
 
-export const PartnersPageTemplate = ({
+export const SchoolPageTemplate = ({
   image,
   title,
   heading,
@@ -43,21 +43,21 @@ export const PartnersPageTemplate = ({
               <p>{description}</p>
             </div>
           </div>
-          <Partners partners={partners} />
+          <PartnersGrid partners={partners} />
         </div>
       </div>
     </section>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
-          <Teachers teachers={teachers} />
+          <TeachersGrid teachers={teachers} />
         </div>
       </div>
     </section>
   </div>
 )
 
-PartnersPageTemplate.propTypes = {
+SchoolPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -67,17 +67,18 @@ PartnersPageTemplate.propTypes = {
 
 }
 
-const PartnersPage = ({ data }) => {
+const SchoolPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
   const partnersContent = data.partnersData.frontmatter
   const teachersContent = data.teachersData.frontmatter
 
   return (
     <Layout>
-      <PartnersPageTemplate
-        image={partnersContent.image}
-        title={partnersContent.title}
-        heading={partnersContent.heading}
-        description={partnersContent.description}
+      <SchoolPageTemplate
+        image={frontmatter.image}
+        title={frontmatter.title}
+        heading={frontmatter.heading}
+        description={frontmatter.description}
         partners={partnersContent.partners}
         teachers={teachersContent.teachers}
       />
@@ -85,7 +86,7 @@ const PartnersPage = ({ data }) => {
   )
 }
 
-PartnersPage.propTypes = {
+SchoolPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -93,11 +94,25 @@ PartnersPage.propTypes = {
   }),
 }
 
-export default PartnersPage
+export default SchoolPage
 
-export const partnersPageQuery = graphql`
-  query PartnersPage {
-    teachersData: markdownRemark(frontmatter: { templateKey: { eq: "teachers-page"}}) {
+export const schoolPageQuery = graphql`
+  query SchoolPage {
+    markdownRemark(frontmatter: { templateKey: { eq: "school-page"}}) {
+      frontmatter {
+        title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        heading
+        description
+      }
+    }
+    teachersData: markdownRemark(frontmatter: { templateKey: { eq: "teachers"}}) {
       frontmatter {
         teachers {
           fullName
@@ -115,18 +130,8 @@ export const partnersPageQuery = graphql`
         }
       }
     }
-    partnersData: markdownRemark(frontmatter: { templateKey: { eq: "partners-page"}}) {
+    partnersData: markdownRemark(frontmatter: { templateKey: { eq: "partners"}}) {
       frontmatter {
-        title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        heading
-        description
         partners {
           name
           description

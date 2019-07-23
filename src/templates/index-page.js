@@ -94,8 +94,8 @@ export const IndexPageTemplate = ({
                     </div>
                     <div className="columns is-centered" style={{overflow: "scroll"}}>
                       { filteredPartners.length > 0 && filteredPartners.map( partner => (
-                          <div className="column">
-                            <PartnerCard key={v4()} partner={partner}/>
+                          <div key={v4()} className="column">
+                            <PartnerCard partner={partner}/>
                           </div>
                         ))
                       }
@@ -174,7 +174,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
-    partnersData: markdownRemark(frontmatter: { templateKey: { eq: "partners-page"}}) {
+    partnersData: markdownRemark(frontmatter: { templateKey: { eq: "partners"}}) {
       frontmatter {
         partners {
           name
