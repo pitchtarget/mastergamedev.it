@@ -5,8 +5,8 @@
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+$primary: #FFC74D
+$primary-invert: #352857
 $body-color: #333
 $black: #2b2523
 
@@ -125,6 +125,55 @@ $menu-label-color: $white-ter
 
 @import "~bulma"
 
+
+// Call to Action
+.callToAction
+  font-weight: 900
+  font-size: 1.5rem
+  padding: .5rem 0
+  align-items: center
+  justify-content: center
+  display: flex
+  .text
+    margin-right: 1rem
+  .icon
+    transition: transform 1s ease
+    transform: translateX(0)
+    svg
+      width: 1.5rem
+      height: 1.5rem
+  &:hover .icon
+    transform: translateX(1rem)
+    transition: transform .32s ease
+
+.cta-large
+  font-size: 2rem
+  padding: .75rem 0
+  .text
+    margin-right: 1.5rem
+  .icon svg
+    width: 2.5rem
+    height: 2.5rem
+
+.cta-primary
+  color: $primary
+  &:hover
+    color: $primary
+
+.cta-inverted
+  color: $primary-invert
+  &:hover
+    color: $primary-invert
+
+.cta-dark
+  color: $primary-invert
+  &:hover
+    color: $primary-invert
+
+.cta-light
+  color: $primary-invert
+  &:hover
+    color: $primary-invert
 
 // responsiveness
 +tablet-only
