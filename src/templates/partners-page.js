@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Partners from '../components/Partners'
+import Teachers from '../components/Teachers'
 
 export const PartnersPageTemplate = ({
   image,
@@ -10,6 +11,7 @@ export const PartnersPageTemplate = ({
   heading,
   description,
   partners,
+  teachers,
 }) => (
   <div className="content">
     <div
@@ -45,6 +47,13 @@ export const PartnersPageTemplate = ({
         </div>
       </div>
     </section>
+    <section className="section section--gradient">
+      <div className="container">
+        <div className="section">
+          <Teachers teachers={teachers} />
+        </div>
+      </div>
+    </section>
   </div>
 )
 
@@ -53,20 +62,24 @@ PartnersPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  partners: PropTypes.array
+  partners: PropTypes.array,
+  teachers: PropTypes.array,
+
 }
 
 const PartnersPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const partnersContent = data.partnersData.frontmatter
+  const teachersContent = data.teachersData.frontmatter
 
   return (
     <Layout>
       <PartnersPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        description={frontmatter.description}
-        partners={frontmatter.partners}
+        image={partnersContent.image}
+        title={partnersContent.title}
+        heading={partnersContent.heading}
+        description={partnersContent.description}
+        partners={partnersContent.partners}
+        teachers={teachersContent.teachers}
       />
     </Layout>
   )
@@ -83,8 +96,26 @@ PartnersPage.propTypes = {
 export default PartnersPage
 
 export const partnersPageQuery = graphql`
-  query PartnersPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+  query PartnersPage {
+    teachersData: markdownRemark(frontmatter: { templateKey: { eq: "teachers-page"}}) {
+      frontmatter {
+        teachers {
+          fullName
+          role
+          bio
+          link
+          altImage
+          image {
+            childImageSharp {
+              fluid(maxWidth: 300, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+    partnersData: markdownRemark(frontmatter: { templateKey: { eq: "partners-page"}}) {
       frontmatter {
         title
         image {
