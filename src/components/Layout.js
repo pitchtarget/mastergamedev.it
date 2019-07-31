@@ -10,7 +10,7 @@ const TemplateWrapper = ({ children }) => {
   return (
     <div>
       <Helmet>
-        <html lang="en" />
+        <html lang="en"/>
         <title>{title}</title>
         <meta name="description" content={description} />
 
@@ -43,6 +43,9 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+        <body className="has-navbar-fixed-top"/>
       </Helmet>
       <Navbar />
       <div>{children}</div>
