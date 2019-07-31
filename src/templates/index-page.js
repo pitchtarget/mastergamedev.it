@@ -7,7 +7,6 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import PartnerCard from '../components/cards/partnerCard'
-import Button from '../components/elements/Button.js'
 
 export const IndexPageTemplate = ({
   image,
@@ -68,16 +67,6 @@ export const IndexPageTemplate = ({
             >
               {subheading}
             </h3>
-            <Button
-              text="CALL TO ACTION"
-              link="/school"
-              style="callToAction cta-large cta-primary"
-            />
-            <Button
-              text="CALL TO ACTION"
-              link="/school"
-              style="callToAction cta-inverted"
-            />
           </div>
         </div>
 
