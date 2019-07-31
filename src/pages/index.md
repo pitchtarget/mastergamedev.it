@@ -7,6 +7,7 @@ subheading: Support sustainable farming while enjoying a cup
 
 mainCover:
   image: /img/home-jumbotron.jpg
+  altImage: home-jumbotron
   heading: Titolo della copertina
   subheading: Quì la descrizione della copertiona
   cta: Scopri di più
@@ -14,6 +15,7 @@ mainCover:
 
 topSignIn:
   image: /img/home-jumbotron.jpg
+  altImage: home-jumbotron
   heading: Partecipa all'open day di ottobre
   subheading: Duarnte l'open day potrai cosnoscere i docenti ed ascoltare le esperienze degli studenti
   cta: Scopri di più
@@ -27,6 +29,7 @@ partnersSection:
 
 schoolSection:
   image: /img/home-jumbotron.jpg
+  altImage: home-jumbotron
   heading: Un master che fa la differenza
   subheading: Descrione del master...
   cta: Vedi il programma
@@ -53,6 +56,7 @@ studentsSection:
 
 bottomSignIn:
   image: /img/home-jumbotron.jpg
+  altImage: home-jumbotron
   heading: Iscriviti all'openday
   subheading: Durante l'open day vengono organizzati brevi work shop con i ragazzi del master che ti aiuteranno a creare il tuo primo gioco
   cta: partecipa ora
@@ -68,7 +72,6 @@ newsSection:
   heading: Le ultime dal master
   cta: Vedi tutte
   link: /blog
-
 
 mainpitch:
   title: Why Kaldi

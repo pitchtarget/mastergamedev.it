@@ -22,8 +22,21 @@ export const IndexPageTemplate = ({
 }) => {
     const filteredPartners = partners.filter(partner => partner.main)
     const filteredStudents = students.filter(student => student.main)
-    const teachersNum = teachers.length
-    const randomTeachers = []
+    let filteredTeachers = []
+    let listNum = []
+    for (let i = 0; i < 10 ; i++) {
+      let randomNum = Math.floor(Math.random() * Math.floor(teachers.length))
+      let hasValue = listNum.includes(randomNum)
+      !hasValue && listNum.length <= 3 && listNum.push(randomNum)
+    }
+
+    filteredTeachers = [
+      teachers[listNum[0]],
+      teachers[listNum[1]],
+      teachers[listNum[2]],
+      teachers[listNum[3]],
+    ]
+    console.log(filteredTeachers)
     // to be create a random filter for teachers
 
     return (
@@ -40,14 +53,20 @@ export const IndexPageTemplate = ({
                 {mainCover.cta}
               </div>
               <div className="column">
-                <img src={!!mainCover.image.childImageSharp ? mainCover.image.childImageSharp.fluid.src : mainCover.image}/>
+                <img
+                  src={!!mainCover.image.childImageSharp ? mainCover.image.childImageSharp.fluid.src : mainCover.image}
+                  alt={mainCover.altImage}
+                />
               </div>
             </div>
 
             <div id="topSignUpBox" className="">
               <div className="columns is-gapless">
                 <div className="column is-3">
-                  <img src={!!topSignIn.image.childImageSharp ? topSignIn.image.childImageSharp.fluid.src : topSignIn.image}/>
+                  <img
+                    src={!!topSignIn.image.childImageSharp ? topSignIn.image.childImageSharp.fluid.src : topSignIn.image}
+                    alt={topSignIn.altImage}
+                  />
                 </div>
                 <div className="column">
                   <h2 className="content">
@@ -146,7 +165,10 @@ export const IndexPageTemplate = ({
             <div id="bottomSignUpBox" className="">
               <div className="columns is-gapless">
                 <div className="column is-3">
-                  <img src={!!bottomSignIn.image.childImageSharp ? bottomSignIn.image.childImageSharp.fluid.src : bottomSignIn.image}/>
+                  <img
+                    src={!!bottomSignIn.image.childImageSharp ? bottomSignIn.image.childImageSharp.fluid.src : bottomSignIn.image}
+                    alt={bottomSignIn.altImage}
+                  />
                 </div>
                 <div className="column">
                   <h2 className="content">
@@ -174,10 +196,34 @@ export const IndexPageTemplate = ({
                 {teachersSection.cta}
               </div>
             </div>
+            <div className="columns">
+              { teachers.length > 0 && filteredTeachers.map( teacher =>(
+                  <div key={v4()} className="column is-desktop-3">
+                    <div className="box">
+                      <h4 className="content">
+                        <p className="title is-4">{teacher.fullName}</p>
+                      </h4>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
           </div>
         </section>
 
-        {/*<BlogRoll />*/}
+        <section id="postsSection" className="">
+          <div className="container">
+            <div className="columns is-gapeless">
+              <div className="column is-4 is-offset-1">
+                <h3 className="content">
+                  <p className="title is-2">{newsSection.heading}</p>
+                </h3>
+                {newsSection.cta}
+              </div>
+            </div>
+            <BlogRoll />
+          </div>
+        </section>
       </>
     )
 }
@@ -300,6 +346,7 @@ export const pageQuery = graphql`
               }
             }
           }
+          altImage
           heading
           subheading
           cta
@@ -313,6 +360,7 @@ export const pageQuery = graphql`
               }
             }
           }
+          altImage
           heading
           subheading
           cta
@@ -332,6 +380,7 @@ export const pageQuery = graphql`
               }
             }
           }
+          altImage
           heading
           subheading
           cta
@@ -357,6 +406,7 @@ export const pageQuery = graphql`
               }
             }
           }
+          altImage
           heading
           subheading
           cta
