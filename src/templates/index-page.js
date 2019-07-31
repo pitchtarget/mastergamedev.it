@@ -6,6 +6,7 @@ import { v4 } from 'uuid'
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import PartnerCard from '../components/cards/partnerCard'
+import Button from '../components/elements/Button'
 
 export const IndexPageTemplate = ({
   mainCover,
@@ -36,8 +37,6 @@ export const IndexPageTemplate = ({
       teachers[listNum[2]],
       teachers[listNum[3]],
     ]
-    console.log(filteredTeachers)
-    // to be create a random filter for teachers
 
     return (
       <>
@@ -50,7 +49,12 @@ export const IndexPageTemplate = ({
                   <p className="title is-1">{mainCover.heading}</p>
                   <p className="subtitle is-5">{mainCover.subheading}</p>
                 </h1>
-                {mainCover.cta}
+                <Button
+                  text={mainCover.cta}
+                  link={mainCover.link}
+                  local={true}
+                  style="callToAction cta-large cta-primary"
+                />
               </div>
               <div className="column">
                 <img
@@ -75,7 +79,12 @@ export const IndexPageTemplate = ({
                   </h2>
                 </div>
                 <div className="column is-3">
-                  {topSignIn.cta}
+                  <Button
+                    text={topSignIn.cta}
+                    link={topSignIn.link}
+                    local={true}
+                    style="callToAction cta-large cta-inverted"
+                  />
                 </div>
               </div>
             </div>
@@ -98,7 +107,12 @@ export const IndexPageTemplate = ({
               ))
             }
           </div>
-          <p className="has-text-centered">{partnersSection.cta}</p>
+          <Button
+            text={partnersSection.cta}
+            link={partnersSection.link}
+            local={true}
+            style="callToAction cta-large cta-inverted"
+          />
         </section>
 
         <section id="schoolSection">
@@ -114,7 +128,12 @@ export const IndexPageTemplate = ({
                   <p className="title is-2">{schoolSection.heading}</p>
                   <p className="subtitle is-5">{schoolSection.subheading}</p>
                 </h3>
-                {schoolSection.cta}
+                <Button
+                  text={schoolSection.cta}
+                  link={schoolSection.link}
+                  local={true}
+                  style="callToAction cta-large cta-inverted"
+                />
               </div>
             </div>
             <div className="columns">
@@ -142,7 +161,12 @@ export const IndexPageTemplate = ({
                   <p className="title is-2">{studentsSection.heading}</p>
                   <p className="subtitle is-5">{studentsSection.subheading}</p>
                 </h3>
-                {studentsSection.cta}
+                <Button
+                  text={studentsSection.cta}
+                  link={studentsSection.link}
+                  local={true}
+                  style="callToAction cta-large cta-inverted"
+                />
               </div>
             </div>
             <div className="columns is-centered" style={{overflow: "scroll"}}>
@@ -177,7 +201,12 @@ export const IndexPageTemplate = ({
                   </h2>
                 </div>
                 <div className="column is-3">
-                  {bottomSignIn.cta}
+                  <Button
+                    text={bottomSignIn.cta}
+                    link={bottomSignIn.link}
+                    local={true}
+                    style="callToAction cta-large cta-inverted"
+                  />
                 </div>
               </div>
             </div>
@@ -202,6 +231,9 @@ export const IndexPageTemplate = ({
                     <div className="box">
                       <h4 className="content">
                         <p className="title is-4">{teacher.fullName}</p>
+                        <p className="subtitle is-4">{teacher.role}</p>
+                        <p className="">{teacher.link}</p>
+                        <p className="">{teacher.bio}</p>
                       </h4>
                     </div>
                   </div>
@@ -218,10 +250,15 @@ export const IndexPageTemplate = ({
                 <h3 className="content">
                   <p className="title is-2">{newsSection.heading}</p>
                 </h3>
-                {newsSection.cta}
+                <Button
+                  text={newsSection.cta}
+                  link={newsSection.link}
+                  local={true}
+                  style="callToAction cta-large cta-inverted"
+                />
               </div>
             </div>
-            <BlogRoll />
+            <BlogRoll number={2}/>
           </div>
         </section>
       </>

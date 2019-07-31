@@ -4,6 +4,7 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class BlogRoll extends React.Component {
+
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -74,7 +75,7 @@ export default () => (
       query BlogRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+          filter: {frontmatter: {templateKey: {eq: "blog-post"}}}, limit: 2
         ) {
           edges {
             node {
