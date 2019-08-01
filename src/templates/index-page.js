@@ -8,6 +8,7 @@ import BlogRoll from '../components/BlogRoll'
 import PartnerCard from '../components/cards/partnerCard'
 import Button from '../components/elements/Button'
 import TeachersShortList from '../components/TeachersShortList'
+import StudentsSlider from '../components/StudentsSlider'
 
 export const IndexPageTemplate = ({
   mainCover,
@@ -19,10 +20,8 @@ export const IndexPageTemplate = ({
   teachersSection,
   newsSection,
   partners,
-  students,
 }) => {
     const filteredPartners = partners.filter(partner => partner.main)
-    const filteredStudents = students.filter(student => student.main)
 
     return (
       <>
@@ -155,22 +154,7 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
-            <div className="columns is-centered" style={{overflow: "scroll"}}>
-              { filteredStudents.length > 0 && filteredStudents.map( student =>(
-                  <div key={v4()} className="column is-12">
-                    <div className="box">
-                      <h4 className="content">
-                        <p className="title is-5">{student.fullName}</p>
-                        <p className="subtitle is-5">{student.company}</p>
-                        <p className="">{student.role}</p>
-                        <p className="">{student.description}</p>
-                        <p className="">{student.master}</p>
-                      </h4>
-                    </div>
-                  </div>
-                ))
-              }
-            </div>
+            <StudentsSlider />
 
             <div id="bottomSignUpBox" className="">
               <div className="columns is-gapless">
@@ -246,13 +230,11 @@ IndexPageTemplate.propTypes = {
   teachersSection: PropTypes.object,
   newsSection: PropTypes.object,
   partners: PropTypes.array,
-  students: PropTypes.array,
 }
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   const partnersList = data.partnersData.frontmatter
-  const studentsList = data.studentsData.frontmatter
 
   return (
     <Layout>
@@ -266,7 +248,6 @@ const IndexPage = ({ data }) => {
         teachersSection={frontmatter.teachersSection}
         newsSection={frontmatter.newsSection}
         partners={partnersList.partners}
-        students={studentsList.students}
       />
     </Layout>
   )
@@ -275,8 +256,6 @@ const IndexPage = ({ data }) => {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     partnersData: PropTypes.object,
-    studentsData: PropTypes.object,
-    teachersData: PropTypes.object,
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
     }),
@@ -293,26 +272,6 @@ export const pageQuery = graphql`
           name
           main
           link
-          altImage
-          image {
-            childImageSharp {
-              fluid(maxWidth: 300, quality: 80) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-    studentsData: markdownRemark(frontmatter: { templateKey: { eq: "students-page"}}) {
-      frontmatter {
-        students {
-          fullName
-          main
-          master
-          company
-          role
-          description
           altImage
           image {
             childImageSharp {
