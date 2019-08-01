@@ -23,7 +23,7 @@ const SignupBox = ({ contents, color, id }) => {
           text={contents.cta}
           link={contents.link}
           local={true}
-          style={`callToAction cta-large cta${style ? "__invert" : "__regular"}`}
+          style={`cta cta-large cta${style ? "__invert" : "__regular"}`}
         />
       </div>
     </div>

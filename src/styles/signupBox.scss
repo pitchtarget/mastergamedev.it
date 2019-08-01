@@ -1,0 +1,30 @@
+.signupBox {
+  display: flex;
+  align-items: center;
+  min-height: 160px;
+  &__regular {
+    background-color: $primary;
+  }
+  &__invert {
+    background-color: $primary-invert;
+  }
+  &--image {
+    min-height: 160px;
+    min-width: 300px;
+    background-size: cover;
+  }
+  &--text {
+    color: inherit;
+    max-width: 600px;
+    padding: 1rem;
+    &__regular {
+      color: $primary-invert;
+    }
+    &__invert {
+      color: $primary;
+    }
+  }
+  &--cta {
+    display: flex;
+  }
+}

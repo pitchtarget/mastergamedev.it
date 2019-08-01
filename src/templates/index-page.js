@@ -36,7 +36,7 @@ export const IndexPageTemplate = ({
                   text={mainCover.cta}
                   link={mainCover.link}
                   local={true}
-                  style="callToAction cta-large cta-primary"
+                  style="cta cta-large cta-primary"
                 />
               </div>
               <div className="column">
@@ -63,7 +63,7 @@ export const IndexPageTemplate = ({
             text={partnersSection.cta}
             link={partnersSection.link}
             local={true}
-            style="callToAction cta-large cta-inverted"
+            style="cta cta-large cta-inverted"
           />
         </section>
 
@@ -84,7 +84,7 @@ export const IndexPageTemplate = ({
                   text={schoolSection.cta}
                   link={schoolSection.link}
                   local={true}
-                  style="callToAction cta-large cta-inverted"
+                  style="cta cta-large cta-inverted"
                 />
               </div>
             </div>
@@ -117,7 +117,7 @@ export const IndexPageTemplate = ({
                   text={studentsSection.cta}
                   link={studentsSection.link}
                   local={true}
-                  style="callToAction cta-large cta-inverted"
+                  style="cta cta-large cta-inverted"
                 />
               </div>
             </div>
@@ -152,7 +152,7 @@ export const IndexPageTemplate = ({
                   text={newsSection.cta}
                   link={newsSection.link}
                   local={true}
-                  style="callToAction cta-large cta-inverted"
+                  style="cta cta-large cta-inverted"
                 />
               </div>
             </div>
