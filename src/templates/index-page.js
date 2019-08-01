@@ -9,6 +9,7 @@ import Button from '../components/elements/Button'
 import TeachersShortList from '../components/TeachersShortList'
 import StudentsSlider from '../components/StudentsSlider'
 import PartnersCarousel from '../components/PartnersCarousel'
+import SignupBox from '../components/SignupBox'
 
 export const IndexPageTemplate = ({
   mainCover,
@@ -45,31 +46,7 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
-
-            <div id="topSignUpBox" className="">
-              <div className="columns is-gapless">
-                <div className="column is-3">
-                  <img
-                    src={!!topSignIn.image.childImageSharp ? topSignIn.image.childImageSharp.fluid.src : topSignIn.image}
-                    alt={topSignIn.altImage}
-                  />
-                </div>
-                <div className="column">
-                  <h2 className="content">
-                    <p className="title is-5">{topSignIn.heading}</p>
-                    <p className="subtitle is-5">{topSignIn.subheading}</p>
-                  </h2>
-                </div>
-                <div className="column is-3">
-                  <Button
-                    text={topSignIn.cta}
-                    link={topSignIn.link}
-                    local={true}
-                    style="callToAction cta-large cta-inverted"
-                  />
-                </div>
-              </div>
-            </div>
+            <SignupBox contents={topSignIn} id="topSignUpBox"/>
 
           </div>
         </section>
@@ -272,7 +249,7 @@ export const pageQuery = graphql`
         topSignIn {
           image {
             childImageSharp {
-              fluid(maxWidth: 300, quality: 80) {
+              fluid(maxWidth: 500, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }

@@ -125,11 +125,25 @@ $menu-label-color: $white-ter
 
 @import "~bulma"
 
-
+//Signup Box
+.signupBox
+  background-color: $primary
+  display: flex
+  align-items: center
+  min-height: 160px
+  &--image
+    min-height: 160px
+    min-width: 300px
+    background-size: cover
+  &--text
+    max-width: 600px
+    padding: 1rem
+  &--cta
+    display: flex
 // Call to Action
 .callToAction
   font-weight: 900
-  font-size: 1.5rem
+  font-size: 1rem
   padding: .5rem 0
   align-items: center
   justify-content: center
@@ -147,7 +161,7 @@ $menu-label-color: $white-ter
     transition: transform .32s ease
 
 .cta-large
-  font-size: 2rem
+  font-size: 1.5rem
   padding: .75rem 0
   .text
     margin-right: 1.5rem

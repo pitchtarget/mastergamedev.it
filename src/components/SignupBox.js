@@ -1,10 +1,31 @@
 import React from 'react'
+import Button from '../components/elements/Button'
 
-const SignupBox = ({ contents }) => {
+const SignupBox = ({ contents, id }) => {
   return (
-    <div className="box">
-      Box test
-    <div/>
+    <div id={id} className="signupBox">
+      <div
+        className="signupBox--image"
+        style={{
+          backgroundImage: `url(${
+            !!contents.image.childImageSharp ? contents.image.childImageSharp.fluid.src : contents.image
+          })`
+        }}
+      />
+      
+      <div classname="signupBox--text">
+        <h2 className="title is-4">{contents.heading}</h2>
+        <p className="subtitle is-6">{contents.subheading}</p>
+      </div>
+      <div className="signupBox--cta">
+        <Button
+          text={contents.cta}
+          link={contents.link}
+          local={true}
+          style="callToAction cta-large cta-inverted"
+        />
+      </div>
+    </div>
   )
 }
 
