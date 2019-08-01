@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import { v4 } from 'uuid'
 
 import Layout from '../components/Layout'
@@ -46,7 +46,7 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
-            <SignupBox contents={topSignIn} id="topSignUpBox"/>
+            <SignupBox contents={topSignIn} id="topSignUpBox" color="regular"/>
 
           </div>
         </section>
@@ -122,32 +122,7 @@ export const IndexPageTemplate = ({
               </div>
             </div>
             <StudentsSlider />
-
-            <div id="bottomSignUpBox" className="">
-              <div className="columns is-gapless">
-                <div className="column is-3">
-                  <img
-                    src={!!bottomSignIn.image.childImageSharp ? bottomSignIn.image.childImageSharp.fluid.src : bottomSignIn.image}
-                    alt={bottomSignIn.altImage}
-                  />
-                </div>
-                <div className="column">
-                  <h2 className="content">
-                    <p className="title is-5">{bottomSignIn.heading}</p>
-                    <p className="subtitle is-5">{bottomSignIn.subheading}</p>
-                  </h2>
-                </div>
-                <div className="column is-3">
-                  <Button
-                    text={bottomSignIn.cta}
-                    link={bottomSignIn.link}
-                    local={true}
-                    style="callToAction cta-large cta-inverted"
-                  />
-                </div>
-              </div>
-            </div>
-
+            <SignupBox contents={bottomSignIn} id="bottomSignUpBox" color="regular"/>
           </div>
         </section>
 

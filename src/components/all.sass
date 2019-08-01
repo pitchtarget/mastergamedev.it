@@ -114,32 +114,41 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #d6400033
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
 
 
 @import "~bulma"
 
 //Signup Box
 .signupBox
-  background-color: $primary
   display: flex
   align-items: center
   min-height: 160px
+  &__regular
+    background-color: $primary
+  &__invert
+    background-color: $primary-invert
   &--image
     min-height: 160px
     min-width: 300px
     background-size: cover
   &--text
+    color: inherit
     max-width: 600px
     padding: 1rem
+    &__regular
+      color: $primary-invert
+    &__invert
+      color: $primary
   &--cta
     display: flex
+
 // Call to Action
 .callToAction
   font-weight: 900
@@ -169,12 +178,12 @@ $menu-label-color: $white-ter
     width: 2.5rem
     height: 2.5rem
 
-.cta-primary
+.cta__primary
   color: $primary
   &:hover
     color: $primary
 
-.cta-inverted
+.cta__invert
   color: $primary-invert
   &:hover
     color: $primary-invert

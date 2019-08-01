@@ -1,9 +1,10 @@
 import React from 'react'
 import Button from '../components/elements/Button'
 
-const SignupBox = ({ contents, id }) => {
+const SignupBox = ({ contents, color, id }) => {
+  const style = color === "invert"
   return (
-    <div id={id} className="signupBox">
+    <div id={id} className={`signupBox signupBox${style ? "__primary" : "__invert"}`}>
       <div
         className="signupBox--image"
         style={{
@@ -12,8 +13,8 @@ const SignupBox = ({ contents, id }) => {
           })`
         }}
       />
-      
-      <div classname="signupBox--text">
+
+      <div classname={`signupBox--text signupBox--text${style ? "__invert" : "__regular"}`}>
         <h2 className="title is-4">{contents.heading}</h2>
         <p className="subtitle is-6">{contents.subheading}</p>
       </div>
@@ -22,7 +23,7 @@ const SignupBox = ({ contents, id }) => {
           text={contents.cta}
           link={contents.link}
           local={true}
-          style="callToAction cta-large cta-inverted"
+          style={`callToAction cta-large cta${style ? "__invert" : "__regular"}`}
         />
       </div>
     </div>
