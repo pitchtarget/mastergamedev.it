@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import PartnerCard from '../components/cards/partnerCard'
 import Button from '../components/elements/Button'
+import TeachersShortList from '../components/TeachersShortList'
 
 export const IndexPageTemplate = ({
   mainCover,
@@ -19,24 +20,9 @@ export const IndexPageTemplate = ({
   newsSection,
   partners,
   students,
-  teachers,
 }) => {
     const filteredPartners = partners.filter(partner => partner.main)
     const filteredStudents = students.filter(student => student.main)
-    let filteredTeachers = []
-    let listNum = []
-    for (let i = 0; i < 10 ; i++) {
-      let randomNum = Math.floor(Math.random() * Math.floor(teachers.length))
-      let hasValue = listNum.includes(randomNum)
-      !hasValue && listNum.length <= 3 && listNum.push(randomNum)
-    }
-
-    filteredTeachers = [
-      teachers[listNum[0]],
-      teachers[listNum[1]],
-      teachers[listNum[2]],
-      teachers[listNum[3]],
-    ]
 
     return (
       <>
@@ -225,21 +211,7 @@ export const IndexPageTemplate = ({
                 {teachersSection.cta}
               </div>
             </div>
-            <div className="columns">
-              { teachers.length > 0 && filteredTeachers.map( teacher =>(
-                  <div key={v4()} className="column is-desktop-3">
-                    <div className="box">
-                      <h4 className="content">
-                        <p className="title is-4">{teacher.fullName}</p>
-                        <p className="subtitle is-4">{teacher.role}</p>
-                        <p className="">{teacher.link}</p>
-                        <p className="">{teacher.bio}</p>
-                      </h4>
-                    </div>
-                  </div>
-                ))
-              }
-            </div>
+            <TeachersShortList />
           </div>
         </section>
 
@@ -275,14 +247,12 @@ IndexPageTemplate.propTypes = {
   newsSection: PropTypes.object,
   partners: PropTypes.array,
   students: PropTypes.array,
-  teachers: PropTypes.array,
 }
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   const partnersList = data.partnersData.frontmatter
   const studentsList = data.studentsData.frontmatter
-  const teachersList = data.teachersData.frontmatter
 
   return (
     <Layout>
@@ -297,7 +267,6 @@ const IndexPage = ({ data }) => {
         newsSection={frontmatter.newsSection}
         partners={partnersList.partners}
         students={studentsList.students}
-        teachers={teachersList.teachers}
       />
     </Layout>
   )
@@ -318,24 +287,6 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
-    teachersData: markdownRemark(frontmatter: { templateKey: { eq: "teachers"}}) {
-      frontmatter {
-        teachers {
-          fullName
-          role
-          bio
-          link
-          altImage
-          image {
-            childImageSharp {
-              fluid(maxWidth: 300, quality: 80) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
     partnersData: markdownRemark(frontmatter: { templateKey: { eq: "partners"}}) {
       frontmatter {
         partners {
