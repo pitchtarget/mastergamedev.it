@@ -11,6 +11,7 @@ description: >-
   anyone.
 students:
   - fullName: student-1
+    main: true
     image: /img/student-img.png
     altImage: student-1
     master: 2018
@@ -22,6 +23,7 @@ students:
       Morbi fringilla convallis sapien, id pulvinar odio volutpat.
       Petierunt uti sibi concilium totius Galliae in diem certam indicere.
   - fullName: student-2
+    main: true
     image: /img/student-img.png
     altImage: student-2
     master: 2018
@@ -32,6 +34,16 @@ students:
       Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
       Morbi fringilla convallis sapien, id pulvinar odio volutpat.
       Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-
-
+  - fullName: student-3
+    main: true
+    image: /img/student-img.png
+    altImage: student-3
+    master: 2018
+    company: company-3
+    role: role-3
+    description: >-
+      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
+      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
+      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
+      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
 ---
