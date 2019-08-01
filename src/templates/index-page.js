@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import { v4 } from 'uuid'
 
 import Layout from '../components/Layout'
@@ -9,6 +9,7 @@ import Button from '../components/elements/Button'
 import TeachersShortList from '../components/TeachersShortList'
 import StudentsSlider from '../components/StudentsSlider'
 import PartnersCarousel from '../components/PartnersCarousel'
+import SignupBox from '../components/SignupBox'
 
 export const IndexPageTemplate = ({
   mainCover,
@@ -35,7 +36,7 @@ export const IndexPageTemplate = ({
                   text={mainCover.cta}
                   link={mainCover.link}
                   local={true}
-                  style="callToAction cta-large cta-primary"
+                  style="cta cta-large cta-primary"
                 />
               </div>
               <div className="column">
@@ -45,31 +46,7 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
-
-            <div id="topSignUpBox" className="">
-              <div className="columns is-gapless">
-                <div className="column is-3">
-                  <img
-                    src={!!topSignIn.image.childImageSharp ? topSignIn.image.childImageSharp.fluid.src : topSignIn.image}
-                    alt={topSignIn.altImage}
-                  />
-                </div>
-                <div className="column">
-                  <h2 className="content">
-                    <p className="title is-5">{topSignIn.heading}</p>
-                    <p className="subtitle is-5">{topSignIn.subheading}</p>
-                  </h2>
-                </div>
-                <div className="column is-3">
-                  <Button
-                    text={topSignIn.cta}
-                    link={topSignIn.link}
-                    local={true}
-                    style="callToAction cta-large cta-inverted"
-                  />
-                </div>
-              </div>
-            </div>
+            <SignupBox contents={topSignIn} id="topSignUpBox" color="regular"/>
 
           </div>
         </section>
@@ -86,7 +63,7 @@ export const IndexPageTemplate = ({
             text={partnersSection.cta}
             link={partnersSection.link}
             local={true}
-            style="callToAction cta-large cta-inverted"
+            style="cta cta-large cta-inverted"
           />
         </section>
 
@@ -107,7 +84,7 @@ export const IndexPageTemplate = ({
                   text={schoolSection.cta}
                   link={schoolSection.link}
                   local={true}
-                  style="callToAction cta-large cta-inverted"
+                  style="cta cta-large cta-inverted"
                 />
               </div>
             </div>
@@ -140,37 +117,12 @@ export const IndexPageTemplate = ({
                   text={studentsSection.cta}
                   link={studentsSection.link}
                   local={true}
-                  style="callToAction cta-large cta-inverted"
+                  style="cta cta-large cta-inverted"
                 />
               </div>
             </div>
             <StudentsSlider />
-
-            <div id="bottomSignUpBox" className="">
-              <div className="columns is-gapless">
-                <div className="column is-3">
-                  <img
-                    src={!!bottomSignIn.image.childImageSharp ? bottomSignIn.image.childImageSharp.fluid.src : bottomSignIn.image}
-                    alt={bottomSignIn.altImage}
-                  />
-                </div>
-                <div className="column">
-                  <h2 className="content">
-                    <p className="title is-5">{bottomSignIn.heading}</p>
-                    <p className="subtitle is-5">{bottomSignIn.subheading}</p>
-                  </h2>
-                </div>
-                <div className="column is-3">
-                  <Button
-                    text={bottomSignIn.cta}
-                    link={bottomSignIn.link}
-                    local={true}
-                    style="callToAction cta-large cta-inverted"
-                  />
-                </div>
-              </div>
-            </div>
-
+            <SignupBox contents={bottomSignIn} id="bottomSignUpBox" color="regular"/>
           </div>
         </section>
 
@@ -200,7 +152,7 @@ export const IndexPageTemplate = ({
                   text={newsSection.cta}
                   link={newsSection.link}
                   local={true}
-                  style="callToAction cta-large cta-inverted"
+                  style="cta cta-large cta-inverted"
                 />
               </div>
             </div>
@@ -272,7 +224,7 @@ export const pageQuery = graphql`
         topSignIn {
           image {
             childImageSharp {
-              fluid(maxWidth: 300, quality: 80) {
+              fluid(maxWidth: 500, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }
