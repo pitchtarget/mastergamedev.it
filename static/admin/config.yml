@@ -34,13 +34,12 @@ collections:
               label: Main cover,
               name: mainCover,
               widget: object,
-              fields: [
-              - {label: Image, name: image, widget: image}
-              - {label: Heading, name: heading, widget: string}
-              - {label: Subheading, name: subheading, widget: string}
-              - {label: Call to action, name: cta, widget: string}
-              - {label: Link to, name: link, widget: string}
-              ]
+              fields:
+                - {label: Image, name: image, widget: image}
+                - {label: Heading, name: heading, widget: string}
+                - {label: Subheading, name: subheading, widget: string}
+                - {label: Call to action, name: cta, widget: string}
+                - {label: Link to, name: link, widget: string}
             }
 
           # First sing-in row
@@ -48,13 +47,12 @@ collections:
               label: Sign in box,
               name: topSignIn,
               widget: object,
-              fields: [
-              - {label: Image, name: image, widget: image}
-              - {label: Heading, name: heading, widget: string}
-              - {label: Subheading, name: subheading, widget: string}
-              - {label: Call to action, name: cta, widget: string}
-              - {label: Link to, name: link, widget: string}
-              ]
+              fields:
+                - {label: Image, name: image, widget: image}
+                - {label: Heading, name: heading, widget: string}
+                - {label: Subheading, name: subheading, widget: string}
+                - {label: Call to action, name: cta, widget: string}
+                - {label: Link to, name: link, widget: string}
             }
 
           # Partners section
@@ -62,12 +60,11 @@ collections:
               label: Partners section,
               name: partnersSection,
               widget: object,
-              fields: [
-              - {label: Heading, name: heading, widget: string}
-              - {label: Subheading, name: subheading, widget: string}
-              - {label: Call to action, name: cta, widget: string}
-              - {label: Link to, name: link, widget: string}
-              ]
+              fields:
+                - {label: Heading, name: heading, widget: string}
+                - {label: Subheading, name: subheading, widget: string}
+                - {label: Call to action, name: cta, widget: string}
+                - {label: Link to, name: link, widget: string}
             }
 
           # School section
@@ -75,14 +72,13 @@ collections:
               label: School section,
               name: schoolSection,
               widget: object,
-              fields: [
-              - {label: Image, name: image, widget: image}
-              - {label: Heading, name: heading, widget: string}
-              - {label: Subheading, name: subheading, widget: string}
-              - {label: Call to action, name: cta, widget: string}
-              - {label: Link to, name: link, widget: string}
-              - {label: Bullet, name: bullet, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: string}, {label: Call to action, name: cta, widget: markdown}, {label: Link, name: link, widget: string}]}
-              ]
+              fields:
+                - {label: Image, name: image, widget: image}
+                - {label: Heading, name: heading, widget: string}
+                - {label: Subheading, name: subheading, widget: string}
+                - {label: Call to action, name: cta, widget: string}
+                - {label: Link to, name: link, widget: string}
+                - {label: Bullet, name: bullet, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: string}, {label: Call to action, name: cta, widget: markdown}, {label: Link, name: link, widget: string}]}
             }
 
           # Students sectioin
@@ -90,14 +86,13 @@ collections:
               label: Student section,
               name: studentsSection,
               widget: object,
-              fields: [
-              - {label: Image, name: image, widget: image}
-              - {label: Heading, name: heading, widget: string}
-              - {label: Subheading, name: subheading, widget: string}
-              - {label: Call to action, name: cta, widget: string}
-              - {label: Link to, name: link, widget: string}
-              - {label: Bullet, name: bullet, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: string}, {label: Call to action, name: cta, widget: markdown}, {label: Link, name: link, widget: string}]}
-              ]
+              fields:
+                - {label: Image, name: image, widget: image}
+                - {label: Heading, name: heading, widget: string}
+                - {label: Subheading, name: subheading, widget: string}
+                - {label: Call to action, name: cta, widget: string}
+                - {label: Link to, name: link, widget: string}
+                - {label: Bullet, name: bullet, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: string}, {label: Call to action, name: cta, widget: markdown}, {label: Link, name: link, widget: string}]}
             }
 
           # Second submission row
@@ -105,13 +100,12 @@ collections:
               label: Sign in box,
               name: bottomSignIn,
               widget: object,
-              fields: [
-              - {label: Image, name: image, widget: image}
-              - {label: Heading, name: heading, widget: string}
-              - {label: Subheading, name: subheading, widget: string}
-              - {label: Call to action, name: cta, widget: string}
-              - {label: Link to, name: link, widget: string}
-              ]
+              fields:
+                - {label: Image, name: image, widget: image}
+                - {label: Heading, name: heading, widget: string}
+                - {label: Subheading, name: subheading, widget: string}
+                - {label: Call to action, name: cta, widget: string}
+                - {label: Link to, name: link, widget: string}
             }
 
           # Teachers section
@@ -119,13 +113,12 @@ collections:
               label: Teachers section,
               name: teachersSection,
               widget: object,
-              fields: [
-              - {label: Image, name: image, widget: image}
-              - {label: Heading, name: heading, widget: string}
-              - {label: Subheading, name: subheading, widget: string}
-              - {label: Call to action, name: cta, widget: string}
-              - {label: Link to, name: link, widget: string}
-              ]
+              fields:
+                - {label: Image, name: image, widget: image}
+                - {label: Heading, name: heading, widget: string}
+                - {label: Subheading, name: subheading, widget: string}
+                - {label: Call to action, name: cta, widget: string}
+                - {label: Link to, name: link, widget: string}
             }
 
           # News section
@@ -133,23 +126,12 @@ collections:
               label: News section,
               name: newsSection,
               widget: object,
-              fields: [
-              - {label: Heading news, name: heading, widget: string}
-              - {label: Call to action, name: cta, widget: string}
-              - {label: Link to , name: link, widget: string}
-              ]
+              fields:
+                - {label: Heading news, name: heading, widget: string}
+                - {label: Call to action, name: cta, widget: string}
+                - {label: Link to , name: link, widget: string}
             }
 
-
-          # TO REMOCE
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
