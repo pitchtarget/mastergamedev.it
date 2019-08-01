@@ -37,7 +37,7 @@ collections:
               fields: [
                 {label: Image, name: image, widget: image},
                 {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: string},
+                {label: Subheading, name: subheading, widget: text},
                 {label: Call to action, name: cta, widget: string},
                 {label: Link to, name: link, widget: string},
               ],
@@ -51,7 +51,7 @@ collections:
               fields: [
                 {label: Image, name: image, widget: image},
                 {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: string},
+                {label: Subheading, name: subheading, widget: text},
                 {label: Call to action, name: cta, widget: string},
                 {label: Link to, name: link, widget: string},
               ],
@@ -64,7 +64,7 @@ collections:
               widget: object,
               fields: [
                 {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: string},
+                {label: Subheading, name: subheading, widget: text},
                 {label: Call to action, name: cta, widget: string},
                 {label: Link to, name: link, widget: string},
               ],
@@ -78,10 +78,10 @@ collections:
               fields: [
                 {label: Image, name: image, widget: image},
                 {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: string},
+                {label: Subheading, name: subheading, widget: text},
                 {label: Call to action, name: cta, widget: string},
                 {label: Link to, name: link, widget: string},
-                {label: Bullet, name: bullet, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: string}, {label: Call to action, name: cta, widget: markdown}, {label: Link, name: link, widget: string}]},
+                {label: Bullet, name: bullet, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: text}, {label: Call to action, name: cta, widget: markdown}, {label: Link, name: link, widget: string}]},
               ],
             }
 
@@ -93,10 +93,10 @@ collections:
               fields: [
                 {label: Image, name: image, widget: image},
                 {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: string},
+                {label: Subheading, name: subheading, widget: text},
                 {label: Call to action, name: cta, widget: string},
                 {label: Link to, name: link, widget: string},
-                {label: Bullet, name: bullet, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: string}, {label: Call to action, name: cta, widget: markdown}, {label: Link, name: link, widget: string}]},
+                {label: Bullet, name: bullet, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: text}, {label: Call to action, name: cta, widget: markdown}, {label: Link, name: link, widget: string}]},
               ],
             }
 
@@ -108,7 +108,7 @@ collections:
               fields: [
                 {label: Image, name: image, widget: image},
                 {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: string},
+                {label: Subheading, name: subheading, widget: text},
                 {label: Call to action, name: cta, widget: string},
                 {label: Link to, name: link, widget: string},
               ],
@@ -122,7 +122,7 @@ collections:
               fields: [
                 {label: Image, name: image, widget: image},
                 {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: string},
+                {label: Subheading, name: subheading, widget: text},
                 {label: Call to action, name: cta, widget: string},
                 {label: Link to, name: link, widget: string},
               ],
