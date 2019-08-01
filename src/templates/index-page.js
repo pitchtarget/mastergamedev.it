@@ -5,10 +5,10 @@ import { v4 } from 'uuid'
 
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
-import PartnerCard from '../components/cards/partnerCard'
 import Button from '../components/elements/Button'
 import TeachersShortList from '../components/TeachersShortList'
 import StudentsSlider from '../components/StudentsSlider'
+import PartnersCarousel from '../components/PartnersCarousel'
 
 export const IndexPageTemplate = ({
   mainCover,
@@ -19,10 +19,7 @@ export const IndexPageTemplate = ({
   bottomSignIn,
   teachersSection,
   newsSection,
-  partners,
 }) => {
-    const filteredPartners = partners.filter(partner => partner.main)
-
     return (
       <>
         <section className="hero">
@@ -84,14 +81,7 @@ export const IndexPageTemplate = ({
               <p className="subtitle is-5">{partnersSection.subheading}</p>
             </h3>
           </div>
-          <div className="columns is-centered" style={{overflow: "scroll"}}>
-            { filteredPartners.length > 0 && filteredPartners.map( partner => (
-                <div key={v4()} className="column is-2">
-                  <PartnerCard partner={partner}/>
-                </div>
-              ))
-            }
-          </div>
+          <PartnersCarousel />
           <Button
             text={partnersSection.cta}
             link={partnersSection.link}
@@ -229,12 +219,10 @@ IndexPageTemplate.propTypes = {
   bottomSignIn: PropTypes.object,
   teachersSection: PropTypes.object,
   newsSection: PropTypes.object,
-  partners: PropTypes.array,
 }
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const partnersList = data.partnersData.frontmatter
 
   return (
     <Layout>
@@ -247,7 +235,6 @@ const IndexPage = ({ data }) => {
         bottomSignIn={frontmatter.bottomSignIn}
         teachersSection={frontmatter.teachersSection}
         newsSection={frontmatter.newsSection}
-        partners={partnersList.partners}
       />
     </Layout>
   )
@@ -266,23 +253,6 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
-    partnersData: markdownRemark(frontmatter: { templateKey: { eq: "partners"}}) {
-      frontmatter {
-        partners {
-          name
-          main
-          link
-          altImage
-          image {
-            childImageSharp {
-              fluid(maxWidth: 300, quality: 80) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         mainCover {
