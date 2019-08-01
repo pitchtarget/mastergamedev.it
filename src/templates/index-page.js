@@ -5,8 +5,10 @@ import { v4 } from 'uuid'
 
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
-import PartnerCard from '../components/cards/partnerCard'
 import Button from '../components/elements/Button'
+import TeachersShortList from '../components/TeachersShortList'
+import StudentsSlider from '../components/StudentsSlider'
+import PartnersCarousel from '../components/PartnersCarousel'
 
 export const IndexPageTemplate = ({
   mainCover,
@@ -17,27 +19,7 @@ export const IndexPageTemplate = ({
   bottomSignIn,
   teachersSection,
   newsSection,
-  partners,
-  students,
-  teachers,
 }) => {
-    const filteredPartners = partners.filter(partner => partner.main)
-    const filteredStudents = students.filter(student => student.main)
-    let filteredTeachers = []
-    let listNum = []
-    for (let i = 0; i < 10 ; i++) {
-      let randomNum = Math.floor(Math.random() * Math.floor(teachers.length))
-      let hasValue = listNum.includes(randomNum)
-      !hasValue && listNum.length <= 3 && listNum.push(randomNum)
-    }
-
-    filteredTeachers = [
-      teachers[listNum[0]],
-      teachers[listNum[1]],
-      teachers[listNum[2]],
-      teachers[listNum[3]],
-    ]
-
     return (
       <>
         <section className="hero">
@@ -99,14 +81,7 @@ export const IndexPageTemplate = ({
               <p className="subtitle is-5">{partnersSection.subheading}</p>
             </h3>
           </div>
-          <div className="columns is-centered" style={{overflow: "scroll"}}>
-            { filteredPartners.length > 0 && filteredPartners.map( partner => (
-                <div key={v4()} className="column is-2">
-                  <PartnerCard partner={partner}/>
-                </div>
-              ))
-            }
-          </div>
+          <PartnersCarousel />
           <Button
             text={partnersSection.cta}
             link={partnersSection.link}
@@ -169,22 +144,7 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
-            <div className="columns is-centered" style={{overflow: "scroll"}}>
-              { filteredStudents.length > 0 && filteredStudents.map( student =>(
-                  <div key={v4()} className="column is-12">
-                    <div className="box">
-                      <h4 className="content">
-                        <p className="title is-5">{student.fullName}</p>
-                        <p className="subtitle is-5">{student.company}</p>
-                        <p className="">{student.role}</p>
-                        <p className="">{student.description}</p>
-                        <p className="">{student.master}</p>
-                      </h4>
-                    </div>
-                  </div>
-                ))
-              }
-            </div>
+            <StudentsSlider />
 
             <div id="bottomSignUpBox" className="">
               <div className="columns is-gapless">
@@ -225,21 +185,7 @@ export const IndexPageTemplate = ({
                 {teachersSection.cta}
               </div>
             </div>
-            <div className="columns">
-              { teachers.length > 0 && filteredTeachers.map( teacher =>(
-                  <div key={v4()} className="column is-desktop-3">
-                    <div className="box">
-                      <h4 className="content">
-                        <p className="title is-4">{teacher.fullName}</p>
-                        <p className="subtitle is-4">{teacher.role}</p>
-                        <p className="">{teacher.link}</p>
-                        <p className="">{teacher.bio}</p>
-                      </h4>
-                    </div>
-                  </div>
-                ))
-              }
-            </div>
+            <TeachersShortList />
           </div>
         </section>
 
@@ -273,16 +219,10 @@ IndexPageTemplate.propTypes = {
   bottomSignIn: PropTypes.object,
   teachersSection: PropTypes.object,
   newsSection: PropTypes.object,
-  partners: PropTypes.array,
-  students: PropTypes.array,
-  teachers: PropTypes.array,
 }
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const partnersList = data.partnersData.frontmatter
-  const studentsList = data.studentsData.frontmatter
-  const teachersList = data.teachersData.frontmatter
 
   return (
     <Layout>
@@ -295,9 +235,6 @@ const IndexPage = ({ data }) => {
         bottomSignIn={frontmatter.bottomSignIn}
         teachersSection={frontmatter.teachersSection}
         newsSection={frontmatter.newsSection}
-        partners={partnersList.partners}
-        students={studentsList.students}
-        teachers={teachersList.teachers}
       />
     </Layout>
   )
@@ -306,8 +243,6 @@ const IndexPage = ({ data }) => {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     partnersData: PropTypes.object,
-    studentsData: PropTypes.object,
-    teachersData: PropTypes.object,
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
     }),
@@ -318,61 +253,6 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
-    teachersData: markdownRemark(frontmatter: { templateKey: { eq: "teachers"}}) {
-      frontmatter {
-        teachers {
-          fullName
-          role
-          bio
-          link
-          altImage
-          image {
-            childImageSharp {
-              fluid(maxWidth: 300, quality: 80) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-    partnersData: markdownRemark(frontmatter: { templateKey: { eq: "partners"}}) {
-      frontmatter {
-        partners {
-          name
-          main
-          link
-          altImage
-          image {
-            childImageSharp {
-              fluid(maxWidth: 300, quality: 80) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-    studentsData: markdownRemark(frontmatter: { templateKey: { eq: "students-page"}}) {
-      frontmatter {
-        students {
-          fullName
-          main
-          master
-          company
-          role
-          description
-          altImage
-          image {
-            childImageSharp {
-              fluid(maxWidth: 300, quality: 80) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         mainCover {

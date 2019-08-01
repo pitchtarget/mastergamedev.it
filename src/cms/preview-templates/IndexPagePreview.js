@@ -16,9 +16,6 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         bottomSignIn={data.bottomSignIn}
         teachersSection={data.teachersSection}
         newsSection={data.newsSection}
-        partners={[]}
-        students={[]}
-        teachers={[]}
       />
     )
   } else {
