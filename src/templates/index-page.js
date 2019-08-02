@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { v4 } from 'uuid'
 
 import Layout from '../components/Layout'
@@ -24,7 +24,6 @@ export const IndexPageTemplate = ({
     return (
       <>
         <section id="mainCover" className="cover">
-
           <div className="container">
             <div className="columns">
               <div className="column is-5 is-offset-1">
@@ -46,7 +45,6 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
-
           </div>
         </section>
         <section className="container">
@@ -64,15 +62,13 @@ export const IndexPageTemplate = ({
               </div>
             </div>
           </div>
-
           <PartnersCarousel />
-
           <div className="is-flex" style={{justifyContent: "center"}}>
             <Button
               text={partnersSection.cta}
               link={partnersSection.link}
               local={true}
-              styles="cta cta-large cta__invert"
+              styles="cta cta__invert"
             />
           </div>
         </section>
@@ -81,32 +77,33 @@ export const IndexPageTemplate = ({
           <div className="container">
             <div className="columns is-gapeless"
             style={{
+              minHeight: "28rem",
               backgroundImage: `url(${
                 !!schoolSection.image.childImageSharp ? schoolSection.image.childImageSharp.fluid.src : schoolSection.image
               })`
             }}>
-              <div className="column is-4 is-offset-1">
+              <div className="column is-4 is-offset-1" style={{paddingTop: "6rem"}}>
                 <h3 className="content">
-                  <p className="title is-2">{schoolSection.heading}</p>
-                  <p className="subtitle is-5">{schoolSection.subheading}</p>
+                  <p className="title is-2 has-text-white">{schoolSection.heading}</p>
+                  <p className="subtitle is-5 has-text-white">{schoolSection.subheading}</p>
                 </h3>
                 <Button
                   text={schoolSection.cta}
                   link={schoolSection.link}
                   local={true}
-                  styles="cta cta-large cta__invert"
+                  styles="cta cta-large has-text-white"
                 />
               </div>
             </div>
-            <div className="columns">
+            <div className="columns" style={{marginTop: "-4rem"}}>
               { schoolSection.bullet.length > 0 && schoolSection.bullet.map( bullet =>(
                   <div key={v4()} className="column is-desktop-3">
-                    <div className="box">
-                      <h4 className="content">
-                        <p className="title is-4">{bullet.heading}</p>
-                        <p className="subtitle is-4">{bullet.subheading}</p>
-                        <p className="">{bullet.cta}</p>
-                      </h4>
+                    <div className="card">
+                      <div className="card-content" style={{minHeight: "16rem"}}>
+                        <h4 className="title is-4 has-text-weight-medium">{bullet.heading}</h4>
+                        <p className="subtitle is-6 has-text-weight-normal">{bullet.subheading}</p>
+                        <Link to={bullet.link} className="">{bullet.cta}</Link>
+                      </div>
                     </div>
                   </div>
                 ))
@@ -115,6 +112,7 @@ export const IndexPageTemplate = ({
           </div>
         </section>
 
+      {/*
         <section id="studentsSection">
           <div className="container">
             <div className="columns is-gapeless">
@@ -169,6 +167,8 @@ export const IndexPageTemplate = ({
             <BlogRoll number={2}/>
           </div>
         </section>
+        */}
+
       </>
     )
 }
