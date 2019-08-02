@@ -3,6 +3,8 @@ $cover-height: 90vh;
 .cover {
   background-color: $primary-invert;
   min-height: $cover-height;
+  display: flex;
+  align-items: center;
 
   .title {
     color: $primary;

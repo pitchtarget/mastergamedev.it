@@ -9,19 +9,17 @@ const PartnerCard = ({ partner }) => {
   }
 
   return (
-    <div className="card">
+    <div className="partnerCard">
       <a href={partner.link}>
         <img
+          className="image"
           src={`${image}`}
           alt={partner.altImage}
         />
+        <h4 className="text">
+          {partner.name}
+        </h4>
       </a>
-      <p>
-        <a href={partner.link}>
-          {partner.name}<br/>
-        </a>
-        {partner.description}<br/>
-      </p>
     </div>
   )
 }

@@ -53,20 +53,28 @@ export const IndexPageTemplate = ({
           <SignupBox contents={topSignIn} id="topSignUpBox" color="regular"/>
         </section>
 
-        <section id="partnersSection">
-          <div className="container">
-            <h3 className="content has-text-centered">
-              <p className="title is-2">{partnersSection.heading}</p>
-              <p className="subtitle is-5">{partnersSection.subheading}</p>
-            </h3>
+        <section id="partnersSection" className="section">
+          <div className="container section">
+            <div className="columns is-gapeless is-centered">
+              <div className="column is-8">
+                <h3 className="content has-text-centered">
+                  <p className="title is-1">{partnersSection.heading}</p>
+                  <p className="subtitle is-5">{partnersSection.subheading}</p>
+                </h3>
+              </div>
+            </div>
           </div>
+
           <PartnersCarousel />
-          <Button
-            text={partnersSection.cta}
-            link={partnersSection.link}
-            local={true}
-            styles="cta cta-large cta__invert"
-          />
+
+          <div className="is-flex" style={{justifyContent: "center"}}>
+            <Button
+              text={partnersSection.cta}
+              link={partnersSection.link}
+              local={true}
+              styles="cta cta-large cta__invert"
+            />
+          </div>
         </section>
 
         <section id="schoolSection">
