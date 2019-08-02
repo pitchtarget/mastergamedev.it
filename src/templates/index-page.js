@@ -73,7 +73,7 @@ export const IndexPageTemplate = ({
           </div>
         </section>
 
-        <section id="schoolSection">
+        <section id="schoolSection" className="section">
           <div className="container">
             <div className="columns is-gapeless"
             style={{
