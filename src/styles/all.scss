@@ -20,6 +20,9 @@ $title-color: $primary-invert;
 $subtitle-color: $primary-invert;
 $title-weight: 900;
 
+$navbar-background-color: $primary-invert;
+$navbar-height: 3rem;
+
 .navbar .navbar-menu {
   box-shadow: none !important;
 }
@@ -96,7 +99,10 @@ $title-weight: 900;
 }
 footer.footer {
   padding: 3rem 0rem 0rem;
-  background-color: transparent;
+  background-color: #3D3A45;
+}
+footer.content {
+  background-color: #3D3A45;
 }
 //Menu overrides
 $menu-item-color: $white-ter;

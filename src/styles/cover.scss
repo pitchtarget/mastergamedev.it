@@ -1,6 +1,7 @@
 $cover-height: 90vh;
 
 .cover {
+  margin-top: -$navbar-height;
   background-color: $primary-invert;
   min-height: $cover-height;
   display: flex;
