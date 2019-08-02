@@ -1,0 +1,13 @@
+$cover-height: 90vh;
+
+.cover {
+  background-color: $primary-invert;
+  min-height: $cover-height;
+
+  .title {
+    color: $primary;
+  }
+  .subtitle {
+    color: $primary;
+  }
+}

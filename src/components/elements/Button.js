@@ -7,7 +7,7 @@ const Button = ({
     link,
     local,
     target,
-    style,
+    styles,
     icon,
   }) => {
   return (
@@ -15,7 +15,7 @@ const Button = ({
       { local
         ? <Link
             to={link ? `${link}` : "#"}
-            className={style}
+            className={styles}
           >
             <span className="text">{text}</span>
             <span className="icon is-large">
@@ -25,7 +25,7 @@ const Button = ({
         : <a
             href={link ? `${link}` : "#"}
             target={target ? "_blank" : "_self"}
-            className={`${style}`}
+            className={styles}
           >
             <span className="text">{text}</span>
             <span className="icon is-large">
@@ -42,7 +42,7 @@ Button.propTypes = {
   link: PropTypes.string,
   local: PropTypes.bool,
   target: PropTypes.bool,
-  style: PropTypes.string,
+  styles: PropTypes.string,
 }
 
 

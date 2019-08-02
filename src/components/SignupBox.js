@@ -4,7 +4,7 @@ import Button from '../components/elements/Button'
 const SignupBox = ({ contents, color, id }) => {
   const style = color === "invert"
   return (
-    <div id={id} className={`signupBox signupBox${style ? "__primary" : "__invert"}`}>
+    <div id={id} className={`signupBox signupBox${style ? "__invert" : "__regular"}`}>
       <div
         className="signupBox--image"
         style={{
@@ -14,7 +14,7 @@ const SignupBox = ({ contents, color, id }) => {
         }}
       />
 
-      <div classname={`signupBox--text signupBox--text${style ? "__invert" : "__regular"}`}>
+      <div className={`signupBox--text signupBox--text${style ? "__invert" : "__regular"}`}>
         <h2 className="title is-4">{contents.heading}</h2>
         <p className="subtitle is-6">{contents.subheading}</p>
       </div>
@@ -23,7 +23,7 @@ const SignupBox = ({ contents, color, id }) => {
           text={contents.cta}
           link={contents.link}
           local={true}
-          style={`cta cta-large cta${style ? "__invert" : "__regular"}`}
+          styles={`cta cta-large cta${!style ? "__invert" : "__regular"}`}
         />
       </div>
     </div>

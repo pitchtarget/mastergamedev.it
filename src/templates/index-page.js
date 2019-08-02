@@ -23,10 +23,10 @@ export const IndexPageTemplate = ({
 }) => {
     return (
       <>
-        <section className="hero">
-          <div className="container">
+        <section id="mainCover" className="cover">
 
-            <div id="maincover" className="columns">
+          <div className="container">
+            <div className="columns">
               <div className="column is-5 is-offset-1">
                 <h1 className="content">
                   <p className="title is-1">{mainCover.heading}</p>
@@ -36,7 +36,7 @@ export const IndexPageTemplate = ({
                   text={mainCover.cta}
                   link={mainCover.link}
                   local={true}
-                  style="cta cta-large cta-primary"
+                  styles="cta cta-large cta__regular"
                 />
               </div>
               <div className="column">
@@ -46,9 +46,11 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
-            <SignupBox contents={topSignIn} id="topSignUpBox" color="regular"/>
 
           </div>
+        </section>
+        <section className="container">
+          <SignupBox contents={topSignIn} id="topSignUpBox" color="regular"/>
         </section>
 
         <section id="partnersSection">
@@ -63,7 +65,7 @@ export const IndexPageTemplate = ({
             text={partnersSection.cta}
             link={partnersSection.link}
             local={true}
-            style="cta cta-large cta-inverted"
+            styles="cta cta-large cta__invert"
           />
         </section>
 
@@ -84,7 +86,7 @@ export const IndexPageTemplate = ({
                   text={schoolSection.cta}
                   link={schoolSection.link}
                   local={true}
-                  style="cta cta-large cta-inverted"
+                  styles="cta cta-large cta__invert"
                 />
               </div>
             </div>
@@ -117,12 +119,12 @@ export const IndexPageTemplate = ({
                   text={studentsSection.cta}
                   link={studentsSection.link}
                   local={true}
-                  style="cta cta-large cta-inverted"
+                  styles="cta cta-large cta__invert"
                 />
               </div>
             </div>
             <StudentsSlider />
-            <SignupBox contents={bottomSignIn} id="bottomSignUpBox" color="regular"/>
+            <SignupBox contents={bottomSignIn} id="bottomSignUpBox" color="invert"/>
           </div>
         </section>
 
@@ -152,7 +154,7 @@ export const IndexPageTemplate = ({
                   text={newsSection.cta}
                   link={newsSection.link}
                   local={true}
-                  style="cta cta-large cta-inverted"
+                  styles="cta cta-large cta__invert"
                 />
               </div>
             </div>
