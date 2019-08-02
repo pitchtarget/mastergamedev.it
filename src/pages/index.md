@@ -1,58 +1,53 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
-
 mainCover:
-  image: /img/home-jumbotron.jpg
-  altImage: home-jumbotron
-  heading: Titolo della copertina
-  subheading: Quì la descrizione della copertiona
+  image: /img/cover-image.jpg
+  altImage: immagine di copertina
+  heading: Il primo master universitario in Italia sulla programmazione dei videogames
+  subheading: Il Master è rivolto a laureati in Informatica o Ingegneria Informatica e si propone di formare programmatori di applicazioni videoludiche e multimediali interattive, focalizzandosi sulle tecnologie più recenti.
   cta: Scopri di più
-  link: /school
+  link: /#
 
 topSignIn:
-  image: /img/home-jumbotron.jpg
-  altImage: home-jumbotron
-  heading: Partecipa all'open day di ottobre
-  subheading: Duarnte l'open day potrai cosnoscere i docenti ed ascoltare le esperienze degli studenti
+  image: /img/open-day.jpg
+  altImage: open-day
+  heading: Open Day Sabato 13 Luglio 2019
+  subheading: Una giornata dedicata alle attività del Master in Computer Game Development, presso Sala Verde Dipartimento di Informatica Università degli Studi di Verona Strada le Grazie 15, Verona.
   cta: Scopri di più
-  link: /openday
+  link: /#
 
 partnersSection:
-  heading: Fatti conoscere dallle aziende leader nel settore del gaming
-  subheading: In stretta collaborazione con il Master di Verona ci sono le raltà più influenti della scena italiana
+  heading: Il Master collabora con le più importanti aziende italiane del settore videoludico
+  subheading: Di seguito i nostri partner, presso i quali sarà possibile effettuare uno stage - obbligatorio e garantito - alla fine del percorso di formazione.
   cta: Vedi tutte
-  link: /school
+  link: /#
 
 schoolSection:
-  image: /img/home-jumbotron.jpg
-  altImage: home-jumbotron
+  image: /img/school-image.jpg
+  altImage: school-image
   heading: Un master che fa la differenza
-  subheading: Descrione del master...
+  subheading: Docenti altamente qualificati provenienti dell’Università di Verona e dall’industria vi seguiranno durante il vostro percorso
   cta: Vedi il programma
-  link: /school
+  link: /#
   bullet:
     - heading: Un master universitario
       subheading: Il master di game development è un percorso formativo di livello universitario
       cta: continua
-      link: /school
+      link: /#
     - heading: Docenti professionisti del settore
       subheading: Al Master acquisirai le conoscenze da un gruppo di docenti professionisti del game development
       cta: continua
-      link: /school
+      link: /#
     - heading: Un filo diretto con le aziende leader del settore
       subheading: La scuola è uno dei bacini più interessanti per le aziende di questo settore
       cta: continua
-      link: /school
+      link: /#
 
 studentsSection:
   heading: Una scuola che ti apre le porte a mondo del lavoro
   subheading: I nostri studenti lavorano su progetti che li portano su strade diverse
   cta: Vedi i progetti
-  link: /students
+  link: /#
 
 bottomSignIn:
   image: /img/home-jumbotron.jpg
@@ -60,7 +55,7 @@ bottomSignIn:
   heading: Iscriviti all'openday
   subheading: Durante l'open day vengono organizzati brevi work shop con i ragazzi del master che ti aiuteranno a creare il tuo primo gioco
   cta: partecipa ora
-  link: /openday
+  link: /#
 
 teachersSection:
   heading: Un dream team, più che un gruppo di docenti
