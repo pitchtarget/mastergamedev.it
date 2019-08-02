@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { v4 } from 'uuid'
 
 import Layout from '../components/Layout'
@@ -23,10 +23,9 @@ export const IndexPageTemplate = ({
 }) => {
     return (
       <>
-        <section className="hero">
+        <section id="mainCover" className="cover">
           <div className="container">
-
-            <div id="maincover" className="columns">
+            <div className="columns">
               <div className="column is-5 is-offset-1">
                 <h1 className="content">
                   <p className="title is-1">{mainCover.heading}</p>
@@ -36,7 +35,7 @@ export const IndexPageTemplate = ({
                   text={mainCover.cta}
                   link={mainCover.link}
                   local={true}
-                  style="cta cta-large cta-primary"
+                  styles="cta cta-large cta__regular"
                 />
               </div>
               <div className="column">
@@ -46,57 +45,65 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
-            <SignupBox contents={topSignIn} id="topSignUpBox" color="regular"/>
-
           </div>
         </section>
+        <section className="container">
+          <SignupBox contents={topSignIn} id="topSignUpBox" color="regular"/>
+        </section>
 
-        <section id="partnersSection">
-          <div className="container">
-            <h3 className="content has-text-centered">
-              <p className="title is-2">{partnersSection.heading}</p>
-              <p className="subtitle is-5">{partnersSection.subheading}</p>
-            </h3>
+        <section id="partnersSection" className="section">
+          <div className="container section">
+            <div className="columns is-gapeless is-centered">
+              <div className="column is-8">
+                <h3 className="content has-text-centered">
+                  <p className="title is-1">{partnersSection.heading}</p>
+                  <p className="subtitle is-5">{partnersSection.subheading}</p>
+                </h3>
+              </div>
+            </div>
           </div>
           <PartnersCarousel />
-          <Button
-            text={partnersSection.cta}
-            link={partnersSection.link}
-            local={true}
-            style="cta cta-large cta-inverted"
-          />
+          <div className="is-flex" style={{justifyContent: "center"}}>
+            <Button
+              text={partnersSection.cta}
+              link={partnersSection.link}
+              local={true}
+              styles="cta cta__invert"
+            />
+          </div>
         </section>
 
         <section id="schoolSection">
           <div className="container">
             <div className="columns is-gapeless"
             style={{
+              minHeight: "28rem",
               backgroundImage: `url(${
                 !!schoolSection.image.childImageSharp ? schoolSection.image.childImageSharp.fluid.src : schoolSection.image
               })`
             }}>
-              <div className="column is-4 is-offset-1">
+              <div className="column is-4 is-offset-1" style={{paddingTop: "6rem"}}>
                 <h3 className="content">
-                  <p className="title is-2">{schoolSection.heading}</p>
-                  <p className="subtitle is-5">{schoolSection.subheading}</p>
+                  <p className="title is-2 has-text-white">{schoolSection.heading}</p>
+                  <p className="subtitle is-5 has-text-white">{schoolSection.subheading}</p>
                 </h3>
                 <Button
                   text={schoolSection.cta}
                   link={schoolSection.link}
                   local={true}
-                  style="cta cta-large cta-inverted"
+                  styles="cta cta-large has-text-white"
                 />
               </div>
             </div>
-            <div className="columns">
+            <div className="columns" style={{marginTop: "-4rem"}}>
               { schoolSection.bullet.length > 0 && schoolSection.bullet.map( bullet =>(
                   <div key={v4()} className="column is-desktop-3">
-                    <div className="box">
-                      <h4 className="content">
-                        <p className="title is-4">{bullet.heading}</p>
-                        <p className="subtitle is-4">{bullet.subheading}</p>
-                        <p className="">{bullet.cta}</p>
-                      </h4>
+                    <div className="card">
+                      <div className="card-content" style={{minHeight: "16rem"}}>
+                        <h4 className="title is-4 has-text-weight-medium">{bullet.heading}</h4>
+                        <p className="subtitle is-6 has-text-weight-normal">{bullet.subheading}</p>
+                        <Link to={bullet.link} className="">{bullet.cta}</Link>
+                      </div>
                     </div>
                   </div>
                 ))
@@ -105,6 +112,7 @@ export const IndexPageTemplate = ({
           </div>
         </section>
 
+      {/*
         <section id="studentsSection">
           <div className="container">
             <div className="columns is-gapeless">
@@ -117,12 +125,12 @@ export const IndexPageTemplate = ({
                   text={studentsSection.cta}
                   link={studentsSection.link}
                   local={true}
-                  style="cta cta-large cta-inverted"
+                  styles="cta cta-large cta__invert"
                 />
               </div>
             </div>
             <StudentsSlider />
-            <SignupBox contents={bottomSignIn} id="bottomSignUpBox" color="regular"/>
+            <SignupBox contents={bottomSignIn} id="bottomSignUpBox" color="invert"/>
           </div>
         </section>
 
@@ -152,13 +160,15 @@ export const IndexPageTemplate = ({
                   text={newsSection.cta}
                   link={newsSection.link}
                   local={true}
-                  style="cta cta-large cta-inverted"
+                  styles="cta cta-large cta__invert"
                 />
               </div>
             </div>
             <BlogRoll number={2}/>
           </div>
         </section>
+        */}
+
       </>
     )
 }

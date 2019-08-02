@@ -5,10 +5,20 @@
 $kaldi-red: #D64000;
 $kaldi-red-invert: #fff;
 
+$body-background-color: #F0F0F2;
+
 $primary: #FFC74D;
 $primary-invert: #352857;
 $body-color: #333;
 $black: #2b2523;
+
+$section-padding: 3rem 0;
+$section-padding-medium: 6rem 0;
+$section-padding-large: 9rem 0;
+
+$title-color: $primary-invert;
+$subtitle-color: $primary-invert;
+$title-weight: 900;
 
 .navbar .navbar-menu {
   box-shadow: none !important;
@@ -135,6 +145,8 @@ $menu-label-color: $white-ter;
 @import "~bulma";
 @import "../styles/cta";
 @import "../styles/signupBox";
+@import "../styles/cover";
+@import "../styles/partnerCard";
 
 
 // responsiveness

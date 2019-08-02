@@ -11,13 +11,13 @@ class PartnersCarousel extends React.Component {
     const partners = data.markdownRemark.frontmatter.partners
     const filteredPartners = partners.filter(partner => partner.main)
     return (
-      <div className="columns is-centered" style={{overflow: "scroll"}}>
-        { filteredPartners.length > 0 && filteredPartners.map( partner => (
-            <div key={v4()} className="column is-2">
-              <PartnerCard partner={partner}/>
-            </div>
-          ))
-        }
+      <div className="partnersCarousel">
+        <div className="wrapper">
+          { filteredPartners.length > 0 && filteredPartners.map( partner => (
+              <PartnerCard key={v4()} partner={partner}/>
+            ))
+          }
+        </div>
       </div>
     )
   }
