@@ -2,9 +2,6 @@ $cover-height: 100vh;
 
 .cover {
   margin-top: -$navbar-height;
-  @include from($desktop) {
-
-  }
   background-color: $primary-invert;
   display: flex;
   align-items: center;
@@ -19,7 +16,8 @@ $cover-height: 100vh;
     width: 100%;
     min-height: 50vh;
     @include from($desktop) {
-      min-height: $cover-height;
+      height: $cover-height;
+      min-height: 700px;
       clip-path: polygon(0% 0%, 15% 100%,100% 100%, 100% 0%);
     }
     background-position: 50%;
@@ -27,6 +25,7 @@ $cover-height: 100vh;
     background-size: cover;
     clip-path: polygon(0% 0%, 0% 100%,100% 100%, 100% 15%)
   }
+
   .cover--content {
     display: flex;
     align-items: center;
