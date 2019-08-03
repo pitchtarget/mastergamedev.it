@@ -20,30 +20,34 @@ export const IndexPageTemplate = ({
   bottomSignIn,
   teachersSection,
   newsSection,
-}) => {
+  }) => {
+    console.log(!!mainCover.image.childImageSharp ? mainCover.image.childImageSharp.fluid.src : mainCover.image)
     return (
       <>
         <section id="mainCover" className="cover">
-          <div className="container">
-            <div className="columns">
-              <div className="column is-5 is-offset-1">
-                <h1 className="content">
-                  <p className="title is-1">{mainCover.heading}</p>
-                  <p className="subtitle is-5">{mainCover.subheading}</p>
-                </h1>
-                <Button
-                  text={mainCover.cta}
-                  link={mainCover.link}
-                  local={true}
-                  styles="cta cta-large cta__regular"
-                />
+          <div className="columns is-desktop is-6 is-vcentered">
+            <div className="column is-offset-1 is-5-desktop is-11-mobile">
+              <div className="cover--content">
+                <div>
+                  <h1 className="title is-spaced is-size-3-mobile is-size-1-tablet">{mainCover.heading}</h1>
+                  <p className="subtitle is-size-6-mobile is-size-4-tablet">{mainCover.subheading}</p>
+                  <Button
+                    text={mainCover.cta}
+                    link={mainCover.link}
+                    local={true}
+                    styles="cta cta-large cta__regular"
+                  />
+                </div>
               </div>
-              <div className="column">
-                <img
-                  src={!!mainCover.image.childImageSharp ? mainCover.image.childImageSharp.fluid.src : mainCover.image}
-                  alt={mainCover.altImage}
-                />
-              </div>
+            </div>
+            <div
+              className="column cover--image"
+              style={{
+                backgroundImage: `url(${
+                  !!mainCover.image.childImageSharp ? mainCover.image.childImageSharp.fluid.src : mainCover.image
+                })`
+              }}
+            >
             </div>
           </div>
         </section>

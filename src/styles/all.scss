@@ -20,12 +20,9 @@ $title-color: $primary-invert;
 $subtitle-color: $primary-invert;
 $title-weight: 900;
 
-$navbar-background-color: hsla(257, 37%, 25%, 0.6);
+$navbar-background-color: transparent;
 $navbar-height: 3rem;
 
-.navbar .navbar-menu {
-  box-shadow: none !important;
-}
 .content .taglist {
   list-style: none;
   margin-bottom: 0;
@@ -94,9 +91,7 @@ $navbar-height: 3rem;
   height: 1.5rem;
   fill: currentColor;
 }
-.navbar-brand .navbar-item.logo {
-  padding: 0 1rem;
-}
+
 footer.footer {
   padding: 3rem 0rem 0rem;
   background-color: #3D3A45;
@@ -153,6 +148,7 @@ $menu-label-color: $white-ter;
 @import "../styles/signupBox";
 @import "../styles/cover";
 @import "../styles/partnerCard";
+@import "../styles/navbar";
 
 
 // responsiveness
