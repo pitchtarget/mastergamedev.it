@@ -29,7 +29,7 @@ export const IndexPageTemplate = ({
             <div className="column is-offset-1 is-5-desktop is-11-mobile">
               <div className="cover--content">
                 <div>
-                  <h1 className="title is-spaced is-size-3-mobile is-size-1-tablet">{mainCover.heading}</h1>
+                  <h1 className="title is-spaced is-size-2-mobile is-size-1-tablet">{mainCover.heading}</h1>
                   <p className="subtitle is-size-6-mobile is-size-4-tablet">{mainCover.subheading}</p>
                   <Button
                     text={mainCover.cta}
@@ -51,6 +51,7 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </section>
+
         <section className="container">
           <SignupBox contents={topSignIn} id="topSignUpBox" color="regular"/>
         </section>
@@ -58,10 +59,14 @@ export const IndexPageTemplate = ({
         <section id="partnersSection" className="section">
           <div className="container section">
             <div className="columns is-gapeless is-centered">
-              <div className="column is-8">
+              <div className="column is-6-desktop is-10-touch is-offset-1-touch">
                 <h3 className="content has-text-centered">
-                  <p className="title is-1">{partnersSection.heading}</p>
-                  <p className="subtitle is-5">{partnersSection.subheading}</p>
+                  <p className="title is-size-3-mobile is-size-1-tablet">
+                    {partnersSection.heading}
+                  </p>
+                  <p className="subtitle is-size-6-mobile is-size-4-tablet">
+                    {partnersSection.subheading}
+                  </p>
                 </h3>
               </div>
             </div>
@@ -81,15 +86,26 @@ export const IndexPageTemplate = ({
           <div className="container">
             <div className="columns is-gapeless"
             style={{
-              minHeight: "28rem",
+              minHeight: "32rem",
+              "background-position": "70% center",
+              "background-size": "cover",
               backgroundImage: `url(${
                 !!schoolSection.image.childImageSharp ? schoolSection.image.childImageSharp.fluid.src : schoolSection.image
               })`
             }}>
-              <div className="column is-4 is-offset-1" style={{paddingTop: "6rem"}}>
+              <div
+                className="column is-4 is-10-mobile is-5-tablet is-offset-1-desktop"
+                style={{
+                  paddingTop: "6rem",
+                  paddingLeft: "3rem",
+              }}>
                 <h3 className="content">
-                  <p className="title is-2 has-text-white">{schoolSection.heading}</p>
-                  <p className="subtitle is-5 has-text-white">{schoolSection.subheading}</p>
+                  <p className="title is-size-2-mobile is-size-1-tablet has-text-white">
+                    {schoolSection.heading}
+                  </p>
+                  <p className="subtitle is-size-6-mobile is-size-4-tablet has-text-white">
+                    {schoolSection.subheading}
+                  </p>
                 </h3>
                 <Button
                   text={schoolSection.cta}
@@ -99,10 +115,11 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
-            <div className="columns" style={{marginTop: "-4rem"}}>
+
+            <div className="columns is-centered" style={{marginTop: "-4rem"}}>
               { schoolSection.bullet.length > 0 && schoolSection.bullet.map( bullet =>(
-                  <div key={v4()} className="column is-desktop-3">
-                    <div className="card">
+                  <div key={v4()} className="column is-3-desktop ">
+                    <div className="card" style={{paffing: "2rem"}}>
                       <div className="card-content" style={{minHeight: "16rem"}}>
                         <h4 className="title is-4 has-text-weight-medium">{bullet.heading}</h4>
                         <p className="subtitle is-6 has-text-weight-normal">{bullet.subheading}</p>
@@ -116,8 +133,8 @@ export const IndexPageTemplate = ({
           </div>
         </section>
 
-      {/*
-        <section id="studentsSection">
+        {/*
+        <section id="studentsSection" className="section has-background-primary">
           <div className="container">
             <div className="columns is-gapeless">
               <div className="column is-4 is-offset-1">
@@ -137,6 +154,7 @@ export const IndexPageTemplate = ({
             <SignupBox contents={bottomSignIn} id="bottomSignUpBox" color="invert"/>
           </div>
         </section>
+
 
         <section id="teachersSection" className="">
           <div className="container">

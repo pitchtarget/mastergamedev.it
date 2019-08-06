@@ -1,8 +1,8 @@
 .partnerCard {
-  margin: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 1.5rem;
   min-width: 10rem;
   min-height: 10rem;
 
@@ -37,10 +37,20 @@
   }
 
   &:first-child {
-    margin-right: 3rem;
+    margin-left: 3rem;
   }
   &:last-child {
-    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  @include until($desktop) {
+    margin: .5rem;
+    &:first-child {
+      margin-left: 1.5rem;
+    }
+    &:last-child {
+      margin-right: 1.5rem;
+    }
   }
 
 }
