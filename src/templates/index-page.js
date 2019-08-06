@@ -21,7 +21,6 @@ export const IndexPageTemplate = ({
   teachersSection,
   newsSection,
   }) => {
-    console.log(!!mainCover.image.childImageSharp ? mainCover.image.childImageSharp.fluid.src : mainCover.image)
     return (
       <>
         <section id="mainCover" className="cover">
@@ -133,8 +132,7 @@ export const IndexPageTemplate = ({
           </div>
         </section>
 
-        {/*
-        <section id="studentsSection" className="section has-background-primary">
+        <section id="studentsSection" className="section is-large has-background-primary">
           <div className="container">
             <div className="columns is-gapeless">
               <div className="column is-4 is-offset-1">
@@ -150,12 +148,13 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
-            <StudentsSlider />
-            <SignupBox contents={bottomSignIn} id="bottomSignUpBox" color="invert"/>
+            {/*<StudentsSlider />*/}
           </div>
         </section>
-
-
+        <section className="container">
+          <SignupBox contents={bottomSignIn} id="bottomSignUpBox" color="invert"/>
+        </section>
+        {/*
         <section id="teachersSection" className="">
           <div className="container">
             <div className="columns is-gapeless">
