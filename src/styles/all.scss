@@ -147,7 +147,7 @@ $menu-label-color: $white-ter;
 @import "../styles/cta";
 @import "../styles/signupBox";
 @import "../styles/cover";
-@import "../styles/partnerCard";
+@import "../styles/cards";
 @import "../styles/navbar";
 
 
@@ -165,5 +165,12 @@ $menu-label-color: $white-ter;
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+  }
+}
+
+.section.is-horizontal-spaced {
+  @include until($desktop) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }

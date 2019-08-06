@@ -56,7 +56,7 @@ export const IndexPageTemplate = ({
         </section>
 
         <section id="partnersSection" className="section">
-          <div className="container section">
+          <div className="container section is-horizontal-spaced">
             <div className="columns is-gapeless is-centered">
               <div className="column is-6-desktop is-10-touch is-offset-1-touch">
                 <h3 className="content has-text-centered">
@@ -86,14 +86,14 @@ export const IndexPageTemplate = ({
             <div className="columns is-gapeless"
             style={{
               minHeight: "32rem",
-              "background-position": "70% center",
-              "background-size": "cover",
+              backgroundPosition: "70% center",
+              backgroundSize: "cover",
               backgroundImage: `url(${
                 !!schoolSection.image.childImageSharp ? schoolSection.image.childImageSharp.fluid.src : schoolSection.image
               })`
             }}>
               <div
-                className="column is-4 is-10-mobile is-5-tablet is-offset-1-desktop"
+                className="column is-4 is-5-tablet is-offset-1-desktop"
                 style={{
                   paddingTop: "6rem",
                   paddingLeft: "3rem",
@@ -133,7 +133,7 @@ export const IndexPageTemplate = ({
         </section>
 
         <section id="studentsSection" className="section is-large has-background-primary">
-          <div className="container">
+          <div className="container section is-horizontal-spaced">
             <div className="columns is-gapeless">
               <div className="column is-4 is-offset-1">
                 <h3 className="content">
@@ -154,22 +154,33 @@ export const IndexPageTemplate = ({
         <section className="container">
           <SignupBox contents={bottomSignIn} id="bottomSignUpBox" color="invert"/>
         </section>
-        {/*
-        <section id="teachersSection" className="">
-          <div className="container">
-            <div className="columns is-gapeless">
+
+        <section id="teachersSection" className="section is-large">
+          <div className="container section is-horizontal-spaced">
+            <div className="columns is-multiline is-gapeless">
               <div className="column is-4 is-offset-1">
                 <h3 className="content">
                   <p className="title is-2">{teachersSection.heading}</p>
                   <p className="subtitle is-5">{teachersSection.subheading}</p>
                 </h3>
-                {teachersSection.cta}
+                <Button
+                  text={teachersSection.cta}
+                  link={teachersSection.link}
+                  local={true}
+                  styles="cta cta-large cta__invert"
+                />
               </div>
             </div>
-            <TeachersShortList />
+          </div>
+          <div className="container">
+            <div className="columns is-touch">
+              <div className="column is-offset-1 is-10-desktop">
+                <TeachersShortList />
+              </div>
+            </div>
           </div>
         </section>
-
+        {/*
         <section id="postsSection" className="">
           <div className="container">
             <div className="columns is-gapeless">

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
 import { v4 } from 'uuid'
+import TeacherCard from '../components/cards/teacherCard'
 
 class TeachersShortList extends React.Component {
   render() {
@@ -24,17 +25,11 @@ class TeachersShortList extends React.Component {
     ]
 
     return (
-      <div className="columns">
+      <div className="columns is-6 is-touch">
         { teachers.length > 0 && filteredTeachers.map( teacher =>(
-            <div key={v4()} className="column is-desktop-3">
-              <div className="box">
-                <h4 className="content">
-                  <p className="title is-4">{teacher.fullName}</p>
-                  <p className="subtitle is-4">{teacher.role}</p>
-                  <p className="">{teacher.link}</p>
-                  <p className="">{teacher.bio}</p>
-                </h4>
-              </div>
+
+            <div key={v4()} className="column is-3-desktop is-6-touch">
+              <TeacherCard teacher={teacher}/>
             </div>
           ))
         }

@@ -64,3 +64,9 @@
     display: flex;
   }
 }
+
+.teacherCard {
+  &--content {
+    padding: 1rem;
+  }
+}
