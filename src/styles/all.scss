@@ -168,7 +168,7 @@ $menu-label-color: $white-ter;
   }
 }
 
-.section.is-horizontal-spaced {
+.is-horizontal-spaced {
   @include until($desktop) {
     padding-left: 1.5rem;
     padding-right: 1.5rem;

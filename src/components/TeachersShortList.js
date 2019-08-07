@@ -25,7 +25,7 @@ class TeachersShortList extends React.Component {
     ]
 
     return (
-      <div className="columns is-6 is-touch">
+      <div className="columns is-multiline is-mobile">
         { teachers.length > 0 && filteredTeachers.map( teacher =>(
 
             <div key={v4()} className="column is-3-desktop is-6-touch">

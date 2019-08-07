@@ -24,8 +24,8 @@ export const IndexPageTemplate = ({
     return (
       <>
         <section id="mainCover" className="cover">
-          <div className="columns is-desktop is-6 is-vcentered">
-            <div className="column is-offset-1 is-5-desktop is-11-mobile">
+          <div className="columns is-desktop is-6 is-vcentered is-gapless">
+            <div className="column is-offset-1 is-5-desktop">
               <div className="cover--content">
                 <div>
                   <h1 className="title is-spaced is-size-2-mobile is-size-1-tablet">{mainCover.heading}</h1>
@@ -57,8 +57,8 @@ export const IndexPageTemplate = ({
 
         <section id="partnersSection" className="section">
           <div className="container section is-horizontal-spaced">
-            <div className="columns is-gapeless is-centered">
-              <div className="column is-6-desktop is-10-touch is-offset-1-touch">
+            <div className="columns is-gapless is-centered is-mobile">
+              <div className="column is-6-desktop is-10-touch">
                 <h3 className="content has-text-centered">
                   <p className="title is-size-3-mobile is-size-1-tablet">
                     {partnersSection.heading}
@@ -83,7 +83,7 @@ export const IndexPageTemplate = ({
 
         <section id="schoolSection" className="section">
           <div className="container">
-            <div className="columns is-gapeless"
+            <div className="columns section is-gapless is-centered is-mobile"
             style={{
               minHeight: "32rem",
               backgroundPosition: "70% center",
@@ -93,7 +93,7 @@ export const IndexPageTemplate = ({
               })`
             }}>
               <div
-                className="column is-4 is-5-tablet is-offset-1-desktop"
+                className="column is-4-desktop is-10-touch is-offset-1-desktop"
                 style={{
                   paddingTop: "6rem",
                   paddingLeft: "3rem",
@@ -134,7 +134,7 @@ export const IndexPageTemplate = ({
 
         <section id="studentsSection" className="section is-large has-background-primary">
           <div className="container section is-horizontal-spaced">
-            <div className="columns is-gapeless">
+            <div className="columns is-gapless">
               <div className="column is-4 is-offset-1">
                 <h3 className="content">
                   <p className="title is-2">{studentsSection.heading}</p>
@@ -157,7 +157,7 @@ export const IndexPageTemplate = ({
 
         <section id="teachersSection" className="section is-large">
           <div className="container section is-horizontal-spaced">
-            <div className="columns is-multiline is-gapeless">
+            <div className="columns is-gapless">
               <div className="column is-4 is-offset-1">
                 <h3 className="content">
                   <p className="title is-2">{teachersSection.heading}</p>
@@ -172,9 +172,9 @@ export const IndexPageTemplate = ({
               </div>
             </div>
           </div>
-          <div className="container">
-            <div className="columns is-touch">
-              <div className="column is-offset-1 is-10-desktop">
+          <div className="container is-horizontal-spaced">
+            <div className="columns">
+              <div className="column is-offset-1-desktop is-10-desktop">
                 <TeachersShortList />
               </div>
             </div>
@@ -183,7 +183,7 @@ export const IndexPageTemplate = ({
         {/*
         <section id="postsSection" className="">
           <div className="container">
-            <div className="columns is-gapeless">
+            <div className="columns is-gapless">
               <div className="column is-4 is-offset-1">
                 <h3 className="content">
                   <p className="title is-2">{newsSection.heading}</p>
