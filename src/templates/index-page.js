@@ -24,7 +24,7 @@ export const IndexPageTemplate = ({
     return (
       <>
         <section id="mainCover" className="cover">
-          <div className="columns is-desktop is-6 is-vcentered is-gapless">
+          <div className="columns is-desktop is-vcentered">
             <div className="column is-offset-1 is-5-desktop">
               <div className="cover--content">
                 <div>
@@ -83,7 +83,7 @@ export const IndexPageTemplate = ({
 
         <section id="schoolSection" className="section">
           <div className="container">
-            <div className="columns section is-gapless is-centered is-mobile"
+            <div className="columns section is-horizontal-spaced is-mobile"
             style={{
               minHeight: "32rem",
               backgroundPosition: "70% center",
@@ -92,12 +92,7 @@ export const IndexPageTemplate = ({
                 !!schoolSection.image.childImageSharp ? schoolSection.image.childImageSharp.fluid.src : schoolSection.image
               })`
             }}>
-              <div
-                className="column is-4-desktop is-10-touch is-offset-1-desktop"
-                style={{
-                  paddingTop: "6rem",
-                  paddingLeft: "3rem",
-              }}>
+              <div className="column is-6-desktop is-10-touch is-offset-1-desktop">
                 <h3 className="content">
                   <p className="title is-size-2-mobile is-size-1-tablet has-text-white">
                     {schoolSection.heading}
@@ -134,8 +129,8 @@ export const IndexPageTemplate = ({
 
         <section id="studentsSection" className="section is-large has-background-primary">
           <div className="container section is-horizontal-spaced">
-            <div className="columns is-gapless">
-              <div className="column is-4 is-offset-1">
+            <div className="columns">
+              <div className="column is-6 is-offset-1">
                 <h3 className="content">
                   <p className="title is-2">{studentsSection.heading}</p>
                   <p className="subtitle is-5">{studentsSection.subheading}</p>
@@ -157,8 +152,8 @@ export const IndexPageTemplate = ({
 
         <section id="teachersSection" className="section is-large">
           <div className="container section is-horizontal-spaced">
-            <div className="columns is-gapless">
-              <div className="column is-4 is-offset-1">
+            <div className="columns">
+              <div className="column is-6 is-offset-1">
                 <h3 className="content">
                   <p className="title is-2">{teachersSection.heading}</p>
                   <p className="subtitle is-5">{teachersSection.subheading}</p>
@@ -180,27 +175,24 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </section>
-        {/*
-        <section id="postsSection" className="">
+        <section id="postsSection" className="section is-horizontal-spaced" style={{backgroundColor: "#CBC9D1"}}>
           <div className="container">
-            <div className="columns is-gapless">
-              <div className="column is-4 is-offset-1">
-                <h3 className="content">
-                  <p className="title is-2">{newsSection.heading}</p>
-                </h3>
+            <div className="columns is-gapless is-vcentered">
+              <div className="column is-10 is-offset-1">
+                <h3 className="title is-2">{newsSection.heading}</h3>
+              </div>
+              <div className="column">
                 <Button
                   text={newsSection.cta}
                   link={newsSection.link}
                   local={true}
-                  styles="cta cta-large cta__invert"
+                  styles="cta cta__invert"
                 />
               </div>
             </div>
-            <BlogRoll number={2}/>
+            <BlogRoll/>
           </div>
         </section>
-        */}
-
       </>
     )
 }

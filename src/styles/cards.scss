@@ -66,7 +66,85 @@
 }
 
 .teacherCard {
+  overflow: hidden;
+  width: 16rem;
+  height: 22rem;
   &--content {
     padding: 1rem;
+    overflow: scroll;
+  }
+  &--preview {
+    transition-delay: all .5s;
+    transition:
+      opacity .19s ease-out,
+      display .19s
+    ;
+    opacity: 100%;
+  }
+  &--details {
+    transition-delay: all .5s;
+    transition:
+      opacity .19s ease-out,
+      display .19s
+    ;
+    opacity: 0%;
+    display: none;
+  }
+  &--image {
+    transition-delay: all .5s;
+    transition: height .19s ease-out;
+    height: 16rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &:hover {
+    .teacherCard--preview {
+      transition:
+        opacity .19s ease-in,
+        display 0s .3s
+      ;
+      opacity: 0%;
+      display: none;
+    }
+    .teacherCard--details {
+      transition:
+        opacity .19s ease-in,
+        display 0s .3s
+      ;
+      opacity: 100%;
+      display: block;
+    }
+    .teacherCard--image {
+      transition: height .19s ease-in;
+      height: 4rem;
+      overflow: hidden;
+    }
+  }
+}
+
+.postCard {
+  @include from($desktop) {
+    min-height: 16rem;
+  }
+  background-color: white;
+  box-shadow: 0 0 10px rgba(255,255,255,.15);
+  &--content {
+    padding: 1rem;
+    .title,
+    .subtitle {
+      color: $primary-invert !important;
+    }
+  }
+  &--image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include until($desktop) {
+      height: 12rem;
+    }
+  }
+  &--header {
+    margin-bottom: 1rem;
   }
 }
