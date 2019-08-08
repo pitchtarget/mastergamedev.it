@@ -169,7 +169,7 @@ export const IndexPageTemplate = ({
           </div>
           <div className="container is-horizontal-spaced">
             <div className="columns">
-              <div className="column is-offset-1-desktop is-10-desktop">
+              <div className="column is-offset-1-widescreen is-10-widescreen">
                 <TeachersShortList />
               </div>
             </div>

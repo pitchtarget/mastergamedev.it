@@ -79,7 +79,7 @@
       opacity .19s ease-out,
       display .19s
     ;
-    opacity: 100%;
+    opacity: 1;
   }
   &--details {
     transition-delay: all .5s;
@@ -87,7 +87,7 @@
       opacity .19s ease-out,
       display .19s
     ;
-    opacity: 0%;
+    opacity: 0;
     display: none;
   }
   &--image {
@@ -104,7 +104,7 @@
         opacity .19s ease-in,
         display 0s .3s
       ;
-      opacity: 0%;
+      opacity: 0;
       display: none;
     }
     .teacherCard--details {
@@ -112,7 +112,7 @@
         opacity .19s ease-in,
         display 0s .3s
       ;
-      opacity: 100%;
+      opacity: 1;
       display: block;
     }
     .teacherCard--image {

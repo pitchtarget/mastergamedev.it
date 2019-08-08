@@ -24,7 +24,7 @@ Teachers.propTypes = {
       fullName: PropTypes.string,
       role: PropTypes.string,
       link: PropTypes.string,
-      description: PropTypes.string,
+      bio: PropTypes.string,
     })
   ),
 }
