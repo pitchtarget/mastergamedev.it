@@ -1,0 +1,150 @@
+.partnerCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+  min-width: 10rem;
+  min-height: 10rem;
+
+  .image {
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1.5rem;
+
+    margin: auto;
+    width: 8rem;
+    height: auto;
+
+    box-shadow: 0 0 20px #00000026;
+  }
+
+  .text {
+    font-size: .875rem;
+    font-weight: normal;
+    color: $grey-dark;
+    text-align: center;
+    line-height: 1;
+    transform: scale(1);
+    transition: transform .47s ease-in .19;
+
+    margin-top: .75rem;
+  }
+
+  &:hover .image {
+    transform: scale(1.15);
+    transform-origin: 50% 100%;
+    transition: transform .19s ease-out;
+  }
+
+  &:first-child {
+    margin-left: 3rem;
+  }
+  &:last-child {
+    margin-right: 3rem;
+  }
+
+  @include until($desktop) {
+    margin: .5rem;
+    &:first-child {
+      margin-left: 1.5rem;
+    }
+    &:last-child {
+      margin-right: 1.5rem;
+    }
+  }
+
+}
+
+.partnersCarousel {
+  overflow-y: scroll;
+  padding: 1rem 0;
+  &::-webkit-scrollbar { width: 0 !important }
+
+  .wrapper {
+    display: flex;
+  }
+}
+
+.teacherCard {
+  overflow: hidden;
+  width: 16rem;
+  height: 22rem;
+  &--content {
+    padding: 1rem;
+    overflow: scroll;
+  }
+  &--preview {
+    transition-delay: all .5s;
+    transition:
+      opacity .19s ease-out,
+      display .19s
+    ;
+    opacity: 1;
+  }
+  &--details {
+    transition-delay: all .5s;
+    transition:
+      opacity .19s ease-out,
+      display .19s
+    ;
+    opacity: 0;
+    display: none;
+  }
+  &--image {
+    transition-delay: all .5s;
+    transition: height .19s ease-out;
+    height: 16rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &:hover {
+    .teacherCard--preview {
+      transition:
+        opacity .19s ease-in,
+        display 0s .3s
+      ;
+      opacity: 0;
+      display: none;
+    }
+    .teacherCard--details {
+      transition:
+        opacity .19s ease-in,
+        display 0s .3s
+      ;
+      opacity: 1;
+      display: block;
+    }
+    .teacherCard--image {
+      transition: height .19s ease-in;
+      height: 4rem;
+      overflow: hidden;
+    }
+  }
+}
+
+.postCard {
+  @include from($desktop) {
+    min-height: 16rem;
+  }
+  background-color: white;
+  box-shadow: 0 0 10px rgba(255,255,255,.15);
+  &--content {
+    padding: 1rem;
+    .title,
+    .subtitle {
+      color: $primary-invert !important;
+    }
+  }
+  &--image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include until($desktop) {
+      height: 12rem;
+    }
+  }
+  &--header {
+    margin-bottom: 1rem;
+  }
+}

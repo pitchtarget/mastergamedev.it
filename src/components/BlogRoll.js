@@ -9,50 +9,49 @@ class BlogRoll extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
+
     return (
       <div className="columns is-multiline">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${
-                            post.title
-                          }`,
-                        }}
-                      />
+            <div className="is-parent column is-6-desktop" key={post.id}>
+              <article className="postCard">
+                <div className="columns is-gapless is-desktop">
+                    {post.frontmatter.featuredimage ? (
+                      <div className="postCard--image column is-one-third-desktop "
+                      style={{
+                        backgroundImage: `url(${
+                          !!post.frontmatter.featuredimage.childImageSharp
+                          ? post.frontmatter.featuredimage.childImageSharp.fluid.src
+                          : post.frontmatter.featuredimage.image
+                        })`
+                      }}/>
+                    ) : null}
+                  <div className="column">
+                    <div className="postCard--content">
+                      <p className="postCard--header">
+                        <Link
+                          className="title is-size-5-mobile is-size-4-desktop"
+                          to={post.fields.slug}
+                        >
+                          {post.frontmatter.title}
+                        </Link>
+                        <span> &bull; </span>
+                        <span className="subtitle is-size-7 is-block">
+                          {post.frontmatter.date}
+                        </span>
+                      </p>
+                      <p>
+                        {post.excerpt}
+                        <br />
+                        <br />
+                        <Link className="" to={post.fields.slug}>
+                          continua
+                        </Link>
+                      </p>
                     </div>
-                  ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
-                </header>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
+                  </div>
+                </div>
               </article>
             </div>
           ))}
@@ -79,7 +78,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(pruneLength: 200)
               id
               fields {
                 slug
@@ -91,7 +90,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 500, quality: 80) {
                       ...GatsbyImageSharpFluid
                     }
                   }

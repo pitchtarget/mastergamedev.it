@@ -1,9 +1,8 @@
-$cover-height: 90vh;
+$cover-height: 100vh;
 
 .cover {
   margin-top: -$navbar-height;
   background-color: $primary-invert;
-  min-height: $cover-height;
   display: flex;
   align-items: center;
 
@@ -12,5 +11,26 @@ $cover-height: 90vh;
   }
   .subtitle {
     color: $primary;
+  }
+  .cover--image {
+    width: 100%;
+    min-height: 50vh;
+    @include from($desktop) {
+      height: $cover-height;
+      min-height: 700px;
+      clip-path: polygon(0% 0%, 15% 100%,100% 100%, 100% 0%);
+    }
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0% 0%, 0% 100%,100% 100%, 100% 15%)
+  }
+
+  .cover--content {
+    display: flex;
+    align-items: center;
+    @include until($desktop) {
+      padding: 6.5rem 2rem 2rem 2rem;
+    }
   }
 }

@@ -20,12 +20,11 @@ $title-color: $primary-invert;
 $subtitle-color: $primary-invert;
 $title-weight: 900;
 
-$navbar-background-color: hsla(257, 37%, 25%, 0.6);
+$navbar-background-color: transparent;
 $navbar-height: 3rem;
 
-.navbar .navbar-menu {
-  box-shadow: none !important;
-}
+$tablet: 768px;
+
 .content .taglist {
   list-style: none;
   margin-bottom: 0;
@@ -94,9 +93,7 @@ $navbar-height: 3rem;
   height: 1.5rem;
   fill: currentColor;
 }
-.navbar-brand .navbar-item.logo {
-  padding: 0 1rem;
-}
+
 footer.footer {
   padding: 3rem 0rem 0rem;
   background-color: #3D3A45;
@@ -152,7 +149,8 @@ $menu-label-color: $white-ter;
 @import "../styles/cta";
 @import "../styles/signupBox";
 @import "../styles/cover";
-@import "../styles/partnerCard";
+@import "../styles/cards";
+@import "../styles/navbar";
 
 
 // responsiveness
@@ -169,5 +167,12 @@ $menu-label-color: $white-ter;
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+  }
+}
+
+.is-horizontal-spaced {
+  @include until($desktop) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }

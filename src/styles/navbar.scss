@@ -1,0 +1,20 @@
+.navbar .navbar-menu {
+  box-shadow: none !important;
+}
+
+.navbar-brand .navbar-item.logo {
+  padding: 0 1rem;
+}
+
+img.navbar-logo {
+  @include from($desktop) {
+    width: 10rem;
+    max-height: 5rem;
+    height: 5rem;
+  }
+  @include until($desktop) {
+    width: 5rem;
+    max-height: 2.5rem;
+    height: 2.5rem;
+  }
+}

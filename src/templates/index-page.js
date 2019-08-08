@@ -11,6 +11,16 @@ import StudentsSlider from '../components/StudentsSlider'
 import PartnersCarousel from '../components/PartnersCarousel'
 import SignupBox from '../components/SignupBox'
 
+const validateImages = (image) => {
+  let newImage
+  if(!!image) {
+    newImage = !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+  } else {
+    newImage = '/img/partner-img.png'
+  }
+  return newImage
+}
+
 export const IndexPageTemplate = ({
   mainCover,
   topSignIn,
@@ -20,44 +30,52 @@ export const IndexPageTemplate = ({
   bottomSignIn,
   teachersSection,
   newsSection,
-}) => {
+  }) => {
     return (
       <>
         <section id="mainCover" className="cover">
-          <div className="container">
-            <div className="columns">
-              <div className="column is-5 is-offset-1">
-                <h1 className="content">
-                  <p className="title is-1">{mainCover.heading}</p>
-                  <p className="subtitle is-5">{mainCover.subheading}</p>
-                </h1>
-                <Button
-                  text={mainCover.cta}
-                  link={mainCover.link}
-                  local={true}
-                  styles="cta cta-large cta__regular"
-                />
+          <div className="columns is-desktop is-vcentered">
+            <div className="column is-offset-1 is-5-desktop">
+              <div className="cover--content">
+                <div>
+                  <h1 className="title is-spaced is-size-2-mobile is-size-1-tablet">{mainCover.heading}</h1>
+                  <p className="subtitle is-size-6-mobile is-size-4-tablet">{mainCover.subheading}</p>
+                  <Button
+                    text={mainCover.cta}
+                    link={mainCover.link}
+                    local={true}
+                    styles="cta cta-large cta__regular"
+                  />
+                </div>
               </div>
-              <div className="column">
-                <img
-                  src={!!mainCover.image.childImageSharp ? mainCover.image.childImageSharp.fluid.src : mainCover.image}
-                  alt={mainCover.altImage}
-                />
-              </div>
+            </div>
+            <div
+              className="column cover--image"
+              style={{
+                backgroundImage: `url(${
+                  validateImages(mainCover.image)
+                })`
+              }}
+            >
             </div>
           </div>
         </section>
+
         <section className="container">
           <SignupBox contents={topSignIn} id="topSignUpBox" color="regular"/>
         </section>
 
         <section id="partnersSection" className="section">
-          <div className="container section">
-            <div className="columns is-gapeless is-centered">
-              <div className="column is-8">
+          <div className="container section is-horizontal-spaced">
+            <div className="columns is-gapless is-centered is-mobile">
+              <div className="column is-6-desktop is-10-touch">
                 <h3 className="content has-text-centered">
-                  <p className="title is-1">{partnersSection.heading}</p>
-                  <p className="subtitle is-5">{partnersSection.subheading}</p>
+                  <p className="title is-size-3-mobile is-size-1-tablet">
+                    {partnersSection.heading}
+                  </p>
+                  <p className="subtitle is-size-6-mobile is-size-4-tablet">
+                    {partnersSection.subheading}
+                  </p>
                 </h3>
               </div>
             </div>
@@ -75,17 +93,23 @@ export const IndexPageTemplate = ({
 
         <section id="schoolSection" className="section">
           <div className="container">
-            <div className="columns is-gapeless"
+            <div className="columns section is-horizontal-spaced is-mobile"
             style={{
-              minHeight: "28rem",
+              minHeight: "32rem",
+              backgroundPosition: "70% center",
+              backgroundSize: "cover",
               backgroundImage: `url(${
-                !!schoolSection.image.childImageSharp ? schoolSection.image.childImageSharp.fluid.src : schoolSection.image
+                validateImages(schoolSection.image)
               })`
             }}>
-              <div className="column is-4 is-offset-1" style={{paddingTop: "6rem"}}>
+              <div className="column is-6-desktop is-10-touch is-offset-1-desktop">
                 <h3 className="content">
-                  <p className="title is-2 has-text-white">{schoolSection.heading}</p>
-                  <p className="subtitle is-5 has-text-white">{schoolSection.subheading}</p>
+                  <p className="title is-size-2-mobile is-size-1-tablet has-text-white">
+                    {schoolSection.heading}
+                  </p>
+                  <p className="subtitle is-size-6-mobile is-size-4-tablet has-text-white">
+                    {schoolSection.subheading}
+                  </p>
                 </h3>
                 <Button
                   text={schoolSection.cta}
@@ -95,10 +119,11 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
-            <div className="columns" style={{marginTop: "-4rem"}}>
+
+            <div className="columns is-centered" style={{marginTop: "-4rem"}}>
               { schoolSection.bullet.length > 0 && schoolSection.bullet.map( bullet =>(
-                  <div key={v4()} className="column is-desktop-3">
-                    <div className="card">
+                  <div key={v4()} className="column is-3-desktop ">
+                    <div className="card" style={{paffing: "2rem"}}>
                       <div className="card-content" style={{minHeight: "16rem"}}>
                         <h4 className="title is-4 has-text-weight-medium">{bullet.heading}</h4>
                         <p className="subtitle is-6 has-text-weight-normal">{bullet.subheading}</p>
@@ -112,11 +137,10 @@ export const IndexPageTemplate = ({
           </div>
         </section>
 
-      {/*
-        <section id="studentsSection">
-          <div className="container">
-            <div className="columns is-gapeless">
-              <div className="column is-4 is-offset-1">
+        <section id="studentsSection" className="section is-large has-background-primary">
+          <div className="container section is-horizontal-spaced">
+            <div className="columns">
+              <div className="column is-6 is-offset-1">
                 <h3 className="content">
                   <p className="title is-2">{studentsSection.heading}</p>
                   <p className="subtitle is-5">{studentsSection.subheading}</p>
@@ -129,46 +153,56 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
-            <StudentsSlider />
-            <SignupBox contents={bottomSignIn} id="bottomSignUpBox" color="invert"/>
+            {/*<StudentsSlider />*/}
           </div>
         </section>
+        <section className="container">
+          <SignupBox contents={bottomSignIn} id="bottomSignUpBox" color="invert"/>
+        </section>
 
-        <section id="teachersSection" className="">
-          <div className="container">
-            <div className="columns is-gapeless">
-              <div className="column is-4 is-offset-1">
+        <section id="teachersSection" className="section is-large">
+          <div className="container section is-horizontal-spaced">
+            <div className="columns">
+              <div className="column is-6 is-offset-1">
                 <h3 className="content">
                   <p className="title is-2">{teachersSection.heading}</p>
                   <p className="subtitle is-5">{teachersSection.subheading}</p>
                 </h3>
-                {teachersSection.cta}
-              </div>
-            </div>
-            <TeachersShortList />
-          </div>
-        </section>
-
-        <section id="postsSection" className="">
-          <div className="container">
-            <div className="columns is-gapeless">
-              <div className="column is-4 is-offset-1">
-                <h3 className="content">
-                  <p className="title is-2">{newsSection.heading}</p>
-                </h3>
                 <Button
-                  text={newsSection.cta}
-                  link={newsSection.link}
+                  text={teachersSection.cta}
+                  link={teachersSection.link}
                   local={true}
                   styles="cta cta-large cta__invert"
                 />
               </div>
             </div>
-            <BlogRoll number={2}/>
+          </div>
+          <div className="container is-horizontal-spaced">
+            <div className="columns">
+              <div className="column is-offset-1-widescreen is-10-widescreen">
+                <TeachersShortList />
+              </div>
+            </div>
           </div>
         </section>
-        */}
-
+        <section id="postsSection" className="section is-horizontal-spaced" style={{backgroundColor: "#CBC9D1"}}>
+          <div className="container">
+            <div className="columns is-gapless is-vcentered">
+              <div className="column is-10 is-offset-1">
+                <h3 className="title is-2">{newsSection.heading}</h3>
+              </div>
+              <div className="column">
+                <Button
+                  text={newsSection.cta}
+                  link={newsSection.link}
+                  local={true}
+                  styles="cta cta__invert"
+                />
+              </div>
+            </div>
+            <BlogRoll/>
+          </div>
+        </section>
       </>
     )
 }
