@@ -1,11 +1,11 @@
 import React from 'react'
 
 const PartnerCard = ({ partner }) => {
-  let image
-  if(partner.image) {
-    image = !!partner.image.childImageSharp ? partner.image.childImageSharp.fluid.src : partner.image
+  let validatedImage
+  if(!!partner.image) {
+    validatedImage = !!partner.image.childImageSharp ? partner.image.childImageSharp.fluid.src : partner.image
   } else {
-    image = '/img/partner-img.png'
+    validatedImage = '/img/partner-img.png'
   }
 
   return (
@@ -13,7 +13,7 @@ const PartnerCard = ({ partner }) => {
       <a href={partner.link}>
         <img
           className="image"
-          src={`${image}`}
+          src={`${validatedImage}`}
           alt={partner.altImage}
         />
         <h4 className="text">

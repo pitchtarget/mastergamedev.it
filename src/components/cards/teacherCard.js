@@ -1,11 +1,11 @@
 import React from 'react'
 
 const TeacherCard = ({ teacher }) => {
-  let image
-  if(teacher.image) {
-    image = !!teacher.image.childImageSharp ? teacher.image.childImageSharp.fluid.src : teacher.image
+  let validatedImage
+  if(!!teacher.image) {
+    validatedImage = !!teacher.image.childImageSharp ? teacher.image.childImageSharp.fluid.src : teacher.image
   } else {
-    image = '/img/partner-img.png'
+    validatedImage = '/img/partner-img.png'
   }
 
   return (
@@ -14,7 +14,7 @@ const TeacherCard = ({ teacher }) => {
         className="teacherCard--image"
         style={{
           backgroundImage: `url(${
-            image
+            validatedImage
           })`
         }}
       />

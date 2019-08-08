@@ -11,6 +11,16 @@ import StudentsSlider from '../components/StudentsSlider'
 import PartnersCarousel from '../components/PartnersCarousel'
 import SignupBox from '../components/SignupBox'
 
+const validateImages = (image) => {
+  let newImage
+  if(!!image) {
+    newImage = !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+  } else {
+    newImage = '/img/partner-img.png'
+  }
+  return newImage
+}
+
 export const IndexPageTemplate = ({
   mainCover,
   topSignIn,
@@ -43,7 +53,7 @@ export const IndexPageTemplate = ({
               className="column cover--image"
               style={{
                 backgroundImage: `url(${
-                  !!mainCover.image.childImageSharp ? mainCover.image.childImageSharp.fluid.src : mainCover.image
+                  validateImages(mainCover.image)
                 })`
               }}
             >
@@ -89,7 +99,7 @@ export const IndexPageTemplate = ({
               backgroundPosition: "70% center",
               backgroundSize: "cover",
               backgroundImage: `url(${
-                !!schoolSection.image.childImageSharp ? schoolSection.image.childImageSharp.fluid.src : schoolSection.image
+                validateImages(schoolSection.image)
               })`
             }}>
               <div className="column is-6-desktop is-10-touch is-offset-1-desktop">
