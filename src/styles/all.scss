@@ -12,6 +12,8 @@ $primary-invert: #352857;
 $body-color: #333;
 $black: #2b2523;
 
+$modal-background: #211d2bf5;
+
 $section-padding: 3rem 0;
 $section-padding-medium: 6rem 0;
 $section-padding-large: 9rem 0;
@@ -24,6 +26,7 @@ $navbar-background-color: transparent;
 $navbar-height: 3rem;
 
 $tablet: 768px;
+$navbar-burger-color: $primary;
 
 .content .taglist {
   list-style: none;
@@ -176,3 +179,59 @@ $menu-label-color: $white-ter;
     padding-right: 1.5rem;
   }
 }
+
+#sidebar {
+  .navbar-burger {
+    height: auto;
+  	display: none;
+  }
+  .navbar-burger span {
+    height: 2px;
+    width: 22px;
+    left: calc(50% - 12px);
+  }
+  .sidebar-list {
+    display: flex;
+    flex-direction: column;
+    a.navbar-item {
+      color: $primary;
+      opacity: .75;
+      font-size: $size-5;
+      font-weight: bold;
+      justify-content: center;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .sidebar-menu {
+    cursor: pointer;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: $primary;
+    strong {
+      color:inherit;
+    }
+  }
+}
+
+.modal-background {
+  background-color: $modal-background;
+}
+footer .footer-list {
+    display: flex;
+    flex-direction: column;
+    a.navbar-item {
+      color: white;
+      opacity: .75;
+      font-size: $size-7;
+      font-weight: bold;
+      // justify-content: center;
+      &:hover {
+        background-color: transparent;
+        opacity: 1;
+      }
+    }
+  }
