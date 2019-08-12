@@ -59,7 +59,6 @@ const Sidebar = class extends React.Component {
     const { yPosition } = this.state
     const sidebarBg = yPosition > 0 ? "has-background" : ""
 
-    console.log(yPosition)
     return (
       <nav
         id="sidebar"
