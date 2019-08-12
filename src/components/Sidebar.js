@@ -8,7 +8,31 @@ const Sidebar = class extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: '',
+      yPosition: null,
     }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenToScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.listenToScroll)
+  }
+
+  listenToScroll = () => {
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop
+
+    const height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight
+
+    const scrolled = winScroll / height
+
+    this.setState({
+      yPosition: scrolled,
+    })
   }
 
   toggleHamburger = () => {
@@ -32,10 +56,14 @@ const Sidebar = class extends React.Component {
   }
 
   render() {
+    const { yPosition } = this.state
+    const sidebarBg = yPosition > 0 ? "has-background" : ""
+
+    console.log(yPosition)
     return (
       <nav
         id="sidebar"
-        className="navbar is-transparent is-fixed-top"
+        className={`navbar is-fixed-top ${sidebarBg}`}
         role="navigation"
         aria-label="main-navigation"
       >

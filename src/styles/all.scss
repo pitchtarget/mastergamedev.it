@@ -22,7 +22,7 @@ $title-color: $primary-invert;
 $subtitle-color: $primary-invert;
 $title-weight: 900;
 
-$navbar-background-color: transparent;
+// $navbar-background-color: transparent;
 $navbar-height: 3rem;
 
 $tablet: 768px;
@@ -181,6 +181,9 @@ $menu-label-color: $white-ter;
 }
 
 #sidebar {
+  background-color: transparent;
+  transition: background-color .19s;
+
   .navbar-burger {
     height: auto;
   	display: none;
@@ -190,6 +193,12 @@ $menu-label-color: $white-ter;
     width: 22px;
     left: calc(50% - 12px);
   }
+
+  &.has-background {
+    transition: background-color .19s;
+    background-color: $primary-invert;
+  }
+
   .sidebar-list {
     display: flex;
     flex-direction: column;
