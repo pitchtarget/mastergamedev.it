@@ -11,10 +11,10 @@ class TeachersShortList extends React.Component {
 
     let filteredTeachers = []
     let listNum = []
-    for (let i = 0; i < 10 ; i++) {
+    while (listNum.length < 4) {
       let randomNum = Math.floor(Math.random() * Math.floor(teachers.length))
       let hasValue = listNum.includes(randomNum)
-      !hasValue && listNum.length <= 3 && listNum.push(randomNum)
+      !hasValue && listNum.push(randomNum)
     }
 
     filteredTeachers = [
