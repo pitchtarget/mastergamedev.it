@@ -12,7 +12,7 @@ description: >-
 students:
   - fullName: student-1
     main: true
-    image: /img/student-img.png
+    image: /img/flavor_wheel.jpg
     altImage: student-1
     master: 2018
     company: company-1
@@ -24,7 +24,7 @@ students:
       Petierunt uti sibi concilium totius Galliae in diem certam indicere.
   - fullName: student-2
     main: true
-    image: /img/student-img.png
+    image: /img/flavor_wheel.jpg
     altImage: student-2
     master: 2018
     company: company-2
@@ -36,7 +36,7 @@ students:
       Petierunt uti sibi concilium totius Galliae in diem certam indicere.
   - fullName: student-3
     main: true
-    image: /img/student-img.png
+    image: /img/flavor_wheel.jpg
     altImage: student-3
     master: 2018
     company: company-3

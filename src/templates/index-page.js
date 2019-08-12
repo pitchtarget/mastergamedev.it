@@ -153,7 +153,8 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
-            {/*<StudentsSlider />*/}
+            {/**/}
+            <StudentsSlider />
           </div>
         </section>
         <section className="container">

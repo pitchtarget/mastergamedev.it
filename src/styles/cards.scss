@@ -148,3 +148,18 @@
     margin-bottom: 1rem;
   }
 }
+
+
+.studentCard {
+  background-color: white;
+  &--image {
+    min-height: 240px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  &--content {
+    padding: 1.5rem;
+  }
+}
