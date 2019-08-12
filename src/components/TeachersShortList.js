@@ -24,6 +24,8 @@ class TeachersShortList extends React.Component {
       teachers[listNum[3]],
     ]
 
+    console.log(filteredTeachers)
+
     return (
       <div className="columns is-multiline is-centered">
         { teachers.length > 0 && filteredTeachers.map( teacher =>(

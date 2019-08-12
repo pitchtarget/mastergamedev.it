@@ -1,6 +1,7 @@
 import React from 'react'
 
 const TeacherCard = ({ teacher }) => {
+  console.log(teacher.image)
   let validatedImage
   if(!!teacher.image) {
     validatedImage = !!teacher.image.childImageSharp ? teacher.image.childImageSharp.fluid.src : teacher.image
@@ -12,11 +13,7 @@ const TeacherCard = ({ teacher }) => {
     <div className="teacherCard card">
       <figure
         className="teacherCard--image"
-        style={{
-          backgroundImage: `url(${
-            validatedImage
-          })`
-        }}
+        style={{backgroundImage: `url(${validatedImage})`}}
       />
       <div className="content teacherCard--content">
         <h4 className="title is-size-4-mobile is-size-5-tablet" style={{marginBottom: ".25rem"}}>
