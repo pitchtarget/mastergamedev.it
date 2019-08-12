@@ -1,14 +1,15 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import Sidebar from '../components/Sidebar'
+
 import '../styles/all.scss'
 import useSiteMetadata from './SiteMetadata'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <div>
+    <>
       <Helmet>
         <html lang="en"/>
         <title>{title}</title>
@@ -47,10 +48,13 @@ const TemplateWrapper = ({ children }) => {
 
         <body className="has-navbar-fixed-top"/>
       </Helmet>
-      <Navbar />
-      {children}
+      {/* <Navbar /> */}
+      <Sidebar />
+      <div className="main">
+        {children}
+      </div>
       <Footer />
-    </div>
+    </>
   )
 }
 
