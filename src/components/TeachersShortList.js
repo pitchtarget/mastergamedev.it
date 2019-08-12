@@ -44,7 +44,16 @@ class TeachersShortList extends React.Component {
 TeachersShortList.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      teachers: PropTypes.array,
+      teachers: PropTypes.arrayOf(
+        PropTypes.shape({
+          image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+          altImage: PropTypes.string,
+          fullName: PropTypes.string,
+          role: PropTypes.string,
+          link: PropTypes.string,
+          description: PropTypes.string,
+        })
+      ),
     }),
   }),
 }
