@@ -46,6 +46,10 @@ $navbar-burger-color: $primary;
     margin-top: 0;
   }
 }
+.main {
+  margin-top: -$navbar-height;
+}
+
 // Helper Classes
 .full-width-image-container {
   width: 100vw;

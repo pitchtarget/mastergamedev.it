@@ -1,10 +1,7 @@
 $cover-height: 100vh;
 
 .cover {
-  margin-top: -$navbar-height;
   background-color: $primary-invert;
-  display: flex;
-  align-items: center;
 
   .title {
     color: $primary;
@@ -12,21 +9,24 @@ $cover-height: 100vh;
   .subtitle {
     color: $primary;
   }
-  .cover--image {
-    width: 100%;
+  &--image {
     min-height: 50vh;
     @include from($desktop) {
       height: $cover-height;
       min-height: 700px;
-      clip-path: polygon(0% 0%, 15% 100%,100% 100%, 100% 0%);
     }
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  & .is-clipped {
+    @include from($desktop) {
+      clip-path: polygon(0% 0%, 15% 100%,100% 100%, 100% 0%);
+    }
     clip-path: polygon(0% 0%, 0% 100%,100% 100%, 100% 15%)
   }
 
-  .cover--content {
+  &--content {
     display: flex;
     align-items: center;
     @include until($desktop) {

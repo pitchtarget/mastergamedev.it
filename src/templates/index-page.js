@@ -10,6 +10,7 @@ import TeachersShortList from '../components/TeachersShortList'
 import StudentsSlider from '../components/StudentsSlider'
 import PartnersCarousel from '../components/PartnersCarousel'
 import SignupBox from '../components/SignupBox'
+import Cover from '../components/Cover'
 
 const validateImages = (image) => {
   let newImage
@@ -33,32 +34,8 @@ export const IndexPageTemplate = ({
   }) => {
     return (
       <>
-        <section id="mainCover" className="cover">
-          <div className="columns is-desktop is-vcentered">
-            <div className="column is-offset-1 is-5-desktop">
-              <div className="cover--content">
-                <div>
-                  <h1 className="title is-spaced is-size-2-mobile is-size-1-tablet">{mainCover.heading}</h1>
-                  <p className="subtitle is-size-6-mobile is-size-4-tablet">{mainCover.subheading}</p>
-                  <Button
-                    text={mainCover.cta}
-                    link={mainCover.link}
-                    local={true}
-                    styles="cta cta-large cta__regular"
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              className="column cover--image"
-              style={{
-                backgroundImage: `url(${
-                  validateImages(mainCover.image)
-                })`
-              }}
-            >
-            </div>
-          </div>
+        <section id="mainCover" className="cover" >
+          <Cover contents={mainCover} clipImage={true}/>
         </section>
 
         <section className="container">
@@ -93,30 +70,32 @@ export const IndexPageTemplate = ({
 
         <section id="schoolSection" className="section">
           <div className="container">
-            <div className="columns section is-horizontal-spaced is-mobile"
-            style={{
-              minHeight: "32rem",
-              backgroundPosition: "70% center",
-              backgroundSize: "cover",
-              backgroundImage: `url(${
-                validateImages(schoolSection.image)
-              })`
-            }}>
+            <div className="column is-mobile"
+              style={{
+                minHeight: "32rem",
+                backgroundPosition: "70% center",
+                backgroundSize: "cover",
+                backgroundImage: `url(${
+                  validateImages(schoolSection.image)
+                })`
+              }}>
               <div className="column is-6-desktop is-10-touch is-offset-1-desktop">
-                <h3 className="content">
-                  <p className="title is-size-2-mobile is-size-1-tablet has-text-white">
-                    {schoolSection.heading}
-                  </p>
-                  <p className="subtitle is-size-6-mobile is-size-4-tablet has-text-white">
-                    {schoolSection.subheading}
-                  </p>
-                </h3>
-                <Button
-                  text={schoolSection.cta}
-                  link={schoolSection.link}
-                  local={true}
-                  styles="cta cta-large has-text-white"
-                />
+                <div className="section is-horizontal-spaced">
+                  <h3 className="content">
+                    <p className="title is-size-2-mobile is-size-1-tablet has-text-white">
+                      {schoolSection.heading}
+                    </p>
+                    <p className="subtitle is-size-6-mobile is-size-4-tablet has-text-white">
+                      {schoolSection.subheading}
+                    </p>
+                  </h3>
+                  <Button
+                    text={schoolSection.cta}
+                    link={schoolSection.link}
+                    local={true}
+                    styles="cta cta-large has-text-white"
+                  />
+                </div>
               </div>
             </div>
 
