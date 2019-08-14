@@ -157,6 +157,13 @@ $menu-label-color: $white-ter;
 @import "../styles/cards";
 @import "../styles/navbar";
 
+// image
+.image--background {
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 // responsiveness
 +tablet-only {

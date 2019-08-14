@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { v4 } from 'uuid'
 
-const Image = ({ src, alt, children, styles }) => {
+const Image = ({ src, alt, children, styles, rounded }) => {
   let image
   if(!!src) {
     image = !!src.childImageSharp ? src.childImageSharp.fluid.src : src
@@ -14,18 +13,20 @@ const Image = ({ src, alt, children, styles }) => {
     <>
       { !!children
         ? <div
-            className={!!styles ? styles : "Image asBackground"}
+            className={!!styles ? styles : "image--background"}
             style={{backgroundImage: `url(${image})`}}
             title={alt}
           >
             {children}
           </div>
 
-        : <img
-            className={!!styles ? styles : "Image asTag"}
-            src={image}
-            alt-image={alt}
-          />
+        : <figure className={`image ${!!styles? styles : "is-fullwidth"}`}>
+            <img
+              className={!!rounded ? "is-rounded" : ""}
+              src={image}
+              alt-image={alt}
+            />
+          </figure>
       }
     </>
   )
