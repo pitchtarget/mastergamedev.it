@@ -10,16 +10,25 @@
 }
 
 .row {
-  &--primary {
+  &__primary {
     @include rowStyle($primary,$primary-invert,#3a3250);
   }
-  &--invert {
+  &__invert {
     @include rowStyle($primary-invert,$primary,#d2a43f);
   }
-  &--dark {
+  &__dark {
     @include rowStyle($gray-dark,$white,$gray-light);
   }
-  &--light {
+  &__light {
     @include rowStyle($gray-light,$black,$gray-dark);
   }
+}
+// remove padding and margin
+.row-wrapper {
+  margin-top: 0px;
+  margin-bottom: 0px !important;
+}
+.row--image {
+  padding-bottom: 0px;
+  padding-top: 0px;
 }

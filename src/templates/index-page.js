@@ -44,7 +44,7 @@ export const IndexPageTemplate = ({
                     text={mainCover.cta}
                     link={mainCover.link}
                     local={true}
-                    styles="cta cta-large cta__regular"
+                    styles="cta cta-large cta__primary"
                   />
                 </div>
               </div>
@@ -86,7 +86,7 @@ export const IndexPageTemplate = ({
               text={partnersSection.cta}
               link={partnersSection.link}
               local={true}
-              styles="cta cta__invert"
+              styles="cta cta-large cta__invert"
             />
           </div>
         </section>
@@ -115,7 +115,7 @@ export const IndexPageTemplate = ({
                   text={schoolSection.cta}
                   link={schoolSection.link}
                   local={true}
-                  styles="cta cta-large has-text-white"
+                  styles="cta cta-large cta__light"
                 />
               </div>
             </div>

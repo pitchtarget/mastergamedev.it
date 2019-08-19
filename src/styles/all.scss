@@ -166,7 +166,10 @@ $menu-label-color: $white-ter;
 
 // image
 .image--background {
-  min-height: 400px;
+  min-height: 200px;
+  @include from($tablet) {
+    min-height: 400px;
+  }
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

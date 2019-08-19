@@ -3,17 +3,30 @@ import PropTypes from 'prop-types'
 import Image from './elements/Image'
 import Button from './elements/Button'
 
+const ctaStyle = (color) => {
+  let style
+  switch (color) {
+    case 'primary': style='invert'; break;
+    case 'invert': style='primary'; break;
+    case 'dark': style='light'; break;
+    case 'light': style='dark'; break;
+    default: style='invert';
+  }
+  return style
+}
+
 const Row = ({ data, reverse, color }) => {
   const {image, alt, title, text, cta, link} = data
+
   return (
-    <div className={`row row--${color || "default"}`}>
+    <div className={`row row__${color || "default"}`}>
       <div className="container is-fullhd">
         <div
-          className="columns is-tablet is-vcentered is-0"
+          className="row-wrapper columns is-tablet is-vcentered"
           style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
         >
-          <div className="column is-4-tablet is-half-desktop">
-            <Image src={image} alt={alt} children />
+          <div className="row--image column is-4-tablet is-half-desktop is-5-widescreen">
+            <Image src={image} alt={alt} children/>
           </div>
           <div className={`column is-8-tablet is-half-desktop is-5-widescreen ${reverse && 'is-offset-1-widescreen'}`} >
             <div
@@ -34,9 +47,8 @@ const Row = ({ data, reverse, color }) => {
               }
               {cta && link &&
                 <Button
-                  text={cta}
-                  link={link}
-                  styles={`cta cta-large`}
+                  text={cta} link={link}
+                  styles={`cta cta-large cta__${ctaStyle(color)}`}
                 />
               }
             </div>
