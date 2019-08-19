@@ -1,0 +1,24 @@
+@mixin rowStyle($background,$title,$text) {
+  background-color: $background;
+  .content {
+    color: $text;
+    .title {
+      color: $title;
+    }
+  }
+}
+
+.row {
+  &--primary {
+    @include rowStyle($primary,$primary-invert,#3a3250);
+  }
+  &--invert {
+    @include rowStyle($primary-invert,$primary,#d2a43f);
+  }
+  &--dark {
+    @include rowStyle($gray-dark,$white,$gray-light);
+  }
+  &--light {
+    @include rowStyle($gray-light,$black,$gray-dark);
+  }
+}

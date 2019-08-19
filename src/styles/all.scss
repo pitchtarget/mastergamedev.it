@@ -12,6 +12,9 @@ $body-background-color: #F0F0F2;
 
 $primary: #FFC74D;
 $primary-invert: #352857;
+$gray-dark: #3D3A45;
+$gray-light: #CBC9D1;
+
 $body-color: #333;
 $black: #2b2523;
 
@@ -28,6 +31,8 @@ $title-weight: 900;
 $navbar-height: 3rem;
 
 $tablet: 768px;
+$fullhd: 1980px;
+
 $navbar-burger-color: $primary;
 
 .content .taglist {
@@ -156,6 +161,7 @@ $menu-label-color: $white-ter;
 @import "../styles/cover";
 @import "../styles/cards";
 @import "../styles/navbar";
+@import "../styles/row";
 
 // image
 .image--background {
