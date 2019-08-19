@@ -1,0 +1,34 @@
+// Colors of Rows
+@mixin rowStyle($background,$title,$text) {
+  background-color: $background;
+  .content {
+    color: $text;
+    .title {
+      color: $title;
+    }
+  }
+}
+
+.row {
+  &__primary {
+    @include rowStyle($primary,$primary-invert,#3a3250);
+  }
+  &__invert {
+    @include rowStyle($primary-invert,$primary,#d2a43f);
+  }
+  &__dark {
+    @include rowStyle($gray-dark,$white,$gray-light);
+  }
+  &__light {
+    @include rowStyle($gray-light,$black,$gray-dark);
+  }
+}
+// remove padding and margin
+.row-wrapper {
+  margin-top: 0px;
+  margin-bottom: 0px !important;
+}
+.row--image {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}

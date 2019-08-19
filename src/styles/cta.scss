@@ -32,27 +32,23 @@
     height: 2.5rem;
   }
 }
-.cta__regular {
-  color: $primary;
+
+@mixin ctaStyle($color) {
+  color: $color;
   &:hover {
-    color: $primary;
+    color: $color;
   }
+}
+
+.cta__primary {
+  @include ctaStyle($primary);
 }
 .cta__invert {
-  color: $primary-invert;
-  &:hover {
-    color: $primary-invert;
-  }
+  @include ctaStyle($primary-invert);
 }
-.cta-dark {
-  color: $primary-invert;
-  &:hover {
-    color: $primary-invert;
-  }
+.cta__dark {
+  @include ctaStyle($black);
 }
-.cta-light {
-  color: $primary-invert;
-  &:hover {
-    color: $primary-invert;
-  }
+.cta__light {
+  @include ctaStyle($white);
 }
