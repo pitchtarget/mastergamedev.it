@@ -84,10 +84,10 @@ collections:
                   name: bullet,
                   widget: list,
                   fields: [
-                  {label: Heading, name: heading, widget: string},
-                  {label: Subheading, name: subheading, widget: text},
-                  {label: Call to action, name: cta, widget: markdown},
-                  {label: Link, name: link, widget: string}
+                    {label: Heading, name: heading, widget: string},
+                    {label: Subheading, name: subheading, widget: text},
+                    {label: Call to action, name: cta, widget: markdown},
+                    {label: Link, name: link, widget: string},
                   ],
                 },
               ],
@@ -111,7 +111,7 @@ collections:
                     {label: Heading, name: heading, widget: string},
                     {label: Subheading, name: subheading, widget: text},
                     {label: Call to action, name: cta, widget: markdown},
-                    {label: Link, name: link, widget: string}
+                    {label: Link, name: link, widget: string},
                   ],
                 },
               ],
@@ -166,7 +166,7 @@ collections:
               widget: list,
               fields: [
                 {label: Title, name: title, widget: string},
-                {label:Description, name: description, widget: markdown}
+                {label:Description, name: description, widget: markdown},
               ],
             }
           - {label: Service title, name: serviceTitle, widget: string}
@@ -178,7 +178,7 @@ collections:
                 {label: Image, name: image, widget: image, default: /img/service-placeholder.png},
                 {label: "Alt image", name: alt, widget: string},
                 {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: string}
+                {label: Subheading, name: subheading, widget: string},
               ],
             }
 
@@ -197,7 +197,7 @@ collections:
               widget: list,
               fields: [
                 {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown}
+                {label: Description, name: description, widget: markdown},
               ],
             }
 
@@ -217,7 +217,7 @@ collections:
                 {label: Title, name: title, widget: string},
                 {label: Description, name: description, widget: markdown},
                 {label: Image, name: image, widget: image},
-                {label: Alt image, name: altImage, widget: string}
+                {label: Alt image, name: altImage, widget: string},
               ],
             }
           - {label: Students title, name: titleStudents, widget: string}
@@ -233,7 +233,7 @@ collections:
                 {label: Master, name: master, widget: number, default: 2010, valueType: int, min: 2010, max: 2030},
                 {label: Company, name: company, widget: string},
                 {label: Role, name: role, widget: string},
-                {label: Description, name: description, widget: markdown}
+                {label: Description, name: description, widget: markdown},
               ],
             }
 
@@ -243,11 +243,11 @@ collections:
         name: "partners"
         fields:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "partners-page"}
-          - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png},
-          - {label: "Alt image", name: altImage, widget: string},
-          - {label: Title, name: title, widget: string},
-          - {label: Description, name: description, widget: markdown},
-          - {label: "Partners title", name: partnersTitle, widget: string},
+          - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png}
+          - {label: "Alt image", name: altImage, widget: string}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: markdown}
+          - {label: "Partners title", name: partnersTitle, widget: string}
           - {
               label: Partners,
               name: partners,
