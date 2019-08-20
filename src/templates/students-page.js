@@ -7,57 +7,64 @@ import Students from '../components/Students'
 export const StudentsPageTemplate = ({
   image,
   title,
-  heading,
-  description,
+  projects,
+  titleStudents,
   students,
-}) => (
-  <div className="content">
-    <div
-      className="full-width-image-container margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-      }}
-    >
-      <h2
-        className="has-text-weight-bold is-size-1"
+}) => {
+
+  return (
+    <div className="content">
+      <div
+        className="full-width-image-container margin-top-0"
         style={{
-          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-          backgroundColor: '#f40',
-          color: 'white',
-          padding: '1rem',
+          backgroundImage: `url(${
+            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          })`,
         }}
       >
-        {title}
-      </h2>
-    </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-7 is-offset-1">
-              <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-              <p>{description}</p>
+        <h2
+          className="has-text-weight-bold is-size-1"
+          style={{
+            boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+            backgroundColor: '#f40',
+            color: 'white',
+            padding: '1rem',
+          }}
+        >
+          {title}
+        </h2>
+      </div>
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="section">
+            <div className="columns">
+              <div className="column is-7 is-offset-1">
+                <h3 className="has-text-weight-semibold is-size-2">{titleStudents}</h3>
+              </div>
             </div>
-          </div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <Students students={students} />
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <Students students={students} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
-)
+      </section>
+    </div>
+  )
+}
 
 StudentsPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
-  description: PropTypes.string,
-  students: PropTypes.array
+  students: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      description: PropTypes.string,
+      altImage: PropTypes.string,
+      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    }),
+  ),
 }
 
 const StudentsPage = ({ data }) => {
@@ -68,8 +75,8 @@ const StudentsPage = ({ data }) => {
       <StudentsPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
-        description={frontmatter.description}
+        projects={frontmatter.projects}
+        titleStudents={frontmatter.titleStudents}
         students={frontmatter.students}
       />
     </Layout>
@@ -98,8 +105,19 @@ export const studentsPageQuery = graphql`
             }
           }
         }
-        heading
-        description
+        projects {
+          title
+          description
+          altImage
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1240, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        titleStudents
         students {
           fullName
           master

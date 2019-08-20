@@ -31,12 +31,9 @@ exports.createPages = ({ actions, graphql }) => {
 
     // Filter out the menu so we don't create pages for those
     const posts = result.data.allMarkdownRemark.edges.filter(edge => {
-      if (edge.node.frontmatter.templateKey === "teachers") {
+      if (edge.node.frontmatter.templateKey === "banners") {
         return false;
-      } else if (edge.node.frontmatter.templateKey === "partners") {
-        return false;
-      }
-      else {
+      } else {
         return result.data.allMarkdownRemark.edges;
       }
     });
