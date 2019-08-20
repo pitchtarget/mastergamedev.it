@@ -33,7 +33,7 @@ const Image = ({ src, alt, children, styles, rounded }) => {
 }
 
 Image.propTypes = {
-  src: PropTypes.object,
+  src: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   alt: PropTypes.string,
   styles: PropTypes.string,
 }
