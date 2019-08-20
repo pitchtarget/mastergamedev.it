@@ -28,7 +28,7 @@ $title-color: $primary-invert;
 $subtitle-color: $primary-invert;
 $title-weight: 900;
 
-$navbar-height: 3rem;
+$navbar-height: 6rem;
 
 //Custom breakpoints
 $tablet: 768px;
@@ -163,6 +163,7 @@ $menu-label-color: $white-ter;
 @import "../styles/cards";
 @import "../styles/navbar";
 @import "../styles/row";
+@import "../styles/sidebar";
 
 // image
 .image--background {
@@ -199,70 +200,20 @@ $menu-label-color: $white-ter;
   }
 }
 
-#sidebar {
-  background-color: transparent;
-  transition: background-color .19s;
-
-  .navbar-burger {
-    height: auto;
-  	display: none;
-  }
-  .navbar-burger span {
-    height: 2px;
-    width: 22px;
-    left: calc(50% - 12px);
-  }
-
-  &.has-background {
-    transition: background-color .19s;
-    background-color: $primary-invert;
-  }
-
-  .sidebar-list {
-    display: flex;
-    flex-direction: column;
-    a.navbar-item {
-      color: $primary;
-      opacity: .75;
-      font-size: $size-5;
-      font-weight: bold;
-      justify-content: center;
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
-  .sidebar-menu {
-    cursor: pointer;
-    z-index: 50;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    color: $primary;
-    strong {
-      color:inherit;
-    }
-  }
-}
-
-.modal-background {
-  background-color: $modal-background;
-}
 footer .footer-list {
-    display: flex;
-    flex-direction: column;
-    a.navbar-item {
-      color: white;
-      opacity: .75;
-      font-size: $size-7;
-      font-weight: bold;
-      // justify-content: center;
-      &:hover {
-        background-color: transparent;
-        opacity: 1;
-      }
+  display: flex;
+  flex-direction: column;
+  a.navbar-item {
+    color: white;
+    opacity: .75;
+    font-size: $size-7;
+    font-weight: bold;
+    &:hover {
+      background-color: transparent;
+      opacity: 1;
     }
   }
+}
 
 // Set slider width
 .slick-list,

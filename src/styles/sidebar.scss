@@ -1,0 +1,49 @@
+#sidebar {
+  background-color: transparent;
+  transition: background-color .19s;
+
+  .navbar-burger {
+    height: auto;
+  	display: none;
+  }
+  .navbar-burger span {
+    height: 2px;
+    width: 22px;
+    left: calc(50% - 12px);
+  }
+
+  &.has-background {
+    transition: background-color .19s;
+    background-color: $primary-invert;
+  }
+
+  .sidebar-list {
+    display: flex;
+    flex-direction: column;
+    a.navbar-item {
+      color: $primary;
+      opacity: .75;
+      font-size: $size-5;
+      font-weight: bold;
+      justify-content: center;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .sidebar-menu {
+    cursor: pointer;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: $primary;
+    strong {
+      color:inherit;
+    }
+  }
+}
+
+.modal-background {
+  background-color: $modal-background;
+}
