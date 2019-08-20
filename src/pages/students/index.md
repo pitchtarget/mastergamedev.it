@@ -3,12 +3,23 @@ templateKey: 'students-page'
 path: /students
 title: Students page
 image: /img/jumbotron.jpg
-heading: This is the student page
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+projects:
+  - title: Unam incolunt Belgae, aliam Aquitani, tertiam.
+    description: >
+      Non equidem invideo, miror magis posuere velit aliquet. Quis aute iure reprehenderit in voluptate velit esse. Unam incolunt Belgae, aliam Aquitani, tertiam. Fictum,  deserunt mollit anim laborum astutumque! Gallia est omnis divisa in partes tres, quarum. A communi observantia non est recedendum.
+    image: /img/placeholder.png
+    altImage: placeholder
+  - title: Contra legem facit qui id facit quod lex prohibet.
+    description: >
+      Ut enim ad minim veniam, quis nostrud exercitation. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Idque Caesaris facere voluntate liceret: sese habere. Excepteur sint obcaecat cupiditat non proident culpa. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Gallia est omnis divisa in partes tres, quarum.
+    image: /img/placeholder.png
+    altImage: placeholder
+  - title: Cras mattis iudicium purus sit amet fermentum.
+    description: >
+      Petierunt uti sibi concilium totius Galliae in diem certam indicere. Contra legem facit qui id facit quod lex prohibet. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. A communi observantia non est recedendum. Curabitur blandit tempus ardua ridiculus sed magna. Non equidem invideo, miror magis posuere velit aliquet.
+    image: /img/placeholder.png
+    altImage: placeholder
+titleStudents: I nostri studenti
 students:
   - fullName: student-1
     main: true
