@@ -24,6 +24,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      # HOME PAGE
       - file: "src/pages/index.md"
         label: "Landing Page"
         name: "index"
@@ -42,7 +43,6 @@ collections:
                 {label: Link to, name: link, widget: string},
               ],
             }
-
           # First sing-in row
           - {
               label: Sign in box,
@@ -56,7 +56,6 @@ collections:
                 {label: Link to, name: link, widget: string},
               ],
             }
-
           # Partners section
           - {
               label: Partners section,
@@ -69,7 +68,6 @@ collections:
                 {label: Link to, name: link, widget: string},
               ],
             }
-
           # School section
           - {
               label: School section,
@@ -84,7 +82,6 @@ collections:
                 {label: Bullet, name: bullet, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: text}, {label: Call to action, name: cta, widget: markdown}, {label: Link, name: link, widget: string}]},
               ],
             }
-
           # Students sectioin
           - {
               label: Student section,
@@ -99,7 +96,6 @@ collections:
                 {label: Bullet, name: bullet, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: text}, {label: Call to action, name: cta, widget: markdown}, {label: Link, name: link, widget: string}]},
               ],
             }
-
           # Second submission row
           - {
               label: Sign in box,
@@ -113,7 +109,6 @@ collections:
                 {label: Link to, name: link, widget: string},
               ],
             }
-
           # Teachers section
           - {
               label: Teachers section,
@@ -126,7 +121,6 @@ collections:
                 {label: Link to, name: link, widget: string},
               ],
             }
-
           # News section
           - {
               label: News section,
@@ -139,6 +133,114 @@ collections:
               ],
             }
 
+      # MASTER PAGE
+      - file: "src/pages/master/index.md"
+        label: "Master page"
+        name: "master"
+        fields:
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "master-page"}
+          - {label: Title, name: title, widget: string}
+          - {
+              label: Paragraphs,
+              name: paragraphs,
+              widget: list,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label:Description, name: description, widget: markdown}
+              ],
+            }
+          - {label: Service title, name: serviceTitle, widget: string}
+          - {
+              label: Services,
+              name: services,
+              widget: list,
+              fields: [
+                {label: Image, name: image, widget: image, default: /img/service-placeholder.png},
+                {label: "Alt image", name: alt, widget: string},
+                {label: Heading, name: heading, widget: string},
+                {label: Subheading, name: subheading, widget: string}
+              ],
+            }
+
+      # STUDENTS PAGE
+      - file: "src/pages/students/index.md"
+        label: "Students page"
+        name: "students"
+        fields:
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "students-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - {
+              label: Students,
+              name: students,
+              widget: list,
+              fields: [
+                {label: Full name, name: fullName, widget: string},
+                {label: "Visible on homepage", name: main, widget: boolean},
+                {label: Image, name: image, widget: image, default: /img/student-img.png},
+                {label: "Alt image", name: altImage, widget: string},
+                {label: Master, name: master, widget: number, default: 2010, valueType: int, min: 2010, max: 2030},
+                {label: Company, name: company, widget: string},
+                {label: Role, name: role, widget: string},
+                {label: Description, name: description, widget: markdown}
+              ],
+            }
+
+      # PARTNERS PAGE
+      - file: "src/pages/partners/index.md"
+        label: "Partners list"
+        name: "partners"
+        fields:
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "partners"}
+          - {
+              label: Partners,
+              name: partners,
+              widget: list,
+              fields: [
+                {label: Full name, name: name, widget: string},
+                {label: Image, name: image, widget: image, default: /img/student-img.png},
+                {label: "Alt image", name: altImage, widget: string},
+                {label: Description, name: description, widget: markdown},
+                {label: "Link", name: link, widget: string},
+                {label: "Show in home", name: main, widget: boolean}
+              ],
+            }
+
+      # TEACHERS PAGE
+      - file: "src/pages/teachers/index.md"
+        label: "Teachers list"
+        name: "teachers"
+        fields:
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "teachers"}
+          - {
+              label: Teachers,
+              name: teachers,
+              widget: list,
+              fields: [
+                {label: Full name, name: fullName, widget: string},
+                {label: Image, name: image, widget: image, default: /img/student-img.png},
+                {label: "Alt image", name: altImage, widget: string},
+                {label: Link, name: link, widget: string},
+                {label: Role, name: role, widget: string},
+                {label: Biography, name: bio, widget: markdown}
+              ],
+            }
+
+      #  TO CHECK
+      - file: "src/pages/school/index.md"
+        label: "School page"
+        name: "school"
+        fields:
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "school-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: description, widget: string}
+
+
+# starter pages
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
@@ -146,6 +248,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"
@@ -160,34 +263,3 @@ collections:
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
-      - file: "src/pages/students/index.md"
-        label: "Students page"
-        name: "students"
-        fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "students-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - {label: Students, name: students, widget: list, fields: [{label: Full name, name: fullName, widget: string}, {label: "Visible on homepage", name: main, widget: boolean}, {label: Image, name: image, widget: image, default: /img/student-img.png}, {label: "Alt image", name: altImage, widget: string}, {label: Master, name: master, widget: number, default: 2010, valueType: int, min: 2010, max: 2030}, {label: Company, name: company, widget: string}, {label: Role, name: role, widget: string},{label: Description, name: description, widget: markdown}]}
-      - file: "src/pages/school/index.md"
-        label: "School page"
-        name: "school"
-        fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "school-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-      - file: "src/pages/partners/index.md"
-        label: "Partners list"
-        name: "partners"
-        fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "partners"}
-          - {label: Partners, name: partners, widget: list, fields: [{label: Full name, name: name, widget: string}, {label: Image, name: image, widget: image, default: /img/student-img.png}, {label: "Alt image", name: altImage, widget: string}, {label: Description, name: description, widget: markdown}, {label: "Link", name: link, widget: string}, {label: "Show in home", name: main, widget: boolean}]}
-      - file: "src/pages/teachers/index.md"
-        label: "Teachers list"
-        name: "teachers"
-        fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "teachers"}
-          - {label: Teachers, name: teachers, widget: list, fields: [{label: Full name, name: fullName, widget: string}, {label: Image, name: image, widget: image, default: /img/student-img.png}, {label: "Alt image", name: altImage, widget: string}, {label: Link, name: link, widget: string}, {label: Role, name: role, widget: string}, {label: Biography, name: bio, widget: markdown}]}
