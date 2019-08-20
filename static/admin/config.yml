@@ -162,6 +162,25 @@ collections:
               ],
             }
 
+      # PROGRAM PAGE
+      - file: "src/pages/program/index.md"
+        label: "Program page"
+        name: "program"
+        fields:
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "program-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: markdown}
+          - {label: Title paragraphs, name: titleParagraphs, widget: string}
+          - {
+              label: Paragraphs,
+              name: paragraphs,
+              widget: list,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: markdown}
+              ],
+            }
+
       # STUDENTS PAGE
       - file: "src/pages/students/index.md"
         label: "Students page"
