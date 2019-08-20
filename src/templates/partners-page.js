@@ -15,7 +15,7 @@ export const PartnersPageTemplate = ({
   altImage,
   partners,
 }) => {
-  debugger
+
   return(
     <div className="content">
     </div>
@@ -41,7 +41,7 @@ PartnersPageTemplate.propTypes = {
 
 const PartnersPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  debugger
+
   return (
     <Layout>
       <PartnersPageTemplate
