@@ -79,7 +79,17 @@ collections:
                 {label: Subheading, name: subheading, widget: text},
                 {label: Call to action, name: cta, widget: string},
                 {label: Link to, name: link, widget: string},
-                {label: Bullet, name: bullet, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: text}, {label: Call to action, name: cta, widget: markdown}, {label: Link, name: link, widget: string}]},
+                {
+                  label: Bullet,
+                  name: bullet,
+                  widget: list,
+                  fields: [
+                  {label: Heading, name: heading, widget: string},
+                  {label: Subheading, name: subheading, widget: text},
+                  {label: Call to action, name: cta, widget: markdown},
+                  {label: Link, name: link, widget: string}
+                  ],
+                },
               ],
             }
           # Students sectioin
@@ -93,7 +103,17 @@ collections:
                 {label: Subheading, name: subheading, widget: text},
                 {label: Call to action, name: cta, widget: string},
                 {label: Link to, name: link, widget: string},
-                {label: Bullet, name: bullet, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: text}, {label: Call to action, name: cta, widget: markdown}, {label: Link, name: link, widget: string}]},
+                {
+                  label: Bullet,
+                  name: bullet,
+                  widget: list,
+                  fields: [
+                    {label: Heading, name: heading, widget: string},
+                    {label: Subheading, name: subheading, widget: text},
+                    {label: Call to action, name: cta, widget: markdown},
+                    {label: Link, name: link, widget: string}
+                  ],
+                },
               ],
             }
           # Second submission row
@@ -217,7 +237,8 @@ collections:
           - {label: "Alt image", name: altImage, widget: string},
           - {label: Title, name: title, widget: string},
           - {label: Description, name: description, widget: markdown},
-          - {label: "Partners title", name: partnersTitle, widget: string},          - {
+          - {label: "Partners title", name: partnersTitle, widget: string},
+          - {
               label: Partners,
               name: partners,
               widget: list,
@@ -236,12 +257,12 @@ collections:
         label: "Teachers list"
         name: "teachers"
         fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "teachers-page"},
-          - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png},
-          - {label: "Alt image", name: altImage, widget: string},
-          - {label: Title, name: title, widget: string},
-          - {label: Description, name: description, widget: markdown},
-          - {label: "Teachers title", name: techersTitle, widget: string},
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "teachers-page"}
+          - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png}
+          - {label: "Alt image", name: altImage, widget: string}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: markdown}
+          - {label: "Teachers title", name: techersTitle, widget: string}
           - {
               label: Teachers,
               name: teachers,
