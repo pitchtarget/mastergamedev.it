@@ -43,19 +43,6 @@ collections:
                 {label: Link to, name: link, widget: string},
               ],
             }
-          # First sing-in row
-          - {
-              label: Sign in box,
-              name: topSignIn,
-              widget: object,
-              fields: [
-                {label: Image, name: image, widget: image},
-                {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: text},
-                {label: Call to action, name: cta, widget: string},
-                {label: Link to, name: link, widget: string},
-              ],
-            }
           # Partners section
           - {
               label: Partners section,
@@ -114,19 +101,6 @@ collections:
                     {label: Link, name: link, widget: string},
                   ],
                 },
-              ],
-            }
-          # Second submission row
-          - {
-              label: Sign in box,
-              name: bottomSignIn,
-              widget: object,
-              fields: [
-                {label: Image, name: image, widget: image},
-                {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: text},
-                {label: Call to action, name: cta, widget: string},
-                {label: Link to, name: link, widget: string},
               ],
             }
           # Teachers section
@@ -293,6 +267,21 @@ collections:
         name: "banners"
         fields:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "banners"}
+          # SIGN UP BOX
+          - {
+              label: Sign in box,
+              name: box,
+              widget: object,
+              fields: [
+                {label: Image, name: image, widget: image},
+                {label: Alt image, name: alt, widget: string},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text},
+                {label: Call to action, name: cta, widget: string},
+                {label: Link to, name: link, widget: string},
+              ],
+            }
+          # ROWS
           - {
               label: Banners,
               name: banners,

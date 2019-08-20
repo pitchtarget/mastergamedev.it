@@ -8,14 +8,6 @@ mainCover:
   cta: Scopri di più
   link: /#
 
-topSignIn:
-  image: /img/open-day.jpg
-  altImage: open-day
-  heading: Open Day Sabato 13 Luglio 2019
-  subheading: Una giornata dedicata alle attività del Master in Computer Game Development, presso Sala Verde Dipartimento di Informatica Università degli Studi di Verona Strada le Grazie 15, Verona.
-  cta: Scopri di più
-  link: /#
-
 partnersSection:
   heading: Il Master collabora con le più importanti aziende italiane del settore videoludico
   subheading: Di seguito i nostri partner, presso i quali sarà possibile effettuare uno stage - obbligatorio e garantito - alla fine del percorso di formazione.
@@ -47,14 +39,6 @@ studentsSection:
   heading: Una scuola che ti apre le porte a mondo del lavoro
   subheading: I nostri studenti lavorano su progetti che li portano su strade diverse
   cta: Vedi i progetti
-  link: /#
-
-bottomSignIn:
-  image: /img/home-jumbotron.jpg
-  altImage: home-jumbotron
-  heading: Iscriviti all'openday
-  subheading: Durante l'open day vengono organizzati brevi work shop con i ragazzi del master che ti aiuteranno a creare il tuo primo gioco
-  cta: partecipa ora
   link: /#
 
 teachersSection:
