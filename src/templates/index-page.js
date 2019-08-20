@@ -23,11 +23,9 @@ const validateImages = (image) => {
 
 export const IndexPageTemplate = ({
   mainCover,
-  topSignIn,
   partnersSection,
   schoolSection,
   studentsSection,
-  bottomSignIn,
   teachersSection,
   newsSection,
   }) => {
@@ -61,8 +59,8 @@ export const IndexPageTemplate = ({
           </div>
         </section>
 
-        <section className="container">
-          <SignupBox contents={topSignIn} id="topSignUpBox" color="regular"/>
+        <section id="topSignUp" className="container signupBox__regular">
+          <SignupBox />
         </section>
 
         <section id="partnersSection" className="section">
@@ -153,12 +151,11 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
-            {/**/}
             <StudentsSlider />
           </div>
         </section>
-        <section className="container">
-          <SignupBox contents={bottomSignIn} id="bottomSignUpBox" color="invert"/>
+        <section id="bottomSignUp" className="container signupBox__invert">
+          <SignupBox/>
         </section>
 
         <section id="teachersSection" className="section is-large">
@@ -266,20 +263,6 @@ export const pageQuery = graphql`
           cta
           link
         }
-        topSignIn {
-          image {
-            childImageSharp {
-              fluid(maxWidth: 500, quality: 80) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          altImage
-          heading
-          subheading
-          cta
-          link
-        }
         partnersSection {
           heading
           subheading
@@ -307,20 +290,6 @@ export const pageQuery = graphql`
           }
         }
         studentsSection {
-          heading
-          subheading
-          cta
-          link
-        }
-        bottomSignIn {
-          image {
-            childImageSharp {
-              fluid(maxWidth: 300, quality: 80) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          altImage
           heading
           subheading
           cta
