@@ -193,8 +193,12 @@ collections:
         label: "Partners list"
         name: "partners"
         fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "partners"}
-          - {
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "partners-page"}
+          - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png},
+          - {label: "Alt image", name: altImage, widget: string},
+          - {label: Title, name: title, widget: string},
+          - {label: Description, name: description, widget: markdown},
+          - {label: "Partners title", name: partnersTitle, widget: string},          - {
               label: Partners,
               name: partners,
               widget: list,

@@ -35,7 +35,7 @@ export default () => (
   <StaticQuery
     query={graphql`
       query PartnersQuery {
-        markdownRemark(frontmatter: { templateKey: { eq: "partners"}}) {
+        markdownRemark(frontmatter: { templateKey: { eq: "partners-page"}}) {
           frontmatter {
             partners {
               name

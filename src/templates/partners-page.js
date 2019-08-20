@@ -7,31 +7,31 @@ import Image from '../components/elements/Image'
 import BlogRoll from '../components/BlogRoll'
 import { v4 } from 'uuid'
 
-export const TeachersPageTemplate = ({
+export const PartnersPageTemplate = ({
   title,
   description,
-  teachersTitle,
+  partnersTitle,
   image,
   altImage,
-  teachers,
+  partners,
 }) => {
+  debugger
   return(
     <div className="content">
     </div>
   )
 }
 
-TeachersPageTemplate.propTypes = {
+PartnersPageTemplate.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  teachersTitle: PropTypes.string,
+  partnersTitle: PropTypes.string,
   altImage: PropTypes.string,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  teachers: PropTypes.arrayOf(
+  partners: PropTypes.arrayOf(
     PropTypes.shape({
-      fullName: PropTypes.string,
-      role: PropTypes.string,
-      bio: PropTypes.string,
+      name: PropTypes.string,
+      description: PropTypes.string,
       link: PropTypes.string,
       altImage: PropTypes.string,
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -39,24 +39,24 @@ TeachersPageTemplate.propTypes = {
   ),
 }
 
-const TeachersPage = ({ data }) => {
+const PartnersPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  debugger
   return (
     <Layout>
-      <TeachersPageTemplate
+      <PartnersPageTemplate
         title={frontmatter.title}
         description={frontmatter.description}
-        teachersTitle={frontmatter.teachersTitle}
+        partnersTitle={frontmatter.partnersTitle}
         altImage={frontmatter.altImage}
         image={frontmatter.image}
-        teachers={frontmatter.teachers}
+        partners={frontmatter.partners}
       />
     </Layout>
   )
 }
 
-TeachersPage.propTypes = {
+PartnersPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -64,15 +64,15 @@ TeachersPage.propTypes = {
   }),
 }
 
-export default TeachersPage
+export default PartnersPage
 
 export const masterPageQuery = graphql`
-  query TeachersPage {
-    markdownRemark(frontmatter: { templateKey: { eq: "teachers-page"}}) {
+  query PartnersPage {
+    markdownRemark(frontmatter: { templateKey: { eq: "partners-page"}}) {
       frontmatter {
         title
         description
-        teachersTitle
+        partnersTitle
         altImage
         image {
           childImageSharp {
@@ -81,10 +81,9 @@ export const masterPageQuery = graphql`
             }
           }
         }
-        teachers {
-          fullName
-          role
-          bio
+        partners {
+          name
+          description
           link
           altImage
           image {
