@@ -9,7 +9,6 @@ import StudentsPagePreview from './preview-templates/StudentsPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 import PartnersGridPreview from './preview-templates/PartnersGridPreview'
 import TeachersGridPreview from './preview-templates/TeachersGridPreview'
-import SchoolPagePreview from './preview-templates/SchoolPagePreview'
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
@@ -20,5 +19,4 @@ CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('students', StudentsPagePreview)
 CMS.registerPreviewTemplate('partners', PartnersGridPreview)
 CMS.registerPreviewTemplate('teachers', TeachersGridPreview)
-CMS.registerPreviewTemplate('school', SchoolPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)

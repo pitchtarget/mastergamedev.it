@@ -27,7 +27,6 @@ class TeachersShortList extends React.Component {
     return (
       <div className="columns is-multiline is-centered">
         { teachers.length > 0 && filteredTeachers.map( teacher =>(
-
             <div key={v4()} className="column is-3-desktop is-5-tablet is-full-mobile is-flex"
             style={{justifyContent: "center"}}>
               <TeacherCard teacher={teacher}/>
@@ -51,7 +50,7 @@ export default () => (
   <StaticQuery
     query={graphql`
       query TeachersQuery {
-        markdownRemark(frontmatter: { templateKey: { eq: "teachers"}}) {
+        markdownRemark(frontmatter: { templateKey: { eq: "teachers-page"}}) {
           frontmatter {
             teachers {
               fullName

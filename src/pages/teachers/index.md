@@ -1,5 +1,11 @@
 ---
-templateKey: 'teachers'
+templateKey: 'teachers-page'
+path: /teachers
+title: Teachers page
+description: Quisque ut dolor gravida, placerat libero vel, euismod. Quo usque tandem abutere, Catilina, patientia nostra? Excepteur sint obcaecat cupiditat non proident culpa. Ut enim ad minim veniam, quis nostrud exercitation.
+image: /img/jumbotron.jpg
+altImage: cover-image
+teachersTitle: I docenti
 teachers:
   - fullName: Umberto Castellani
     role: Fondamenti di interazione uomo-macchina

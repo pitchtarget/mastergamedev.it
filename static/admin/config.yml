@@ -213,7 +213,12 @@ collections:
         label: "Teachers list"
         name: "teachers"
         fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "teachers"}
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "teachers-page"},
+          - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png},
+          - {label: "Alt image", name: altImage, widget: string},
+          - {label: Title, name: title, widget: string},
+          - {label: Description, name: description, widget: markdown},
+          - {label: "Teachers title", name: techersTitle, widget: string},
           - {
               label: Teachers,
               name: teachers,
@@ -227,18 +232,6 @@ collections:
                 {label: Biography, name: bio, widget: markdown}
               ],
             }
-
-      #  TO CHECK
-      - file: "src/pages/school/index.md"
-        label: "School page"
-        name: "school"
-        fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "school-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-
 
 # starter pages
       - file: "src/pages/about/index.md"
