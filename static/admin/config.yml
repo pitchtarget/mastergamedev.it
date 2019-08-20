@@ -290,7 +290,7 @@ collections:
       # BANNERS
       - file: "src/pages/banners/index.md"
         label: "Banners list"
-        name: "bannersList"
+        name: "banners"
         fields:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "banners"}
           - {
