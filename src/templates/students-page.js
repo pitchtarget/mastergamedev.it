@@ -31,38 +31,37 @@ export const StudentsPageTemplate = ({
         </div>
       </Image>
       <div className="container">
-        <div className="columns is-tablet">
-          <div className="column is-10 is-offset-1">
-            { projects.length > 0 && projects.map( (project, id) => {
-              const reverse = id % 2
-              return (
-                <div key={v4()} className="section">
-                  <div
-                    className="columns is-vcentered"
-                    style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
-                  >
-                    <div className="column">
-                      <Image src={project.image} alt={project.alt}/>
-                    </div>
-                    <div className="column">
-                      <div
-                        className="content"
-                        style={{padding: '5%'}}
-                      >
-                        <h2>
-                          <span className="title is-spaced is-size-3-mobile is-size-2-tablet">
-                            {project.title}
-                          </span>
-                        </h2>
-                        <p className="description">
-                          {project.description}
-                        </p>
+        <div className="section is-medium">
+          <div className="columns is-tablet">
+            <div className="column is-10 is-offset-1">
+              { projects.length > 0 && projects.map( (project, id) => {
+                const reverse = id % 2
+                return (
+                  <div key={v4()} className="section">
+                    <div
+                      className="columns is-vcentered"
+                      style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
+                    >
+                      <div className="column">
+                        <Image src={project.image} alt={project.alt}/>
+                      </div>
+                      <div className="column">
+                        <div className="content">
+                          <h3>
+                            <span className="title is-spaced is-size-3-mobile is-size-2-tablet">
+                              {project.title}
+                            </span>
+                          </h3>
+                          <p className="description">
+                            {project.description}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              )})
-            }
+                )})
+              }
+            </div>
           </div>
         </div>
       </div>
