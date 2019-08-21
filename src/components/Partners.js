@@ -9,7 +9,7 @@ export const Partners = ({ partners }) => {
       {partners.length > 0 && partners.map(partner => {
         return (
         <div key={v4()} className="column is-4-tablet is-3-desktop">
-          <PartnerCard partner={partner}/>
+          <PartnerCard partner={partner} styles="is-grid"/>
         </div>
       )})}
     </div>

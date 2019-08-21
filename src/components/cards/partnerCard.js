@@ -9,7 +9,7 @@ const PartnerCard = ({ partner, styles}) => {
   }
 
   return (
-    <div className={`partnerCard ${styles}`}>
+    <div className={`partnerCard ${styles ? styles : ''}`}>
       <a href={partner.link}>
         <img
           className="image"

@@ -35,6 +35,11 @@
     transition: transform .19s ease-out;
   }
 
+  &.is-grid {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   &.is-carousel {
     margin: 1.5rem;
     &:first-child {
