@@ -163,6 +163,7 @@ collections:
         fields:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "program-page"}
           - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
           - {label: Description, name: description, widget: markdown}
           - {label: Title paragraphs, name: titleParagraphs, widget: string}
           - {

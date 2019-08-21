@@ -2,6 +2,7 @@
 templateKey: 'program-page'
 path: /program
 title: Program page
+subtitle: Quam temere in vitiis, legem sancimus haerentia.
 description: Quisque ut dolor gravida, placerat libero vel, euismod. Quo usque tandem abutere, Catilina, patientia nostra? Excepteur sint obcaecat cupiditat non proident culpa. Ut enim ad minim veniam, quis nostrud exercitation.
 titleParagraphs: Lista dei moduli
 paragraphs:

@@ -16,7 +16,7 @@ export const MasterPageTemplate = ({
   const topParagraphs = paragraphs.length > 0 && paragraphs.slice(0,3)
   const bottomParagraphs = paragraphs.length > 0 && paragraphs.slice(3)
 
-  return(
+  return (
     <div className="content">
       <section className="">
         <div className="container">

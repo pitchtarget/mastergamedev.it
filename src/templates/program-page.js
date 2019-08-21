@@ -1,20 +1,78 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import SignupBox from '../components/SignupBox'
-import Image from '../components/elements/Image'
 import { v4 } from 'uuid'
+import Layout from '../components/Layout'
+import Image from '../components/elements/Image'
+import Button from '../components/elements/Button'
 
 export const ProgramPageTemplate = ({
   title,
+  subtitle,
   description,
   titleParagraphs,
   paragraphs,
+  bannerStudents,
+  bannerMaster,
 }) => {
-  return(
-    <div className="content">
-    </div>
+  return (
+    <>
+      <section className="">
+        <div className="container">
+          <h1 className="title">{title}</h1>
+          <h3 className="subtitle">{subtitle}</h3>
+          <p className="">{description}</p>
+        </div>
+      </section>
+      <div className="container">
+        <section className="section is-medium">
+          <h2 className="title">{titleParagraphs}</h2>
+          <div className="columns is-multiline">
+            { paragraphs.length > 0 && paragraphs.map( paragraph =>(
+                <div key={v4()} className="column is-6-tablet">
+                  <h3 className="">{paragraph.title}</h3>
+                  <p>{paragraph.description}</p>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+      </div>
+      <section className="section has-double-background">
+        <div className="container is-6 is-variable">
+          <div className="columns is-tablet">
+            <div className="column">
+              <div className="has-text-primary-invert" style={{padding: '5%'}}>
+                <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
+                    {bannerStudents.title}
+                </h3>
+                <p className="description">
+                  {bannerStudents.text}
+                </p>
+                <Button
+                  text={bannerStudents.cta} link={bannerStudents.link}
+                  styles={`cta cta-large cta__invert`}
+                />
+              </div>
+            </div>
+            <div className="column">
+              <div className="has-text-primary" style={{padding: '5%'}}>
+                <h3 className="title is-spaced has-text-primary is-size-3-mobile is-size-2-tablet">
+                    {bannerMaster.title}
+                </h3>
+                <p className="description">
+                  {bannerMaster.text}
+                </p>
+                <Button
+                  text={bannerMaster.cta} link={bannerMaster.link}
+                  styles={`cta cta-large cta__primary`}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
 
@@ -22,6 +80,8 @@ ProgramPageTemplate.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   titleParagraphs: PropTypes.string,
+  bannerStudents: PropTypes.object,
+  bannerMaster: PropTypes.object,
   paragraphs: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -32,7 +92,8 @@ ProgramPageTemplate.propTypes = {
 
 const ProgramPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  const bannerMaster = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'master')
+  const bannerStudents = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'students')
   return (
     <Layout>
       <ProgramPageTemplate
@@ -40,6 +101,8 @@ const ProgramPage = ({ data }) => {
         description={frontmatter.description}
         titleParagraphs={frontmatter.titleParagraphs}
         paragraphs={frontmatter.paragraphs}
+        bannerMaster={bannerMaster[0]}
+        bannerStudents={bannerStudents[0]}
       />
     </Layout>
   )
@@ -49,6 +112,11 @@ ProgramPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
+    }),
+    bannersData: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        banners: PropTypes.array,
+      }),
     }),
   }),
 }
@@ -65,6 +133,17 @@ export const masterPageQuery = graphql`
         paragraphs {
           title
           description
+        }
+      }
+    }
+    bannersData: markdownRemark(frontmatter: { templateKey: { eq: "banners"}}) {
+      frontmatter {
+        banners {
+          name
+          title
+          text
+          cta
+          link
         }
       }
     }
