@@ -1,6 +1,5 @@
 .signupBox {
   min-height: 160px;
-  margin-top: -80px;
 
   &--image {
     min-height: 160px;
@@ -24,7 +23,11 @@
   }
 
 }
-
+@include from($desktop) {
+  .is-moveup {
+    margin-top: -80px;
+  }
+}
 .signupBox__regular .signupBox {
   background-color: $primary;
   .signupBox--text {
