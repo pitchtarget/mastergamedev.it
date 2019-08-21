@@ -1,62 +1,97 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { v4 } from 'uuid'
 import Layout from '../components/Layout'
+import SignupBox from '../components/SignupBox'
+import Image from '../components/elements/Image'
+import Row from '../components/Row'
 import Students from '../components/Students'
 
 export const StudentsPageTemplate = ({
   image,
+  altImage,
   title,
   projects,
   titleStudents,
   students,
+  banner,
 }) => {
-
   return (
-    <div className="content">
-      <div
-        className="full-width-image-container margin-top-0"
-        style={{
-          backgroundImage: `url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`,
-        }}
-      >
-        <h2
-          className="has-text-weight-bold is-size-1"
-          style={{
-            boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-            backgroundColor: '#f40',
-            color: 'white',
-            padding: '1rem',
-          }}
-        >
-          {title}
-        </h2>
-      </div>
-      <section className="section section--gradient">
+    <>
+      <Image src={image} alt={altImage} styles="cover is-small">
         <div className="container">
-          <div className="section">
-            <div className="columns">
-              <div className="column is-7 is-offset-1">
-                <h3 className="has-text-weight-semibold is-size-2">{titleStudents}</h3>
-              </div>
-            </div>
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <Students students={students} />
+          <div className="columns is-tablet">
+            <div className="column is-7 is-offset-1">
+              <div className="section is-large">
+                <h1 className="title">{title}</h1>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Image>
+      <div className="container">
+        <div className="section is-medium">
+          <div className="columns is-tablet">
+            <div className="column is-10 is-offset-1">
+              { projects.length > 0 && projects.map( (project, id) => {
+                const reverse = id % 2
+                return (
+                  <div key={v4()} className="section">
+                    <div
+                      className="columns is-vcentered"
+                      style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
+                    >
+                      <div className="column">
+                        <Image src={project.image} alt={project.alt}/>
+                      </div>
+                      <div className="column">
+                        <div className="content">
+                          <h3>
+                            <span className="title is-spaced is-size-3-mobile is-size-2-tablet">
+                              {project.title}
+                            </span>
+                          </h3>
+                          <p className="description">
+                            {project.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )})
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="columns is-tablet">
+          <div className="column is-10 is-offset-1">
+            <div className="section is-medium">
+              <h2 className="title is-spaced">{titleStudents}</h2>
+              <Students students={students} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <Row data={banner} color="primary" reverse/>
+    </>
   )
 }
 
 StudentsPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
+  banner: PropTypes.object,
+  projects: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      description: PropTypes.string,
+      altImage: PropTypes.string,
+      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    }),
+  ),
   students: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -69,7 +104,7 @@ StudentsPageTemplate.propTypes = {
 
 const StudentsPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'partners')
   return (
     <Layout>
       <StudentsPageTemplate
@@ -78,6 +113,7 @@ const StudentsPage = ({ data }) => {
         projects={frontmatter.projects}
         titleStudents={frontmatter.titleStudents}
         students={frontmatter.students}
+        banner={banner[0]}
       />
     </Layout>
   )
@@ -87,6 +123,11 @@ StudentsPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
+    }),
+    bannersData: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        banners: PropTypes.array,
+      }),
     }),
   }),
 }
@@ -100,7 +141,7 @@ export const studentsPageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
+            fluid(maxWidth: 1240, quality: 80) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -128,6 +169,25 @@ export const studentsPageQuery = graphql`
           image {
             childImageSharp {
               fluid(maxWidth: 300, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+    bannersData: markdownRemark(frontmatter: { templateKey: { eq: "banners"}}) {
+      frontmatter {
+        banners {
+          name
+          title
+          text
+          cta
+          link
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 500, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }
