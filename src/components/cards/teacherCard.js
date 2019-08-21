@@ -28,9 +28,9 @@ const TeacherCard = ({ teacher }) => {
           </p>
         </div>
         <div className="content teacherCard--details">
-          <small className="is-size-7" style={{margin: "0"}}>
+          <p className="is-size-7" style={{margin: "0"}}>
             {teacher.bio}
-          </small>
+          </p>
           { teacher.link &&
             <p className="has-text-centered">
               <a href={teacher.link} className="">

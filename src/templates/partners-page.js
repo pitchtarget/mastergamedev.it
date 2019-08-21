@@ -16,7 +16,7 @@ export const PartnersPageTemplate = ({
   partners,
   banner,
 }) => {
-  return(
+  return (
     <>
       <Image src={image} alt={altImage} styles="cover is-small" children/>
       <section className="has-background-white">
@@ -139,6 +139,13 @@ export const masterPageQuery = graphql`
           cta
           link
           alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 500, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }
