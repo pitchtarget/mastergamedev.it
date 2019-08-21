@@ -8,7 +8,7 @@ export const Partners = ({ partners }) => {
     <div className="columns is-multiline">
       {partners.length > 0 && partners.map(partner => {
         return (
-        <div key={v4()} className="column is-4">
+        <div key={v4()} className="column is-4-tablet is-3-desktop">
           <PartnerCard partner={partner}/>
         </div>
       )})}

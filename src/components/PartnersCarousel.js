@@ -14,7 +14,7 @@ class PartnersCarousel extends React.Component {
       <div className="partnersCarousel">
         <div className="wrapper">
           { filteredPartners.length > 0 && filteredPartners.map( partner => (
-              <PartnerCard key={v4()} partner={partner}/>
+              <PartnerCard key={v4()} partner={partner} styles="is-carousel"/>
             ))
           }
         </div>
