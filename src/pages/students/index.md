@@ -3,6 +3,7 @@ templateKey: 'students-page'
 path: /students
 title: Students page
 image: /img/jumbotron.jpg
+altImage: students
 projects:
   - title: Unam incolunt Belgae, aliam Aquitani, tertiam.
     description: >
