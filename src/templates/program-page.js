@@ -19,18 +19,18 @@ export const ProgramPageTemplate = ({
     <>
       <section className="">
         <div className="container">
-          <h1 className="title">{title}</h1>
+          <h1 className="title is-1">{title}</h1>
           <h3 className="subtitle">{subtitle}</h3>
           <p className="">{description}</p>
         </div>
       </section>
       <div className="container">
         <section className="section is-medium">
-          <h2 className="title">{titleParagraphs}</h2>
+          <h2 className="title is-2">{titleParagraphs}</h2>
           <div className="columns is-multiline">
             { paragraphs.length > 0 && paragraphs.map( paragraph =>(
                 <div key={v4()} className="column is-6-tablet">
-                  <h3 className="">{paragraph.title}</h3>
+                  <h3 className="title is-3">{paragraph.title}</h3>
                   <p>{paragraph.description}</p>
                 </div>
               ))
@@ -43,7 +43,7 @@ export const ProgramPageTemplate = ({
           <div className="columns is-tablet">
             <div className="column">
               <div className="has-text-primary-invert" style={{padding: '5%'}}>
-                <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
+                <h3 className="title is-2 is-spaced is-size-3-mobile is-size-2-tablet">
                     {bannerStudents.title}
                 </h3>
                 <p className="description">
@@ -57,7 +57,7 @@ export const ProgramPageTemplate = ({
             </div>
             <div className="column">
               <div className="has-text-primary" style={{padding: '5%'}}>
-                <h3 className="title is-spaced has-text-primary is-size-3-mobile is-size-2-tablet">
+                <h3 className="title is-2 is-spaced has-text-primary is-size-3-mobile is-size-2-tablet">
                     {bannerMaster.title}
                 </h3>
                 <p className="description">
