@@ -3,10 +3,10 @@ templateKey: 'banners'
 box:
   image: /img/open-day.jpg
   alt: open day
-  title: Iscriviti all'openday
+  title: Partecipa all’OPEN DAY sabato 13 Luglio 2019
   text: >
     Durante l'open day vengono organizzati brevi work shop con i ragazzi del master che ti aiuteranno a creare il tuo primo gioco
-  cta: partecipa ora
+  cta: Mi interessa
   link: /contact
 banners:
   - name: students
