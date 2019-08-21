@@ -28,10 +28,10 @@ const Row = ({ data, reverse, color }) => {
           <div className="row--image column is-4-tablet is-half-desktop is-5-widescreen">
             <Image src={image} alt={alt} children/>
           </div>
-          <div className={`column is-8-tablet is-half-desktop is-5-widescreen ${reverse && 'is-offset-1-widescreen'}`} >
+          <div className={`column is-8-tablet is-half-desktop is-5-fullhd ${reverse ? 'is-offset-1-widescreen' : ''}`} >
             <div
               className="content"
-              style={{padding: '10%'}}
+              style={{padding: '5%'}}
             >
               {title &&
                 <h2>

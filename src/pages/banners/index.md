@@ -12,7 +12,7 @@ banners:
   - name: students
     title: Ut enim ad minim veniam, quis nostrud exercitation.
     text: >
-      Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi. Quae vero auctorem tractata ab fiducia dicuntur. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
+      Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi.
     cta: studenti
     link: /student/#students
     image: /img/placeholder.png
@@ -20,7 +20,7 @@ banners:
   - name: partners
     title: Ut enim ad minim veniam, quis nostrud exercitation.
     text: >
-      Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi. Quae vero auctorem tractata ab fiducia dicuntur. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
+      Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi.
     cta: i nostri partner
     link: /partners/#partners
     image: /img/placeholder.png
@@ -28,7 +28,7 @@ banners:
   - name: master
     title: Ut enim ad minim veniam, quis nostrud exercitation.
     text: >
-      Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi. Quae vero auctorem tractata ab fiducia dicuntur. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
+      Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi.
     cta: il master
     link: /master
     image: /img/placeholder.png
@@ -36,7 +36,7 @@ banners:
   - name: program
     title: Ut enim ad minim veniam, quis nostrud exercitation.
     text: >
-      Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi. Quae vero auctorem tractata ab fiducia dicuntur. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
+      Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi.
     cta: programma completo
     link: /program
     image: /img/placeholder.png

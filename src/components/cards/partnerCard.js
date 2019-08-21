@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PartnerCard = ({ partner }) => {
+const PartnerCard = ({ partner, styles}) => {
   let validatedImage
   if(!!partner.image) {
     validatedImage = !!partner.image.childImageSharp ? partner.image.childImageSharp.fluid.src : partner.image
@@ -9,7 +9,7 @@ const PartnerCard = ({ partner }) => {
   }
 
   return (
-    <div className="partnerCard">
+    <div className={`partnerCard ${styles ? styles : ''}`}>
       <a href={partner.link}>
         <img
           className="image"

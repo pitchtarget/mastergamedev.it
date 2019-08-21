@@ -14,6 +14,8 @@ $primary: #FFC74D;
 $primary-invert: #352857;
 $gray-dark: #3D3A45;
 $gray-light: #CBC9D1;
+$grey-lighter: $gray-light;
+$grey-darker: $gray-dark;
 
 $body-color: #333;
 $black: #2b2523;
@@ -52,6 +54,7 @@ $navbar-burger-color: $primary;
     margin-top: 0;
   }
 }
+
 // Helper Classes
 .full-width-image-container {
   width: 100vw;
@@ -98,6 +101,7 @@ $navbar-burger-color: $primary;
 .navbar-item .icon {
   color: $primary;
 }
+
 // Override for use of svg's from https://simpleicons.org/
 .icon svg {
   width: 1.5rem;

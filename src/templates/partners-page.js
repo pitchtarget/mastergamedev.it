@@ -4,8 +4,8 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import SignupBox from '../components/SignupBox'
 import Image from '../components/elements/Image'
-import BlogRoll from '../components/BlogRoll'
-import { v4 } from 'uuid'
+import Partners from '../components/Partners'
+import Row from '../components/Row'
 
 export const PartnersPageTemplate = ({
   title,
@@ -14,11 +14,38 @@ export const PartnersPageTemplate = ({
   image,
   altImage,
   partners,
+  banner,
 }) => {
-
   return(
-    <div className="content">
-    </div>
+    <>
+      <Image src={image} alt={altImage} styles="cover is-small" children/>
+      <section className="has-background-white">
+        <div className="container">
+          <div className="columns is-tablet">
+            <div className="column is-7 is-offset-1">
+              <div className="section is-large">
+                <h1 className="title">{title}</h1>
+                <p>{description}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="container signupBox__regular is-moveup">
+        <SignupBox />
+      </div>
+      <div className="container">
+        <div className="columns is-tablet">
+          <div className="column is-10 is-offset-1">
+            <div className="section is-medium">
+              <h2 className="title is-spaced">{partnersTitle}</h2>
+              <Partners partners={partners} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <Row data={banner} color="invert"/>
+    </>
   )
 }
 
@@ -28,6 +55,7 @@ PartnersPageTemplate.propTypes = {
   partnersTitle: PropTypes.string,
   altImage: PropTypes.string,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  banner: PropTypes.object,
   partners: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
@@ -35,13 +63,13 @@ PartnersPageTemplate.propTypes = {
       link: PropTypes.string,
       altImage: PropTypes.string,
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    })
+    }),
   ),
 }
 
 const PartnersPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'master')
   return (
     <Layout>
       <PartnersPageTemplate
@@ -51,6 +79,7 @@ const PartnersPage = ({ data }) => {
         altImage={frontmatter.altImage}
         image={frontmatter.image}
         partners={frontmatter.partners}
+        banner={banner[0]}
       />
     </Layout>
   )
@@ -60,6 +89,11 @@ PartnersPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
+    }),
+    bannersData: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        banners: PropTypes.array,
+      }),
     }),
   }),
 }
@@ -76,7 +110,7 @@ export const masterPageQuery = graphql`
         altImage
         image {
           childImageSharp {
-            fluid(maxWidth: 300, quality: 80) {
+            fluid(maxWidth: 1920, quality: 80) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -93,6 +127,18 @@ export const masterPageQuery = graphql`
               }
             }
           }
+        }
+      }
+    }
+    bannersData: markdownRemark(frontmatter: { templateKey: { eq: "banners"}}) {
+      frontmatter {
+        banners {
+          name
+          title
+          text
+          cta
+          link
+          alt
         }
       }
     }

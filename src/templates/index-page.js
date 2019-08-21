@@ -31,7 +31,7 @@ export const IndexPageTemplate = ({
   }) => {
     return (
       <>
-        <section id="mainCover" className="cover">
+        <section id="mainCover" className="cover cover__main">
           <div className="columns is-desktop is-vcentered">
             <div className="column is-offset-1 is-5-desktop">
               <div className="cover--content">
@@ -59,7 +59,7 @@ export const IndexPageTemplate = ({
           </div>
         </section>
 
-        <section id="topSignUp" className="container signupBox__regular">
+        <section id="topSignUp" className="container signupBox__regular is-moveup">
           <SignupBox />
         </section>
 
@@ -154,7 +154,7 @@ export const IndexPageTemplate = ({
             <StudentsSlider />
           </div>
         </section>
-        <section id="bottomSignUp" className="container signupBox__invert">
+        <section id="bottomSignUp" className="container signupBox__invert is-moveup">
           <SignupBox/>
         </section>
 

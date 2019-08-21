@@ -2,9 +2,19 @@ $cover-height: 100vh;
 
 .cover {
   margin-top: -$navbar-height;
-  background-color: $primary-invert;
-  display: flex;
-  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__main {
+    background-color: $primary-invert;
+    display: flex;
+    align-items: center;
+  }
+
+  &.is-small {
+    min-height: 320px;
+  }
 
   .title {
     color: $primary;
