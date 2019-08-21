@@ -4,8 +4,8 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import SignupBox from '../components/SignupBox'
 import Image from '../components/elements/Image'
-import BlogRoll from '../components/BlogRoll'
-import { v4 } from 'uuid'
+import Teachers from '../components/Teachers'
+import Row from '../components/Row'
 
 export const TeachersPageTemplate = ({
   title,
@@ -14,10 +14,38 @@ export const TeachersPageTemplate = ({
   image,
   altImage,
   teachers,
+  banner,
 }) => {
-  return(
-    <div className="content">
-    </div>
+  return (
+    <>
+      <Image src={image} alt={altImage} styles="cover is-small" children/>
+      <section className="has-background-white">
+        <div className="container">
+          <div className="columns is-tablet">
+            <div className="column is-7 is-offset-1">
+              <div className="section is-large">
+                <h1 className="title">{title}</h1>
+                <p>{description}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="container signupBox__regular is-moveup">
+        <SignupBox />
+      </div>
+      <div className="container">
+        <div className="columns is-tablet">
+          <div className="column is-10 is-offset-1">
+            <div className="section is-medium">
+              <h2 className="title is-spaced">{teachersTitle}</h2>
+              <Teachers teachers={teachers} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <Row data={banner} color="primary"/>
+    </>
   )
 }
 
@@ -27,6 +55,7 @@ TeachersPageTemplate.propTypes = {
   teachersTitle: PropTypes.string,
   altImage: PropTypes.string,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  banner: PropTypes.object,
   teachers: PropTypes.arrayOf(
     PropTypes.shape({
       fullName: PropTypes.string,
@@ -41,7 +70,7 @@ TeachersPageTemplate.propTypes = {
 
 const TeachersPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'partners')
   return (
     <Layout>
       <TeachersPageTemplate
@@ -51,6 +80,7 @@ const TeachersPage = ({ data }) => {
         altImage={frontmatter.altImage}
         image={frontmatter.image}
         teachers={frontmatter.teachers}
+        banner={banner[0]}
       />
     </Layout>
   )
@@ -60,6 +90,11 @@ TeachersPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
+    }),
+    bannersData: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        banners: PropTypes.array,
+      }),
     }),
   }),
 }
@@ -76,7 +111,7 @@ export const masterPageQuery = graphql`
         altImage
         image {
           childImageSharp {
-            fluid(maxWidth: 300, quality: 80) {
+            fluid(maxWidth: 1240, quality: 80) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -90,6 +125,25 @@ export const masterPageQuery = graphql`
           image {
             childImageSharp {
               fluid(maxWidth: 300, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+    bannersData: markdownRemark(frontmatter: { templateKey: { eq: "banners"}}) {
+      frontmatter {
+        banners {
+          name
+          title
+          text
+          cta
+          link
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 500, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }

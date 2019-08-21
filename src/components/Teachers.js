@@ -8,7 +8,7 @@ export const Teachers = ({ teachers }) => {
     <div className="columns is-multiline">
       {teachers.length > 0 && teachers.map(teacher => {
         return (
-        <div key={v4()} className="column is-4">
+        <div key={v4()} className="column is-4-tablet is-3-desktop">
           <TeacherCard teacher={teacher}/>
         </div>
       )})}

@@ -23,16 +23,16 @@ banners:
       Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi.
     cta: i nostri partner
     link: /partners/#partners
-    image: /img/placeholder.png
-    alt: placeholder
+    image: /img/jumbotron.jpg
+    alt: partners
   - name: master
     title: Ut enim ad minim veniam, quis nostrud exercitation.
     text: >
       Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi.
     cta: il master
     link: /master
-    image: /img/placeholder.png
-    alt: placeholder
+    image: /img/jumbotron.jpg
+    alt: master
   - name: program
     title: Ut enim ad minim veniam, quis nostrud exercitation.
     text: >
