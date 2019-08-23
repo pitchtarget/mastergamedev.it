@@ -1,3 +1,12 @@
+# Content editing
+
+Pages content are Markdown files, you can find them under `src/pages/`
+EX: Home Page: src/pages/index.md
+Each page has a template associated, see `templateKey` for each Markdown page (ex: templateKey: index-page )
+
+Pages templates are here: src/templates (ex: src/templates/index-page.js)
+
+
 # Gatsby + Netlify CMS Starter
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
