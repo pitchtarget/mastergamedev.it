@@ -242,20 +242,47 @@ footer .footer-list {
 .slick-list,
 .slick-slide {
   @include from($tablet) {
-    width: 80vw;
-  }
-  @include from($desktop) {
     width: 75vw;
   }
-  width: 85vw;
+  @include from($desktop) {
+    width: 70vw;
+  }
+  width: 80vw;
 }
-
 .slick-list {
   margin: auto;
 }
+$slider-arrow: url('../img/arrow.svg');
+.slick-arrow,
+.slick-arrow:hover,
+.slick-prev:hover,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-next:focus, {
+  color: white;
+  width: 1.5rem;
+  height: 2rem;
+  background: $slider-arrow;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: transparent;
+}
+.slick-arrow {
+  opacity: .75;
+  &:hover {
+    opacity: 1;
+  }
+}
+
 .slick-prev {
-  left: -10px;
+  left: 0px;
+  transform: translateY(-50%) rotate(180deg);
 }
 .slick-next {
-  right: -10px;
+  right: 0px;
+}
+.slick-prev:before,
+.slick-next:before {
+  content: none;
 }

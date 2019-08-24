@@ -135,7 +135,7 @@ export const IndexPageTemplate = ({
           </div>
         </section>
 
-        <section id="studentsSection" className="section is-large has-background-primary">
+        <section id="studentsSection" className="section is-medium has-background-primary">
           <div className="container section is-horizontal-spaced">
             <div className="columns">
               <div className="column is-6 is-offset-1">
@@ -158,7 +158,7 @@ export const IndexPageTemplate = ({
           <SignupBox/>
         </section>
 
-        <section id="teachersSection" className="section is-large">
+        <section id="teachersSection" className="section is-medium">
           <div className="container section is-horizontal-spaced">
             <div className="columns">
               <div className="column is-6 is-offset-1">
