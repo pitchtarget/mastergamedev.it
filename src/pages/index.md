@@ -12,16 +12,16 @@ partnersSection:
   heading: Collaboriamo con le più rinomate aziende del settore!
   subheading: Crediamo nella collaborazione, non solo con talenti professionisti, ma anche con le migliori aziende del settore videoludico
   cta: I nostri partner
-  link: /partners
+  link: /collaborazioni
 
 schoolSection:
-  image: /img/school-image.jpg
+  image: /img/scuola.jpg
   altImage: school-image
-  heading: Un Master che fa la differenza
+  heading: Un percorso formativo completo e all'avanguardia
   subheading: >
     C’è differenza tra saper fare, e saper fare bene: specializzati per diventare un game developer competitivo.
   cta: Dimmi di più
-  link: /program
+  link: /programma
   bullet:
     - heading: Un master universitario
       subheading: Il master di game development è un percorso formativo di livello universitario
@@ -40,13 +40,13 @@ studentsSection:
   heading: Una scuola che ti apre le porte a mondo del lavoro
   subheading: I nostri studenti lavorano su progetti che li portano su strade diverse, sviluppa i requisiti per entrare anche tu nella game industry.
   cta: Chi ti ha preceduto
-  link: /students
+  link: /studenti
 
 teachersSection:
   heading: Chi saranno i tuoi mentor
   subheading: I docenti del master sono professionisti selezionati che ricoprono ruoli di spicco nella game industry.
   cta: Voglio conoscerli
-  link: /teachers
+  link: /docenti
 
 newsSection:
   heading: Aggiornamenti

@@ -41,7 +41,6 @@ export const IndexPageTemplate = ({
                   <Button
                     text={mainCover.cta}
                     link={mainCover.link}
-                    local={true}
                     styles="cta cta-large cta__primary"
                   />
                 </div>
@@ -83,7 +82,6 @@ export const IndexPageTemplate = ({
             <Button
               text={partnersSection.cta}
               link={partnersSection.link}
-              local={true}
               styles="cta cta-large cta__invert"
             />
           </div>
@@ -146,7 +144,6 @@ export const IndexPageTemplate = ({
                 <Button
                   text={studentsSection.cta}
                   link={studentsSection.link}
-                  local={true}
                   styles="cta cta-large cta__invert"
                 />
               </div>
@@ -169,7 +166,6 @@ export const IndexPageTemplate = ({
                 <Button
                   text={teachersSection.cta}
                   link={teachersSection.link}
-                  local={true}
                   styles="cta cta-large cta__invert"
                 />
               </div>

@@ -19,7 +19,7 @@ export const StudentsPageTemplate = ({
 }) => {
   return (
     <>
-      <Image src={image} alt={altImage} styles="cover is-small">
+      <Image src={image} alt={altImage} styles="cover align-top is-small">
         <div className="container">
           <div className="columns is-tablet">
             <div className="column is-7 is-offset-1">
@@ -141,7 +141,7 @@ export const studentsPageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 1240, quality: 80) {
+            fluid(maxWidth: 1920, quality: 80) {
               ...GatsbyImageSharpFluid
             }
           }

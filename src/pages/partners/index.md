@@ -1,10 +1,10 @@
 ---
 templateKey: 'partners-page'
-path: /partners
+path: /collaborazioni
 title: Partners page
 description: Quisque ut dolor gravida, placerat libero vel, euismod. Quo usque tandem abutere, Catilina, patientia nostra? Excepteur sint obcaecat cupiditat non proident culpa. Ut enim ad minim veniam, quis nostrud exercitation.
-image: /img/jumbotron.jpg
-altImage: cover-image
+image: /img/programming.jpg
+altImage: programming
 partnersTitle: I Partners
 partners:
 - name: MILESTONE

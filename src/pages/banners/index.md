@@ -14,7 +14,7 @@ banners:
     text: >
       Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi.
     cta: studenti
-    link: /student/#students
+    link: /studenti/#students
     image: /img/placeholder.png
     alt: placeholder
   - name: partners
@@ -22,8 +22,8 @@ banners:
     text: >
       Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi.
     cta: i nostri partner
-    link: /partners/#partners
-    image: /img/jumbotron.jpg
+    link: /collaborazioni/#partners
+    image: /img/programming.jpg
     alt: partners
   - name: master
     title: Ut enim ad minim veniam, quis nostrud exercitation.
@@ -31,14 +31,14 @@ banners:
       Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi.
     cta: il master
     link: /master
-    image: /img/jumbotron.jpg
+    image: /img/master.jpg
     alt: master
   - name: program
     title: Ut enim ad minim veniam, quis nostrud exercitation.
     text: >
       Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi.
     cta: programma completo
-    link: /program
-    image: /img/placeholder.png
-    alt: placeholder
+    link: /programma
+    image: /img/scuola.jpg
+    alt: scuola
 ---

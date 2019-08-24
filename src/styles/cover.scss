@@ -12,6 +12,10 @@ $cover-height: 100vh;
     align-items: center;
   }
 
+  &.align-top {
+    background-position: top;
+  }
+
   &.is-small {
     min-height: 320px;
   }
