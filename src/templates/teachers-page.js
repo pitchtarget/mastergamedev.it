@@ -23,8 +23,8 @@ export const TeachersPageTemplate = ({
         <div className="container">
           <div className="columns is-tablet">
             <div className="column is-7 is-offset-1">
-              <div className="section is-large">
-                <h1 className="title">{title}</h1>
+              <div className="section is-medium">
+                <h1 className="title is-1">{title}</h1>
                 <p>{description}</p>
               </div>
             </div>
@@ -38,7 +38,7 @@ export const TeachersPageTemplate = ({
         <div className="columns is-tablet">
           <div className="column is-10 is-offset-1">
             <div className="section is-medium">
-              <h2 className="title is-spaced">{teachersTitle}</h2>
+              <h2 className="title is-2 is-spaced">{teachersTitle}</h2>
               <Teachers teachers={teachers} />
             </div>
           </div>

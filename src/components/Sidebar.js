@@ -95,25 +95,25 @@ const Sidebar = class extends React.Component {
             <Link className="navbar-item" to="/">
               Home
             </Link>
-            <Link className="navbar-item" to="/students">
+            <Link className="navbar-item" to="/studenti">
               Studenti
             </Link>
-            <Link className="navbar-item" to="/partners">
+            <Link className="navbar-item" to="/collaborazioni">
               Collaborazioni
             </Link>
-            <Link className="navbar-item" to="/teachers">
+            <Link className="navbar-item" to="/docenti">
               Docenti
             </Link>
             <Link className="navbar-item" to="/master">
               Master
             </Link>
-            <Link className="navbar-item" to="/program">
+            <Link className="navbar-item" to="/programma">
               Programma
             </Link>
             <Link className="navbar-item" to="/blog">
               Blog
             </Link>
-            <Link className="navbar-item" to="/contact">
+            <Link className="navbar-item" to="/contatti">
               Contact
             </Link>
           </div>

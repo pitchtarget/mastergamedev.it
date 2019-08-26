@@ -24,7 +24,7 @@ export const PartnersPageTemplate = ({
           <div className="columns is-tablet">
             <div className="column is-7 is-offset-1">
               <div className="section is-large">
-                <h1 className="title">{title}</h1>
+                <h1 className="title is-1">{title}</h1>
                 <p>{description}</p>
               </div>
             </div>

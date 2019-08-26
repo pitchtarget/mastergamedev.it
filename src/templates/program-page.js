@@ -17,20 +17,20 @@ export const ProgramPageTemplate = ({
 }) => {
   return (
     <>
-      <section className="">
+      <section className="section is-medium">
         <div className="container">
-          <h1 className="title is-1">{title}</h1>
-          <h3 className="subtitle">{subtitle}</h3>
+          <h1 className="title is-1 is-spaced">{title}</h1>
+          <h3 className="title is-3">{subtitle}</h3>
           <p className="">{description}</p>
         </div>
       </section>
       <div className="container">
-        <section className="section is-medium">
-          <h2 className="title is-2">{titleParagraphs}</h2>
+        <section className="section is-medium" style={{paddingTop: '0px'}}>
+          <h2 className="title is-2 is-spaced">{titleParagraphs}</h2>
           <div className="columns is-multiline">
             { paragraphs.length > 0 && paragraphs.map( paragraph =>(
                 <div key={v4()} className="column is-6-tablet">
-                  <h3 className="title is-3">{paragraph.title}</h3>
+                  <h3 className="title is-5">{paragraph.title}</h3>
                   <p>{paragraph.description}</p>
                 </div>
               ))
@@ -78,6 +78,7 @@ export const ProgramPageTemplate = ({
 
 ProgramPageTemplate.propTypes = {
   title: PropTypes.string,
+  subtitle: PropTypes.string,
   description: PropTypes.string,
   titleParagraphs: PropTypes.string,
   bannerStudents: PropTypes.object,
@@ -98,6 +99,7 @@ const ProgramPage = ({ data }) => {
     <Layout>
       <ProgramPageTemplate
         title={frontmatter.title}
+        subtitle={frontmatter.subtitle}
         description={frontmatter.description}
         titleParagraphs={frontmatter.titleParagraphs}
         paragraphs={frontmatter.paragraphs}
@@ -128,6 +130,7 @@ export const masterPageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "program-page"}}) {
       frontmatter {
         title
+        subtitle
         description
         titleParagraphs
         paragraphs {
