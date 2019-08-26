@@ -1,33 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { v4 } from 'uuid'
+import StudentCard from './cards/studentCard'
 
 const Students = ({ students }) => {
   return (
     <div className="columns is-multiline">
-      {students.length > 0 && students.map(student => {
-        let image
-        if(student.image) {
-          image = !!student.image.childImageSharp ? student.image.childImageSharp.fluid.src : student.image
-        } else {
-          image = '/img/student-img.png'
-        }
-
-        return (
-        <div key={v4()} className="column is-4">
-          <img
-            src={`${image}`}
-            alt={student.altImage}
-          />
-          <p>
-            {student.fullName}<br/>
-            {student.master}<br/>
-            {student.company}<br/>
-            {student.role}<br/>
-            {student.description}<br/>
-          </p>
+      {students.length > 0 && students.map(student => (
+        <div key={v4()} className="column is-4-tablet is-3-desktop">
+          <StudentCard student={student} />
         </div>
-      )})}
+      ))}
     </div>
   )
 }

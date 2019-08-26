@@ -4,6 +4,7 @@
   justify-content: center;
   min-width: 10rem;
   min-height: 10rem;
+  margin: auto;
 
   .image {
     background-color: white;
@@ -41,25 +42,19 @@
   }
 
   &.is-carousel {
-    margin: 1.5rem;
-    &:first-child {
-      margin-left: 3rem;
+    @include until($desktop) {
+      margin: 1rem;
     }
-    &:last-child {
-      margin-right: 3rem;
-    }
-  }
-
-  @include until($desktop) {
-    margin: .5rem;
-    &:first-child {
-      margin-left: 1.5rem;
-    }
-    &:last-child {
-      margin-right: 1.5rem;
+    @include from($desktop) {
+      margin: 1.5rem;
+      &:first-child {
+        margin-left: 3rem;
+      }
+      &:last-child {
+        margin-right: 3rem;
+      }
     }
   }
-
 }
 
 .partnersCarousel {
@@ -72,7 +67,9 @@
   }
 }
 
-.teacherCard {
+.teacherCard,
+.studentCard {
+  margin: auto;
   overflow: hidden;
   width: 16rem;
   height: 22rem;
@@ -106,26 +103,29 @@
     background-size: cover;
   }
   &:hover {
-    .teacherCard--preview {
-      transition:
+    .teacherCard,
+    .studentCard {
+      &--preview {
+        transition:
         opacity .19s ease-in,
         display 0s .3s
-      ;
-      opacity: 0;
-      display: none;
-    }
-    .teacherCard--details {
-      transition:
+        ;
+        opacity: 0;
+        display: none;
+      }
+      &--details {
+        transition:
         opacity .19s ease-in,
         display 0s .3s
-      ;
-      opacity: 1;
-      display: block;
-    }
-    .teacherCard--image {
-      transition: height .19s ease-in;
-      height: 0px;
-      overflow: hidden;
+        ;
+        opacity: 1;
+        display: block;
+      }
+      &--image {
+        transition: height .19s ease-in;
+        height: 0px;
+        overflow: hidden;
+      }
     }
   }
 }
@@ -133,6 +133,10 @@
 .postCard {
   @include from($desktop) {
     min-height: 16rem;
+  }
+  @include from($fullhd) {
+    min-height: auto;
+    height: auto;
   }
   background-color: white;
   box-shadow: 0 0 10px rgba(255,255,255,.15);
@@ -157,7 +161,7 @@
 }
 
 
-.studentCard {
+.studentSlide {
   background-color: white;
   &--image {
     min-height: 240px;

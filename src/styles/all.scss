@@ -144,7 +144,8 @@ $menu-label-color: $white-ter;
   text-align: left;
 }
 .social {
-  padding: 2em;
+  padding: 2rem 0rem;
+  text-align: right;
 }
 .social a {
     padding: .5em .5em .3em .5em;
@@ -247,17 +248,28 @@ footer .footer-list {
     }
   }
 }
-
+.footer--info {
+  text-align: right;
+}
+.footer--info,
+.footer--logo {
+  @include until($tablet) {
+    text-align: center;
+  }
+}
 // Set slider width
 .slick-list,
 .slick-slide {
   @include from($tablet) {
-    width: 75vw;
+    width: 90vw;
   }
   @include from($desktop) {
     width: 70vw;
   }
-  width: 80vw;
+  @include from($widescreen) {
+    width: 60vw;
+  }
+  width: 100vw;
 }
 .slick-list {
   margin: auto;
@@ -286,13 +298,36 @@ $slider-arrow: url('../img/arrow.svg');
 }
 
 .slick-prev {
-  left: 0px;
+  @include until($tablet) {
+    visibility: hidden;
+  }
+  @include from($desktop) {
+    left: 20px;
+  }
+  @include until($fullhd) {
+    left: -10%;
+  }
+  left: -30%;
   transform: translateY(-50%) rotate(180deg);
 }
 .slick-next {
-  right: 0px;
+  @include until($tablet) {
+    visibility: hidden;
+  }
+  @include from($desktop) {
+    right: 20px;
+  }
+  @include until($fullhd) {
+    right: -10%;
+  }
+  right: -30%;
 }
 .slick-prev:before,
 .slick-next:before {
   content: none;
+}
+@include until($fullhd) {
+  .blog-roll > .column:last-child {
+    display: none;
+  }
 }
