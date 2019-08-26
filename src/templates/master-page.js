@@ -22,7 +22,7 @@ export const MasterPageTemplate = ({
     <>
       <Image src={image} alt={altImage} styles="cover is-small" children/>
       <section className="section has-background-white">
-        <div className="container">
+        <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
             <div className="column is-10 is-offset-1">
               <div className="section">
@@ -48,7 +48,7 @@ export const MasterPageTemplate = ({
         </div>
       </section>
       <section className="section is-medium has-background-primary">
-        <div className="container">
+        <div className="container is-horizontal-spaced">
           <h2 className="title is-2">{serviceTitle}</h2>
           <div className="columns is-multiline is-centered">
             { services.length > 0 && services.map( service => (
@@ -62,7 +62,7 @@ export const MasterPageTemplate = ({
         </div>
       </section>
       <section className="section has-background-white">
-        <div className="container">
+        <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
             <div className="column is-10 is-offset-1">
               <div className="columns is-multiline is-tablet">
@@ -80,7 +80,7 @@ export const MasterPageTemplate = ({
           </div>
         </div>
       </section>
-      <div className="container">
+      <div className="container is-horizontal-spaced">
         <div className="section">
           <BlogRoll />
         </div>

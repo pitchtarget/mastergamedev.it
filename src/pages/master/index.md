@@ -22,22 +22,22 @@ paragraphs:
     description: >
       A Verona è inoltre presente un gruppo di ricerca molto attivo nel campo delle applicazioni di Computer Vision, Multimediali e Pattern Recognition. Il gruppo VIPS (Vision, Image Processing and Sound) è coinvolto in importanti progetti nazionali ed europei ed è autore ogni anno di svariate pubblicazione in conferenze e riviste internazionali.
 services:
-  - image: /img/biblioteca.png
+  - image: /img/services/biblioteca.png
     alt: biblioteca
     heading: Biblioteca
-  - image: /img/laboratori.png
+  - image: /img/services/laboratori.png
     alt: laboratori informatici
     heading: Laboratori informatici
-  - image: /img/database.png
+  - image: /img/services/database.png
     alt: banca dati
     heading: Database ricerche scentifiche
-  - image: /img/aula-studio.png
+  - image: /img/services/aula-studio.png
     alt: Aule studio
     heading: Aule studio
-  - image: /img/wireless.png
+  - image: /img/services/wireless.png
     alt: wireless
     heading: Rete Wireless
-  - image: /img/email.png
+  - image: /img/services/email.png
     alt: email
     heading: Servizio Mail
 ---

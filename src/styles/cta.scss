@@ -19,6 +19,9 @@
     transform: translateX(1rem);
     transition: transform .32s ease;
   }
+  &__align_right {
+    justify-content: flex-end;
+  }
 }
 
 .cta-large {

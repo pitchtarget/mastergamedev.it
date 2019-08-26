@@ -18,13 +18,13 @@ export const ProgramPageTemplate = ({
   return (
     <>
       <section className="section is-medium">
-        <div className="container">
+        <div className="container is-horizontal-spaced">
           <h1 className="title is-1 is-spaced">{title}</h1>
           <h3 className="title is-3">{subtitle}</h3>
           <p className="">{description}</p>
         </div>
       </section>
-      <div className="container">
+      <div className="container is-horizontal-spaced">
         <section className="section is-medium" style={{paddingTop: '0px'}}>
           <h2 className="title is-2 is-spaced">{titleParagraphs}</h2>
           <div className="columns is-multiline">
@@ -39,7 +39,7 @@ export const ProgramPageTemplate = ({
         </section>
       </div>
       <section className="section has-double-background">
-        <div className="container is-6 is-variable">
+        <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
             <div className="column">
               <div className="has-text-primary-invert" style={{padding: '5%'}}>

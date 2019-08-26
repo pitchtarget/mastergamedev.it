@@ -12,10 +12,10 @@ const Footer = class extends React.Component {
     return (
       <footer className="footer has-text-white-ter">
         <div className="content has-text-centered has-text-white-ter">
-          <div className="container has-text-white-ter">
+          <div className="container is-horizontal-spaced has-text-white-ter">
             <div className="columns">
-              <div className="column">
-                <div className="content has-text-centered">
+              <div className="column is-3-tablet is-2-desktop">
+                <div className="content footer--logo">
                   <img
                     src={logo}
                     alt="Kaldi"
@@ -23,7 +23,7 @@ const Footer = class extends React.Component {
                   />
                 </div>
               </div>
-              <div className="column is-offset-1">
+              <div className="column is-2-tablet is-1-desktop is-offset-1-desktop">
                 <div className="footer-list">
                   <Link className="navbar-item" to="/">
                     Home
@@ -39,7 +39,7 @@ const Footer = class extends React.Component {
                   </Link>
                 </div>
               </div>
-              <div className="column is-offset-1">
+              <div className="column is-2-tablet is-1-desktop is-offset-1-desktop">
                 <div className="footer-list">
                   <Link className="navbar-item" to="/master">
                     Master
@@ -55,11 +55,9 @@ const Footer = class extends React.Component {
                   </Link>
                 </div>
               </div>
-              <div className="column">
-              </div>
-              <div className="column is-6-tablet is-4-desktop">
+              <div className="column is-4-desktop is-6-widescreen">
                   <div className="">
-                    <p className="has-text-left is-size-6">
+                    <p className="footer--info is-size-6">
                       <strong className="has-text-white">
                         Dipartimento di Informatica
                       </strong><br/>

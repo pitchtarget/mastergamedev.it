@@ -1,20 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class BlogRoll extends React.Component {
-
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
-
     return (
-      <div className="columns is-multiline">
+      <div className="columns is-vcenered is-centered blog-roll">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6-desktop" key={post.id}>
+            <div className="column is-6-desktop is-4-fullhd" key={post.id}>
               <article className="postCard">
                 <div className="columns is-gapless is-desktop">
                     {post.frontmatter.featuredimage ? (
@@ -74,7 +71,7 @@ export default () => (
       query BlogRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: {frontmatter: {templateKey: {eq: "blog-post"}}}, limit: 2
+          filter: {frontmatter: {templateKey: {eq: "blog-post"}}}, limit: 3
         ) {
           edges {
             node {

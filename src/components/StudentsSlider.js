@@ -22,16 +22,16 @@ class StudentsSlider extends React.Component {
     return (
       <Slider {...settings}>
         { filteredStudents.length > 0 && filteredStudents.map( student =>(
-            <div key={v4()} className="studentCard">
+            <div key={v4()} className="studentSlide">
               <div className="columns is-tablet is-gapless">
                 <div
-                  className="studentCard--image column"
+                  className="studentSlide--image column"
                   style={{ backgroundImage:
                   `url(${!!student.image.childImageSharp ? student.image.childImageSharp.fluid.src : student.image})`
                   }}
                 />
                 <div className="column">
-                  <h4 className="studentCard--content content">
+                  <h4 className="studentSlide--content content">
                     <p className="title is-5">{student.fullName}</p>
                     <p className="subtitle is-5">{student.company}</p>
                     <p className="">{student.role}</p>

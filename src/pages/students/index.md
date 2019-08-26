@@ -2,6 +2,8 @@
 templateKey: 'students-page'
 path: /studenti
 title: Students page
+description: >
+  A communi observantia non est recedendum. Quis aute iure reprehenderit in voluptate velit esse. Ambitioni dedisse scripsisse iudicaretur.
 image: /img/scuola.jpg
 altImage: students
 projects:
@@ -58,4 +60,53 @@ students:
       Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
       Morbi fringilla convallis sapien, id pulvinar odio volutpat.
       Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+  - fullName: student-1
+    main: false
+    image: /img/student-image.jpg
+    altImage: student-1
+    master: 2018
+    company: company-1
+    role: role-1
+    description: >-
+      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
+      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
+      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
+      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+  - fullName: student-1
+    main: false
+    image: /img/student-image.jpg
+    altImage: student-1
+    master: 2018
+    company: company-1
+    role: role-1
+    description: >-
+      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
+      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
+      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
+      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+  - fullName: student-1
+    main: false
+    image: /img/student-image.jpg
+    altImage: student-1
+    master: 2018
+    company: company-1
+    role: role-1
+    description: >-
+      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
+      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
+      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
+      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+  - fullName: student-1
+    main: false
+    image: /img/student-image.jpg
+    altImage: student-1
+    master: 2018
+    company: company-1
+    role: role-1
+    description: >-
+      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
+      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
+      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
+      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+
 ---

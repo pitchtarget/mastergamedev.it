@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { MasterPageTemplate } from '../../templates/master-page'
 
 const MasterPagePreview = ({ entry, getAsset }) => {
-  debugger
   const data = entry.getIn(['data']).toJS()
 
   if (data) {

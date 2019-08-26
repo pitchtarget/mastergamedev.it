@@ -12,6 +12,7 @@ export const StudentsPageTemplate = ({
   image,
   altImage,
   title,
+  description,
   projects,
   titleStudents,
   students,
@@ -21,12 +22,11 @@ export const StudentsPageTemplate = ({
     <>
       <Image src={image} alt={altImage} styles="cover align-top is-small" children/>
       <section className="section is-medium has-background-white">
-        <div className="container">
-          <div className="section">
-            <div className="columns is-tablet">
-              <div className="column is-offset-1">
-                <h1 className="title is-1">{title}</h1>
-              </div>
+        <div className="container is-horizontal-spaced">
+          <div className="columns is-tablet">
+            <div className="column is-8 is-offset-1">
+              <h1 className="title is-1">{title}</h1>
+              <p>{description}</p>
             </div>
           </div>
           <div className="columns is-tablet">
@@ -60,7 +60,10 @@ export const StudentsPageTemplate = ({
           </div>
         </div>
       </section>
-      <div className="container">
+      <div className="container signupBox__regular is-moveup">
+        <SignupBox />
+      </div>
+      <div className="container is-horizontal-spaced">
         <div className="columns is-tablet">
           <div className="column is-10 is-offset-1">
             <div className="section is-medium">
@@ -78,6 +81,7 @@ export const StudentsPageTemplate = ({
 StudentsPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
+  description: PropTypes.string,
   banner: PropTypes.object,
   projects: PropTypes.arrayOf(
     PropTypes.shape({
@@ -105,6 +109,7 @@ const StudentsPage = ({ data }) => {
       <StudentsPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
+        description={frontmatter.description}
         projects={frontmatter.projects}
         titleStudents={frontmatter.titleStudents}
         students={frontmatter.students}
@@ -134,6 +139,7 @@ export const studentsPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        description
         image {
           childImageSharp {
             fluid(maxWidth: 1920, quality: 80) {

@@ -134,7 +134,7 @@ export const IndexPageTemplate = ({
         </section>
 
         <section id="studentsSection" className="section is-medium has-background-primary">
-          <div className="container section is-horizontal-spaced">
+          <div className="container is-horizontal-spaced">
             <div className="columns">
               <div className="column is-6 is-offset-1">
                 <h3 className="content">
@@ -148,6 +148,8 @@ export const IndexPageTemplate = ({
                 />
               </div>
             </div>
+          </div>
+          <div className="container">
             <StudentsSlider />
           </div>
         </section>
@@ -190,7 +192,7 @@ export const IndexPageTemplate = ({
                   text={newsSection.cta}
                   link={newsSection.link}
                   local={true}
-                  styles="cta cta__invert"
+                  styles="cta cta__invert cta__align_right"
                 />
               </div>
             </div>

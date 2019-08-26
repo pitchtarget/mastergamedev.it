@@ -85,22 +85,10 @@ collections:
               name: studentsSection,
               widget: object,
               fields: [
-                {label: Image, name: image, widget: image},
                 {label: Heading, name: heading, widget: string},
                 {label: Subheading, name: subheading, widget: text},
                 {label: Call to action, name: cta, widget: string},
                 {label: Link to, name: link, widget: string},
-                {
-                  label: Bullet,
-                  name: bullet,
-                  widget: list,
-                  fields: [
-                    {label: Heading, name: heading, widget: string},
-                    {label: Subheading, name: subheading, widget: text},
-                    {label: Call to action, name: cta, widget: markdown},
-                    {label: Link, name: link, widget: string},
-                  ],
-                },
               ],
             }
           # Teachers section

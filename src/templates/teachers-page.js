@@ -20,9 +20,9 @@ export const TeachersPageTemplate = ({
     <>
       <Image src={image} alt={altImage} styles="cover is-small" children/>
       <section className="has-background-white">
-        <div className="container">
+        <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
-            <div className="column is-7 is-offset-1">
+            <div className="column is-8 is-offset-1">
               <div className="section is-medium">
                 <h1 className="title is-1">{title}</h1>
                 <p>{description}</p>
@@ -34,7 +34,7 @@ export const TeachersPageTemplate = ({
       <div className="container signupBox__regular is-moveup">
         <SignupBox />
       </div>
-      <div className="container">
+      <div className="container is-horizontal-spaced">
         <div className="columns is-tablet">
           <div className="column is-10 is-offset-1">
             <div className="section is-medium">

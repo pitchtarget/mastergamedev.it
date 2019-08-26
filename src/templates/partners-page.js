@@ -20,7 +20,7 @@ export const PartnersPageTemplate = ({
     <>
       <Image src={image} alt={altImage} styles="cover is-small" children/>
       <section className="has-background-white">
-        <div className="container">
+        <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
             <div className="column is-7 is-offset-1">
               <div className="section is-large">
@@ -34,7 +34,7 @@ export const PartnersPageTemplate = ({
       <div className="container signupBox__regular is-moveup">
         <SignupBox />
       </div>
-      <div className="container">
+      <div className="container is-horizontal-spaced">
         <div className="columns is-tablet">
           <div className="column is-10 is-offset-1">
             <div className="section is-medium">
