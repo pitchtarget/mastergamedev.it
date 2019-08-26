@@ -4,6 +4,7 @@
 
   .navbar-burger {
     height: auto;
+    width: 3rem;
   	display: none;
   }
   .navbar-burger span {
@@ -20,11 +21,22 @@
   .sidebar-list {
     display: flex;
     flex-direction: column;
+
+    @include from($desktop) {
+      margin-right: 7.5rem;
+    }
+
     a.navbar-item {
       color: $primary;
+      background-color: transparent;
       opacity: .75;
       font-size: $size-5;
       font-weight: bold;
+      @include from($desktop) {
+        text-align: right;
+        justify-content: flex-end;
+      }
+      text-align: center;
       justify-content: center;
       &:hover {
         opacity: 1;
@@ -42,8 +54,12 @@
       color:inherit;
     }
   }
-}
-
-.modal-background {
-  background-color: $modal-background;
+  @include from($desktop) {
+    .modal {
+      align-items: flex-end;
+    }
+  }
+  .modal-background {
+    background-color: $modal-background;
+  }
 }

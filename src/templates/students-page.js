@@ -19,19 +19,16 @@ export const StudentsPageTemplate = ({
 }) => {
   return (
     <>
-      <Image src={image} alt={altImage} styles="cover align-top is-small">
+      <Image src={image} alt={altImage} styles="cover align-top is-small" children/>
+      <section className="section is-medium has-background-white">
         <div className="container">
-          <div className="columns is-tablet">
-            <div className="column is-7 is-offset-1">
-              <div className="section is-large">
-                <h1 className="title">{title}</h1>
+          <div className="section">
+            <div className="columns is-tablet">
+              <div className="column is-offset-1">
+                <h1 className="title is-1">{title}</h1>
               </div>
             </div>
           </div>
-        </div>
-      </Image>
-      <div className="container">
-        <div className="section is-medium">
           <div className="columns is-tablet">
             <div className="column is-10 is-offset-1">
               { projects.length > 0 && projects.map( (project, id) => {
@@ -47,12 +44,10 @@ export const StudentsPageTemplate = ({
                       </div>
                       <div className="column">
                         <div className="content">
-                          <h3>
-                            <span className="title is-spaced is-size-3-mobile is-size-2-tablet">
+                          <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
                               {project.title}
-                            </span>
                           </h3>
-                          <p className="description">
+                          <p>
                             {project.description}
                           </p>
                         </div>
@@ -64,12 +59,12 @@ export const StudentsPageTemplate = ({
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div className="container">
         <div className="columns is-tablet">
           <div className="column is-10 is-offset-1">
             <div className="section is-medium">
-              <h2 className="title is-spaced">{titleStudents}</h2>
+              <h2 className="title is-2 is-spaced">{titleStudents}</h2>
               <Students students={students} />
             </div>
           </div>

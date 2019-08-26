@@ -31,6 +31,7 @@ $black: #2b2523;
 $modal-background: #211d2bf5;
 
 $section-padding: 3rem 0;
+$section-padding-small: 1.5rem 0;
 $section-padding-medium: 6rem 0;
 $section-padding-large: 9rem 0;
 
@@ -177,7 +178,16 @@ $menu-label-color: $white-ter;
 @import "../styles/row";
 @import "../styles/sidebar";
 
+
+// section
+.section.is-small {
+  padding: $section-padding-small;
+}
 // image
+.image--tag {
+  margin: auto;
+}
+
 .image--background {
   min-height: 200px;
   @include from($tablet) {

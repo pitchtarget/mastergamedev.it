@@ -5,17 +5,17 @@ title: Students page
 image: /img/scuola.jpg
 altImage: students
 projects:
-  - title: Unam incolunt Belgae, aliam Aquitani, tertiam.
+  - title: Tipologia progetto 1
     description: >
       Non equidem invideo, miror magis posuere velit aliquet. Quis aute iure reprehenderit in voluptate velit esse. Unam incolunt Belgae, aliam Aquitani, tertiam. Fictum,  deserunt mollit anim laborum astutumque! Gallia est omnis divisa in partes tres, quarum. A communi observantia non est recedendum.
     image: /img/student-image.jpg
     altImage: placeholder
-  - title: Contra legem facit qui id facit quod lex prohibet.
+  - title: Tipologia progetto 2
     description: >
       Ut enim ad minim veniam, quis nostrud exercitation. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Idque Caesaris facere voluntate liceret: sese habere. Excepteur sint obcaecat cupiditat non proident culpa. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Gallia est omnis divisa in partes tres, quarum.
     image: /img/student-image.jpg
     altImage: placeholder
-  - title: Cras mattis iudicium purus sit amet fermentum.
+  - title: Tipologia progetto 3
     description: >
       Petierunt uti sibi concilium totius Galliae in diem certam indicere. Contra legem facit qui id facit quod lex prohibet. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. A communi observantia non est recedendum. Curabitur blandit tempus ardua ridiculus sed magna. Non equidem invideo, miror magis posuere velit aliquet.
     image: /img/student-image.jpg
