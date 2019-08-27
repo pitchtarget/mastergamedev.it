@@ -42,8 +42,8 @@ StudentsPagePreview.propTypes = {
 
 export default StudentsPagePreview
 
-export const studentsPageQuery = graphql`
-  query StudentsPage($id: String!) {
+export const studentsPagePreviewQuery = graphql`
+  query StudentsPagePreview($id: String!) {
     bannersData: markdownRemark(frontmatter: { templateKey: { eq: "banners"}}) {
       frontmatter {
         banners {
