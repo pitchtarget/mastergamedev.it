@@ -15,7 +15,6 @@ export const ProgramPageTemplate = ({
   bannerStudents,
   bannerMaster,
 }) => {
-  console.log(bannerStudents)
   return (
     <>
       <section className="section is-medium">
@@ -39,40 +38,42 @@ export const ProgramPageTemplate = ({
           </div>
         </section>
       </div>
-      <section className="section has-double-background">
-        <div className="container is-horizontal-spaced">
-          <div className="columns is-tablet">
-            <div className="column">
-              <div className="has-text-primary-invert" style={{padding: '5%'}}>
-                <h3 className="title is-2 is-spaced is-size-3-mobile is-size-2-tablet">
-                    {bannerStudents.title}
-                </h3>
-                <p className="description">
-                  {bannerStudents.text}
-                </p>
-                <Button
-                  text={bannerStudents.cta} link={bannerStudents.link}
-                  styles={`cta cta-large cta__invert`}
-                />
+      { !!bannerStudents && !!bannerMaster &&
+        <section className="section has-double-background">
+          <div className="container is-horizontal-spaced">
+            <div className="columns is-tablet">
+              <div className="column">
+                <div className="has-text-primary-invert" style={{padding: '5%'}}>
+                  <h3 className="title is-2 is-spaced is-size-3-mobile is-size-2-tablet">
+                      {bannerStudents.title}
+                  </h3>
+                  <p className="description">
+                    {bannerStudents.text}
+                  </p>
+                  <Button
+                    text={bannerStudents.cta} link={bannerStudents.link}
+                    styles={`cta cta-large cta__invert`}
+                  />
+                </div>
               </div>
-            </div>
-            <div className="column">
-              <div className="has-text-primary" style={{padding: '5%'}}>
-                <h3 className="title is-2 is-spaced has-text-primary is-size-3-mobile is-size-2-tablet">
-                    {bannerMaster.title}
-                </h3>
-                <p className="description">
-                  {bannerMaster.text}
-                </p>
-                <Button
-                  text={bannerMaster.cta} link={bannerMaster.link}
-                  styles={`cta cta-large cta__primary`}
-                />
+              <div className="column">
+                <div className="has-text-primary" style={{padding: '5%'}}>
+                  <h3 className="title is-2 is-spaced has-text-primary is-size-3-mobile is-size-2-tablet">
+                      {bannerMaster.title}
+                  </h3>
+                  <p className="description">
+                    {bannerMaster.text}
+                  </p>
+                  <Button
+                    text={bannerMaster.cta} link={bannerMaster.link}
+                    styles={`cta cta-large cta__primary`}
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      }
     </>
   )
 }

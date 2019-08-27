@@ -44,7 +44,7 @@ export const TeachersPageTemplate = ({
           </div>
         </div>
       </div>
-      <Row data={banner} color="primary"/>
+      { !!banner && <Row data={banner} color="primary"/> }
     </>
   )
 }

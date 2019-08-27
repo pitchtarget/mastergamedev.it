@@ -4,14 +4,18 @@ import { MasterPageTemplate } from '../../templates/master-page'
 
 const MasterPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
+  const entryParagraphs = entry.getIn(['data', 'paragraphs'])
+  const paragraphs = entryParagraphs ? entryParagraphs.toJS() : []
+  const entryServices = entry.getIn(['data', 'services'])
+  const services = entryServices ? entryServices.toJS() : []
 
   if (data) {
     return (
       <MasterPageTemplate
         title={data.title}
         serviceTitle={data.serviceTitle}
-        paragraphs={data.paragraphs}
-        services={data.services}
+        paragraphs={paragraphs}
+        services={services}
       />
     )
   } else {

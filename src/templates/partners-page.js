@@ -44,7 +44,7 @@ export const PartnersPageTemplate = ({
           </div>
         </div>
       </div>
-      <Row data={banner} color="invert"/>
+      { !!banner && <Row data={banner} color="invert"/> }
     </>
   )
 }
