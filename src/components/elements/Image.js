@@ -24,7 +24,7 @@ const Image = ({ src, alt, children, styles, rounded }) => {
             <img
               className={!!rounded ? "is-rounded" : ""}
               src={image}
-              alt-image={alt}
+              alt={alt}
             />
           </figure>
       }

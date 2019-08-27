@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { v4 } from 'uuid'
 import Layout from '../components/Layout'
-import Image from '../components/elements/Image'
 import Button from '../components/elements/Button'
 
 export const ProgramPageTemplate = ({

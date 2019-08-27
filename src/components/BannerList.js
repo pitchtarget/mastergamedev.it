@@ -10,7 +10,7 @@ const BannerList = ({ banners }) => {
       <section className="section">
       {banners.length > 0 && banners.map(banner => {
         return (
-          <Row data={banner} />
+          <Row key={v4()} data={banner} />
       )})}
       </section>
     </>

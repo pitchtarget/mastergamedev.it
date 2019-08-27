@@ -55,7 +55,7 @@ const Navbar = class extends React.Component {
               <span />
             </div>
           </div>
-        {/*
+
           <div
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
@@ -96,7 +96,6 @@ const Navbar = class extends React.Component {
               </a>
             </div>
           </div>
-          */}
         </div>
       </nav>
     )

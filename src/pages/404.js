@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Image from '../components/elements/Image'
 import Button from '../components/elements/Button'
 
 const NotFoundPage = () => (
