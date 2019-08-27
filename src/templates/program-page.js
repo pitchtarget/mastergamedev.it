@@ -15,6 +15,7 @@ export const ProgramPageTemplate = ({
   bannerStudents,
   bannerMaster,
 }) => {
+  console.log(bannerStudents)
   return (
     <>
       <section className="section is-medium">

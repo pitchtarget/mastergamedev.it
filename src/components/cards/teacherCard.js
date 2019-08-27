@@ -5,7 +5,7 @@ const TeacherCard = ({ teacher }) => {
   if(!!teacher.image) {
     validatedImage = !!teacher.image.childImageSharp ? teacher.image.childImageSharp.fluid.src : teacher.image
   } else {
-    validatedImage = '/img/teachers/placeholder.png'
+    validatedImage = '/img/docente.png'
   }
 
   return (
