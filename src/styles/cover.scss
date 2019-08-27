@@ -1,7 +1,10 @@
 $cover-height: 100vh;
 
 .cover {
-  margin-top: -$navbar-height;
+  @include from($desktop) {
+    margin-top: -$navbar-height;
+  }
+  margin-top: -3rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,6 +13,12 @@ $cover-height: 100vh;
     background-color: $primary-invert;
     display: flex;
     align-items: center;
+    @include until($desktop) {
+      .columns {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
     @include from($fullhd) {
       .columns {
         width: 100%;
@@ -42,14 +51,17 @@ $cover-height: 100vh;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    clip-path: polygon(0% 0%, 0% 100%,100% 100%, 100% 15%)
+    clip-path: polygon(0% 0%, 0% 85%,100% 100%, 100% 0%)
   }
 
   .cover--content {
     display: flex;
     align-items: center;
     @include until($desktop) {
-      padding: 6.5rem 2rem 2rem 2rem;
+      padding: 2rem;
+    }
+    @include until($tablet) {
+      padding: 1rem;
     }
   }
 }

@@ -37,13 +37,13 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <section className="section">
-          <div className="container">
+          <div className="container is-horizontal-spaced">
             <div className="content">
               <h1>Contact</h1>
               <form
                 name="contact"
                 method="post"
-                action="/contact/thanks/"
+                action="/contatti/thanks/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}

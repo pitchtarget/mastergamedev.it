@@ -20,7 +20,7 @@ class SignupBox extends React.Component {
           </div>
           <div className="column">
             <div className="columns is-gapless is-vcentered">
-              <div className="column">
+              <div className="column is-7-tablet">
                 <div className="signupBox--text">
                   <h2 className="title is-4">{contents.title}</h2>
                   <p className="subtitle is-6">{contents.text}</p>

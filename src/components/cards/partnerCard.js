@@ -5,7 +5,7 @@ const PartnerCard = ({ partner, styles}) => {
   if(!!partner.image) {
     validatedImage = !!partner.image.childImageSharp ? partner.image.childImageSharp.fluid.src : partner.image
   } else {
-    validatedImage = '/img/partner-img.png'
+    validatedImage = '/img/azienda.png'
   }
 
   return (

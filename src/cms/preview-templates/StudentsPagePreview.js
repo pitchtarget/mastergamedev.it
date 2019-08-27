@@ -1,18 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
 import { StudentsPageTemplate } from '../../templates/students-page'
 
 const StudentsPagePreview = ({ entry, getAsset }) => {
+  const data = entry.getIn(['data']).toJS()
   const entryStudents = entry.getIn(['data', 'students'])
   const students = entryStudents ? entryStudents.toJS() : []
+  const entryProjects = entry.getIn(['data', 'projects'])
+  const projects = entryProjects ? entryProjects.toJS() : []
 
   return (
     <StudentsPageTemplate
-      image={entry.getIn(['data', 'image'])}
-      title={entry.getIn(['data', 'title'])}
-      heading={entry.getIn(['data', 'heading'])}
-      description={entry.getIn(['data', 'description'])}
+      image={data.image}
+      title={data.title}
+      heading={data.heading}
+      description={data.description}
+      projects={projects}
       students={students}
+      banner={false}
     />
   )
 }

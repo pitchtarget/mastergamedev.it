@@ -22,7 +22,7 @@ export const PartnersPageTemplate = ({
       <section className="has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
-            <div className="column is-7 is-offset-1">
+            <div className="column is-7-desktop is-offset-1-desktop">
               <div className="section is-large">
                 <h1 className="title is-1">{title}</h1>
                 <p>{description}</p>
@@ -36,7 +36,7 @@ export const PartnersPageTemplate = ({
       </div>
       <div className="container is-horizontal-spaced">
         <div className="columns is-tablet">
-          <div className="column is-10 is-offset-1">
+          <div className="column is-10-desktop is-offset-1-desktop">
             <div className="section is-medium">
               <h2 className="title is-spaced">{partnersTitle}</h2>
               <Partners partners={partners} />
@@ -44,7 +44,7 @@ export const PartnersPageTemplate = ({
           </div>
         </div>
       </div>
-      <Row data={banner} color="invert"/>
+      { !!banner && <Row data={banner} color="invert"/> }
     </>
   )
 }
