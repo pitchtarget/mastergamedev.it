@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { ProgramPageTemplate } from '../../templates/program-page'
 
 const ProgramPagePreview = ({ entry, getAsset }) => {
-  debugger
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
