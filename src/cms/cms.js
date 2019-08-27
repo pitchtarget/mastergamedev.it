@@ -16,8 +16,8 @@ CMS.registerMediaLibrary(cloudinary);
 
 CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('students', StudentsPagePreview)
-CMS.registerPreviewTemplate('partners', PartnersGridPreview)
-CMS.registerPreviewTemplate('teachers', TeachersGridPreview)
+CMS.registerPreviewTemplate('partners', PartnersPagePreview)
+CMS.registerPreviewTemplate('teachers', TeachersPagePreview)
 CMS.registerPreviewTemplate('master', MasterPagePreview)
 CMS.registerPreviewTemplate('program', ProgramPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
