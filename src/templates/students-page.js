@@ -24,13 +24,13 @@ export const StudentsPageTemplate = ({
       <section className="section is-medium has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
-            <div className="column is-8 is-offset-1">
+            <div className="column is-8-desktop is-offset-1-desktop">
               <h1 className="title is-1">{title}</h1>
               <p>{description}</p>
             </div>
           </div>
           <div className="columns is-tablet">
-            <div className="column is-10 is-offset-1">
+            <div className="column is-10-desktop is-offset-1-desktop">
               { projects.length > 0 && projects.map( (project, id) => {
                 const reverse = id % 2
                 return (
@@ -65,7 +65,7 @@ export const StudentsPageTemplate = ({
       </div>
       <div className="container is-horizontal-spaced">
         <div className="columns is-tablet">
-          <div className="column is-10 is-offset-1">
+          <div className="column is-10-desktop is-offset-1-desktop">
             <div className="section is-medium">
               <h2 className="title is-2 is-spaced">{titleStudents}</h2>
               <Students students={students} />

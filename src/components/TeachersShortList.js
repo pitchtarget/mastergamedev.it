@@ -27,8 +27,10 @@ class TeachersShortList extends React.Component {
     return (
       <div className="columns is-multiline is-centered">
         { teachers.length > 0 && filteredTeachers.map( teacher =>(
-            <div key={v4()} className="column is-3-desktop is-5-tablet is-full-mobile is-flex"
-            style={{justifyContent: "center"}}>
+            <div key={v4()}
+              className="column is-3-desktop is-4-tablet is-full-mobile is-flex hide-last-child"
+              style={{justifyContent: "center"}}
+            >
               <TeacherCard teacher={teacher}/>
             </div>
           ))

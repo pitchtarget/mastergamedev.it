@@ -32,8 +32,8 @@ export const IndexPageTemplate = ({
     return (
       <>
         <section id="mainCover" className="cover cover__main">
-          <div className="columns is-desktop is-vcentered">
-            <div className="column is-offset-1 is-5-desktop">
+          <div className="columns is-vcentered">
+            <div className="column is-offset-1-desktop is-5-desktop">
               <div className="cover--content">
                 <div>
                   <h1 className="title is-spaced is-size-2-mobile is-size-1-tablet">{mainCover.heading}</h1>
@@ -65,7 +65,7 @@ export const IndexPageTemplate = ({
         <section id="partnersSection" className="section">
           <div className="container section is-horizontal-spaced">
             <div className="columns is-gapless is-centered is-mobile">
-              <div className="column is-6-desktop is-10-touch">
+              <div className="column is-6-desktop">
                 <h3 className="content has-text-centered">
                   <p className="title is-size-3-mobile is-size-1-tablet">
                     {partnersSection.heading}
@@ -98,7 +98,7 @@ export const IndexPageTemplate = ({
                 validateImages(schoolSection.image)
               })`
             }}>
-              <div className="column is-6-desktop is-10-touch is-offset-1-desktop">
+              <div className="column is-6-desktop is-offset-1-desktop">
                 <h3 className="content">
                   <p className="title is-size-2-mobile is-size-1-tablet has-text-white">
                     {schoolSection.heading}
@@ -136,7 +136,7 @@ export const IndexPageTemplate = ({
         <section id="studentsSection" className="section is-medium has-background-primary">
           <div className="container is-horizontal-spaced">
             <div className="columns">
-              <div className="column is-6 is-offset-1">
+              <div className="column is-6-desktop is-offset-1-desktop">
                 <h3 className="content">
                   <p className="title is-2">{studentsSection.heading}</p>
                   <p className="subtitle is-5">{studentsSection.subheading}</p>
@@ -160,7 +160,7 @@ export const IndexPageTemplate = ({
         <section id="teachersSection" className="section is-medium">
           <div className="container section is-horizontal-spaced">
             <div className="columns">
-              <div className="column is-6 is-offset-1">
+              <div className="column is-6-desktop is-offset-1-desktop">
                 <h3 className="content">
                   <p className="title is-2">{teachersSection.heading}</p>
                   <p className="subtitle is-5">{teachersSection.subheading}</p>

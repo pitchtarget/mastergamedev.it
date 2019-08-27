@@ -1,5 +1,13 @@
 #sidebar {
   background-color: transparent;
+  @include until($desktop) {
+    background-color: $primary-invert;
+    min-height: 3rem;
+    & > .container,
+    & .navbar-brand {
+      min-height: 3rem;
+    }
+  }
   transition: background-color .19s;
 
   .navbar-burger {
