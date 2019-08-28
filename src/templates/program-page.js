@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import { v4 } from 'uuid'
 import Layout from '../components/Layout'
 import Button from '../components/elements/Button'
+import MarkdownContent from '../components/MarkdownContent'
 
 export const ProgramPageTemplate = ({
   title,
@@ -20,7 +21,7 @@ export const ProgramPageTemplate = ({
         <div className="container is-horizontal-spaced">
           <h1 className="title is-1 is-spaced">{title}</h1>
           <h3 className="title is-3">{subtitle}</h3>
-          <p className="">{description}</p>
+          <MarkdownContent content={description}/>
         </div>
       </section>
       <div className="container is-horizontal-spaced">
@@ -30,7 +31,7 @@ export const ProgramPageTemplate = ({
             { paragraphs.length > 0 && paragraphs.map( paragraph =>(
                 <div key={v4()} className="column is-6-tablet">
                   <h3 className="title is-5">{paragraph.title}</h3>
-                  <p>{paragraph.description}</p>
+                  <MarkdownContent content={paragraph.description}/>
                 </div>
               ))
             }

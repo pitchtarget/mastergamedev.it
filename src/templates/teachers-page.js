@@ -6,6 +6,7 @@ import SignupBox from '../components/SignupBox'
 import Image from '../components/elements/Image'
 import Teachers from '../components/Teachers'
 import Row from '../components/Row'
+import MarkdownContent from '../components/MarkdownContent'
 
 export const TeachersPageTemplate = ({
   title,
@@ -25,7 +26,7 @@ export const TeachersPageTemplate = ({
             <div className="column is-8-desktop is-offset-1-desktop">
               <div className="section is-medium">
                 <h1 className="title is-1">{title}</h1>
-                <p>{description}</p>
+                <MarkdownContent content={description}/>
               </div>
             </div>
           </div>

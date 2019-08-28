@@ -6,6 +6,7 @@ import SignupBox from '../components/SignupBox'
 import Image from '../components/elements/Image'
 import Partners from '../components/Partners'
 import Row from '../components/Row'
+import MarkdownContent from '../components/MarkdownContent'
 
 export const PartnersPageTemplate = ({
   title,
@@ -25,7 +26,7 @@ export const PartnersPageTemplate = ({
             <div className="column is-7-desktop is-offset-1-desktop">
               <div className="section is-large">
                 <h1 className="title is-1">{title}</h1>
-                <p>{description}</p>
+                <MarkdownContent content={description}/>
               </div>
             </div>
           </div>
