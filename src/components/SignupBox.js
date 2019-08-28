@@ -6,7 +6,7 @@ import Button from '../components/elements/Button'
 
 export const SignupBoxComponent = ({ data, color, id, styles }) => {
   const style = color === "invert"
-  const content = data.markdownRemark.frontmatter.box
+  const content = data
   return (
     <div id={id} className={`signupBox signupBox${style ? "__invert" : "__regular"} ${styles}`}>
       <div className="columns is-desktop is-gapless is-vcentered">
@@ -64,7 +64,14 @@ const SignupBox = ({color, id, styles}) => (
         }
       }
     `}
-    render={data => <SignupBoxComponent data={data} color={color} id={id} styles={styles}/>}
+    render={data => (
+      <SignupBoxComponent
+        id={id}
+        color={color}
+        styles={styles}
+        data={data.markdownRemark.frontmatter.box}
+      />
+    )}
   />
 )
 
