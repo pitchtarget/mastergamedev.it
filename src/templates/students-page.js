@@ -7,6 +7,7 @@ import SignupBox from '../components/SignupBox'
 import Image from '../components/elements/Image'
 import Row from '../components/Row'
 import Students from '../components/Students'
+import MarkdownContent from '../components/MarkdownParser'
 
 export const StudentsPageTemplate = ({
   image,
@@ -50,6 +51,7 @@ export const StudentsPageTemplate = ({
                           <p>
                             {project.description}
                           </p>
+                          <MarkdownContent content={project.description}/>
                         </div>
                       </div>
                     </div>
