@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { v4 } from 'uuid'
 import Layout from '../components/Layout'
 import Image from '../components/elements/Image'
 import BlogRoll from '../components/BlogRoll'
-import { v4 } from 'uuid'
+import MarkdownContent from '../components/MarkdownContent'
 
 export const MasterPageTemplate = ({
   title,
@@ -36,7 +37,7 @@ export const MasterPageTemplate = ({
                     <div key={v4()} className={`column is-10 ${id % 2 ? 'is-offset-2' : ''}`} >
                       <div className="section is-small">
                         <h3 className="title is-3 is-spaced">{paragraph.title}</h3>
-                        <p>{paragraph.description}</p>
+                        <MarkdownContent content={paragraph.description}/>
                       </div>
                     </div>
                   ))

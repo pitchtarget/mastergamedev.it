@@ -73,7 +73,7 @@ collections:
                   fields: [
                     {label: Heading, name: heading, widget: string},
                     {label: Subheading, name: subheading, widget: text},
-                    {label: Call to action, name: cta, widget: markdown},
+                    {label: Call to action, name: cta, widget: string},
                     {label: Link, name: link, widget: string},
                   ],
                 },
@@ -128,7 +128,7 @@ collections:
               widget: list,
               fields: [
                 {label: Title, name: title, widget: string},
-                {label:Description, name: description, widget: markdown},
+                {label:Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]},
               ],
             }
           - {label: Service title, name: serviceTitle, widget: string}
@@ -152,7 +152,7 @@ collections:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "program-page"}
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Description, name: description, widget: markdown}
+          - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]}
           - {label: Title paragraphs, name: titleParagraphs, widget: string}
           - {
               label: Paragraphs,
@@ -160,7 +160,7 @@ collections:
               widget: list,
               fields: [
                 {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]},
               ],
             }
 
@@ -179,7 +179,7 @@ collections:
               widget: list,
               fields: [
                 {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]},
                 {label: Image, name: image, widget: image},
                 {label: Alt image, name: altImage, widget: string},
               ],
@@ -197,7 +197,7 @@ collections:
                 {label: Master, name: master, widget: number, default: 2010, valueType: int, min: 2010, max: 2030},
                 {label: Company, name: company, widget: string},
                 {label: Role, name: role, widget: string},
-                {label: Description, name: description, widget: markdown},
+                {label: Description, name: description, widget: string},
               ],
             }
 
@@ -210,7 +210,7 @@ collections:
           - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png}
           - {label: "Alt image", name: altImage, widget: string}
           - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown}
+          - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]}
           - {label: "Partners title", name: partnersTitle, widget: string}
           - {
               label: Partners,
@@ -220,7 +220,7 @@ collections:
                 {label: Full name, name: name, widget: string},
                 {label: Image, name: image, widget: image, default: /img/student-img.png},
                 {label: "Alt image", name: altImage, widget: string},
-                {label: Description, name: description, widget: markdown},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]},
                 {label: "Link", name: link, widget: string},
                 {label: "Show in home", name: main, widget: boolean}
               ],
@@ -235,7 +235,7 @@ collections:
           - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png}
           - {label: "Alt image", name: altImage, widget: string}
           - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown}
+          - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]}
           - {label: "Teachers title", name: techersTitle, widget: string}
           - {
               label: Teachers,
@@ -247,7 +247,7 @@ collections:
                 {label: "Alt image", name: altImage, widget: string},
                 {label: Link, name: link, widget: string},
                 {label: Role, name: role, widget: string},
-                {label: Biography, name: bio, widget: markdown}
+                {label: Biography, name: bio, widget: string}
               ],
             }
 
@@ -281,7 +281,7 @@ collections:
                 {label: Image, name: image, widget: image, default: "/img/placeholder.png"},
                 {label: Alt image, image: alt, widget: string},
                 {label: Banner title, name: title, widget: string},
-                {label: Banner text, name: text, widget: markdown},
+                {label: Banner text, name: text, widget: text},
                 {label: Call to action, name: cta, widget: string},
                 {label: Link, name: link, widget: string},
               ],

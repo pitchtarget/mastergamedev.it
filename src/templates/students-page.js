@@ -7,6 +7,7 @@ import SignupBox from '../components/SignupBox'
 import Image from '../components/elements/Image'
 import Row from '../components/Row'
 import Students from '../components/Students'
+import MarkdownContent from '../components/MarkdownContent'
 
 export const StudentsPageTemplate = ({
   image,
@@ -47,9 +48,7 @@ export const StudentsPageTemplate = ({
                           <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
                               {project.title}
                           </h3>
-                          <p>
-                            {project.description}
-                          </p>
+                          <MarkdownContent content={project.description}/>
                         </div>
                       </div>
                     </div>
