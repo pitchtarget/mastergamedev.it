@@ -3,21 +3,20 @@ templateKey: index-page
 mainCover:
   image: /img/cover-image.jpg
   altImage: immagine di copertina
-  heading: Il primo master universitario in Italia sulla programmazione dei videogames
+  heading: primo master universitario in Italia sulla programmazione dei videogames
   subheading: Il Master è rivolto a laureati in Informatica o Ingegneria Informatica e si propone di formare programmatori di applicazioni videoludiche e multimediali interattive, focalizzandosi sulle tecnologie più recenti.
   cta: Scopri di più
   link: /#
 
 partnersSection:
-  heading: Il Master collabora con le più importanti aziende italiane del settore videoludico
-  subheading: Di seguito i nostri partner, presso i quali sarà possibile effettuare uno stage - obbligatorio e garantito - alla fine del percorso di formazione.
-  cta: Vedi tutte
+  heading: Le Nostre ricette esclusive
+  cta: Vai al dettaglio
   link: /#
 
 schoolSection:
-  image: /img/school-image.jpg
+  image: /img/NostreMiscele.jpg
   altImage: school-image
-  heading: Un master che fa la differenza
+  heading: I Nostri caffè esclusivi
   subheading: Docenti altamente qualificati provenienti dell’Università di Verona e dall’industria vi seguiranno durante il vostro percorso
   cta: Vedi il programma
   link: /#
@@ -36,9 +35,9 @@ schoolSection:
       link: /#
 
 studentsSection:
-  heading: Una scuola che ti apre le porte a mondo del lavoro
-  subheading: I nostri studenti lavorano su progetti che li portano su strade diverse
-  cta: Vedi i progetti
+  heading: I segreti per una Moka perfetta!
+  subheading: Le Nostre miscele
+  cta: Guarda il video
   link: /#
 
 teachersSection:

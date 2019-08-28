@@ -1,9 +1,9 @@
 ---
 templateKey: 'banners'
 box:
-  image: /img/open-day.jpg
+  image: /img/NostraStoria.jpg
   alt: open day
-  title: Iscriviti all'openday
+  title: La Nostra storia
   text: >
     Durante l'open day vengono organizzati brevi work shop con i ragazzi del master che ti aiuteranno a creare il tuo primo gioco
   cta: partecipa ora
