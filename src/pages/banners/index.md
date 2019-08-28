@@ -5,7 +5,7 @@ box:
   alt: open day
   title: La Nostra storia
   text: >
-    Durante l'open day vengono organizzati brevi work shop con i ragazzi del master che ti aiuteranno a creare il tuo primo gioco
+    Produciamo caffè fin dal 1948 e la nostra attenzione è rivolta attualmente soprattutto ai...
   cta: partecipa ora
   link: /contact
 banners:

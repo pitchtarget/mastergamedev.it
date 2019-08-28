@@ -3,8 +3,8 @@ templateKey: index-page
 mainCover:
   image: /img/cover-image.jpg
   altImage: immagine di copertina
-  heading: primo master universitario in Italia sulla programmazione dei videogames
-  subheading: Il Master è rivolto a laureati in Informatica o Ingegneria Informatica e si propone di formare programmatori di applicazioni videoludiche e multimediali interattive, focalizzandosi sulle tecnologie più recenti.
+  heading: Artigiano del Caffè
+  subheading: Amore per una dimensione, quella artigianale; per la piccola torrefazione familiare che assicura un’attenzione quasi maniacale all’acquisto e alla miscelazione dei caffè migliori; odio per tutto ciò che deborda nell’industriale, per gli occhi attenti ai costi che guardano con disprezzo la qualità. Bisogna amare il caffè, essere suo amico.
   cta: Scopri di più
   link: /#
 
@@ -22,23 +22,23 @@ schoolSection:
   cta: Vedi il programma
   link: /#
   bullet:
-    - heading: Un master universitario
-      subheading: Il master di game development è un percorso formativo di livello universitario
+    - heading: Guatemala
+      subheading: Caffè dal profumo di fiori, dal sentore di frutta esotica matura
       cta: continua
       link: /#
-    - heading: Docenti professionisti del settore
-      subheading: Al Master acquisirai le conoscenze da un gruppo di docenti professionisti del game development
+    - heading: Etiopia
+      subheading: Produce qualità pregiatissime dolci e corpose, di grande sostegno per la esausta economia del paese.
       cta: continua
       link: /#
-    - heading: Un filo diretto con le aziende leader del settore
-      subheading: La scuola è uno dei bacini più interessanti per le aziende di questo settore
+    - heading: India
+      subheading: E' delicato, tendente al dolce.
       cta: continua
       link: /#
 
 studentsSection:
-  heading: I segreti per una Moka perfetta!
-  subheading: Le Nostre miscele
-  cta: Guarda il video
+  heading: Il vero nemico del caffè la fretta!
+  subheading: La voglia o la necessità di scappare che portano a prepararlo in un istante, di corsa. Nei caffè, un tempo luoghi di incontro, di cultura, di amicizia, specchi di uno stile di vita andante e colloquiale una volta il caffè si assaporava. Ora si tracanna.
+  cta: I 5 segreti per una Moka perfetta
   link: /#
 
 teachersSection:
