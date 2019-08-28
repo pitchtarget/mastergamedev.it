@@ -10,6 +10,7 @@ mainCover:
 
 partnersSection:
   heading: Le Nostre ricette esclusive
+  subheading: test
   cta: Vai al dettaglio
   link: /#
 
