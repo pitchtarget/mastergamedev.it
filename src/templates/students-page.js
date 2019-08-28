@@ -59,9 +59,9 @@ export const StudentsPageTemplate = ({
           </div>
         </div>
       </section>
-      <div className="container signupBox__regular is-moveup">
-        <SignupBox />
-      </div>
+      <section className="container">
+        <SignupBox id="studentsSignup" styles="is-moveup"/>
+      </section>
       <div className="container is-horizontal-spaced">
         <div className="columns is-tablet">
           <div className="column is-10-desktop is-offset-1-desktop">

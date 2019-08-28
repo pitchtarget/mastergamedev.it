@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import BannerList from '../../components/BannerList'
-import SignupBox from '../../components/SignupBox'
+import { SignupBoxComponent } from '../../components/SignupBox'
 
 const BannersListPreview = ({ entry, getAsset }) => {
   const signupBox = entry.getIn(['data', 'box'])
@@ -10,7 +10,9 @@ const BannersListPreview = ({ entry, getAsset }) => {
 
   return (
     <>
-      <SignupBox data={signupBox} />
+      <section className="container">
+        <SignupBoxComponent data={signupBox} id="signUpPreview" />
+      </section>
       <BannerList banners={banners} />
     </>
   )

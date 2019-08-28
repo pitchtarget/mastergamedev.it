@@ -57,11 +57,9 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </section>
-
-        <section id="topSignUp" className="container signupBox__regular is-moveup">
-          <SignupBox />
+        <section className="container">
+          <SignupBox id="topSignUp" styles="is-moveup"/>
         </section>
-
         <section id="partnersSection" className="section">
           <div className="container section is-horizontal-spaced">
             <div className="columns is-gapless is-centered is-mobile">
@@ -153,10 +151,9 @@ export const IndexPageTemplate = ({
             <StudentsSlider />
           </div>
         </section>
-        <section id="bottomSignUp" className="container signupBox__invert is-moveup">
-          <SignupBox/>
+        <section className="container">
+          <SignupBox id="bottomSignUp" color="invert" styles="is-moveup"/>
         </section>
-
         <section id="teachersSection" className="section is-medium">
           <div className="container section is-horizontal-spaced">
             <div className="columns">
