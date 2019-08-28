@@ -184,7 +184,7 @@ export const IndexPageTemplate = ({
         <section id="postsSection" className="section is-horizontal-spaced" style={{backgroundColor: "#CBC9D1"}}>
           <div className="container">
             <div className="columns is-gapless is-vcentered">
-              <div className="column is-10 is-offset-1">
+              <div className="column is-6 is-offset-1">
                 <h3 className="title is-2">{newsSection.heading}</h3>
               </div>
               <div className="column">
