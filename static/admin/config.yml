@@ -258,18 +258,16 @@ collections:
         fields:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "banners"}
           # SIGN UP BOX
-          - {
-              label: Sign in box,
-              name: box,
-              widget: object,
-              fields:
-                - {label: Image, name: image, widget: image},
-                - {label: Alt image, name: alt, widget: string},
-                - {label: Title, name: title, widget: string},
-                - {label: Text, name: text, widget: text},
-                - {label: Call to action, name: cta, widget: string},
-                - {label: Link to, name: link, widget: string},
-            }
+          - label: Sign in box,
+            name: box,
+            widget: object,
+            fields:
+              - {label: Image, name: image, widget: image}
+              - {label: Alt image, name: alt, widget: string}
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - {label: Call to action, name: cta, widget: string}
+              - {label: Link to, name: link, widget: string}
           # ROWS
           - {
               label: Banners,
