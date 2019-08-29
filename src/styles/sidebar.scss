@@ -1,7 +1,8 @@
+
 #sidebar {
   background-color: transparent;
   @include until($desktop) {
-    background-color: $primary-invert;
+    background-color: $sidebar-background;
     min-height: 3rem;
     & > .container,
     & .navbar-brand {
@@ -23,7 +24,7 @@
 
   &.has-background {
     transition: background-color .19s;
-    background-color: $primary-invert;
+    background-color: $sidebar-background;
   }
 
   .sidebar-list {
@@ -35,7 +36,8 @@
     }
 
     a.navbar-item {
-      color: $primary;
+      font-family: $family-secondary;
+      color: $navbar-burger-color;
       background-color: transparent;
       opacity: .75;
       font-size: $size-5;
@@ -57,7 +59,8 @@
     display: flex;
     align-items: center;
     margin-left: auto;
-    color: $primary;
+    color: $navbar-burger-color;
+    font-family: $family-secondary;
     strong {
       color:inherit;
     }

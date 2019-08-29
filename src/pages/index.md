@@ -3,8 +3,8 @@ templateKey: index-page
 mainCover:
   image: /img/cover-image.jpg
   altImage: immagine di copertina
-  heading: Artigiano del Caffè
-  subheading: Amore per una dimensione, quella artigianale; per la piccola torrefazione familiare che assicura un’attenzione quasi maniacale all’acquisto e alla miscelazione dei caffè migliori; odio per tutto ciò che deborda nell’industriale, per gli occhi attenti ai costi che guardano con disprezzo la qualità. Bisogna amare il caffè, essere suo amico.
+  heading: Amore per una dimensione quella artigianale
+  subheading: La piccola torrefazione familiare assicura un’attenzione quasi maniacale dall’acquisto  alla miscelazione dei caffè migliori. Odio per tutto ciò che deborda nell’industriale, per gli occhi attenti ai costi che guardano con disprezzo la qualità. Bisogna amare il caffè, essere suo amico.
   cta: Scopri di più
   link: /#
 
@@ -22,15 +22,21 @@ schoolSection:
   cta: Vedi il programma
   link: /#
   bullet:
-    - heading: Guatemala
+    - image: /img/placeholder.png
+      altImage: placeholder
+      heading: Guatemala
       subheading: Caffè dal profumo di fiori, dal sentore di frutta esotica matura
       cta: continua
       link: /#
-    - heading: Etiopia
+    - image: /img/placeholder.png
+      altImage: placeholder
+      heading: Etiopia
       subheading: Produce qualità pregiatissime dolci e corpose, di grande sostegno per la esausta economia del paese.
       cta: continua
       link: /#
-    - heading: India
+    - image: /img/placeholder.png
+      altImage: placeholder
+      heading: India
       subheading: E' delicato, tendente al dolce.
       cta: continua
       link: /#

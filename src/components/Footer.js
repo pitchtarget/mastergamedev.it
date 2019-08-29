@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import logo from '../img/logo.svg'
+import logo from '../img/logo.png'
 import facebook from '../img/social/facebook.svg'
 // import instagram from '../img/social/instagram.svg'
 // import twitter from '../img/social/twitter.svg'
@@ -18,7 +18,7 @@ const Footer = class extends React.Component {
                 <div className="content footer--logo">
                   <img
                     src={logo}
-                    alt="Kaldi"
+                    alt="Artigiano del caffè"
                     style={{ width: '14em', height: 'auto' }}
                   />
                 </div>

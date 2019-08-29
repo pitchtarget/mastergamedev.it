@@ -9,13 +9,8 @@ const IndexPagePreview = ({ entry, getAsset }) => {
     return (
       <IndexPageTemplate
         mainCover={data.mainCover}
-        topSignIn={data.topSignIn}
-        partnersSection={data.partnersSection}
         schoolSection={data.schoolSection}
         studentsSection={data.studentsSection}
-        bottomSignIn={data.bottomSignIn}
-        teachersSection={data.teachersSection}
-        newsSection={data.newsSection}
       />
     )
   } else {

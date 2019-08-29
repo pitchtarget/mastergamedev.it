@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
   }
   &__regular {
-    background-color: $primary;
+    background-color: $navbar-burger-color;
   }
   &__invert {
     background-color: $primary-invert;
@@ -26,7 +26,7 @@
       color: $primary-invert;
     }
     &__invert {
-      color: $primary;
+      color: $navbar-burger-color;
     }
   }
   &--cta {

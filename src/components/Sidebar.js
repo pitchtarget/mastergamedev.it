@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/logo.svg'
+import logo from '../img/logo.png'
 
 const Sidebar = class extends React.Component {
   constructor(props) {
@@ -69,7 +69,7 @@ const Sidebar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand" style={{width: "100%"}}>
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Master Game Dev" className="navbar-logo"/>
+              <img src={logo} alt="Artigiano del caffè" className="navbar-logo"/>
             </Link>
             {/* Hamburger menu */}
             <div
