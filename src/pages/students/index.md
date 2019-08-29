@@ -48,65 +48,13 @@ students:
       Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
       Morbi fringilla convallis sapien, id pulvinar odio volutpat.
       Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-  - fullName: student-3
+  - fullName: Moka
     main: true
-    image: /img/student-image.jpg
-    altImage: student-3
-    master: 2018
-    company: company-3
-    role: role-3
+    image: /img/flavor_wheel.jpg
+    altImage: Moka
+    master:
+    company:
+    role:
     description: >-
-      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
-      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
-      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
-      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-  - fullName: student-1
-    main: false
-    image: /img/student-image.jpg
-    altImage: student-1
-    master: 2018
-    company: company-1
-    role: role-1
-    description: >-
-      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
-      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
-      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
-      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-  - fullName: student-1
-    main: false
-    image: /img/student-image.jpg
-    altImage: student-1
-    master: 2018
-    company: company-1
-    role: role-1
-    description: >-
-      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
-      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
-      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
-      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-  - fullName: student-1
-    main: false
-    image: /img/student-image.jpg
-    altImage: student-1
-    master: 2018
-    company: company-1
-    role: role-1
-    description: >-
-      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
-      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
-      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
-      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-  - fullName: student-1
-    main: false
-    image: /img/student-image.jpg
-    altImage: student-1
-    master: 2018
-    company: company-1
-    role: role-1
-    description: >-
-      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
-      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
-      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
-      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-
+      Per casa si comprava in grani, per macinarlo poco prima di farlo e far insaporire tutta una casa.“Quattro chiacchiere e un caffè” recitava la pubblicità di una tradizionale torrefazione romana, per dire che, nonostante il carattere nervino della bevanda, bere un caffè rappresentava un momento di pausa vera. E così che l’amore per il caffè si trasformava in amore per se, ammazzava il nemico e non mortificava uno dei grandi doni della natura. Recuperare è d’obbligo.
 ---

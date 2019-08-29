@@ -33,7 +33,8 @@
     "react-slick": "^0.25.2",
     "showdown": "^1.9.0",
     "slick-carousel": "^1.8.1",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "yarn": "^1.17.3"
   },
   "keywords": [
     "gatsby"

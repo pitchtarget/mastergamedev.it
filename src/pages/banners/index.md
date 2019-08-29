@@ -1,12 +1,12 @@
 ---
 templateKey: 'banners'
 box:
-  image: /img/open-day.jpg
+  image: /img/NostraStoria.jpg
   alt: open day
-  title: Partecipa all’OPEN DAY sabato 13 Luglio 2019
+  title: La Nostra storia
   text: >
-    Durante l'open day vengono organizzati brevi work shop con i ragazzi del master che ti aiuteranno a creare il tuo primo gioco
-  cta: Mi interessa
+    Produciamo caffè fin dal 1948 e la nostra attenzione è rivolta attualmente soprattutto ai...
+  cta: partecipa ora
   link: /contact
 banners:
   - name: students
