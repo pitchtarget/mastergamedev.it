@@ -4,7 +4,8 @@ import BannerList from '../../components/BannerList'
 import { SignupBoxComponent } from '../../components/SignupBox'
 
 const BannersListPreview = ({ entry, getAsset }) => {
-  const signupBox = entry.getIn(['data', 'box'])
+  const entrySignupBox = entry.getIn(['data', 'box'])
+  const signupBox = entrySignupBox ? entrySignupBox.toJS() : []
   const entryBanners = entry.getIn(['data', 'banners'])
   const banners = entryBanners ? entryBanners.toJS() : []
 
