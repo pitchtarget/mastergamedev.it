@@ -7,6 +7,12 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  &__regular {
+    background-color: $primary;
+  }
+  &__invert {
+    background-color: $primary-invert;
+  }
   &--text {
     max-width: 600px;
     padding: 1.5rem;
@@ -15,6 +21,12 @@
     }
     .subtitle {
       color: inherit;
+    }
+    &__regular {
+      color: $primary-invert;
+    }
+    &__invert {
+      color: $primary;
     }
   }
   &--cta {
@@ -26,28 +38,5 @@
 @include from($desktop) {
   .is-moveup {
     margin-top: -80px;
-  }
-}
-.signupBox__regular .signupBox {
-  background-color: $primary;
-  .signupBox--text {
-    color: $primary-invert;
-  }
-  .signupBox--cta {
-    .text, .icon {
-      color: $primary-invert;
-    }
-  }
-}
-
-.signupBox__invert .signupBox {
-  background-color: $primary-invert;
-  .signupBox--text {
-    color: $primary;
-  }
-  .signupBox--cta {
-    .text, .icon {
-      color: $primary;
-    }
   }
 }

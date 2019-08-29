@@ -4,7 +4,9 @@ import { graphql } from 'gatsby'
 import { v4 } from 'uuid'
 import Layout from '../components/Layout'
 import Image from '../components/elements/Image'
+import Button from '../components/elements/Button'
 import BlogRoll from '../components/BlogRoll'
+import Row from '../components/Row'
 import MarkdownContent from '../components/MarkdownContent'
 
 export const MasterPageTemplate = ({
@@ -14,6 +16,7 @@ export const MasterPageTemplate = ({
   serviceTitle,
   paragraphs,
   services,
+  banner,
 }) => {
   const topParagraphs = paragraphs.length > 0 && paragraphs.slice(1,4)
   const bottomParagraphs = paragraphs.length > 0 && paragraphs.slice(4)
@@ -80,11 +83,25 @@ export const MasterPageTemplate = ({
           </div>
         </div>
       </section>
-      <div className="container is-horizontal-spaced">
-        <div className="section">
-          <BlogRoll />
+      { !!banner && <Row data={banner} color="dark"/> }
+      <section id="postsSection" className="section is-horizontal-spaced" style={{backgroundColor: "#CBC9D1"}}>
+        <div className="container">
+          <div className="columns is-gapless is-vcentered">
+            <div className="column is-6 is-offset-1">
+              <h3 className="title is-2">Blog</h3>
+            </div>
+            <div className="column">
+              <Button
+                text={"leggi le notizie"}
+                link={"/blog"}
+                local={true}
+                styles="cta cta__invert cta__align_right"
+              />
+            </div>
+          </div>
+          <BlogRoll/>
         </div>
-      </div>
+      </section>
     </>
   )
 }
@@ -100,6 +117,7 @@ MasterPageTemplate.propTypes = {
 
 const MasterPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'program')
 
   return (
     <Layout>
@@ -110,6 +128,7 @@ const MasterPage = ({ data }) => {
         serviceTitle={frontmatter.serviceTitle}
         paragraphs={frontmatter.paragraphs}
         services={frontmatter.services}
+        banner={banner[0]}
       />
     </Layout>
   )
@@ -119,6 +138,11 @@ MasterPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
+    }),
+    bannersData: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        banners: PropTypes.array,
+      }),
     }),
   }),
 }
@@ -149,6 +173,25 @@ export const masterPageQuery = graphql`
           image {
             childImageSharp {
               fluid(maxWidth: 100, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+    bannersData: markdownRemark(frontmatter: { templateKey: { eq: "banners"}}) {
+      frontmatter {
+        banners {
+          name
+          title
+          text
+          cta
+          link
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 500, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }

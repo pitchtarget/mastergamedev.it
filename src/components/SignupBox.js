@@ -4,62 +4,42 @@ import { graphql, StaticQuery } from 'gatsby'
 
 import Button from '../components/elements/Button'
 
-class SignupBox extends React.Component {
-  render() {
-    const { data } = this.props
-    const contents = data.markdownRemark.frontmatter.box
-
-    return (
-      <div className="signupBox">
-        <div className="columns is-desktop is-gapless is-vcentered">
-          <div className="column is-3-desktop">
-            <div
-              className="signupBox--image"
-              style={{backgroundImage: `url(${!!contents.image.childImageSharp ? contents.image.childImageSharp.fluid.src : contents.image})`}}
-            />
-          </div>
-          <div className="column">
-            <div className="columns is-gapless is-vcentered">
-              <div className="column is-7-tablet">
-                <div className="signupBox--text">
-                  <h2 className="title is-4">{contents.title}</h2>
-                  <p className="subtitle is-6">{contents.text}</p>
-                </div>
+export const SignupBoxComponent = ({ data, color, id, styles }) => {
+  const style = color === "invert"
+  return (
+    <div id={id} className={`signupBox signupBox${style ? "__invert" : "__regular"} ${styles}`}>
+      <div className="columns is-desktop is-gapless is-vcentered">
+        <div className="column is-3-desktop">
+          <div
+            className="signupBox--image"
+            style={{backgroundImage: `url(${!!data.image.childImageSharp ? data.image.childImageSharp.fluid.src : data.image})`}}
+          />
+        </div>
+        <div className="column">
+          <div className="columns is-gapless is-vcentered">
+            <div className="column">
+              <div className={`signupBox--text signupBox--text${style ? "__invert" : "__regular"}`}>
+                <h2 className="title is-4">{data.title}</h2>
+                <p className="subtitle is-6">{data.text}</p>
               </div>
-              <div className="column is-4-desktop">
-                <div className="signupBox--cta">
-                  <Button
-                    text={contents.cta}
-                    link={contents.link}
-                    local={true}
-                    styles="cta cta-large"
-                  />
-                </div>
+            </div>
+            <div className="column is-4-desktop">
+              <div className="signupBox--cta">
+                <Button
+                  text={data.cta}
+                  link={data.link}
+                  styles={`cta cta-large cta${!style ? "__invert" : "__primary"}`}
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
-SignupBox.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      topSingin: PropTypes.shape({
-        image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-        altImage: PropTypes.string,
-        heading: PropTypes.string,
-        subheading: PropTypes.string,
-        cta: PropTypes.string,
-        link: PropTypes.string,
-      }),
-    }),
-  }),
-}
-
-export default () => (
+const SignupBox = ({color, id, styles}) => (
   <StaticQuery
     query={graphql`
       query SignupBoxQuery {
@@ -83,6 +63,30 @@ export default () => (
         }
       }
     `}
-    render={(data) => <SignupBox data={data}/>}
+    render={data => (
+      <SignupBoxComponent
+        id={id}
+        color={color}
+        styles={styles}
+        data={data.markdownRemark.frontmatter.box}
+      />
+    )}
   />
 )
+
+SignupBoxComponent.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      box: PropTypes.shape({
+        image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+        altImage: PropTypes.string,
+        heading: PropTypes.string,
+        subheading: PropTypes.string,
+        cta: PropTypes.string,
+        link: PropTypes.string,
+      }),
+    }),
+  }),
+}
+
+export default SignupBox
