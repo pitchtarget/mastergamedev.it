@@ -15,7 +15,7 @@ teachers:
     bio: >
       Ricercatore del Dipartimento di Informatica dell‘Università di Verona. Direttore del master, i suo interessi di ricerca riguardano l’elaborazione di dati 3D, l’addestramento statistico e l’elaborazione di dati biomedicali.
     link:
-  - fullName: Marco Tarini
+  - fullName: Gianpaolo Greco
     role: Advanced Graphics programming
     image: /img/tarini.jpg
     altImage: Marco Tarini
