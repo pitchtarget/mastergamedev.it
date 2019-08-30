@@ -23,51 +23,57 @@ const Footer = class extends React.Component {
                   />
                 </div>
               </div>
-              <div className="column is-2-tablet is-1-desktop is-offset-1-desktop">
+              <div className="column is-3-tablet is-2-desktop">
                 <div className="footer-list">
                   <Link className="navbar-item" to="/">
                     Home
                   </Link>
-                  <Link className="navbar-item" to="/studenti">
-                    Studenti
+                  <Link className="navbar-item" to="/storia">
+                    la Storia
                   </Link>
-                  <Link className="navbar-item" to="/collaborazioni">
-                    Collaborazioni
-                  </Link>
-                  <Link className="navbar-item" to="/docenti">
-                    Docenti
+                  <Link className="navbar-item" to="/miscele">
+                    le Miscele
                   </Link>
                 </div>
               </div>
-              <div className="column is-2-tablet is-1-desktop is-offset-1-desktop">
+              <div className="column is-3-tablet is-2-desktop">
                 <div className="footer-list">
-                  <Link className="navbar-item" to="/master">
-                    Master
+                  <Link className="navbar-item" to="/la-buona">
+                    la Buona
                   </Link>
-                  <Link className="navbar-item" to="/programma">
-                    Programma
+                  <Link className="navbar-item" to="/la-migliore">
+                    la Migliore
                   </Link>
-                  <Link className="navbar-item" to="/blog">
-                    Blog
-                  </Link>
-                  <Link className="navbar-item" to="/contatti">
-                    Contatti
+                  <Link className="navbar-item" to="/la-ancora-meglio">
+                    la ancora Meglio
                   </Link>
                 </div>
               </div>
-              <div className="column is-4-desktop is-6-widescreen">
-                  <div className="">
-                    <p className="footer--info is-size-6">
-                      <strong className="has-text-white">
-                        Dipartimento di Informatica
-                      </strong><br/>
-                      Università degli studi di Verona<br/>
-                      <small >
-                      Strada le Grazie 15 - 37134 Verona<br/>
-                      Italia
-                      </small>
-                    </p>
+              {/*
+                <div className="column is-2-tablet is-1-desktop is-offset-1-desktop">
+                  <div className="footer-list">
+                    <Link className="navbar-item" to="/blog">
+                      Blog
+                    </Link>
+                    <Link className="navbar-item" to="/contatti">
+                      Contatti
+                    </Link>
                   </div>
+                </div>
+              */}
+              <div className="column is-4-desktop is-6-widescreen">
+                <div className="">
+                  <p className="footer--info is-size-6">
+                    <strong className="has-text-white">
+                      Artigiano del caffè
+                    </strong><br/>
+                    Inserire i dati<br/>
+                    <small >
+                    Vanno aggiunti nel componente Footer
+                    </small>
+                  </p>
+                </div>
+                {/*
                   <div className="social">
                     <a title="facebook" href="https://www.facebook.com/Mastergamedev-Univr-1090366591113635/">
                       <img
@@ -76,7 +82,6 @@ const Footer = class extends React.Component {
                         style={{ width: '1em', height: '1em' }}
                       />
                     </a>
-                    {/*
                     <a title="twitter" href="https://twitter.com">
                       <img
                         className="fas fa-lg"
@@ -85,7 +90,6 @@ const Footer = class extends React.Component {
                         style={{ width: '1em', height: '1em' }}
                       />
                     </a>
-
                     <a title="instagram" href="https://instagram.com">
                       <img
                         src={instagram}
@@ -100,9 +104,8 @@ const Footer = class extends React.Component {
                         style={{ width: '1em', height: '1em' }}
                       />
                     </a>
-                    */}
-
-                </div>
+                  </div>
+                */}
               </div>
             </div>
           {/*
