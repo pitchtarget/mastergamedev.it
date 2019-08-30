@@ -47,6 +47,10 @@ $fullhd: 1980px;
 
 $navbar-burger-color: $primary;
 
+.main {
+  min-height: calc(100vh - 320px);
+}
+
 .content .taglist {
   list-style: none;
   margin-bottom: 0;

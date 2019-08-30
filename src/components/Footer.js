@@ -18,7 +18,7 @@ const Footer = class extends React.Component {
                 <div className="content footer--logo">
                   <img
                     src={logo}
-                    alt="Kaldi"
+                    alt="Master Game Development"
                     style={{ width: '14em', height: 'auto' }}
                   />
                 </div>

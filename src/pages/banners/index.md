@@ -7,7 +7,7 @@ box:
   text: >
     Durante l'open day vengono organizzati brevi work shop con i ragazzi del master che ti aiuteranno a creare il tuo primo gioco
   cta: Mi interessa
-  link: /contact
+  link: /contatti
 banners:
   - name: students
     title: Ut enim ad minim veniam, quis nostrud exercitation.
