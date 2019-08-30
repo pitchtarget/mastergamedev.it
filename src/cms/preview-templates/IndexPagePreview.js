@@ -9,8 +9,8 @@ const IndexPagePreview = ({ entry, getAsset }) => {
     return (
       <IndexPageTemplate
         mainCover={data.mainCover}
-        schoolSection={data.schoolSection}
-        studentsSection={data.studentsSection}
+        coffeeType={data.coffeeType}
+        mokaSecrets={data.mokaSecrets}
       />
     )
   } else {

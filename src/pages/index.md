@@ -8,20 +8,14 @@ mainCover:
   cta: Scopri di più
   link: /#
 
-partnersSection:
-  heading: Le Nostre ricette esclusive
-  subheading: test
-  cta: Vai al dettaglio
-  link: /#
-
-schoolSection:
+coffeeType:
   image: /img/NostreMiscele.jpg
   altImage: school-image
   heading: I Nostri caffè esclusivi
   subheading: Docenti altamente qualificati provenienti dell’Università di Verona e dall’industria vi seguiranno durante il vostro percorso
   cta: Vedi il programma
   link: /#
-  bullet:
+  coffees:
     - image: /img/placeholder.png
       altImage: placeholder
       heading: Guatemala
@@ -41,19 +35,8 @@ schoolSection:
       cta: continua
       link: /#
 
-studentsSection:
+mokaSecrets:
   heading: Il vero nemico del caffè la fretta!
   subheading: La voglia o la necessità di scappare che portano a prepararlo in un istante, di corsa. Nei caffè, un tempo luoghi di incontro, di cultura, di amicizia, specchi di uno stile di vita andante e colloquiale una volta il caffè si assaporava. Ora si tracanna.
   cta: I 5 segreti per una Moka perfetta
   link: /#
-
-teachersSection:
-  heading: Chi saranno i tuoi mentor
-  subheading: I docenti del master sono professionisti selezionati che ricoprono ruoli di spicco nella game industry.
-  cta: Voglio conoscerli
-  link: /docenti
-
-newsSection:
-  heading: Aggiornamenti
-  cta: Leggi le notizie
-  link: /blog

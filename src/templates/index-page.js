@@ -23,8 +23,8 @@ const validateImages = (image) => {
 
 export const IndexPageTemplate = ({
   mainCover,
-  schoolSection,
-  studentsSection,
+  coffeeType,
+  mokaSecrets,
   }) => {
     return (
       <>
@@ -67,21 +67,21 @@ export const IndexPageTemplate = ({
               backgroundPosition: "70% center",
               backgroundSize: "cover",
               backgroundImage: `url(${
-                validateImages(schoolSection.image)
+                validateImages(coffeeType.image)
               })`
             }}>
               <div className="column is-6-desktop is-offset-1-desktop">
                 <h3 className="content">
                   <p className="title is-size-2-mobile is-size-1-tablet has-text-white">
-                    {schoolSection.heading}
+                    {coffeeType.heading}
                   </p>
                   <p className="subtitle is-size-6 has-text-white">
-                    {schoolSection.subheading}
+                    {coffeeType.subheading}
                   </p>
                 </h3>
                 <Button
-                  text={schoolSection.cta}
-                  link={schoolSection.link}
+                  text={coffeeType.cta}
+                  link={coffeeType.link}
                   local={true}
                   styles="cta cta-large cta__light"
                 />
@@ -89,18 +89,18 @@ export const IndexPageTemplate = ({
             </div>
 
             <div className="columns is-centered" style={{marginTop: "-4rem"}}>
-              { schoolSection.bullet.length > 0 && schoolSection.bullet.map( bullet =>(
+              { coffeeType.coffees.length > 0 && coffeeType.coffees.map( coffee =>(
                   <div key={v4()} className="column is-4-desktop ">
                     <div className="card" style={{paffing: "2rem"}}>
                       <div class="card-image">
                         <figure class="image is-4by3">
-                          <img src={validateImages(bullet.image)} alt={bullet.altImage}/>
+                          <img src={validateImages(coffee.image)} alt={coffee.altImage}/>
                         </figure>
                       </div>
                       <div className="card-content" style={{minHeight: "13rem"}}>
-                        <h4 className="title is-4 has-text-weight-medium">{bullet.heading}</h4>
-                        <p className="subtitle is-6 has-text-weight-normal">{bullet.subheading}</p>
-                        <Link to={bullet.link} className="">{bullet.cta}</Link>
+                        <h4 className="title is-4 has-text-weight-medium">{coffee.heading}</h4>
+                        <p className="subtitle is-6 has-text-weight-normal">{coffee.subheading}</p>
+                        <Link to={coffee.link} className="">{coffee.cta}</Link>
                       </div>
                     </div>
                   </div>
@@ -115,12 +115,12 @@ export const IndexPageTemplate = ({
             <div className="columns">
               <div className="column is-6-desktop is-offset-1-desktop">
                 <h3 className="content">
-                  <p className="title is-2">{studentsSection.heading}</p>
-                  <p className="subtitle is-5">{studentsSection.subheading}</p>
+                  <p className="title is-2">{mokaSecrets.heading}</p>
+                  <p className="subtitle is-5">{mokaSecrets.subheading}</p>
                 </h3>
                 <Button
-                  text={studentsSection.cta}
-                  link={studentsSection.link}
+                  text={mokaSecrets.cta}
+                  link={mokaSecrets.link}
                   styles="cta cta-large cta__light"
                 />
               </div>
@@ -135,8 +135,8 @@ export const IndexPageTemplate = ({
 }
 IndexPageTemplate.propTypes = {
   mainCover: PropTypes.object,
-  schoolSection: PropTypes.object,
-  studentsSection: PropTypes.object,
+  coffeeType: PropTypes.object,
+  mokaSecrets: PropTypes.object,
 }
 
 const IndexPage = ({ data }) => {
@@ -146,8 +146,8 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         mainCover={frontmatter.mainCover}
-        schoolSection={frontmatter.schoolSection}
-        studentsSection={frontmatter.studentsSection}
+        coffeeType={frontmatter.coffeeType}
+        mokaSecrets={frontmatter.mokaSecrets}
       />
     </Layout>
   )
@@ -182,7 +182,7 @@ export const pageQuery = graphql`
           cta
           link
         }
-        schoolSection {
+        coffeeType {
           image {
             childImageSharp {
               fluid(maxWidth: 1980, quality: 80) {
@@ -195,7 +195,7 @@ export const pageQuery = graphql`
           subheading
           cta
           link
-          bullet {
+          coffees {
             image {
               childImageSharp {
                 fluid(maxWidth: 300, quality: 80) {
@@ -210,7 +210,7 @@ export const pageQuery = graphql`
             link
           }
         }
-        studentsSection {
+        mokaSecrets {
           heading
           subheading
           cta
