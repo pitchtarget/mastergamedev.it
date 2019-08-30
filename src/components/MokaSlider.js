@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import { graphql, StaticQuery } from 'gatsby'
 import { v4 } from 'uuid'
 
-class StudentsSlider extends React.Component {
+class MokaSlider extends React.Component {
   render() {
     const settings = {
       infinite: true,
@@ -17,26 +17,22 @@ class StudentsSlider extends React.Component {
       centerPadding: "0px 0px",
     };
     const { data } = this.props
-    const students = data.markdownRemark.frontmatter.students
-    const filteredStudents = students.filter(student => student.main)
+    const secrets = data.markdownRemark.frontmatter.mokaSecrets.secrets
     return (
       <Slider {...settings}>
-        { filteredStudents.length > 0 && filteredStudents.map( student =>(
+        { secrets.length > 0 && secrets.map( secret =>(
             <div key={v4()} className="studentSlide">
               <div className="columns is-tablet is-gapless">
                 <div
                   className="studentSlide--image column"
                   style={{ backgroundImage:
-                  `url(${!!student.image.childImageSharp ? student.image.childImageSharp.fluid.src : student.image})`
+                  `url(${!!secret.image.childImageSharp ? secret.image.childImageSharp.fluid.src : secret.image})`
                   }}
                 />
                 <div className="column">
                   <h4 className="studentSlide--content content">
-                    <p className="title is-5">{student.fullName}</p>
-                    <p className="subtitle is-5">{student.company}</p>
-                    <p className="">{student.role}</p>
-                    <p className="">{student.description}</p>
-                    <p className="">{student.master}</p>
+                    <p className="title is-5">{secret.title}</p>
+                    <p className="">{secret.description}</p>
                   </h4>
                 </div>
               </div>
@@ -48,7 +44,7 @@ class StudentsSlider extends React.Component {
   }
 }
 
-StudentsSlider.propTypes = {
+MokaSlider.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       students: PropTypes.array,
@@ -59,21 +55,19 @@ StudentsSlider.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query StudentsQuery {
-        markdownRemark(frontmatter: { templateKey: { eq: "students-page"}}) {
+      query BlendQuery {
+        markdownRemark(frontmatter: { templateKey: { eq: "index-page"}}) {
           frontmatter {
-            students {
-              fullName
-              main
-              master
-              company
-              role
-              description
-              altImage
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 300, quality: 80) {
-                    ...GatsbyImageSharpFluid
+            mokaSecrets {
+              secrets {
+                title
+                description
+                altImage
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 300, quality: 80) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }
@@ -82,6 +76,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <StudentsSlider data={data} count={count} />}
+    render={(data, count) => <MokaSlider data={data} count={count} />}
   />
 )

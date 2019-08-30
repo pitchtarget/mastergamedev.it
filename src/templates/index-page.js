@@ -6,9 +6,7 @@ import { v4 } from 'uuid'
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import Button from '../components/elements/Button'
-import TeachersShortList from '../components/TeachersShortList'
-import StudentsSlider from '../components/StudentsSlider'
-import PartnersCarousel from '../components/PartnersCarousel'
+import MokaSlider from '../components/MokaSlider'
 import SignupBox from '../components/SignupBox'
 
 const validateImages = (image) => {
@@ -92,8 +90,8 @@ export const IndexPageTemplate = ({
               { coffeeType.coffees.length > 0 && coffeeType.coffees.map( coffee =>(
                   <div key={v4()} className="column is-4-desktop ">
                     <div className="card" style={{paffing: "2rem"}}>
-                      <div class="card-image">
-                        <figure class="image is-4by3">
+                      <div className="card-image">
+                        <figure className="image is-4by3">
                           <img src={validateImages(coffee.image)} alt={coffee.altImage}/>
                         </figure>
                       </div>
@@ -127,7 +125,7 @@ export const IndexPageTemplate = ({
             </div>
           </div>
           <div className="container">
-            <StudentsSlider />
+            <MokaSlider />
           </div>
         </section>
       </>

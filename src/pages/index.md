@@ -40,3 +40,20 @@ mokaSecrets:
   subheading: La voglia o la necessità di scappare che portano a prepararlo in un istante, di corsa. Nei caffè, un tempo luoghi di incontro, di cultura, di amicizia, specchi di uno stile di vita andante e colloquiale una volta il caffè si assaporava. Ora si tracanna.
   cta: I 5 segreti per una Moka perfetta
   link: /#
+  secrets:
+    - title: Moka
+      description: >
+        Per casa si comprava in grani, per macinarlo poco prima di farlo e far insaporire tutta una casa.“Quattro chiacchiere e un caffè” recitava la pubblicità di una tradizionale torrefazione romana, per dire che, nonostante il carattere nervino della bevanda, bere un caffè rappresentava un momento di pausa vera. E così che l’amore per il caffè si trasformava in amore per se, ammazzava il nemico e non mortificava uno dei grandi doni della natura. Recuperare è d’obbligo.
+      image: /img/flavor_wheel.jpg
+      altImage: Moka
+    - title: Moka
+      description: >
+        Per casa si comprava in grani, per macinarlo poco prima di farlo e far insaporire tutta una casa.“Quattro chiacchiere e un caffè” recitava la pubblicità di una tradizionale torrefazione romana, per dire che, nonostante il carattere nervino della bevanda, bere un caffè rappresentava un momento di pausa vera. E così che l’amore per il caffè si trasformava in amore per se, ammazzava il nemico e non mortificava uno dei grandi doni della natura. Recuperare è d’obbligo.
+      image: /img/flavor_wheel.jpg
+      altImage: Moka
+    - title: Moka
+      description: >
+        Per casa si comprava in grani, per macinarlo poco prima di farlo e far insaporire tutta una casa.“Quattro chiacchiere e un caffè” recitava la pubblicità di una tradizionale torrefazione romana, per dire che, nonostante il carattere nervino della bevanda, bere un caffè rappresentava un momento di pausa vera. E così che l’amore per il caffè si trasformava in amore per se, ammazzava il nemico e non mortificava uno dei grandi doni della natura. Recuperare è d’obbligo.
+      image: /img/flavor_wheel.jpg
+      altImage: Moka
+---

@@ -80,10 +80,21 @@ collections:
                 {label: Call to action, name: cta, widget: string},
                 {label: Link to, name: link, widget: string},
               ],
+              {
+                label: Secrets,
+                name: secrets,
+                widget: list,
+                fields: [
+                  {label: Image, name: image, widget: image},
+                  {label: "Alt image", name: altImage, widget: string},
+                  {label: Title, name: title, widget: string},
+                  {label: Description, name: description, widget: text},
+                ],
+              },
             }
 
       # HISTORY PAGE
-      - file: "src/pages/story/index.md"
+      - file: "src/pages/history/index.md"
         label: "History page"
         name: "history"
         fields:
@@ -131,18 +142,18 @@ collections:
               ],
             }
 
-      # STUDENTS PAGE
-      - file: "src/pages/students/index.md"
-        label: "Students page"
-        name: "students"
+      # BLENDS PAGE
+      - file: "src/pages/blends/index.md"
+        label: "Blends page"
+        name: "blends"
         fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "students-page"}
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "blends-page"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Alt image, name: altImage, widget: string}
           - {
-              label: Projects,
-              name: projects,
+              label: Blend selections,
+              name: blendSelection,
               widget: list,
               fields: [
                 {label: Title, name: title, widget: string},
@@ -151,19 +162,17 @@ collections:
                 {label: Alt image, name: altImage, widget: string},
               ],
             }
-          - {label: Students title, name: titleStudents, widget: string}
+          - {label: Blend title, name: blendTitle, widget: string}
           - {
-              label: Students,
-              name: students,
+              label: Blends,
+              name: blends,
               widget: list,
               fields: [
-                {label: Full name, name: fullName, widget: string},
+                {label: Name, name: name, widget: string},
                 {label: "Visible on homepage", name: main, widget: boolean},
                 {label: Image, name: image, widget: image, default: /img/student-img.png},
                 {label: "Alt image", name: altImage, widget: string},
-                {label: Master, name: master, widget: number, default: 2010, valueType: int, min: 2010, max: 2030},
-                {label: Company, name: company, widget: string},
-                {label: Role, name: role, widget: string},
+                {label: Origin, name: origin, widget: string},
                 {label: Description, name: description, widget: string},
               ],
             }

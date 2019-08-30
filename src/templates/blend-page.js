@@ -3,20 +3,18 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { v4 } from 'uuid'
 import Layout from '../components/Layout'
-import SignupBox from '../components/SignupBox'
 import Image from '../components/elements/Image'
 import Row from '../components/Row'
-import Students from '../components/Students'
 import MarkdownContent from '../components/MarkdownContent'
 
-export const StudentsPageTemplate = ({
+export const BlendPageTemplate = ({
   image,
   altImage,
   title,
   description,
-  projects,
-  titleStudents,
-  students,
+  blendSelection,
+  blendTitle,
+  blends,
   banner,
 }) => {
   return (
@@ -30,44 +28,43 @@ export const StudentsPageTemplate = ({
               <p>{description}</p>
             </div>
           </div>
-          <div className="columns is-tablet">
-            <div className="column is-10-desktop is-offset-1-desktop">
-              { projects.length > 0 && projects.map( (project, id) => {
-                const reverse = id % 2
-                return (
-                  <div key={v4()} className="section">
-                    <div
-                      className="columns is-vcentered"
-                      style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
-                    >
-                      <div className="column">
-                        <Image src={project.image} alt={project.alt}/>
-                      </div>
-                      <div className="column">
-                        <div className="content">
-                          <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
-                              {project.title}
-                          </h3>
-                          <MarkdownContent content={project.description}/>
+          { blendSelection.length > 0 &&
+            <div className="columns is-tablet">
+              <div className="column is-10-desktop is-offset-1-desktop">
+                { blendSelection.length > 0 && blendSelection.map( (selected, id) => {
+                  const reverse = id % 2
+                  return (
+                    <div key={v4()} className="section">
+                      <div
+                        className="columns is-vcentered"
+                        style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
+                      >
+                        <div className="column">
+                          <Image src={selected.image} alt={selected.alt}/>
+                        </div>
+                        <div className="column">
+                          <div className="content">
+                            <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
+                                {selected.title}
+                            </h3>
+                            <MarkdownContent content={selected.description}/>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                )})
-              }
+                  )})
+                }
+              </div>
             </div>
-          </div>
+          }
         </div>
-      </section>
-      <section className="container">
-        <SignupBox id="studentsSignup" styles="is-moveup"/>
       </section>
       <div className="container is-horizontal-spaced">
         <div className="columns is-tablet">
           <div className="column is-10-desktop is-offset-1-desktop">
             <div className="section is-medium">
-              <h2 className="title is-2 is-spaced">{titleStudents}</h2>
-              <Students students={students} />
+              <h2 className="title is-2 is-spaced">{blendTitle}</h2>
+              {/* Inserire le origini */}
             </div>
           </div>
         </div>
@@ -77,12 +74,13 @@ export const StudentsPageTemplate = ({
   )
 }
 
-StudentsPageTemplate.propTypes = {
+BlendPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   description: PropTypes.string,
   banner: PropTypes.object,
-  projects: PropTypes.arrayOf(
+  blendTitle: PropTypes.string,
+  blendSelection: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
       description: PropTypes.string,
@@ -90,7 +88,7 @@ StudentsPageTemplate.propTypes = {
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     }),
   ),
-  students: PropTypes.arrayOf(
+  blends: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
       description: PropTypes.string,
@@ -100,25 +98,25 @@ StudentsPageTemplate.propTypes = {
   ),
 }
 
-const StudentsPage = ({ data }) => {
+const BlendPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'partners')
   return (
     <Layout>
-      <StudentsPageTemplate
+      <BlendPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         description={frontmatter.description}
-        projects={frontmatter.projects}
-        titleStudents={frontmatter.titleStudents}
-        students={frontmatter.students}
+        blendSelection={frontmatter.blendSelection}
+        blendTitle={frontmatter.blendTitle}
+        blends={frontmatter.blends}
         banner={banner[0]}
       />
     </Layout>
   )
 }
 
-StudentsPage.propTypes = {
+BlendPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -131,10 +129,10 @@ StudentsPage.propTypes = {
   }),
 }
 
-export default StudentsPage
+export default BlendPage
 
-export const studentsPageQuery = graphql`
-  query StudentsPage($id: String!) {
+export const blendPageQuery = graphql`
+  query BlendPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
@@ -146,7 +144,7 @@ export const studentsPageQuery = graphql`
             }
           }
         }
-        projects {
+        blendSelection {
           title
           description
           altImage
@@ -158,12 +156,10 @@ export const studentsPageQuery = graphql`
             }
           }
         }
-        titleStudents
-        students {
-          fullName
-          master
-          company
-          role
+        blendTitle
+        blends {
+          name
+          origin
           description
           altImage
           image {
