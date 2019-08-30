@@ -83,7 +83,8 @@ export const MasterPageTemplate = ({
           </div>
         </div>
       </section>
-      { !!banner && <Row data={banner} color="dark"/> }
+      { !!banner && <Row data={banner} color="light"/> }
+      {/*
       <section id="postsSection" className="section is-horizontal-spaced" style={{backgroundColor: "#CBC9D1"}}>
         <div className="container">
           <div className="columns is-gapless is-vcentered">
@@ -102,6 +103,7 @@ export const MasterPageTemplate = ({
           <BlogRoll/>
         </div>
       </section>
+      */}
     </>
   )
 }

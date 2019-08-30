@@ -130,7 +130,7 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </section>
-
+        {/*
         <section id="studentsSection" className="section is-medium has-background-primary">
           <div className="container is-horizontal-spaced">
             <div className="columns">
@@ -154,6 +154,8 @@ export const IndexPageTemplate = ({
         <section className="container">
           <SignupBox id="bottomSignUp" color="invert" styles="is-moveup"/>
         </section>
+        */}
+
         <section id="teachersSection" className="section is-medium">
           <div className="container section is-horizontal-spaced">
             <div className="columns">
@@ -178,6 +180,8 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </section>
+
+        {/*
         <section id="postsSection" className="section is-horizontal-spaced" style={{backgroundColor: "#CBC9D1"}}>
           <div className="container">
             <div className="columns is-gapless is-vcentered">
@@ -196,6 +200,7 @@ export const IndexPageTemplate = ({
             <BlogRoll/>
           </div>
         </section>
+        */}
       </>
     )
 }
@@ -220,10 +225,10 @@ const IndexPage = ({ data }) => {
         topSignIn={frontmatter.topSignIn}
         partnersSection={frontmatter.partnersSection}
         schoolSection={frontmatter.schoolSection}
-        studentsSection={frontmatter.studentsSection}
-        bottomSignIn={frontmatter.bottomSignIn}
+        // studentsSection={frontmatter.studentsSection}
+        // bottomSignIn={frontmatter.bottomSignIn}
         teachersSection={frontmatter.teachersSection}
-        newsSection={frontmatter.newsSection}
+        // newsSection={frontmatter.newsSection}
       />
     </Layout>
   )

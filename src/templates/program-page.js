@@ -96,7 +96,7 @@ ProgramPageTemplate.propTypes = {
 const ProgramPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   const bannerMaster = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'master')
-  const bannerStudents = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'students')
+  const bannerStudents = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'partners')
   return (
     <Layout>
       <ProgramPageTemplate
