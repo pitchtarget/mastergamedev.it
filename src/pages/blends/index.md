@@ -1,6 +1,7 @@
 ---
 templateKey: 'blend-page'
 path: /miscele
+bannerName: history
 title: Le miscele dei migliori caffè
 description: >
   A communi observantia non est recedendum. Quis aute iure reprehenderit in voluptate velit esse. Ambitioni dedisse scripsisse iudicaretur.

@@ -49,19 +49,19 @@ const Footer = class extends React.Component {
                   </Link>
                 </div>
               </div>
-              {/*
                 <div className="column is-2-tablet is-1-desktop is-offset-1-desktop">
                   <div className="footer-list">
+                  {/*
                     <Link className="navbar-item" to="/blog">
                       Blog
                     </Link>
+                    */}
                     <Link className="navbar-item" to="/contatti">
                       Contatti
                     </Link>
                   </div>
                 </div>
-              */}
-              <div className="column is-4-desktop is-6-widescreen">
+              <div className="column">
                 <div className="">
                   <p className="footer--info is-size-6">
                     <strong className="has-text-white">

@@ -16,6 +16,7 @@ export const CoffeePageTemplate = ({
   subtitle,
   shortDesc,
   description,
+  banner
 }) => {
   return (
     <>
@@ -39,6 +40,7 @@ export const CoffeePageTemplate = ({
           <MarkdownContent content={description}/>
         </div>
       </div>
+      { !!banner && <Row data={banner} color="primary" reverse/> }
     </>
   )
 }
@@ -52,11 +54,12 @@ CoffeePageTemplate.propTypes = {
   subtitle: PropTypes.string,
   shortDesc: PropTypes.string,
   description: PropTypes.string,
+  banner: PropTypes.object,
 }
 
 const CoffeePage = ({ data }) => {
-  debugger
   const { frontmatter } = data.markdownRemark
+  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === frontmatter.bannerName)
   return (
     <Layout>
       <CoffeePageTemplate
@@ -68,6 +71,7 @@ const CoffeePage = ({ data }) => {
         subtitle={frontmatter.subtitle}
         shortDesc={frontmatter.shortDesc}
         description={frontmatter.description}
+        banner={banner[0]}
       />
     </Layout>
   )
@@ -77,6 +81,11 @@ CoffeePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
+    }),
+    bannersData: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        banners: PropTypes.array,
+      }),
     }),
   }),
 }
@@ -91,6 +100,7 @@ export const coffeePageQuery = graphql`
         subtitle
         shortDesc
         description
+        bannerName
         altImage
         image {
           childImageSharp {
@@ -104,6 +114,25 @@ export const coffeePageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 1920, quality: 80) {
               ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    bannersData: markdownRemark(frontmatter: { templateKey: { eq: "banners"}}) {
+      frontmatter {
+        banners {
+          name
+          title
+          text
+          cta
+          link
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 500, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }

@@ -84,23 +84,6 @@ export const HistoryPageTemplate = ({
         </div>
       </section>
       { !!banner && <Row data={banner} color="dark"/> }
-      <section id="postsSection" className="section is-horizontal-spaced" style={{backgroundColor: "#CBC9D1"}}>
-        <div className="container">
-          <div className="columns is-gapless is-vcentered">
-            <div className="column is-6 is-offset-1">
-              <h3 className="title is-2">Blog</h3>
-            </div>
-            <div className="column">
-              <Button
-                text={"leggi le notizie"}
-                link={"/blog"}
-                local={true}
-                styles="cta cta__invert cta__align_right"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   )
 }
@@ -116,7 +99,8 @@ HistoryPageTemplate.propTypes = {
 
 const HistoryPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'program')
+  debugger
+  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === frontmatter.bannerName)
 
   return (
     <Layout>
@@ -153,6 +137,7 @@ export const historyPageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "history-page"}}) {
       frontmatter {
         title
+        bannerName
         image {
           childImageSharp {
             fluid(maxWidth: 1920, quality: 80) {

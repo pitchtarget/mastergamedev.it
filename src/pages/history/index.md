@@ -1,6 +1,7 @@
 ---
 templateKey: 'history-page'
 path: /storia
+bannerName: good
 title: Il master 2019
 image: /img/cover-image.jpg
 altImage: Coffee

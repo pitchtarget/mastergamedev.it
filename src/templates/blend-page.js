@@ -125,7 +125,7 @@ BlendPageTemplate.propTypes = {
 
 const BlendPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'partners')
+  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === frontmatter.bannerName)
   return (
     <Layout>
       <BlendPageTemplate
@@ -162,6 +162,7 @@ export const blendPageQuery = graphql`
       frontmatter {
         title
         description
+        bannerName
         image {
           childImageSharp {
             fluid(maxWidth: 1920, quality: 80) {

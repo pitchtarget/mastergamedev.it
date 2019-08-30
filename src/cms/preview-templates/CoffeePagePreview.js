@@ -16,6 +16,7 @@ const CoffeePagePreview = ({ entry, getAsset }) => {
         subtitle={data.subtitle}
         shortDesc={data.shortDesc}
         description={data.description}
+        banner={false}
       />
     )
   } else {

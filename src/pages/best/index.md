@@ -1,5 +1,6 @@
 ---
 templateKey: 'coffee-page'
+bannerName: blend
 path: /la-migliore
 cover: /img/scuola.jpg
 altCover: image

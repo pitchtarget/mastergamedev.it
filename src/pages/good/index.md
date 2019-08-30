@@ -1,6 +1,7 @@
 ---
 templateKey: 'coffee-page'
 path: /la-buona
+bannerName: excellent
 cover: /img/scuola.jpg
 altCover: image
 image: /img/scuola.jpg
