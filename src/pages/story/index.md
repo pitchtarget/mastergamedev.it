@@ -1,12 +1,12 @@
 ---
-templateKey: 'master-page'
-path: /master
+templateKey: 'history-page'
+path: /storia
 title: Il master 2019
-image: /img/programming.jpg
-altImage: programming
-serviceTitle: I nostri servizi
+image: /img/cover-image.jpg
+altImage: Coffee
+historyTitle: La nostra storia
 paragraphs:
-  - title: Obbiettivi del Master
+  - title: Storia di un amore... per il caffèè
     description: >
       L’enorme sviluppo dei videogiochi trova sicuramente il suo elemento qualificante nelle tecniche di resa grafica al calcolatore, sostenute dalla crescente potenza di calcolo messa a disposizione dalle unità di elaborazione grafica (GPU). Il livello di realismo sempre più elevato non è però solo visivo ma coinvolge anche la riproduzione sempre più fedele dei movimenti umani, la simulazione precisa della realtà fisica, e la crescente immersività della interazione – si pensi ai casi HTC Vive, Nintendo Wii o Microsoft Kinect. Inoltre i comportamenti naturali esibiti dai personaggi che popolano il gioco (oltre al giocatore) sono frutto di esperienze maturate nel campo dell’intelligenza artificiale. Da questa breve introduzione si intuisce come la progettazione e la programmazione dei videogiochi sia un’attività profondamente multidisciplinare, che tocca diverse aree dell’informatica (programmazione, ingegneria del software, grafica, elaborazione dei suoni, interazione uomo-macchina, intelligenza artificiale) e  richiede solide basi in discipline matematiche e fisiche.Il master ha l’obiettivo di formare sviluppatori di videogiochi e/o applicazioni multimediali avanzate, focalizzandosi sulle tecnologie più recenti e con una particolare attenzione alle problematiche di lavoro in gruppo.
   - title: Stage
@@ -44,23 +44,21 @@ paragraphs:
       colloquio di ammissione 15/10/19
       pagamento prima rata 22/10/19
       inizio lezioni 08/11/19
-services:
-  - image: /img/biblioteca.png
-    alt: biblioteca
-    heading: Biblioteca
-  - image: /img/laboratori.png
-    alt: laboratori informatici
-    heading: Laboratori informatici
-  - image: /img/database.png
-    alt: banca dati
-    heading: Database ricerche scentifiche
-  - image: /img/aula-studio.png
-    alt: Aule studio
-    heading: Aule studio
-  - image: /img/wireless.png
-    alt: wireless
-    heading: Rete Wireless
-  - image: /img/email.png
-    alt: email
-    heading: Servizio Mail
+historySteps:
+  - image: /img/placeholder.png
+    alt: placeholder
+    heading: "1986"
+    subheading: Nasce l'azienda
+  - image: /img/placeholder.png
+    alt: placeholder
+    heading: "1998"
+    subheading: si ingrandisce
+  - image: /img/placeholder.png
+    alt: placeholder
+    heading: "2004"
+    subheading: si ingrandisce ancora
+  - image: /img/placeholder.png
+    alt: placeholder
+    heading: "2016"
+    subheading: premio boh
 ---

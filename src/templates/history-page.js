@@ -9,13 +9,13 @@ import BlogRoll from '../components/BlogRoll'
 import Row from '../components/Row'
 import MarkdownContent from '../components/MarkdownContent'
 
-export const MasterPageTemplate = ({
+export const HistoryPageTemplate = ({
   title,
   image,
   altImage,
-  serviceTitle,
+  historyTitle,
   paragraphs,
-  services,
+  historySteps,
   banner,
 }) => {
   const topParagraphs = paragraphs.length > 0 && paragraphs.slice(1,4)
@@ -52,12 +52,13 @@ export const MasterPageTemplate = ({
       </section>
       <section className="section is-medium has-background-primary">
         <div className="container is-horizontal-spaced">
-          <h2 className="title is-2">{serviceTitle}</h2>
+          <h2 className="title is-2">{historyTitle}</h2>
           <div className="columns is-multiline is-centered">
-            { services.length > 0 && services.map( service => (
+            { historySteps.length > 0 && historySteps.map( step => (
                 <div key={v4()} className="column is-4-tablet is-2-desktop is-1-fullhd has-text-centered">
-                  <Image src={service.image} alt={service.alt} styles="is-96x96 image--tag" rounded/>
-                  <h4 className="title is-5" style={{marginTop: '1rem'}}>{service.heading}</h4>
+                  <Image src={step.image} alt={step.alt} styles="is-96x96 image--tag" rounded/>
+                  <h4 className="title is-5" style={{marginTop: '1rem'}}>{step.heading}</h4>
+                  <p className="has-text-primary-invert">{step.subheading}</p>
                 </div>
               ))
             }
@@ -106,7 +107,7 @@ export const MasterPageTemplate = ({
   )
 }
 
-MasterPageTemplate.propTypes = {
+HistoryPageTemplate.propTypes = {
   title: PropTypes.string,
   altImage: PropTypes.string,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -115,26 +116,26 @@ MasterPageTemplate.propTypes = {
   services: PropTypes.array,
 }
 
-const MasterPage = ({ data }) => {
+const HistoryPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'program')
 
   return (
     <Layout>
-      <MasterPageTemplate
+      <HistoryPageTemplate
         title={frontmatter.title}
         altImage={frontmatter.altImage}
         image={frontmatter.image}
-        serviceTitle={frontmatter.serviceTitle}
+        historyTitle={frontmatter.historyTitle}
         paragraphs={frontmatter.paragraphs}
-        services={frontmatter.services}
+        historySteps={frontmatter.historySteps}
         banner={banner[0]}
       />
     </Layout>
   )
 }
 
-MasterPage.propTypes = {
+HistoryPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -147,11 +148,11 @@ MasterPage.propTypes = {
   }),
 }
 
-export default MasterPage
+export default HistoryPage
 
-export const masterPageQuery = graphql`
-  query MasterPage {
-    markdownRemark(frontmatter: { templateKey: { eq: "master-page"}}) {
+export const historyPageQuery = graphql`
+  query HistoryPage {
+    markdownRemark(frontmatter: { templateKey: { eq: "history-page"}}) {
       frontmatter {
         title
         image {
@@ -162,13 +163,14 @@ export const masterPageQuery = graphql`
           }
         }
         altImage
-        serviceTitle
+        historyTitle
         paragraphs {
           title
           description
         }
-        services {
+        historySteps {
           heading
+          subheading
           alt
           image {
             childImageSharp {

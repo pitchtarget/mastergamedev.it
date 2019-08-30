@@ -1,21 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { MasterPageTemplate } from '../../templates/master-page'
+import { HistoryPageTemplate } from '../../templates/history-page'
 
-const MasterPagePreview = ({ entry, getAsset }) => {
+const HistoryPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
   const entryParagraphs = entry.getIn(['data', 'paragraphs'])
   const paragraphs = entryParagraphs ? entryParagraphs.toJS() : []
-  const entryServices = entry.getIn(['data', 'services'])
-  const services = entryServices ? entryServices.toJS() : []
+  const entrySteps = entry.getIn(['data', 'services'])
+  const historySteps = entrySteps ? entrySteps.toJS() : []
 
   if (data) {
     return (
-      <MasterPageTemplate
+      <HistoryPageTemplate
         title={data.title}
-        serviceTitle={data.serviceTitle}
+        historyTitle={data.historyTitle}
         paragraphs={paragraphs}
-        services={services}
+        historySteps={historySteps}
       />
     )
   } else {
@@ -23,11 +23,11 @@ const MasterPagePreview = ({ entry, getAsset }) => {
   }
 }
 
-MasterPagePreview.propTypes = {
+HistoryPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   getAsset: PropTypes.func,
 }
 
-export default MasterPagePreview
+export default HistoryPagePreview

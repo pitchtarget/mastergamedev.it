@@ -83,11 +83,11 @@ collections:
             }
 
       # MASTER PAGE
-      - file: "src/pages/master/index.md"
-        label: "Master page"
-        name: "master"
+      - file: "src/pages/story/index.md"
+        label: "History page"
+        name: "history"
         fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "master-page"}
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "history-page"}
           - {label: Title, name: title, widget: string}
           - {
               label: Paragraphs,
@@ -98,10 +98,10 @@ collections:
                 {label:Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]},
               ],
             }
-          - {label: Service title, name: serviceTitle, widget: string}
+          - {label: History title, name: historyTitle, widget: string}
           - {
-              label: Services,
-              name: services,
+              label: History steps,
+              name: historySteps,
               widget: list,
               fields: [
                 {label: Image, name: image, widget: image, default: /img/service-placeholder.png},
