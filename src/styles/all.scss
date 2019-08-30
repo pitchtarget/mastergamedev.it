@@ -52,6 +52,10 @@ $fullhd: 1980px;
 $navbar-burger-color: #cabeae;
 $sidebar-background: #17110d;
 
+.main {
+  min-height: 80vh;
+}
+
 .content .taglist {
   list-style: none;
   margin-bottom: 0;

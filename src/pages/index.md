@@ -6,7 +6,7 @@ mainCover:
   heading: Amore per una dimensione quella artigianale
   subheading: La piccola torrefazione familiare assicura un’attenzione quasi maniacale dall’acquisto  alla miscelazione dei caffè migliori. Odio per tutto ciò che deborda nell’industriale, per gli occhi attenti ai costi che guardano con disprezzo la qualità. Bisogna amare il caffè, essere suo amico.
   cta: Scopri di più
-  link: /#
+  link: /storia
 
 coffeeType:
   image: /img/NostreMiscele.jpg
@@ -14,26 +14,26 @@ coffeeType:
   heading: I Nostri caffè esclusivi
   subheading: Docenti altamente qualificati provenienti dell’Università di Verona e dall’industria vi seguiranno durante il vostro percorso
   cta: Vedi il programma
-  link: /#
+  link: /miscele
   coffees:
     - image: /img/placeholder.png
       altImage: placeholder
-      heading: Guatemala
-      subheading: Caffè dal profumo di fiori, dal sentore di frutta esotica matura
-      cta: continua
-      link: /#
+      heading: La buona
+      subheading: Tu quoque, Brute, fili mi, nihil timor populi, nihil! Fabio vel iudice vincam, sunt in culpa qui officia.
+      cta: vedi scheda
+      link: /la-buona
     - image: /img/placeholder.png
       altImage: placeholder
-      heading: Etiopia
-      subheading: Produce qualità pregiatissime dolci e corpose, di grande sostegno per la esausta economia del paese.
-      cta: continua
-      link: /#
+      heading: La Migliore
+      subheading: Etiam habebis sem dicantur magna mollis euismod. Cras mattis iudicium purus sit amet fermentum.
+      cta: vedi scheda
+      link: /la-migliore
     - image: /img/placeholder.png
       altImage: placeholder
-      heading: India
-      subheading: E' delicato, tendente al dolce.
-      cta: continua
-      link: /#
+      heading: La ancora meglio
+      subheading: Quam temere in vitiis, legem sancimus haerentia. Ullamco laboris nisi ut aliquid ex ea commodi consequat.
+      cta: vedi scheda
+      link: /la-ancora-meglio
 
 mokaSecrets:
   heading: Il vero nemico del caffè la fretta!

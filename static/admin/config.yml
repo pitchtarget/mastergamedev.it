@@ -122,25 +122,48 @@ collections:
               ],
             }
 
-      # PROGRAM PAGE
-      - file: "src/pages/program/index.md"
-        label: "Program page"
-        name: "program"
+      # COFFEE PAGES
+      - file: "src/pages/good/index.md"
+        label: "La buona"
+        name: "good"
         fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "program-page"}
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "coffee-page"}
+          - {label: Cover, name: cover, widget: image}
+          - {label: "Alt cover", name: altCover: widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: "Alt image", name: altImage: widget: string}
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Short description, name: shortDesc, widget: string}
           - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]}
-          - {label: Title paragraphs, name: titleParagraphs, widget: string}
-          - {
-              label: Paragraphs,
-              name: paragraphs,
-              widget: list,
-              fields: [
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]},
-              ],
-            }
+
+      - file: "src/pages/excellent/index.md"
+        label: "La Migliore"
+        name: "excellent"
+        fields:
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "coffee-page"}
+          - {label: Cover, name: cover, widget: image}
+          - {label: "Alt cover", name: altCover: widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: "Alt image", name: altImage: widget: string}
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Short description, name: shortDesc, widget: string}
+          - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]}
+
+      - file: "src/pages/best/index.md"
+        label: "La ancora meglio"
+        name: "best"
+        fields:
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "coffee-page"}
+          - {label: Cover, name: cover, widget: image}
+          - {label: "Alt cover", name: altCover: widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: "Alt image", name: altImage: widget: string}
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Short description, name: shortDesc, widget: string}
+          - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]}
 
       # BLENDS PAGE
       - file: "src/pages/blends/index.md"
@@ -174,56 +197,6 @@ collections:
                 {label: "Alt image", name: altImage, widget: string},
                 {label: Origin, name: origin, widget: string},
                 {label: Description, name: description, widget: string},
-              ],
-            }
-
-      # PARTNERS PAGE
-      - file: "src/pages/partners/index.md"
-        label: "Partners list"
-        name: "partners"
-        fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "partners-page"}
-          - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png}
-          - {label: "Alt image", name: altImage, widget: string}
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]}
-          - {label: "Partners title", name: partnersTitle, widget: string}
-          - {
-              label: Partners,
-              name: partners,
-              widget: list,
-              fields: [
-                {label: Full name, name: name, widget: string},
-                {label: Image, name: image, widget: image, default: /img/student-img.png},
-                {label: "Alt image", name: altImage, widget: string},
-                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]},
-                {label: "Link", name: link, widget: string},
-                {label: "Show in home", name: main, widget: boolean}
-              ],
-            }
-
-      # TEACHERS PAGE
-      - file: "src/pages/teachers/index.md"
-        label: "Teachers list"
-        name: "teachers"
-        fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "teachers-page"}
-          - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png}
-          - {label: "Alt image", name: altImage, widget: string}
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]}
-          - {label: "Teachers title", name: techersTitle, widget: string}
-          - {
-              label: Teachers,
-              name: teachers,
-              widget: list,
-              fields: [
-                {label: Full name, name: fullName, widget: string},
-                {label: Image, name: image, widget: image, default: /img/student-img.png},
-                {label: "Alt image", name: altImage, widget: string},
-                {label: Link, name: link, widget: string},
-                {label: Role, name: role, widget: string},
-                {label: Biography, name: bio, widget: string}
               ],
             }
 
