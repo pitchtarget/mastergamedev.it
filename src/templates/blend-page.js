@@ -64,7 +64,32 @@ export const BlendPageTemplate = ({
           <div className="column is-10-desktop is-offset-1-desktop">
             <div className="section is-medium">
               <h2 className="title is-2 is-spaced">{blendTitle}</h2>
-              {/* Inserire le origini */}
+              { blends.length > 0 && blends.map( (blend, id) => {
+                const reverse = id % 2
+                return (
+                  <div key={v4()} className="section">
+                    <div
+                      className="columns is-vcentered"
+                      style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
+                    >
+                      <div className="column">
+                        <Image src={blend.image} alt={blend.alt}/>
+                      </div>
+                      <div className="column">
+                        <div className="content">
+                          <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
+                            {blend.name}
+                          </h3>
+                          <h5 className="subtitle is-spaced is-5">
+                            <small>Origine:</small> {blend.origin}
+                          </h5>
+                          <MarkdownContent content={blend.description}/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )})
+              }
             </div>
           </div>
         </div>
