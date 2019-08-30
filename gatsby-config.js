@@ -2,9 +2,9 @@ var proxy = require('http-proxy-middleware')
 
 module.exports = {
   siteMetadata: {
-    title: 'Master game develop',
+    title: 'Artigiano del caffè',
     description:
-      'Il primo master universitario in Italia sulla programmazione dei videogames',
+      'piccola torrefazione familiare',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
