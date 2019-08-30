@@ -5,7 +5,6 @@ import { v4 } from 'uuid'
 import Layout from '../components/Layout'
 import Image from '../components/elements/Image'
 import Button from '../components/elements/Button'
-import BlogRoll from '../components/BlogRoll'
 import Row from '../components/Row'
 import MarkdownContent from '../components/MarkdownContent'
 
@@ -100,7 +99,6 @@ export const HistoryPageTemplate = ({
               />
             </div>
           </div>
-          <BlogRoll/>
         </div>
       </section>
     </>

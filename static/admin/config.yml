@@ -82,7 +82,7 @@ collections:
               ],
             }
 
-      # MASTER PAGE
+      # HISTORY PAGE
       - file: "src/pages/story/index.md"
         label: "History page"
         name: "history"
