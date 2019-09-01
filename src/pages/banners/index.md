@@ -18,9 +18,9 @@ banners:
     image: /img/placeholder.png
     alt: placeholder
   - name: partners
-    title: Il Master collabora con le più importanti aziende italiane del settore videoludico.
+    title: L’Università di Verona rappresenta garanzia di Didattica qualificata, Strutture e Ricerca.
     text: >
-      Di seguito i nostri partner, presso i quali sarà possibile effettuare uno stage - obbligatorio e garantito - alla fine del percorso di formazione.
+      La facoltà di Scienze in particolare è stata insignita negli ultimi anni di numerosi riconoscimenti per qualità di insegnamenti e ricerca. E’ presente tra gli altri un indirizzo ad orientamento multimediale nell’ambito della laurea magistrale in Ingegneria e scienze informatiche.
     cta: i nostri partner
     link: /collaborazioni/#partners
     image: /img/programming.jpg
@@ -37,6 +37,7 @@ banners:
     title: Il Master è strutturato in 1500 ore di lezioni frontali
     text: >
       Il Master mira a soddisfare le esigenze di formazione elevata nell’ambito dello sviluppo di applicazioni videoludiche.
+    cta: programma completo
     link: /programma
     image: /img/scuola.jpg
     alt: scuola
