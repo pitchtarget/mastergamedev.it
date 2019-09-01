@@ -5,8 +5,8 @@ mainCover:
   altImage: immagine di copertina
   heading: Amore per una dimensione quella artigianale
   subheading: La piccola torrefazione familiare assicura un’attenzione quasi maniacale dall’acquisto  alla miscelazione dei caffè migliori. Odio per tutto ciò che deborda nell’industriale, per gli occhi attenti ai costi che guardano con disprezzo la qualità. Bisogna amare il caffè, essere suo amico.
-  cta: Scopri di più
-  link: /storia
+  //*cta: Scopri di più
+  //link: /storia
 
 coffeeType:
   image: /img/NostreMiscele.jpg
@@ -16,20 +16,20 @@ coffeeType:
   cta: Vedi il programma
   link: /miscele
   coffees:
-    - image: /img/placeholder.png
-      altImage: placeholder
+    - image: /img/packaging.jpg
+      altImage: packaging
       heading: La buona
       subheading: Tu quoque, Brute, fili mi, nihil timor populi, nihil! Fabio vel iudice vincam, sunt in culpa qui officia.
       cta: vedi scheda
       link: /la-buona
-    - image: /img/placeholder.png
-      altImage: placeholder
+    - image: /img/packaging.jpg
+      altImage: packaging
       heading: La Migliore
       subheading: Etiam habebis sem dicantur magna mollis euismod. Cras mattis iudicium purus sit amet fermentum.
       cta: vedi scheda
       link: /la-migliore
-    - image: /img/placeholder.png
-      altImage: placeholder
+    - image: /img/packaging.jpg
+      altImage: packaging
       heading: La ancora meglio
       subheading: Quam temere in vitiis, legem sancimus haerentia. Ullamco laboris nisi ut aliquid ex ea commodi consequat.
       cta: vedi scheda
