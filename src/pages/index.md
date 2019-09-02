@@ -26,15 +26,15 @@ schoolSection:
     - heading: Un master universitario
       subheading: Il master di game development è un percorso formativo di livello universitario
       cta: continua
-      link: /#
+      link: /master
     - heading: Docenti professionisti del settore
       subheading: Al Master acquisirai le conoscenze da un gruppo di docenti professionisti del game development
       cta: continua
-      link: /#
+      link: /docenti
     - heading: Un filo diretto con le aziende leader del settore
       subheading: La scuola è uno dei bacini più interessanti per le aziende di questo settore
       cta: continua
-      link: /#
+      link: /collaborazioni
 
 studentsSection:
   heading: Una scuola che ti apre le porte a mondo del lavoro
