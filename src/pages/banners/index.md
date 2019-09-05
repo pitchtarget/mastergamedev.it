@@ -6,8 +6,8 @@ box:
   title: Partecipa all’OPEN DAY sabato 13 Luglio 2019
   text: >
     Durante l'open day vengono organizzati brevi work shop con i ragazzi del master che ti aiuteranno a creare il tuo primo gioco
-  cta: Mi interessa
-  link: /contatti
+  cta: Iscriviti
+  link: http://www.scienzeingegneria.univr.it//fol/?ent=iscrizionecs&cs=406&aa=2019%2F2020&lang=it
 banners:
   - name: students
     title: Ut enim ad minim veniam, quis nostrud exercitation.
