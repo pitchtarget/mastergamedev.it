@@ -5,8 +5,8 @@ mainCover:
   altImage: immagine di copertina
   heading: Amore per una dimensione quella artigianale
   subheading: La piccola torrefazione familiare assicura un’attenzione quasi maniacale dall’acquisto  alla miscelazione dei caffè migliori. Odio per tutto ciò che deborda nell’industriale, per gli occhi attenti ai costi che guardano con disprezzo la qualità. Bisogna amare il caffè, essere suo amico.
-  //*cta: Scopri di più
-  //link: /storia
+  #cta: Scopri di più
+  #link: /storia
 
 coffeeType:
   image: /img/NostreMiscele.jpg

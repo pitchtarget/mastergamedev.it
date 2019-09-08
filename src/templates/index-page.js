@@ -33,11 +33,6 @@ export const IndexPageTemplate = ({
                 <div>
                   <h1 className="title is-spaced is-size-2-mobile is-size-1-tablet">{mainCover.heading}</h1>
                   <p className="subtitle is-size-6">{mainCover.subheading}</p>
-                  <Button
-                    text={mainCover.cta}
-                    link={mainCover.link}
-                    styles="cta cta-large cta__light"
-                  />
                 </div>
               </div>
             </div>
@@ -177,8 +172,6 @@ export const pageQuery = graphql`
           altImage
           heading
           subheading
-          cta
-          link
         }
         coffeeType {
           image {
