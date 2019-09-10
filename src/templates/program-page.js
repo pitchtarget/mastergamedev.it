@@ -12,6 +12,8 @@ export const ProgramPageTemplate = ({
   description,
   titleParagraphs,
   paragraphs,
+  scientificCommittee,
+  people,
   bannerStudents,
   bannerMaster,
 }) => {
@@ -29,6 +31,25 @@ export const ProgramPageTemplate = ({
           <h2 className="title is-2 is-spaced">{titleParagraphs}</h2>
           <div className="columns is-multiline">
             { paragraphs.length > 0 && paragraphs.map( paragraph =>(
+                <div key={v4()} className="column is-6-tablet">
+                  <h3 className="title is-5">{paragraph.title}</h3>
+                  <MarkdownContent content={paragraph.description}/>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+      </div>
+      <div className="container is-horizontal-spaced">
+        <section className="section is-medium" style={{paddingTop: '0px'}}>
+          <h2 className="title is-2 is-spaced">{scientificCommittee}</h2>
+          <section className="section is-medium" style={{paddingTop: '0px'}}>
+
+          Il Comitato Scientifico ha la responsabilità di indirizzo e di gestione del Master. È composto da docenti dell’Università di Verona e dai persone provenienti dall’industria videoludica con provata esperienza.Il Comitato Scientifico è nominato, contestualmente all’approvazione della proposta istitutiva, dal Consiglio di Dipartimento ed è composto da almeno cinque componenti: il Comitato Scientifico provvede alla programmazione delle attività formative, all’eventuale riconoscimento allo studente di crediti, alla definizione dei criteri di valutazione e delle modalità di espletamento delle procedure selettive, delle verifiche periodiche e della prova finale. Inoltre, per le attività di stage, individua uno o più referenti sia per il coordinamento delle attività sia per gli aspetti organizzativi e la stipula delle convenzioni.
+          </section>
+          <div className="columns is-multiline">
+            {
+              people.length > 0 && people.map( paragraph =>(
                 <div key={v4()} className="column is-6-tablet">
                   <h3 className="title is-5">{paragraph.title}</h3>
                   <MarkdownContent content={paragraph.description}/>
@@ -85,12 +106,19 @@ ProgramPageTemplate.propTypes = {
   titleParagraphs: PropTypes.string,
   bannerStudents: PropTypes.object,
   bannerMaster: PropTypes.object,
-  paragraphs: PropTypes.arrayOf(
+  scientificCommittee: PropTypes.string,
+  people: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
       description: PropTypes.string,
     })
   ),
+  paragraphs: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      description: PropTypes.string,
+    })
+  )
 }
 
 const ProgramPage = ({ data }) => {
@@ -105,6 +133,8 @@ const ProgramPage = ({ data }) => {
         description={frontmatter.description}
         titleParagraphs={frontmatter.titleParagraphs}
         paragraphs={frontmatter.paragraphs}
+        scientificCommittee={frontmatter.scientificCommittee}
+        people={frontmatter.people}
         bannerMaster={bannerMaster[0]}
         bannerStudents={bannerStudents[0]}
       />
@@ -135,10 +165,19 @@ export const masterPageQuery = graphql`
         subtitle
         description
         titleParagraphs
+        people {
+          title
+          description
+        }
         paragraphs {
           title
           description
         }
+      }
+    }
+    markdownRemark(frontmatter: { templateKey: { eq: "program-page"}}) {
+      frontmatter {
+        scientificCommittee
       }
     }
     bannersData: markdownRemark(frontmatter: { templateKey: { eq: "banners"}}) {
