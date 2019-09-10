@@ -3,10 +3,10 @@ templateKey: 'banners'
 box:
   image: /img/open-day.jpg
   alt: open day
-  title: Partecipa all’OPEN DAY sabato 13 Luglio 2019
+  title: Corso 2019-2020
   text: >
-    Durante l'open day vengono organizzati brevi work shop con i ragazzi del master che ti aiuteranno a creare il tuo primo gioco
-  cta: Iscriviti
+    Le iscrizioni al master chiuderanno a breve
+  cta: Iscriviti ora
   link: http://www.scienzeingegneria.univr.it//fol/?ent=iscrizionecs&cs=406&aa=2019%2F2020&lang=it
 banners:
   - name: students
