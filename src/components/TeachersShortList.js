@@ -18,10 +18,10 @@ class TeachersShortList extends React.Component {
     }
 
     filteredTeachers = [
-      teachers[listNum[0]],
-      teachers[listNum[1]],
-      teachers[listNum[2]],
-      teachers[listNum[3]],
+      teachers[0],
+      teachers[1],
+      teachers[2],
+      teachers[3],
     ]
 
     return (
