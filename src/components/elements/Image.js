@@ -13,7 +13,7 @@ const Image = ({ src, alt, children, styles, rounded }) => {
     <>
       { !!children
         ? <div
-            className={!!styles ? styles : "image--background"}
+            className={!!styles ? styles : "image--bg is-md"}
             style={{backgroundImage: `url(${image})`}}
             title={alt}
           >

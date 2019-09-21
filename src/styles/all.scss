@@ -208,15 +208,36 @@ $menu-label-color: $white-ter;
   margin: auto;
 }
 
-.image--background {
-  min-height: 200px;
-  @include from($tablet) {
-    min-height: 400px;
-  }
+.image--bg {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  &.is-sm {
+    min-height: 120px;
+    @include from($tablet) {
+      min-height: 240px;
+    }
+  }
+  &.is-md {
+    min-height: 160px;
+    @include from($tablet) {
+      min-height: 320px;
+    }
+  }
+  &.is-lg {
+    min-height: 240px;
+    @include from($tablet) {
+      min-height: 480px;
+    }
+    &.is-tile {
+      min-height: calc(240px + 1.5rem);
+      @include from($tablet) {
+        min-height: calc(480px + 1.5rem);
+      }
+    }
+  }
 }
+
 
 // responsiveness
 +tablet-only {

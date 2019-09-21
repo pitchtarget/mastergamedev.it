@@ -22,7 +22,7 @@ projects:
       Petierunt uti sibi concilium totius Galliae in diem certam indicere. Contra legem facit qui id facit quod lex prohibet. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. A communi observantia non est recedendum. Curabitur blandit tempus ardua ridiculus sed magna. Non equidem invideo, miror magis posuere velit aliquet.
     image: /img/student-image.jpg
     altImage: placeholder
-titleStudents: I nostri studenti
+titleProjects: I Progetti
 students:
   - fullName: student-1
     main: true

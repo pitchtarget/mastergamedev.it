@@ -184,7 +184,7 @@ collections:
                 {label: Alt image, name: altImage, widget: string},
               ],
             }
-          - {label: Students title, name: titleStudents, widget: string}
+          - {label: Students title, name: titleProjects, widget: string}
           - {
               label: Students,
               name: students,
