@@ -15,7 +15,7 @@ export const StudentsPageTemplate = ({
   title,
   description,
   projects,
-  titleStudents,
+  titleProjects,
   students,
   banner,
 }) => {
@@ -32,29 +32,7 @@ export const StudentsPageTemplate = ({
           </div>
           <div className="columns is-tablet">
             <div className="column is-10-desktop is-offset-1-desktop">
-              { projects.length > 0 && projects.map( (project, id) => {
-                const reverse = id % 2
-                return (
-                  <div key={v4()} className="section">
-                    <div
-                      className="columns is-vcentered"
-                      style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
-                    >
-                      <div className="column">
-                        <Image src={project.image} alt={project.alt}/>
-                      </div>
-                      <div className="column">
-                        <div className="content">
-                          <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
-                              {project.title}
-                          </h3>
-                          <MarkdownContent content={project.description}/>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )})
-              }
+              <Students students={students} />
             </div>
           </div>
         </div>
@@ -62,12 +40,94 @@ export const StudentsPageTemplate = ({
       <section className="container">
         <SignupBox id="studentsSignup" styles="is-moveup"/>
       </section>
-      <div className="container is-horizontal-spaced">
-        <div className="columns is-tablet">
-          <div className="column is-10-desktop is-offset-1-desktop">
-            <div className="section is-medium">
-              <h2 className="title is-2 is-spaced">{titleStudents}</h2>
-              <Students students={students} />
+      <div className="section is-medium">
+        <div className="container is-horizontal-spaced">
+          <div className="columns is-tablet">
+            <div className="column is-10-desktop is-offset-1-desktop">
+              <h2 className="title is-2 is-spaced">{titleProjects}</h2>
+              <div style={{marginBottom: '3rem'}}>
+                { projects.length > 0 && projects.map( (project, id) => {
+                  const reverse = id % 2
+                  return (
+                    <div key={v4()} className="section">
+                      <div
+                        className="columns is-vcentered"
+                        style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
+                      >
+                        <div className="column">
+                          <Image src={project.image} alt={project.alt}/>
+                        </div>
+                        <div className="column">
+                          <div className="content">
+                            <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
+                                {project.title}
+                            </h3>
+                            <MarkdownContent content={project.description}/>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )})
+                }
+              </div>
+              <div id="tiles">
+                <div className="tile is-ancestor">
+                  <div className="tile is-parent is-6">
+                    <div className="tile is-child">
+                      <Image src={image} alt={altImage} styles="" children/>
+                    </div>
+                  </div>
+                  <div className="tile is-parent">
+                    <div className="tile is-child">
+                      <Image src={image} alt={altImage} styles="" children/>
+                    </div>
+                  </div>
+                  <div className="tile is-parent">
+                    <div className="tile is-child">
+                      <Image src={image} alt={altImage} styles="" children/>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="tile is-ancestor">
+                  <div className="tile is-parent is-vertical">
+                    <div className="tile is-child">
+                      <Image src={image} alt={altImage} styles="image--bg is-sm" children/>
+                    </div>
+                    <div className="tile is-child">
+                      <Image src={image} alt={altImage} styles="image--bg is-sm" children/>
+                    </div>
+                  </div>
+                  <div className="tile is-parent">
+                    <div className="tile is-child">
+                      <Image src={image} alt={altImage} styles="image--bg is-lg is-tile" children/>
+                    </div>
+                  </div>
+                  <div className="tile is-parent">
+                    <div className="tile is-child">
+                      <Image src={image} alt={altImage} styles="image--bg is-lg is-tile" children/>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="tile is-ancestor">
+                  <div className="tile is-parent">
+                    <div className="tile is-child">
+                      <Image src={image} alt={altImage} styles="" children/>
+                    </div>
+                  </div>
+                  <div className="tile is-parent is-6">
+                    <div className="tile is-child">
+                      <Image src={image} alt={altImage} styles="" children/>
+                    </div>
+                  </div>
+                  <div className="tile is-parent">
+                    <div className="tile is-child">
+                      <Image src={image} alt={altImage} styles="" children/>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -110,7 +170,7 @@ const StudentsPage = ({ data }) => {
         title={frontmatter.title}
         description={frontmatter.description}
         projects={frontmatter.projects}
-        titleStudents={frontmatter.titleStudents}
+        titleProjects={frontmatter.titleProjects}
         students={frontmatter.students}
         banner={banner[0]}
       />
@@ -158,7 +218,7 @@ export const studentsPageQuery = graphql`
             }
           }
         }
-        titleStudents
+        titleProjects
         students {
           fullName
           master
