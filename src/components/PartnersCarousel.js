@@ -39,6 +39,7 @@ export default () => (
           frontmatter {
             partners {
               name
+              description
               main
               link
               altImage

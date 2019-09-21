@@ -115,6 +115,10 @@ $navbar-burger-color: $primary;
   color: $primary;
 }
 
+.modal-background {
+  background-color: $modal-background !important;
+}
+
 // Override for use of svg's from https://simpleicons.org/
 .icon svg {
   width: 1.5rem;
