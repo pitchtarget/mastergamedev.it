@@ -14,9 +14,10 @@ export const StudentsPageTemplate = ({
   altImage,
   title,
   description,
-  projects,
-  titleProjects,
   students,
+  titleProjects,
+  projects,
+  projectsMedia,
   banner,
 }) => {
   return (
@@ -72,40 +73,28 @@ export const StudentsPageTemplate = ({
               </div>
               <div id="tiles">
                 <div className="tile is-ancestor">
-                  <div className="tile is-parent is-6">
-                    <div className="tile is-child">
-                      <Image src={image} alt={altImage} styles="" children/>
+                  <div className="tile is-vertical is-8">
+                    <div className="tile is-parent">
+                      <div className="tile is-child">
+                        { projectsMedia.length > 0 && <Image src={projectsMedia[0]} alt={altImage} size="md"/>}
+                      </div>
+                    </div>
+                    <div className="tile">
+                      <div className="tile is-parent">
+                        <div className="tile is-child">
+                          { projectsMedia.length > 1 && <Image src={projectsMedia[1]} alt={altImage} styles=""/>}
+                        </div>
+                      </div>
+                      <div className="tile is-parent">
+                        <div className="tile is-child">
+                          { projectsMedia.length > 2 && <Image src={projectsMedia[2]} alt={altImage} styles=""/>}
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div className="tile is-parent">
                     <div className="tile is-child">
-                      <Image src={image} alt={altImage} styles="" children/>
-                    </div>
-                  </div>
-                  <div className="tile is-parent">
-                    <div className="tile is-child">
-                      <Image src={image} alt={altImage} styles="" children/>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="tile is-ancestor">
-                  <div className="tile is-parent is-vertical">
-                    <div className="tile is-child">
-                      <Image src={image} alt={altImage} styles="image--bg is-sm" children/>
-                    </div>
-                    <div className="tile is-child">
-                      <Image src={image} alt={altImage} styles="image--bg is-sm" children/>
-                    </div>
-                  </div>
-                  <div className="tile is-parent">
-                    <div className="tile is-child">
-                      <Image src={image} alt={altImage} styles="image--bg is-lg is-tile" children/>
-                    </div>
-                  </div>
-                  <div className="tile is-parent">
-                    <div className="tile is-child">
-                      <Image src={image} alt={altImage} styles="image--bg is-lg is-tile" children/>
+                      { projectsMedia.length > 3 && <Image src={projectsMedia[3]} alt={altImage} size="md" vertical/>}
                     </div>
                   </div>
                 </div>
@@ -113,20 +102,57 @@ export const StudentsPageTemplate = ({
                 <div className="tile is-ancestor">
                   <div className="tile is-parent">
                     <div className="tile is-child">
-                      <Image src={image} alt={altImage} styles="" children/>
+                      { projectsMedia.length > 4 && <Image src={projectsMedia[4]} alt={altImage} size="md" vertical/>}
                     </div>
                   </div>
-                  <div className="tile is-parent is-6">
-                    <div className="tile is-child">
-                      <Image src={image} alt={altImage} styles="" children/>
+                  <div className="tile is-vertical is-8">
+                    <div className="tile is-parent">
+                      <div className="tile is-child">
+                        { projectsMedia.length > 5 && <Image src={projectsMedia[5]} alt={altImage} size="md"/>}
+                      </div>
+                    </div>
+                    <div className="tile">
+                      <div className="tile is-parent">
+                        <div className="tile is-child">
+                          { projectsMedia.length > 6 && <Image src={projectsMedia[6]} alt={altImage} styles=""/>}
+                        </div>
+                      </div>
+                      <div className="tile is-parent">
+                        <div className="tile is-child">
+                          { projectsMedia.length > 7 && <Image src={projectsMedia[7]} alt={altImage} styles=""/>}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="tile is-ancestor">
+                  <div className="tile is-vertical is-8">
+                    <div className="tile is-parent">
+                      <div className="tile is-child">
+                        { projectsMedia.length > 8 && <Image src={projectsMedia[8]} alt={altImage} size="md"/>}
+                      </div>
+                    </div>
+                    <div className="tile">
+                      <div className="tile is-parent">
+                        <div className="tile is-child">
+                          { projectsMedia.length > 9 && <Image src={projectsMedia[9]} alt={altImage} styles=""/>}
+                        </div>
+                      </div>
+                      <div className="tile is-parent">
+                        <div className="tile is-child">
+                          { projectsMedia.length > 10 && <Image src={projectsMedia[10]} alt={altImage} styles=""/>}
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div className="tile is-parent">
                     <div className="tile is-child">
-                      <Image src={image} alt={altImage} styles="" children/>
+                      { projectsMedia.length > 11 && <Image src={projectsMedia[11]} alt={altImage} size="md" vertical/>}
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -141,15 +167,6 @@ StudentsPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   description: PropTypes.string,
-  banner: PropTypes.object,
-  projects: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string,
-      description: PropTypes.string,
-      altImage: PropTypes.string,
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    }),
-  ),
   students: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -158,6 +175,19 @@ StudentsPageTemplate.propTypes = {
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     }),
   ),
+  titleProjects: PropTypes.string,
+  projects: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      description: PropTypes.string,
+      altImage: PropTypes.string,
+      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    }),
+  ),
+  projectsMedia: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+  ),
+  banner: PropTypes.object,
 }
 
 const StudentsPage = ({ data }) => {
@@ -169,9 +199,10 @@ const StudentsPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         description={frontmatter.description}
-        projects={frontmatter.projects}
-        titleProjects={frontmatter.titleProjects}
         students={frontmatter.students}
+        titleProjects={frontmatter.titleProjects}
+        projects={frontmatter.projects}
+        projectsMedia={frontmatter.projectsMedia}
         banner={banner[0]}
       />
     </Layout>
@@ -200,25 +231,14 @@ export const studentsPageQuery = graphql`
         title
         description
         image {
+          extension
+          publicURL
           childImageSharp {
             fluid(maxWidth: 1920, quality: 80) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        projects {
-          title
-          description
-          altImage
-          image {
-            childImageSharp {
-              fluid(maxWidth: 1240, quality: 80) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-        titleProjects
         students {
           fullName
           master
@@ -227,10 +247,36 @@ export const studentsPageQuery = graphql`
           description
           altImage
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 300, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
+            }
+          }
+        }
+        titleProjects
+        projects {
+          title
+          description
+          altImage
+          image {
+            extension
+            publicURL
+            childImageSharp {
+              fluid(maxWidth: 1240, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        projectsMedia {
+          extension
+          publicURL
+          childImageSharp {
+            fluid(maxWidth: 1240, quality: 80) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -246,6 +292,8 @@ export const studentsPageQuery = graphql`
           link
           alt
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 500, quality: 80) {
                 ...GatsbyImageSharpFluid

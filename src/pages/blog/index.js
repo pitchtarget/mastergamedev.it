@@ -99,6 +99,8 @@ query BlogPageQuery {
           date(formatString: "MMMM DD, YYYY")
           featuredpost
           featuredimage {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 500, quality: 80) {
                 ...GatsbyImageSharpFluid

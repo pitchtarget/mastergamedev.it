@@ -111,6 +111,8 @@ export const masterPageQuery = graphql`
         teachersTitle
         altImage
         image {
+          extension
+          publicURL
           childImageSharp {
             fluid(maxWidth: 1240, quality: 80) {
               ...GatsbyImageSharpFluid
@@ -124,6 +126,8 @@ export const masterPageQuery = graphql`
           link
           altImage
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 300, quality: 80) {
                 ...GatsbyImageSharpFluid
@@ -143,6 +147,8 @@ export const masterPageQuery = graphql`
           link
           alt
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 500, quality: 80) {
                 ...GatsbyImageSharpFluid
