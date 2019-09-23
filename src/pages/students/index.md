@@ -114,7 +114,7 @@ projectsMedia:
   - /img/Clone_Hunting_2.png
   - /img/ChildhoodNightmares.mp4
   - /img/CubeFall.mp4
-  - /img/Diary_Madness.mp4
+  - /img/DiaryMadness.mp4
   - /img/Diary_Madness_1.jpg
   - /img/Diary_Madness_2.jpg
   - /img/pcGameplay.mp4
