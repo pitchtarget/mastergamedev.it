@@ -157,6 +157,8 @@ export const masterPageQuery = graphql`
       frontmatter {
         title
         image {
+          extension
+          publicURL
           childImageSharp {
             fluid(maxWidth: 1920, quality: 80) {
               ...GatsbyImageSharpFluid
@@ -173,6 +175,8 @@ export const masterPageQuery = graphql`
           heading
           alt
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 100, quality: 80) {
                 ...GatsbyImageSharpFluid
@@ -192,6 +196,8 @@ export const masterPageQuery = graphql`
           link
           alt
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 500, quality: 80) {
                 ...GatsbyImageSharpFluid

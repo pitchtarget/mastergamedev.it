@@ -208,33 +208,44 @@ $menu-label-color: $white-ter;
   margin: auto;
 }
 
+@mixin imageSize($mobileSize ,$tabletSize ,$desktopSize ,$fullhdSize) {
+  @include until($tablet) {
+    min-height: $mobileSize;
+    min-width: $mobileSize;
+  }
+  @include from($tablet) {
+    min-height: $tabletSize;
+    &.is-tile { min-height: $tabletSize - $column-gap}
+  }
+  @include from($desktop) {
+    min-height: $desktopSize;
+    &.is-tile { min-height: $desktopSize - $column-gap}
+  }
+  @include from($fullhd) {
+    min-height: $fullhdSize;
+    &.is-tile { min-height: $fullhdSize - $column-gap}
+  }
+}
+
+.video--bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 .image--bg {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   &.is-sm {
-    min-height: 120px;
-    @include from($tablet) {
-      min-height: 240px;
-    }
+    @include imageSize(8rem,12rem,16rem,20rem);
   }
   &.is-md {
-    min-height: 160px;
-    @include from($tablet) {
-      min-height: 320px;
-    }
+    @include imageSize(12rem,16rem,20rem,32rem);
   }
   &.is-lg {
-    min-height: 240px;
-    @include from($tablet) {
-      min-height: 480px;
-    }
-    &.is-tile {
-      min-height: calc(240px + 1.5rem);
-      @include from($tablet) {
-        min-height: calc(480px + 1.5rem);
-      }
-    }
+    @include imageSize(16rem,20rem,32rem,40rem);
   }
 }
 

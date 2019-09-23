@@ -174,18 +174,6 @@ collections:
           - {label: Image, name: image, widget: image}
           - {label: Alt image, name: altImage, widget: string}
           - {
-              label: Projects,
-              name: projects,
-              widget: list,
-              fields: [
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]},
-                {label: Image, name: image, widget: image},
-                {label: Alt image, name: altImage, widget: string},
-              ],
-            }
-          - {label: Students title, name: titleProjects, widget: string}
-          - {
               label: Students,
               name: students,
               widget: list,
@@ -200,6 +188,19 @@ collections:
                 {label: Description, name: description, widget: string},
               ],
             }
+          - {label: Students title, name: titleProjects, widget: string}
+          - {
+              label: Projects,
+              name: projects,
+              widget: list,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]},
+                {label: Image, name: image, widget: image},
+                {label: Alt image, name: altImage, widget: string},
+              ],
+            }
+          - {label: Projects media, name: projectsMedia, widget: image}
 
       # PARTNERS PAGE
       - file: "src/pages/partners/index.md"

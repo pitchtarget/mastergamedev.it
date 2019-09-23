@@ -251,6 +251,8 @@ export const pageQuery = graphql`
       frontmatter {
         mainCover {
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1980, quality: 60) {
                 ...GatsbyImageSharpFluid
@@ -271,6 +273,8 @@ export const pageQuery = graphql`
         }
         schoolSection {
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1980, quality: 80) {
                 ...GatsbyImageSharpFluid

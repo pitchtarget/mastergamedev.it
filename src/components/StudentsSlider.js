@@ -71,6 +71,8 @@ export default () => (
               description
               altImage
               image {
+                extension
+                publicURL
                 childImageSharp {
                   fluid(maxWidth: 300, quality: 80) {
                     ...GatsbyImageSharpFluid

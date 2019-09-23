@@ -47,6 +47,8 @@ const SignupBox = ({color, id, styles}) => (
           frontmatter {
             box {
               image {
+                extension
+                publicURL
                 childImageSharp {
                   fluid(maxWidth: 500, quality: 80) {
                     ...GatsbyImageSharpFluid
