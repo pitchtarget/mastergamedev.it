@@ -13,13 +13,11 @@ const Image = ({ src, alt, children, styles, rounded, size, vertical }) => {
   else { videoSize = {w: 800, h: 600} }
 
   if(!!vertical) {videoSize = {w: videoSize.h, h: videoSize.w} }
-  // console.log(src.extension)
-  // debugger
 
   return (
     <>
       { src.extension === "mp4"
-        ? <video className={styles} autoPlay loop muted width={`${videoSize.w}`} height={`${videoSize.h}`}>
+        ? <video autoPlay loop muted width={`${videoSize.w}`} height={`${videoSize.h}`}>
             <source src={media} type="video/mp4"/>
             Sorry, your browser doesn't support embedded videos.
           </video>
