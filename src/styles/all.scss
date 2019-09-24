@@ -62,9 +62,13 @@ $navbar-burger-color: $primary;
   justify-content: left;
   align-items: center;
   li {
+    cursor: pointer;
     padding: 0 2rem 1rem 0;
     margin-bottom: 1.5rem;
     margin-top: 0;
+  }
+  li.active {
+    font-weight: bold;
   }
 }
 
