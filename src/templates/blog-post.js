@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import Button from '../components/elements/Button'
 
 export const BlogPostTemplate = ({
   content,
@@ -37,6 +38,11 @@ export const BlogPostTemplate = ({
                     </li>
                   ))}
                 </ul>
+                <Button
+                  text="Tutti i post"
+                  link="/blog"
+                  styles="cta cta-large cta__invert"
+                />
               </div>
             ) : null}
           </div>

@@ -42,8 +42,8 @@ export default class BlogIndexPage extends React.Component {
               <div className="column is-offset-1">
                 <div className="content">
                   <h1 className="title is-1">Ultime news</h1>
+                  <h4>Tags</h4>
                   <ul className="taglist">
-                    <li>Categorie:</li>
                     { tags && tags.map(tag => (
                       <li
                         key={tag.fieldValue}
