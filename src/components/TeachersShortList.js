@@ -15,14 +15,8 @@ class TeachersShortList extends React.Component {
       let randomNum = Math.floor(Math.random() * Math.floor(teachers.length))
       let hasValue = listNum.includes(randomNum)
       !hasValue && listNum.push(randomNum)
+      !hasValue && filteredTeachers.push(teachers[randomNum])
     }
-
-    filteredTeachers = [
-      teachers[0],
-      teachers[1],
-      teachers[2],
-      teachers[3],
-    ]
 
     return (
       <div className="columns is-multiline is-centered">
