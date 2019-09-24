@@ -3,8 +3,11 @@ import PropTypes from 'prop-types'
 
 const Image = ({ src, alt, children, styles, rounded, size, vertical }) => {
   let media
-  if(!!src) { media = !!src.childImageSharp ? src.childImageSharp.fluid.src : src.publicURL }
-  else { media = '/img/placeholder.png' }
+  if(!!src) {
+    if(!!src.childImageSharp) { media = src.childImageSharp.fluid.src }
+    else if(!!src.publicURL){ media = src.publicURL }
+    else { media = src }
+  } else { media = '/img/placeholder.png' }
 
   let videoSize
   if (size === 'sm') { videoSize = {w: 400, h: 300} }

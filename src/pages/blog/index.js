@@ -1,28 +1,66 @@
 import React from 'react'
+import { kebabCase } from 'lodash'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import Image from '../../components/elements/Image'
 
 export default class BlogIndexPage extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      filterTag: null,
+      filteredPosts: this.props.data.allMarkdownRemark.edges,
+    }
+  }
+
+  filterPost = (tag) => {
+    const { filterTag } = this.state
+    const allPosts = this.props.data.allMarkdownRemark.edges
+
+    let filteredPosts = allPosts.filter(function(post) {
+      return post.node.frontmatter.tags.includes(tag)
+    });
+
+    this.setState({
+      filteredPosts: filterTag === tag ? allPosts : filteredPosts,
+      filterTag: filterTag === tag ? null : tag,
+    })
+
+  }
+
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const { filterTag, filteredPosts } = this.state
+    const tags = this.props.data.tagsListQuery.group
+
     return (
       <Layout>
-        <Image src="/img/gaming.jpg" alt="blog-cover" styles="cover is-small" children/>
+        <Image src="/img/docenti.jpg" alt="blog-cover" styles="cover is-small" children/>
         <section className="section">
           <div className="container is-horizontal-spaced">
-            <div className="columns is-tablet">
-              <div className="column is-8 is-offset-1">
-                <div className="section">
+            <div className="columns is-tablet is-multiline">
+              <div className="column is-offset-1">
+                <div className="content">
                   <h1 className="title is-1">Ultime news</h1>
+                  <h4>Tags</h4>
+                  <ul className="taglist">
+                    { tags && tags.map(tag => (
+                      <li
+                        key={tag.fieldValue}
+                        onClick={() => this.filterPost(tag.fieldValue)}
+                        className={filterTag === tag.fieldValue ? "active" : ""}
+                      >
+                        <span>  {tag.fieldValue}</span>
+                        <small>  {tag.totalCount}</small>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
             <div className="columns is-multiline is-tablet">
-              {posts &&
-                posts.map(({ node: post }) => (
+              { filteredPosts &&
+                filteredPosts.map(({ node: post }) => (
                   <div className="column is-6-tablet" key={post.id}>
                     <article className="postCard">
                       <div className="columns is-gapless is-desktop">
@@ -77,6 +115,9 @@ BlogIndexPage.propTypes = {
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
     }),
+    tagsListQuery: PropTypes.shape({
+      group: PropTypes.array,
+    }),
   }),
 }
 
@@ -98,6 +139,7 @@ query BlogPageQuery {
           templateKey
           date(formatString: "MMMM DD, YYYY")
           featuredpost
+          tags
           featuredimage {
             extension
             publicURL
@@ -109,6 +151,12 @@ query BlogPageQuery {
           }
         }
       }
+    }
+  }
+  tagsListQuery: allMarkdownRemark(limit: 1000) {
+    group(field: frontmatter___tags) {
+      fieldValue
+      totalCount
     }
   }
 }
