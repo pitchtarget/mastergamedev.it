@@ -35,7 +35,7 @@ export default class BlogIndexPage extends React.Component {
 
     return (
       <Layout>
-        <Image src="/img/gaming.jpg" alt="blog-cover" styles="cover is-small" children/>
+        <Image src="/img/docenti.jpg" alt="blog-cover" styles="cover is-small" children/>
         <section className="section">
           <div className="container is-horizontal-spaced">
             <div className="columns is-tablet is-multiline">
