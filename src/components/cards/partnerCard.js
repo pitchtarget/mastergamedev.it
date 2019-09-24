@@ -13,22 +13,24 @@ const PartnerCard = class extends React.Component {
 
   toggleModal = () => {
     // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              modalActiveClass: 'is-active',
-            })
-          : this.setState({
-              modalActiveClass: '',
-            })
-      }
-    )
+    if(!this.props.disableModal) {
+      this.setState(
+        {
+          active: !this.state.active,
+        },
+        // after state has been updated,
+        () => {
+          // set the class in state for the navbar accordingly
+          this.state.active
+            ? this.setState({
+                modalActiveClass: 'is-active',
+              })
+            : this.setState({
+                modalActiveClass: '',
+              })
+        }
+      )
+    }
   }
 
   render() {

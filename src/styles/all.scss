@@ -317,73 +317,75 @@ footer .footer-list {
   }
 }
 // Set slider width
-.slick-list,
-.slick-slide {
-  @include from($tablet) {
-    width: 90vw;
+#studentSlider {
+  .slick-list,
+  .slick-slide {
+    @include from($tablet) {
+      width: 90vw;
+    }
+    @include from($desktop) {
+      width: 70vw;
+    }
+    @include from($widescreen) {
+      width: 60vw;
+    }
+    width: 100vw;
   }
-  @include from($desktop) {
-    width: 70vw;
+  .slick-list {
+    margin: auto;
   }
-  @include from($widescreen) {
-    width: 60vw;
+  $slider-arrow: url('../img/arrow.svg');
+  .slick-arrow,
+  .slick-arrow:hover,
+  .slick-prev:hover,
+  .slick-next:hover,
+  .slick-prev:focus,
+  .slick-next:focus, {
+    color: white;
+    width: 1.5rem;
+    height: 2rem;
+    background: $slider-arrow;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: transparent;
   }
-  width: 100vw;
-}
-.slick-list {
-  margin: auto;
-}
-$slider-arrow: url('../img/arrow.svg');
-.slick-arrow,
-.slick-arrow:hover,
-.slick-prev:hover,
-.slick-next:hover,
-.slick-prev:focus,
-.slick-next:focus, {
-  color: white;
-  width: 1.5rem;
-  height: 2rem;
-  background: $slider-arrow;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  color: transparent;
-}
-.slick-arrow {
-  opacity: .75;
-  &:hover {
-    opacity: 1;
+  .slick-arrow {
+    opacity: .75;
+    &:hover {
+      opacity: 1;
+    }
   }
-}
 
-.slick-prev {
-  @include until($desktop) {
-    display: none !important;
+  .slick-prev {
+    @include until($desktop) {
+      display: none !important;
+    }
+    @include from($desktop) {
+      left: 20px;
+    }
+    @include until($fullhd) {
+      left: -10%;
+    }
+    left: -30%;
+    transform: translateY(-50%) rotate(180deg);
   }
-  @include from($desktop) {
-    left: 20px;
+  .slick-next {
+    @include until($desktop) {
+      display: none !important;
+    }
+    @include from($desktop) {
+      right: 20px;
+    }
+    @include until($fullhd) {
+      right: -10%;
+    }
+    right: -30%;
   }
-  @include until($fullhd) {
-    left: -10%;
+  .slick-prev:before,
+  .slick-next:before {
+    content: none;
   }
-  left: -30%;
-  transform: translateY(-50%) rotate(180deg);
-}
-.slick-next {
-  @include until($desktop) {
-    display: none !important;
-  }
-  @include from($desktop) {
-    right: 20px;
-  }
-  @include until($fullhd) {
-    right: -10%;
-  }
-  right: -30%;
-}
-.slick-prev:before,
-.slick-next:before {
-  content: none;
 }
 @include until($fullhd) {
   .blog-roll > .column:last-child {
