@@ -23,7 +23,7 @@ banners:
       La facoltà di Scienze in particolare è stata insignita negli ultimi anni di numerosi riconoscimenti per qualità di insegnamenti e ricerca. E’ presente tra gli altri un indirizzo ad orientamento multimediale nell’ambito della laurea magistrale in Ingegneria e scienze informatiche.
     cta: i nostri partner
     link: /collaborazioni/#partners
-    image: /img/programming.jpg
+    image: /img/classroom.jpg
     alt: partners
   - name: master
     title: L’Università di Verona rappresenta garanzia di Didattica qualificata, Strutture e Ricerca.

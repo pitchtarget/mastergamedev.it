@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Image from './elements/Image'
 import Button from './elements/Button'
 
 const ctaStyle = (color) => {
@@ -24,17 +23,13 @@ const Row = ({ data, reverse, color }) => {
       <div className={`row row__${color || "default"}`}>
         <div className="container is-fullhd">
           <div
-            className="row-wrapper columns is-tablet is-vcentered"
+            className="row-wrapper"
             style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
           >
-            <div className="row--image column is-4-tablet is-half-desktop is-5-widescreen">
-              <Image src={image} alt={alt} children/>
+            <div className="row--image" title={alt} style={{backgroundImage: `url(${image.childImageSharp.fluid.src})`}}>
             </div>
-            <div className={`column is-8-tablet is-half-desktop is-5-fullhd ${reverse ? 'is-offset-1-widescreen' : ''}`} >
-              <div
-                className="content"
-                style={{padding: '5%'}}
-              >
+            <div className="row--content" >
+              <div className="content" style={{padding: '5%'}}>
                 {title &&
                   <h2>
                     <span className="title is-spaced is-size-3-mobile is-size-2-tablet">

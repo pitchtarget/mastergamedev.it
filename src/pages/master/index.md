@@ -2,7 +2,7 @@
 templateKey: 'master-page'
 path: /master
 title: Il master 2019
-image: /img/programming.jpg
+image: /img/classroom.jpg
 altImage: programming
 serviceTitle: I nostri servizi
 paragraphs:

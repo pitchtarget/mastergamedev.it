@@ -3,7 +3,7 @@ templateKey: 'partners-page'
 path: /collaborazioni
 title: Partners page
 description: Il Master collabora con le più importanti aziende italiane del settore videoludico. Di seguito i nostri partner, presso i quali sarà possibile effettuare uno stage - obbligatorio e garantito - alla fine del percorso di formazione.
-image: /img/programming.jpg
+image: /img/classroom.jpg
 altImage: programming
 partnersTitle: I Partners
 partners:
