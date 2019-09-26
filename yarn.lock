@@ -5732,6 +5732,13 @@ gatsby-link@^2.1.1:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
+gatsby-plugin-meta-redirect@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-meta-redirect/-/gatsby-plugin-meta-redirect-1.1.1.tgz#058e8e53edff38dc44d3bb6153109d01c910f863"
+  integrity sha512-Oc4qgU3SlDUM9qoxIMKO+re2bdMs3/a2KXrfL65gb8XMLsHylBbveWtXZRhgjd2QDL/49RX4S9SEykuadRju2w==
+  dependencies:
+    fs-extra "^7.0.0"
+
 gatsby-plugin-netlify-cms@4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.0.3.tgz#8a84100e372a6c2cd5a7fd6ab2d753d768837ddf"
@@ -5824,6 +5831,11 @@ gatsby-react-router-scroll@^2.0.7:
     "@babel/runtime" "^7.0.0"
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
+
+gatsby-redirect-from@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-redirect-from/-/gatsby-redirect-from-0.2.1.tgz#d5041f8730348d4652f1a8a752bca1cf7e86bc75"
+  integrity sha512-GLDM1hwOaeh95QFibTMuZORxXUrDXbSX+JOGjLDldDNC2KD8uILO0MNnwqf2UOXytD+5eTHaJAGLNiUjvWOKaw==
 
 gatsby-remark-copy-linked-files@^2.0.7:
   version "2.0.13"

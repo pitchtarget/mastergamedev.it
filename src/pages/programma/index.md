@@ -1,6 +1,7 @@
 ---
 templateKey: 'program-page'
-path: /programma
+redirect_from:
+  - /struttura
 title: Il programma del master
 subtitle: 1500 ore di lezione
 description: >

@@ -145,7 +145,7 @@ collections:
             }
 
       # PROGRAM PAGE
-      - file: "src/pages/program/index.md"
+      - file: "src/pages/programma/index.md"
         label: "Program page"
         name: "program"
         fields:
