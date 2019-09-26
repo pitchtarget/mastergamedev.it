@@ -44,8 +44,9 @@ export const ProgramPageTemplate = ({
         <section className="section is-medium" style={{paddingTop: '0px'}}>
           <h2 className="title is-2 is-spaced">{scientificCommittee}</h2>
           <section className="section is-medium" style={{paddingTop: '0px'}}>
-
-          Il Comitato Scientifico ha la responsabilità di indirizzo e di gestione del Master. È composto da docenti dell’Università di Verona e dai persone provenienti dall’industria videoludica con provata esperienza.Il Comitato Scientifico è nominato, contestualmente all’approvazione della proposta istitutiva, dal Consiglio di Dipartimento ed è composto da almeno cinque componenti: il Comitato Scientifico provvede alla programmazione delle attività formative, all’eventuale riconoscimento allo studente di crediti, alla definizione dei criteri di valutazione e delle modalità di espletamento delle procedure selettive, delle verifiche periodiche e della prova finale. Inoltre, per le attività di stage, individua uno o più referenti sia per il coordinamento delle attività sia per gli aspetti organizzativi e la stipula delle convenzioni.
+            <p>
+              Il Comitato Scientifico ha la responsabilità di indirizzo e di gestione del Master.<br/> È composto da docenti dell’Università di Verona e dai persone provenienti dall’industria videoludica con provata esperienza. Il Comitato Scientifico è nominato, contestualmente all’approvazione della proposta istitutiva, dal Consiglio di Dipartimento ed è composto da almeno cinque componenti: il Comitato Scientifico provvede alla programmazione delle attività formative, all’eventuale riconoscimento allo studente di crediti, alla definizione dei criteri di valutazione e delle modalità di espletamento delle procedure selettive, delle verifiche periodiche e della prova finale. Inoltre, per le attività di stage, individua uno o più referenti sia per il coordinamento delle attività sia per gli aspetti organizzativi e la stipula delle convenzioni.
+            </p>
           </section>
           <div className="columns is-multiline">
             {

@@ -40,7 +40,7 @@ export const StudentsPageTemplate = ({
         </div>
       </section>
       */}
-      <div className="section is-medium has-background-white">
+      <div className="section has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
             <div className="column is-10-desktop is-offset-1-desktop">
@@ -73,11 +73,13 @@ export const StudentsPageTemplate = ({
             </div>
           </div>
         </div>
-        <div className="container">
-          <section className="section container">
-            <SignupBox id="studentsSignup" styles="is-moveup"/>
-          </section>
-        </div>
+      </div>
+      <div className="container">
+        <section className="section container">
+          <SignupBox id="studentsSignup" styles="is-moveup"/>
+        </section>
+      </div>
+      <div className="section">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
             <div className="column is-10-desktop is-offset-1-desktop">
