@@ -1,6 +1,7 @@
 ---
 templateKey: 'master-page'
-path: /master
+redirect_from:
+  - /il-master
 title: Il master 2019
 image: /img/classroom.jpg
 altImage: programming
