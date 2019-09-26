@@ -23,6 +23,7 @@ export const StudentsPageTemplate = ({
   return (
     <>
       <Image src={image} alt={altImage} styles="cover align-top is-small" children/>
+      {/*
       <section className="section is-medium has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
@@ -38,10 +39,8 @@ export const StudentsPageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="container">
-        <SignupBox id="studentsSignup" styles="is-moveup"/>
-      </section>
-      <div className="section is-medium">
+      */}
+      <div className="section is-medium has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
             <div className="column is-10-desktop is-offset-1-desktop">
@@ -71,6 +70,17 @@ export const StudentsPageTemplate = ({
                   )})
                 }
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <section className="section container">
+            <SignupBox id="studentsSignup" styles="is-moveup"/>
+          </section>
+        </div>
+        <div className="container is-horizontal-spaced">
+          <div className="columns is-tablet">
+            <div className="column is-10-desktop is-offset-1-desktop">
               <div id="tiles">
                 <div className="tile is-ancestor">
                   <div className="tile is-vertical is-8">
