@@ -203,6 +203,20 @@ $menu-label-color: $white-ter;
   }
 }
 
+// list
+ul.markdown-list {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 2rem;
+  list-style-type: disc;
+  &>li {
+    padding-bottom: .5rem;
+  }
+}
+
+
 // section
 .section.is-small {
   padding: $section-padding-small;

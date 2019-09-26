@@ -23,17 +23,22 @@ paragraphs:
     description: >
       Il Master prevede un numero minimo di 15 iscritti regolari per essere attivato ed un numero massimo di 20.</br></br>
       I requisiti di accesso sono:
-      </br>Laurea (pre D.M. 509/99) in Scienze dell’informazione, Informatica, Ingegneria informatica, Ingegneria dell’informazione.
-      </br>Laurea nella classe  delle Scienze e tecnologie informatiche  (classe L-31 nell’ordinamento del D.M. 270/04 e classe 26 nell’ordinamento del D.M. 509/99).
-      </br>Altre lauree in discipline scientifiche nel cui piano delle attività formative siamo previsti almeno 78 CFU esplicitamente attribuiti ad attività didattiche nei settori INF/01 o ING-INF/05.</br></br>
-      Altre lauree in discipline scientifiche che non soddisfino il requisito al punto 3.  verranno valutate caso per caso dalla commissione e comunque l’accesso sarà in subordine rispetto alle lauree di cui ai punti 1. 2. e 3.
+      <ul class="markdown-list">
+        <li>Laurea (pre D.M. 509/99) in Scienze dell’informazione, Informatica, Ingegneria informatica, Ingegneria dell’informazione.</li>
+        <li>Laurea nella classe  delle Scienze e tecnologie informatiche  (classe L-31 nell’ordinamento del D.M. 270/04 e classe 26 nell’ordinamento del D.M. 509/99).</li>
+        <li>Altre lauree in discipline scientifiche nel cui piano delle attività formative siamo previsti almeno 78 CFU esplicitamente attribuiti ad attività didattiche nei settori INF/01 o ING-INF/05.</li>
+        <li>Altre lauree in discipline scientifiche che non soddisfino il requisito al punto 3. Verranno valutate caso per caso dalla commissione e comunque l’accesso sarà in subordine rispetto alle lauree di cui ai punti 1. 2. e 3.</li>
+      </ul>
       Coloro che non possiedono i requisiti di cui sopra possono venire ammessi come uditori al corso fino al raggiungimento di 20 frequentanti, compresi gli iscritti regolari. Gli uditori frequentano le lezioni ma non svolgono lo stage aziendale, non sostengono le verifiche intermedie nè  la prova finale. Al termine ricevono un attestato di frequenza, invece che il titolo di studio.</br></br>
       I candidati verranno selezionati sulla base del curriculum vitae et studiorum  e di un colloquio e verranno valutati i seguenti elementi:
-      </br>Voto di Laurea (30 punti)
-      </br>Attinenza del curriculum studiorum con con le tematiche del Master (10 punti)
-      </br>Colloquio motivazionale (10 punti)
-      </br>Portfolio (5 punti)
-      </br>Altri titoli (5 punti).</br></br>
+      <ul class="markdown-list">
+        <li>Voto di Laurea (30 punti)</li>
+        <li>Attinenza del curriculum studiorum con con le tematiche del Master (10 punti</li>
+        <li>Colloquio motivazionale (10 punti)</li>
+        <li>Portfolio (5 punti)</li>
+        <li>Altri titoli (5 punti)</li>
+      </ul>
+      </br></br>
       L’attribuzione dei punteggi avviene secondo criteri insindacabili fissati dalla commissione che amministra il colloquio di ammissione. Tale commissione viene nominata dal Comitato Scientifico o dal Direttore con delibera d’urganza.</br></br>
       Per gli studenti stranieri l’ammissione è subordinata alla conoscenza della lingua italiana, da accertarsi durante il colloquio. Per questi ultimi il colloquio può avvenire in teleconferenza.</br></br>
       Il 20% dei posti disponibili è riservato ai laureati dell’Università degli studi di Verona.

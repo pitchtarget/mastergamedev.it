@@ -32,7 +32,6 @@ class TeacherCard extends React.Component {
 
   render() {
     const { teacher, image } = this.state
-    console.log(image)
 
     return (
       <div className="teacherCard card">

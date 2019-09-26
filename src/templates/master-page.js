@@ -37,7 +37,7 @@ export const MasterPageTemplate = ({
               </div>
               <div className="columns is-multiline is-tablet">
                 { topParagraphs.length > 0 && topParagraphs.map((paragraph, id) => (
-                    <div key={v4()} className={`column is-10 ${id % 2 ? 'is-offset-2' : ''}`} >
+                    <div key={v4()} className="column is-12" >
                       <div className="section is-small">
                         <h3 className="title is-3 is-spaced">{paragraph.title}</h3>
                         <MarkdownContent content={paragraph.description}/>
@@ -70,7 +70,7 @@ export const MasterPageTemplate = ({
             <div className="column is-10-desktop is-offset-1-desktop">
               <div className="columns is-multiline is-tablet">
                 { bottomParagraphs.length > 0 && bottomParagraphs.map((paragraph, id) => (
-                    <div key={v4()} className={`column is-10 ${id % 2 ? 'is-offset-2' : ''}`} >
+                    <div key={v4()} className="column is-12">
                       <div className="section is-small">
                         <h3 className="title is-3 is-spaced">{paragraph.title}</h3>
                         <MarkdownContent content={paragraph.description}/>
