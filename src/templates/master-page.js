@@ -64,7 +64,7 @@ export const MasterPageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="section has-background-white">
+      <section id="iscrizioni" className="section has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
             <div className="column is-10-desktop is-offset-1-desktop">

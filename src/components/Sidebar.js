@@ -110,6 +110,9 @@ const Sidebar = class extends React.Component {
             <Link className="navbar-item" to="/programma">
               Programma
             </Link>
+            <Link className="navbar-item" to="/master/#iscrizioni">
+              Iscrizioni
+            </Link>
             {/*
             <Link className="navbar-item" to="/blog">
               Blog
