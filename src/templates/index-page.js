@@ -181,7 +181,6 @@ export const IndexPageTemplate = ({
           </div>
         </section>
 
-        {/*
         <section id="postsSection" className="section is-horizontal-spaced" style={{backgroundColor: "#CBC9D1"}}>
           <div className="container">
             <div className="columns is-gapless is-vcentered">
@@ -200,7 +199,6 @@ export const IndexPageTemplate = ({
             <BlogRoll/>
           </div>
         </section>
-        */}
       </>
     )
 }
@@ -228,7 +226,7 @@ const IndexPage = ({ data }) => {
         // studentsSection={frontmatter.studentsSection}
         // bottomSignIn={frontmatter.bottomSignIn}
         teachersSection={frontmatter.teachersSection}
-        // newsSection={frontmatter.newsSection}
+        newsSection={frontmatter.newsSection}
       />
     </Layout>
   )
