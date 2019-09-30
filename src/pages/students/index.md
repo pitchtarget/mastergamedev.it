@@ -95,17 +95,17 @@ titleProjects: I Progetti
 projects:
   - title: Progetti Mobile
     description: >
-      Non equidem invideo, miror magis posuere velit aliquet. Quis aute iure reprehenderit in voluptate velit esse. Unam incolunt Belgae, aliam Aquitani, tertiam. Fictum,  deserunt mollit anim laborum astutumque! Gallia est omnis divisa in partes tres, quarum. A communi observantia non est recedendum.
+      II modulo di Mobile Programming insegna tutte le basi per creare un gioco per smartphone: ogni anno, con la guida del docente, gli studenti sono invitati a realizzare progetti e pubblicarli sugli store.
     image: /img/mobileGames.png
     altImage: placeholder
   - title: Progetti phisics
     description: >
-      Ut enim ad minim veniam, quis nostrud exercitation. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Idque Caesaris facere voluntate liceret: sese habere. Excepteur sint obcaecat cupiditat non proident culpa. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Gallia est omnis divisa in partes tres, quarum.
+      Il modulo di Physics programming insegna le basi della fisica legate allo sviluppo di videogiochi. Con le basi ottenuti gli studenti si cimentano nella creazione dei gameplay più disparati per testare e provare le conoscenze acquisite.
     image: /img/phisics.png
     altImage: placeholder
   - title: Game jam
     description: >
-      Petierunt uti sibi concilium totius Galliae in diem certam indicere. Contra legem facit qui id facit quod lex prohibet. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. A communi observantia non est recedendum. Curabitur blandit tempus ardua ridiculus sed magna. Non equidem invideo, miror magis posuere velit aliquet.
+      Il Master partecipa attivamente sia alla Global Game Jam, dove è accreditata come sede attiva dell’evento, che alla Ludum Dare organizzata insieme ai docenti. Ogni anno questi eventi vedono nascere esperienze importanti e progetti creativi.
     image: /img/gameJam.png
     altImage: game-jam
 projectsMedia:
