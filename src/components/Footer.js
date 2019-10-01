@@ -15,13 +15,13 @@ const Footer = class extends React.Component {
           <div className="container is-horizontal-spaced has-text-white-ter">
             <div className="columns">
               <div className="column is-3-tablet is-2-desktop">
-                <div className="content footer--logo">
+                <Link to="/" className="content footer--logo">
                   <img
                     src={logo}
-                    alt="Kaldi"
+                    alt="Master Game Development"
                     style={{ width: '14em', height: 'auto' }}
                   />
-                </div>
+                </Link>
               </div>
               <div className="column is-2-tablet is-1-desktop is-offset-1-desktop">
                 <div className="footer-list">

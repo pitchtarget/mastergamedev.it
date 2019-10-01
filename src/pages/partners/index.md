@@ -2,8 +2,8 @@
 templateKey: 'partners-page'
 path: /collaborazioni
 title: Partners page
-description: Quisque ut dolor gravida, placerat libero vel, euismod. Quo usque tandem abutere, Catilina, patientia nostra? Excepteur sint obcaecat cupiditat non proident culpa. Ut enim ad minim veniam, quis nostrud exercitation.
-image: /img/programming.jpg
+description: Il Master collabora con le più importanti aziende italiane del settore videoludico. Di seguito i nostri partner, presso i quali sarà possibile effettuare uno stage - obbligatorio e garantito - alla fine del percorso di formazione.
+image: /img/classroom.jpg
 altImage: programming
 partnersTitle: I Partners
 partners:

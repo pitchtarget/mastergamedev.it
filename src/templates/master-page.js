@@ -33,11 +33,11 @@ export const MasterPageTemplate = ({
               </div>
               <div className="section">
                 <h3 className="title is-3 is-spaced">{paragraphs[0].title}</h3>
-                <p>{paragraphs[0].description}</p>
+                <MarkdownContent content={paragraphs[0].description}/>
               </div>
               <div className="columns is-multiline is-tablet">
                 { topParagraphs.length > 0 && topParagraphs.map((paragraph, id) => (
-                    <div key={v4()} className={`column is-10 ${id % 2 ? 'is-offset-2' : ''}`} >
+                    <div key={v4()} className="column is-12" >
                       <div className="section is-small">
                         <h3 className="title is-3 is-spaced">{paragraph.title}</h3>
                         <MarkdownContent content={paragraph.description}/>
@@ -64,16 +64,16 @@ export const MasterPageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="section has-background-white">
+      <section id="iscrizioni" className="section has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
             <div className="column is-10-desktop is-offset-1-desktop">
               <div className="columns is-multiline is-tablet">
                 { bottomParagraphs.length > 0 && bottomParagraphs.map((paragraph, id) => (
-                    <div key={v4()} className={`column is-10 ${id % 2 ? 'is-offset-2' : ''}`} >
+                    <div key={v4()} className="column is-12">
                       <div className="section is-small">
                         <h3 className="title is-3 is-spaced">{paragraph.title}</h3>
-                        <p>{paragraph.description}</p>
+                        <MarkdownContent content={paragraph.description}/>
                       </div>
                     </div>
                   ))
@@ -83,7 +83,8 @@ export const MasterPageTemplate = ({
           </div>
         </div>
       </section>
-      { !!banner && <Row data={banner} color="dark"/> }
+      { !!banner && <Row data={banner} color="light"/> }
+      {/*
       <section id="postsSection" className="section is-horizontal-spaced" style={{backgroundColor: "#CBC9D1"}}>
         <div className="container">
           <div className="columns is-gapless is-vcentered">
@@ -102,6 +103,7 @@ export const MasterPageTemplate = ({
           <BlogRoll/>
         </div>
       </section>
+      */}
     </>
   )
 }
@@ -155,6 +157,8 @@ export const masterPageQuery = graphql`
       frontmatter {
         title
         image {
+          extension
+          publicURL
           childImageSharp {
             fluid(maxWidth: 1920, quality: 80) {
               ...GatsbyImageSharpFluid
@@ -171,6 +175,8 @@ export const masterPageQuery = graphql`
           heading
           alt
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 100, quality: 80) {
                 ...GatsbyImageSharpFluid
@@ -190,6 +196,8 @@ export const masterPageQuery = graphql`
           link
           alt
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 500, quality: 80) {
                 ...GatsbyImageSharpFluid

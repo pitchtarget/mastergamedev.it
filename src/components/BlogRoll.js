@@ -26,18 +26,19 @@ class BlogRoll extends React.Component {
                     ) : null}
                   <div className="column">
                     <div className="postCard--content">
-                      <p className="postCard--header">
-                        <Link
-                          className="title is-size-5-mobile is-size-4-desktop"
-                          to={post.fields.slug}
-                        >
-                          {post.frontmatter.title}
-                        </Link>
-                        <span> &bull; </span>
-                        <span className="subtitle is-size-7 is-block">
+                      <div className="postCard--header">
+                        <h3>
+                          <Link
+                            className="title is-size-5-mobile is-size-4-desktop"
+                            to={post.fields.slug}
+                          >
+                            {post.frontmatter.title}
+                          </Link>
+                        </h3>
+                        <p className="subtitle is-size-7 is-block">
                           {post.frontmatter.date}
-                        </span>
-                      </p>
+                        </p>
+                      </div>
                       <p>
                         {post.excerpt}
                         <br />
@@ -86,6 +87,8 @@ export default () => (
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 featuredimage {
+                  extension
+                  publicURL
                   childImageSharp {
                     fluid(maxWidth: 500, quality: 80) {
                       ...GatsbyImageSharpFluid

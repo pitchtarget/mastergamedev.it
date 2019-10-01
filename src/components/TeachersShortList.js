@@ -5,28 +5,32 @@ import { v4 } from 'uuid'
 import TeacherCard from '../components/cards/teacherCard'
 
 class TeachersShortList extends React.Component {
-  render() {
-    const { data } = this.props
-    const teachers = data.markdownRemark.frontmatter.teachers
+  constructor(props) {
+    super(props)
+    this.state = {
+      randomTeachers: this.randomize(),
+    }
+  }
 
-    let filteredTeachers = []
+  randomize() {
+    const teachers = this.props.data.markdownRemark.frontmatter.teachers
     let listNum = []
+    let filteredTeachers = []
+
     while (listNum.length < 4) {
       let randomNum = Math.floor(Math.random() * Math.floor(teachers.length))
       let hasValue = listNum.includes(randomNum)
       !hasValue && listNum.push(randomNum)
+      !hasValue && filteredTeachers.push(teachers[randomNum])
     }
+    return filteredTeachers
+  }
 
-    filteredTeachers = [
-      teachers[listNum[0]],
-      teachers[listNum[1]],
-      teachers[listNum[2]],
-      teachers[listNum[3]],
-    ]
-
+  render() {
+    const { randomTeachers } = this.state
     return (
       <div className="columns is-multiline is-centered">
-        { teachers.length > 0 && filteredTeachers.map( teacher =>(
+        { randomTeachers.length > 0 && randomTeachers.map( teacher =>(
             <div key={v4()}
               className="column is-3-desktop is-4-tablet is-full-mobile is-flex hide-last-child"
               style={{justifyContent: "center"}}
@@ -61,6 +65,8 @@ export default () => (
               link
               altImage
               image {
+                extension
+                publicURL
                 childImageSharp {
                   fluid(maxWidth: 300, quality: 80) {
                     ...GatsbyImageSharpFluid

@@ -71,13 +71,6 @@ teachers:
     bio: >
       Dopo essersi laureato in Matematica presso l’Università di Parma, frequenta il Master in Computer Game Development a Verona. Nel 2012 inizia la sua carriera in Milestone, con cui collabora tutt’ora, occupandosi di simulazione del veicolo, fisica, AI e networking. Nel 2016 ha fondato 3Go Games, software house di sviluppo indipendente.
     link: https://it.linkedin.com/in/devis-rossini-01949756
-  - fullName: Daniele Colombo
-    role: Da completare
-    image:
-    altImage: docente
-    bio: >
-      Professionista nel campo video ludico ha partecipato a grandi titoli come Forza Motosport o Pay Day sotto le vesti di Programmatore Grafico, dopo aver lavorato diversi anni per grandi case ha deciso di crearsi il suo futuro come lavoratore autonomo e Freelancer.
-    link:
   - fullName: Gianpaolo Greco
     role: Element of Game Production
     image: /img/greco.jpg
@@ -85,6 +78,14 @@ teachers:
     bio: >
       Laureato presso l’università di Salerno in Informatica Applicata, frequenta la prima edizione del Master in Computer Game Development nel 2010. Per anni ha lavorato come Developer, Game Designer e Producer nel settore dei videogiochi. Oggi è Direttore Creativo presso Uqido, azienda specializzata in Realtà Virtuale e Aumentata.
     link: https://www.linkedin.com/in/gianpaologreco/
+---
+<!--   - fullName: Daniele Colombo
+    role: Da completare
+    image:
+    altImage: docente
+    bio: >
+      Professionista nel campo video ludico ha partecipato a grandi titoli come Forza Motosport o Pay Day sotto le vesti di Programmatore Grafico, dopo aver lavorato diversi anni per grandi case ha deciso di crearsi il suo futuro come lavoratore autonomo e Freelancer.
+    link:
   - fullName: Nicholas Roncatti
     role: Da completare
     image:
@@ -92,4 +93,4 @@ teachers:
     bio: >
       Laureato presso l’Università degli Studi di Ferrara in Ingegneria Informatica, attualmente si occupa di sviluppo software come Senior Gameplay Programmer, in special modo per piattaforme mobile, presso Just Funny Games Srl.
     link:
----
+ -->

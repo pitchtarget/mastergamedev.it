@@ -13,6 +13,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Redirect from", name: "redirect_from", widget: "text"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
@@ -128,7 +129,7 @@ collections:
               widget: list,
               fields: [
                 {label: Title, name: title, widget: string},
-                {label:Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]},
+                {label:Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
               ],
             }
           - {label: Service title, name: serviceTitle, widget: string}
@@ -145,14 +146,14 @@ collections:
             }
 
       # PROGRAM PAGE
-      - file: "src/pages/program/index.md"
+      - file: "src/pages/programma/index.md"
         label: "Program page"
         name: "program"
         fields:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "program-page"}
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]}
+          - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]}
           - {label: Title paragraphs, name: titleParagraphs, widget: string}
           - {
               label: Paragraphs,
@@ -160,7 +161,7 @@ collections:
               widget: list,
               fields: [
                 {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
               ],
             }
 
@@ -173,18 +174,6 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Alt image, name: altImage, widget: string}
-          - {
-              label: Projects,
-              name: projects,
-              widget: list,
-              fields: [
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]},
-                {label: Image, name: image, widget: image},
-                {label: Alt image, name: altImage, widget: string},
-              ],
-            }
-          - {label: Students title, name: titleStudents, widget: string}
           - {
               label: Students,
               name: students,
@@ -200,6 +189,19 @@ collections:
                 {label: Description, name: description, widget: string},
               ],
             }
+          - {label: Students title, name: titleProjects, widget: string}
+          - {
+              label: Projects,
+              name: projects,
+              widget: list,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
+                {label: Image, name: image, widget: image},
+                {label: Alt image, name: altImage, widget: string},
+              ],
+            }
+          - {label: Projects media, name: projectsMedia, widget: image}
 
       # PARTNERS PAGE
       - file: "src/pages/partners/index.md"
@@ -210,7 +212,7 @@ collections:
           - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png}
           - {label: "Alt image", name: altImage, widget: string}
           - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]}
+          - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]}
           - {label: "Partners title", name: partnersTitle, widget: string}
           - {
               label: Partners,
@@ -220,7 +222,7 @@ collections:
                 {label: Full name, name: name, widget: string},
                 {label: Image, name: image, widget: image, default: /img/student-img.png},
                 {label: "Alt image", name: altImage, widget: string},
-                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
                 {label: "Link", name: link, widget: string},
                 {label: "Show in home", name: main, widget: boolean}
               ],
@@ -235,7 +237,7 @@ collections:
           - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png}
           - {label: "Alt image", name: altImage, widget: string}
           - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block]}
+          - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]}
           - {label: "Teachers title", name: techersTitle, widget: string}
           - {
               label: Teachers,

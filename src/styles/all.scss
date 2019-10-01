@@ -47,6 +47,10 @@ $fullhd: 1980px;
 
 $navbar-burger-color: $primary;
 
+.main {
+  min-height: calc(100vh - 320px);
+}
+
 .content .taglist {
   list-style: none;
   margin-bottom: 0;
@@ -58,9 +62,13 @@ $navbar-burger-color: $primary;
   justify-content: left;
   align-items: center;
   li {
+    cursor: pointer;
     padding: 0 2rem 1rem 0;
     margin-bottom: 1.5rem;
     margin-top: 0;
+  }
+  li.active {
+    font-weight: bold;
   }
 }
 
@@ -109,6 +117,10 @@ $navbar-burger-color: $primary;
 }
 .navbar-item .icon {
   color: $primary;
+}
+
+.modal-background {
+  background-color: $modal-background !important;
 }
 
 // Override for use of svg's from https://simpleicons.org/
@@ -191,6 +203,20 @@ $menu-label-color: $white-ter;
   }
 }
 
+// list
+ul.markdown-list {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 2rem;
+  list-style-type: disc;
+  &>li {
+    padding-bottom: .5rem;
+  }
+}
+
+
 // section
 .section.is-small {
   padding: $section-padding-small;
@@ -200,15 +226,47 @@ $menu-label-color: $white-ter;
   margin: auto;
 }
 
-.image--background {
-  min-height: 200px;
-  @include from($tablet) {
-    min-height: 400px;
+@mixin imageSize($mobileSize ,$tabletSize ,$desktopSize ,$fullhdSize) {
+  @include until($tablet) {
+    min-height: $mobileSize;
+    min-width: $mobileSize;
   }
+  @include from($tablet) {
+    min-height: $tabletSize;
+    &.is-tile { min-height: $tabletSize - $column-gap}
+  }
+  @include from($desktop) {
+    min-height: $desktopSize;
+    &.is-tile { min-height: $desktopSize - $column-gap}
+  }
+  @include from($fullhd) {
+    min-height: $fullhdSize;
+    &.is-tile { min-height: $fullhdSize - $column-gap}
+  }
+}
+
+.video--bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.image--bg {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  &.is-sm {
+    @include imageSize(8rem,12rem,16rem,20rem);
+  }
+  &.is-md {
+    @include imageSize(12rem,16rem,20rem,32rem);
+  }
+  &.is-lg {
+    @include imageSize(16rem,20rem,32rem,40rem);
+  }
 }
+
 
 // responsiveness
 +tablet-only {
@@ -273,73 +331,75 @@ footer .footer-list {
   }
 }
 // Set slider width
-.slick-list,
-.slick-slide {
-  @include from($tablet) {
-    width: 90vw;
+#studentSlider {
+  .slick-list,
+  .slick-slide {
+    @include from($tablet) {
+      width: 90vw;
+    }
+    @include from($desktop) {
+      width: 70vw;
+    }
+    @include from($widescreen) {
+      width: 60vw;
+    }
+    width: 100vw;
   }
-  @include from($desktop) {
-    width: 70vw;
+  .slick-list {
+    margin: auto;
   }
-  @include from($widescreen) {
-    width: 60vw;
+  $slider-arrow: url('../img/arrow.svg');
+  .slick-arrow,
+  .slick-arrow:hover,
+  .slick-prev:hover,
+  .slick-next:hover,
+  .slick-prev:focus,
+  .slick-next:focus, {
+    color: white;
+    width: 1.5rem;
+    height: 2rem;
+    background: $slider-arrow;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: transparent;
   }
-  width: 100vw;
-}
-.slick-list {
-  margin: auto;
-}
-$slider-arrow: url('../img/arrow.svg');
-.slick-arrow,
-.slick-arrow:hover,
-.slick-prev:hover,
-.slick-next:hover,
-.slick-prev:focus,
-.slick-next:focus, {
-  color: white;
-  width: 1.5rem;
-  height: 2rem;
-  background: $slider-arrow;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  color: transparent;
-}
-.slick-arrow {
-  opacity: .75;
-  &:hover {
-    opacity: 1;
+  .slick-arrow {
+    opacity: .75;
+    &:hover {
+      opacity: 1;
+    }
   }
-}
 
-.slick-prev {
-  @include until($desktop) {
-    display: none !important;
+  .slick-prev {
+    @include until($desktop) {
+      display: none !important;
+    }
+    @include from($desktop) {
+      left: 20px;
+    }
+    @include until($fullhd) {
+      left: -10%;
+    }
+    left: -30%;
+    transform: translateY(-50%) rotate(180deg);
   }
-  @include from($desktop) {
-    left: 20px;
+  .slick-next {
+    @include until($desktop) {
+      display: none !important;
+    }
+    @include from($desktop) {
+      right: 20px;
+    }
+    @include until($fullhd) {
+      right: -10%;
+    }
+    right: -30%;
   }
-  @include until($fullhd) {
-    left: -10%;
+  .slick-prev:before,
+  .slick-next:before {
+    content: none;
   }
-  left: -30%;
-  transform: translateY(-50%) rotate(180deg);
-}
-.slick-next {
-  @include until($desktop) {
-    display: none !important;
-  }
-  @include from($desktop) {
-    right: 20px;
-  }
-  @include until($fullhd) {
-    right: -10%;
-  }
-  right: -30%;
-}
-.slick-prev:before,
-.slick-next:before {
-  content: none;
 }
 @include until($fullhd) {
   .blog-roll > .column:last-child {

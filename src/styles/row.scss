@@ -25,6 +25,10 @@
 }
 // remove padding and margin
 .row-wrapper {
+  display: flex;
+  @include until($tablet) {
+    flex-direction: column !important;
+  }
   margin-top: 0px;
   margin-bottom: 0px !important;
 }
@@ -34,4 +38,27 @@
   @include until($desktop) {
     padding: 0;
   }
+}
+.row--image {
+  @include from($tablet) {
+    width: 50%;
+    min-height: auto;
+  }
+  width: 100%;
+  min-height: 10rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.row--content {
+  @include from($tablet) {
+    width: 50%;
+  }
+  @include from($desktop) {
+    width: 35%;
+  }
+  width: 100%;
+  min-height: 24rem;
+  display: inherit;
+  align-items: center;
 }

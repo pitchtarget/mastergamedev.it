@@ -8,8 +8,8 @@ export const SignupBoxComponent = ({ data, color, id, styles }) => {
   const style = color === "invert"
   return (
     <div id={id} className={`signupBox signupBox${style ? "__invert" : "__regular"} ${styles}`}>
-      <div className="columns is-desktop is-gapless is-vcentered">
-        <div className="column is-3-desktop">
+      <div className="columns is-tablet is-gapless is-vcentered">
+        <div className="column is-3-tablet is-3-desktop">
           <div
             className="signupBox--image"
             style={{backgroundImage: `url(${!!data.image.childImageSharp ? data.image.childImageSharp.fluid.src : data.image})`}}
@@ -47,6 +47,8 @@ const SignupBox = ({color, id, styles}) => (
           frontmatter {
             box {
               image {
+                extension
+                publicURL
                 childImageSharp {
                   fluid(maxWidth: 500, quality: 80) {
                     ...GatsbyImageSharpFluid

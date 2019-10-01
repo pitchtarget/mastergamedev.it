@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import Button from '../components/elements/Button'
 
 export const BlogPostTemplate = ({
   content,
@@ -25,7 +26,6 @@ export const BlogPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -37,6 +37,11 @@ export const BlogPostTemplate = ({
                     </li>
                   ))}
                 </ul>
+                <Button
+                  text="Tutti i post"
+                  link="/blog"
+                  styles="cta cta-large cta__invert"
+                />
               </div>
             ) : null}
           </div>
