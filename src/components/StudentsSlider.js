@@ -33,9 +33,11 @@ class StudentsSlider extends React.Component {
                 <div className="column">
                   <h4 className="studentSlide--content content">
                     <p className="title is-5">{student.fullName}</p>
-                    <p className="subtitle is-5">{student.company}</p>
-                    <p className="">{student.role}</p>
-                    <p className="">{student.description}</p>
+                    <p className="subtitle is-5">
+                      <a href={student.compLink} target="_blanck">{student.company}</a>
+                    </p>
+                    <p className="">{student.quote}</p>
+                    <p className="">{student.games}</p>
                     <p className="">{student.master}</p>
                   </h4>
                 </div>
@@ -64,11 +66,13 @@ export default () => (
           frontmatter {
             students {
               fullName
+              linkedin
               main
               master
               company
-              role
-              description
+              compLink
+              quote
+              games
               altImage
               image {
                 extension

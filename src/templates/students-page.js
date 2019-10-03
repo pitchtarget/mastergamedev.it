@@ -23,9 +23,8 @@ export const StudentsPageTemplate = ({
   return (
     <>
       <Image src={image} alt={altImage} styles="cover align-top is-small" children/>
-      {/*
-      <section className="section is-medium has-background-white">
-        <div className="container is-horizontal-spaced">
+      <section className="section is-medium has-background-white is-horizontal-spaced">
+        <div className="container">
           <div className="columns is-tablet">
             <div className="column is-8-desktop is-offset-1-desktop">
               <h1 className="title is-1">{title}</h1>
@@ -39,45 +38,45 @@ export const StudentsPageTemplate = ({
           </div>
         </div>
       </section>
-      */}
-      <div className="section has-background-white">
-        <div className="container is-horizontal-spaced">
-          <div className="columns is-tablet">
-            <div className="column is-10-desktop is-offset-1-desktop">
-              <h2 className="title is-2 is-spaced">{titleProjects}</h2>
-              <div style={{marginBottom: '3rem'}}>
-                { projects.length > 0 && projects.map( (project, id) => {
-                  const reverse = id % 2
-                  return (
-                    <div key={v4()} className="section">
-                      <div
-                        className="columns is-vcentered"
-                        style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
-                      >
-                        <div className="column">
-                          <Image src={project.image} alt={project.alt}/>
-                        </div>
-                        <div className="column">
-                          <div className="content">
-                            <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
-                                {project.title}
-                            </h3>
-                            <MarkdownContent content={project.description}/>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )})
-                }
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="container">
         <section className="section container">
           <SignupBox id="studentsSignup" styles="is-moveup"/>
         </section>
+        <div className="section has-background-white">
+          <div className="container is-horizontal-spaced">
+            <div className="columns is-tablet">
+              <div className="column is-10-desktop is-offset-1-desktop">
+                <h2 className="title is-2 is-spaced">{titleProjects}</h2>
+                <div style={{marginBottom: '3rem'}}>
+                  { projects.length > 0 && projects.map( (project, id) => {
+                    const reverse = id % 2
+                    return (
+                      <div key={v4()} className="section">
+                        <div
+                          className="columns is-vcentered"
+                          style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
+                        >
+                          <div className="column">
+                            <Image src={project.image} alt={project.alt}/>
+                          </div>
+                          <div className="column">
+                            <div className="content">
+                              <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
+                                  {project.title}
+                              </h3>
+                              <MarkdownContent content={project.description}/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )})
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div className="section">
         <div className="container is-horizontal-spaced">
@@ -253,10 +252,12 @@ export const studentsPageQuery = graphql`
         }
         students {
           fullName
+          linkedin
           master
           company
-          role
-          description
+          compLink
+          quote
+          games
           altImage
           image {
             extension
