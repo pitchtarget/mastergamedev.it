@@ -62,4 +62,40 @@ students:
       Approfittate delle opportunita' che il master vi dara' di mettere in pratica le conoscenze acquisite per sviluppare un vostro portfolio da presentare alle aziende e questo vi aiutera' immensamente a trovare un lavoro nell'industria dei videogames.
     games: >-
       Battlefield V, Star Wars: Battlefront II, Total War: Warhammer, Tom Clancy's Ghost Recon: Wildlands
+  - fullName: Simone Straccia
+    linkedin: https://www.linkedin.com/in/simone-straccia-93ab1224/
+    main: true
+    image: /img/simone-straccia.jpg
+    altImage: Simone Straccia
+    master: 2011
+    company: Rockstar North
+    compLink: https://www.rockstarnorth.com
+    quote: >-
+      Creare videogiochi non è come giocarli: è meglio!
+    games: >-
+        Red Dead Redemption ( Rockstar North ), Mario + Rabbids: Kingdom Battle (Ubisoft Milan)
+  - fullName: Giuliano Focchiatti
+    linkedin: https://www.linkedin.com/in/giuliano-focchiatti-361ba785
+    main: true
+    image: /img/giuliano-focchiatti.jpg
+    altImage: Giuliano Focchiatti
+    master: 2014
+    company: Ubisoft Milano
+    compLink: https://www.ubisoft.com
+    quote: >-
+      Essere intraprendenti, non accontentarsi mai dei propri risultati e cercare sempre di migliorarsi.
+    games: >-
+      Mario + Rabbids Kingdom Battle, Mario + Rabbids Kingdom Battle Donkey Kong Adventure
+  - fullName: Riccardo Reffato
+    linkedin: https://www.linkedin.com/in/riccardo-reffato
+    main: true
+    image: /img/riccardo-reffato.jpg
+    altImage: Riccardo Reffato
+    master: 2017
+    company: Milestone
+    compLink: http://milestone.it/
+    quote: >-
+      Studiare bene il C++ e mostrare il proprio impegno ai professori (visto che sono in contatto con le aziende o lavorano in azienda)
+    games: >-
+      MXGP Pro, Supercross 2 The Official Videogame, MXGP 2019 The official Videogame
 ---
