@@ -79,7 +79,7 @@
 
   @mixin cardBlock($opacity,$tranlate) {
     display: flex;
-    @include until($desktop) {
+    @include until($tablet) {
       flex-direction: column;
     }
     flex-direction: row;
@@ -88,7 +88,7 @@
     transition: all .29s;
     width: 100%;
     opacity: $opacity;
-    @include from($tablet) {
+    @include from($desktop) {
       padding: 2rem;
     }
   }
