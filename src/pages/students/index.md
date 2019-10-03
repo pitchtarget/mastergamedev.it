@@ -6,91 +6,6 @@ description: >
   A communi observantia non est recedendum. Quis aute iure reprehenderit in voluptate velit esse. Ambitioni dedisse scripsisse iudicaretur.
 image: /img/scuola.jpg
 altImage: students
-students:
-  - fullName: student-1
-    main: true
-    image: /img/student-image.jpg
-    altImage: student-1
-    master: 2018
-    company: company-1
-    role: role-1
-    description: >-
-      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
-      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
-      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
-      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-  - fullName: student-2
-    main: true
-    image: /img/student-image.jpg
-    altImage: student-2
-    master: 2018
-    company: company-2
-    role: role-2
-    description: >-
-      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
-      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
-      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
-      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-  - fullName: student-3
-    main: true
-    image: /img/student-image.jpg
-    altImage: student-3
-    master: 2018
-    company: company-3
-    role: role-3
-    description: >-
-      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
-      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
-      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
-      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-  - fullName: student-1
-    main: false
-    image: /img/student-image.jpg
-    altImage: student-1
-    master: 2018
-    company: company-1
-    role: role-1
-    description: >-
-      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
-      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
-      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
-      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-  - fullName: student-1
-    main: false
-    image: /img/student-image.jpg
-    altImage: student-1
-    master: 2018
-    company: company-1
-    role: role-1
-    description: >-
-      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
-      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
-      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
-      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-  - fullName: student-1
-    main: false
-    image: /img/student-image.jpg
-    altImage: student-1
-    master: 2018
-    company: company-1
-    role: role-1
-    description: >-
-      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
-      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
-      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
-      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-  - fullName: student-1
-    main: false
-    image: /img/student-image.jpg
-    altImage: student-1
-    master: 2018
-    company: company-1
-    role: role-1
-    description: >-
-      Cras mattis iudicium purus sit amet fermentum. Curabitur est gravida et libero vitae dictum.
-      Etiam habebis sem dicantur magna mollis euismod. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
-      Morbi fringilla convallis sapien, id pulvinar odio volutpat.
-      Petierunt uti sibi concilium totius Galliae in diem certam indicere.
 titleProjects: I Progetti
 projects:
   - title: Progetti Mobile
@@ -121,4 +36,30 @@ projectsMedia:
   - /img/RobberRunner.mp4
   - /img/TheIncredibleMachine.mp4
   - /img/StrategyBots.mp4
+students:
+  - fullName: Dario Zampini
+    linkedin: http://linkedin.com/in/dariozampini
+    main: true
+    image: /img/dario-zampini.jpg
+    altImage: Dario Zampini
+    master: 2012
+    company: Activision Blizzard - King Berlin
+    compLink: https://king.com/it
+    quote: >-
+      Mezzo litro di passione, due cucchiai di duro lavoro, un pizzico di fortuna e 50 grammi di obiettivi in polvere macinata fina
+      La ricetta per una carriera di successo nella game industry non esiste senza un elemento essenziale: non smettere mai di crederci.
+    games: >-
+      CalciAmo iOS, TapTalpa iOS, Rubbish! iOS, CineMaster iOS, Santa Claus Zombie iOS, Cupets iOS, Soccer hero iOS, Drakensang online pc, Candy Crush Jelly Saga Mobile/pc
+  - fullName: Jacopo Vezzosi
+    linkedin: https://www.linkedin.com/in/jvezzosi
+    main: true
+    image: /img/jacopo-vezzosi.jpg
+    altImage: student-1
+    master: 2013
+    company: Electronic Arts (EA)
+    compLink: https://www.ea.com
+    quote: >-
+      Approfittate delle opportunita' che il master vi dara' di mettere in pratica le conoscenze acquisite per sviluppare un vostro portfolio da presentare alle aziende e questo vi aiutera' immensamente a trovare un lavoro nell'industria dei videogames.
+    games: >-
+      Battlefield V, Star Wars: Battlefront II, Total War: Warhammer, Tom Clancy's Ghost Recon: Wildlands
 ---

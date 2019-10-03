@@ -13,7 +13,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Redirect from", name: "redirect_from", widget: "text"}
+      - {label: "Redirect from", name: "redirect_from", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
@@ -180,13 +180,15 @@ collections:
               widget: list,
               fields: [
                 {label: Full name, name: fullName, widget: string},
+                {label: Linkedin link, name: linkedin, widget: string},
                 {label: "Visible on homepage", name: main, widget: boolean},
                 {label: Image, name: image, widget: image, default: /img/student-img.png},
                 {label: "Alt image", name: altImage, widget: string},
                 {label: Master, name: master, widget: number, default: 2010, valueType: int, min: 2010, max: 2030},
                 {label: Company, name: company, widget: string},
-                {label: Role, name: role, widget: string},
-                {label: Description, name: description, widget: string},
+                {label: Company website, name: compLink, widget: string},
+                {label: Quote, name: quote, widget: text},
+                {label: Games, name: games, widget: markdown},
               ],
             }
           - {label: Students title, name: titleProjects, widget: string}
