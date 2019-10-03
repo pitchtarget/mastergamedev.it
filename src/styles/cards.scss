@@ -71,7 +71,11 @@
 .studentCard {
   min-height: 250px;
   position: relative;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
+
+  @include until($tablet) {
+    margin: 2rem -1.5rem;
+  }
 
   @mixin cardBlock($opacity,$tranlate) {
     display: flex;
@@ -84,11 +88,16 @@
     transition: all .29s;
     width: 100%;
     opacity: $opacity;
-    padding: 2rem;
+    @include from($tablet) {
+      padding: 2rem;
+    }
   }
 
   &--preview {
     @include cardBlock(1,0);
+    @include until($tablet) {
+      position: relative;
+    }
   }
   &--details {
     @include cardBlock(0,-100%);
@@ -131,9 +140,13 @@
   }
 
   &--image {
-    width: 200px;
-    height: 200px;
-    margin-right: 2rem;
+    width: 100%;
+    height: auto;
+    @include from($desktop) {
+      width: 200px;
+      height: 200px;
+      margin-right: 2rem;
+    }
   }
   &--content {
     position: relative;
