@@ -80,7 +80,7 @@ collections:
                 },
               ],
             }
-          # Students sectioin
+          # Students section
           - {
               label: Student section,
               name: studentsSection,

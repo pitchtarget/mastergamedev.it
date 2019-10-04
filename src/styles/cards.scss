@@ -84,8 +84,8 @@
     }
     flex-direction: row;
     position: absolute;
-    transform: translateX($tranlate);
-    transition: all .29s;
+    transform: translateY($tranlate);
+    transition: transform .32s, opacity .28s;
     width: 100%;
     opacity: $opacity;
     @include from($desktop) {
@@ -100,13 +100,18 @@
     }
   }
   &--details {
-    @include cardBlock(0,-100%);
+    @include cardBlock(0,-10%);
   }
 
   &--quote {
     position: relative;
     display: flex;
     align-items: center;
+
+    min-width: calc(100% - 332px);
+    @include from($tablet) {
+      min-width: calc(100% - 232px);
+    }
   }
 
   &--quote h3 {
@@ -140,9 +145,11 @@
   }
 
   &--image {
-    width: 100%;
-    height: auto;
-    @include from($desktop) {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+
+    @include from($tablet) {
       width: 200px;
       height: 200px;
       margin-right: 2rem;
@@ -156,13 +163,13 @@
 
 .studentCard:hover {
   .studentCard--preview {
-    transition: all .28s;
-    transform: translateX(100%);
+    transition: transform .32s, opacity .28s;
+    transform: translateY(10%);
     opacity: 0;
   }
   .studentCard--details {
-    transition: all .28s;
-    transform: translateX(0%);
+    transition: transform .32s, opacity .28s;
+    transform: translateY(0%);
     opacity: 1;
   }
 }

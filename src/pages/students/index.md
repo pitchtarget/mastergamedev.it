@@ -40,7 +40,6 @@ students:
   - fullName: Dario Zampini
     linkedin: http://linkedin.com/in/dariozampini
     main: true
-    image: /img/dario-zampini.jpg
     altImage: Dario Zampini
     master: 2012
     company: Activision Blizzard - King Berlin
@@ -77,7 +76,6 @@ students:
   - fullName: Giuliano Focchiatti
     linkedin: https://www.linkedin.com/in/giuliano-focchiatti-361ba785
     main: true
-    image: /img/giuliano-focchiatti.jpg
     altImage: Giuliano Focchiatti
     master: 2014
     company: Ubisoft Milano
