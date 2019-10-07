@@ -37,7 +37,7 @@ const StudentCard = ({ student }) => {
         <img src={validatedImage} alt="" className="studentCard--image"/>
         <div className="studentCard--quote">
           <span>“</span>
-          <h3>{student.quote}</h3>
+          <h4>{student.quote}</h4>
           <span>”</span>
         </div>
       </div>
