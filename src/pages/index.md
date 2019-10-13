@@ -3,23 +3,22 @@ templateKey: index-page
 mainCover:
   image: /img/cover-image.jpg
   altImage: immagine di copertina
-  heading: Amore per una dimensione quella artigianale
-  subheading: La piccola torrefazione familiare assicura un’attenzione quasi maniacale dall’acquisto  alla miscelazione dei caffè migliori. Odio per tutto ciò che deborda nell’industriale, per gli occhi attenti ai costi che guardano con disprezzo la qualità. Bisogna amare il caffè, essere suo amico.
-  #cta: Scopri di più
+  heading: 'Love for one dimension: the artisan one'
+  subheading: 'Quality and quantity have never got along. You only need to glance at “specialties”, the coffees of particular plantations, to realize that the best coffees are offered in small, sometimes very small lots. And the small lots are not suitable for large-scale processing: very good coffee is scarce.'
   #link: /storia
 
 coffeeType:
   image: /img/NostreMiscele.jpg
   altImage: school-image
-  heading: I Nostri caffè esclusivi
-  subheading: Docenti altamente qualificati provenienti dell’Università di Verona e dall’industria vi seguiranno durante il vostro percorso
+  heading: Our original blend
+  subheading: 'A well-reasoned selection to achieve the best balance of aroma, density and taste. Beacuse we exclusively use 100% Arabica beans from the most crefully selected plantations the blend is naturaly low in caffeine'
   cta: Vedi il programma
   link: /miscele
   coffees:
     - image: /img/packaging.jpg
       altImage: packaging
-      heading: La buona
-      subheading: Tu quoque, Brute, fili mi, nihil timor populi, nihil! Fabio vel iudice vincam, sunt in culpa qui officia.
+      heading: 'Melody'
+      subheading: 'Microlots of coffee selected from Brazilian, Central American and Ethiopian plantations. Rigorous Italian roasting'
       cta: vedi scheda
       link: /la-buona
     - image: /img/packaging.jpg
@@ -36,24 +35,30 @@ coffeeType:
       link: /la-ancora-meglio
 
 mokaSecrets:
-  heading: Il vero nemico del caffè la fretta!
+  heading: The real coffee enemy is the haste!
   subheading: La voglia o la necessità di scappare che portano a prepararlo in un istante, di corsa. Nei caffè, un tempo luoghi di incontro, di cultura, di amicizia, specchi di uno stile di vita andante e colloquiale una volta il caffè si assaporava. Ora si tracanna.
-  cta: I 5 segreti per una Moka perfetta
+  cta: The 5 secrets on how to make a perfect coffee with the Moka
   link: /#
   secrets:
-    - title: Moka
+    - title: 1. The Method
       description: >
-        Per casa si comprava in grani, per macinarlo poco prima di farlo e far insaporire tutta una casa.“Quattro chiacchiere e un caffè” recitava la pubblicità di una tradizionale torrefazione romana, per dire che, nonostante il carattere nervino della bevanda, bere un caffè rappresentava un momento di pausa vera. E così che l’amore per il caffè si trasformava in amore per se, ammazzava il nemico e non mortificava uno dei grandi doni della natura. Recuperare è d’obbligo.
+        'It is the most common method of preparation in Italy: the water, inserted into the base of the Moka machine, is pushed by the steam trough the filter filled with the coffee poweder.'
       image: /img/flavor_wheel.jpg
       altImage: Moka
-    - title: Moka
+    - title: 2. How to Store Coffee
       description: >
-        Per casa si comprava in grani, per macinarlo poco prima di farlo e far insaporire tutta una casa.“Quattro chiacchiere e un caffè” recitava la pubblicità di una tradizionale torrefazione romana, per dire che, nonostante il carattere nervino della bevanda, bere un caffè rappresentava un momento di pausa vera. E così che l’amore per il caffè si trasformava in amore per se, ammazzava il nemico e non mortificava uno dei grandi doni della natura. Recuperare è d’obbligo.
+        PCoffee does not like the cold. Keep it tightly closed in a jar at room temperature. If you have an excessive supply it can be kept in the refrigerator, remembering that the coffee easily absorbs moisture and odors: it must always be kept tightly closed. Before using it agin it’s necessary to bring it back to room temperature before use: the coffee is rich in aromatic oils that solidified at low temperatures.
       image: /img/flavor_wheel.jpg
       altImage: Moka
-    - title: Moka
+    - title: 3. Whole coffee beans? Get the grind size right
       description: >
-        Per casa si comprava in grani, per macinarlo poco prima di farlo e far insaporire tutta una casa.“Quattro chiacchiere e un caffè” recitava la pubblicità di una tradizionale torrefazione romana, per dire che, nonostante il carattere nervino della bevanda, bere un caffè rappresentava un momento di pausa vera. E così che l’amore per il caffè si trasformava in amore per se, ammazzava il nemico e non mortificava uno dei grandi doni della natura. Recuperare è d’obbligo.
+        The filter must be fully filled with the coffee powder: the right quantity of coffee is from six to eight grams per cup. Remember also that grind size of coffee is very important in order to obtain a full-bodied aromatic coffee. 
       image: /img/flavor_wheel.jpg
       altImage: Moka
+    - title: 4. The Preparation
+      description: >
+        Put and keep the heat low: the water must pass through the filter of the Moka machine in a smooth manner. Don't rush, haste spoils the coffee. Check and periodically replace the rubber gasket: even a very small leak can compromise the pressure of the water and the quality of your coffee.
+      image: /img/flavor_wheel.jpg
+      altImage: Moka
+      
 ---
