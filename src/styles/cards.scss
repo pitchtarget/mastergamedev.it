@@ -116,8 +116,7 @@
       &--details {
         transition:
         opacity .19s ease-in,
-        display 0s .3s
-        ;
+        display 0s .3s;
         opacity: 1;
         display: block;
       }
@@ -140,7 +139,8 @@
   }
   background-color: white;
   box-shadow: 0 0 10px rgba(255,255,255,.15);
-  &--content {
+  &--content,
+  &--quote {
     padding: 1rem;
     .title,
     .subtitle {
@@ -161,9 +161,12 @@
 }
 
 .studentCard {
-  min-height: 250px;
+  min-height: 300px;
   position: relative;
   margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 
   @include until($tablet) {
     margin: 2rem -1.5rem;
@@ -171,6 +174,7 @@
 
   @mixin cardBlock($opacity,$tranlate) {
     display: flex;
+    align-items: center;
     @include until($tablet) {
       flex-direction: column;
     }
@@ -197,9 +201,6 @@
 
   &--quote {
     position: relative;
-    display: flex;
-    align-items: center;
-
     min-width: calc(100% - 332px);
     @include from($tablet) {
       min-width: calc(100% - 232px);
@@ -213,21 +214,21 @@
     color: $gray-dark;
     margin: 1.5rem;
   }
-  &--quote span {
+  &--quote .quote {
     font-family: 'Playfair Display', serif;
     font-size: 6rem;
     font-weight: 200;
     color: $gray-light;
     position: absolute;
-    &:first-child {
+    &.first {
       line-height: 1rem;
-      top: 10px;
-      left: -10px;
+      top: 80px;
+      left: 0px;
     }
-    &:last-child {
+    &.last {
       line-height: 1rem;
       bottom: -10px;
-      right: -10px;
+      right: 0px;
     }
   }
   &--icon {
@@ -247,26 +248,34 @@
       margin-right: 2rem;
     }
   }
-  &--content {
+  &--content,
+  &--quote {
     width: 100%;
     position: relative;
     padding: 1rem;
   }
 }
 
-.studentCard:hover {
-  .studentCard--preview {
-    transition: transform .32s, opacity .28s;
-    transform: translateY(10%);
-    opacity: 0;
+.studentCard {
+  transition: box-shadow .28s;
+  box-shadow: 0px 0px 0px #00000014;
+  &:hover {
+    transition: box-shadow .28s;
+    box-shadow: 0px 0px 20px #00000014;
   }
-  .studentCard--details {
-    transition: transform .32s, opacity .28s;
-    transform: translateY(0%);
-    opacity: 1;
+  &.is-active {
+    .studentCard--preview {
+      transition: transform .32s, opacity .28s;
+      transform: translateY(10%);
+      opacity: 0;
+    }
+    .studentCard--details {
+      transition: transform .32s, opacity .28s;
+      transform: translateY(0%);
+      opacity: 1;
+    }
   }
 }
-
 .studentSlide {
   background-color: white;
 
