@@ -92,31 +92,54 @@ const Sidebar = class extends React.Component {
         <div className={`modal ${this.state.navBarActiveClass}`}>
           <div className="modal-background" onClick={() => this.toggleHamburger()}></div>
           <div className="sidebar-list">
-            <Link className="navbar-item" to="/">
+            <Link
+              className="navbar-item" to="/"
+              onClick={() => this.toggleHamburger()}>
               Home
             </Link>
-            <Link className="navbar-item" to="/collaborazioni">
+            <Link
+              className="navbar-item" to="/collaborazioni"
+              onClick={() => this.toggleHamburger()}>
               Collaborazioni
             </Link>
-            <Link className="navbar-item" to="/docenti">
+            <Link
+              className="navbar-item" to="/docenti"
+              onClick={() => this.toggleHamburger()}>
               Docenti
             </Link>
-            <Link className="navbar-item" to="/studenti">
+            <Link
+              className="navbar-item" to="/studenti"
+              onClick={() => this.toggleHamburger()}>
               Studenti
             </Link>
-            <Link className="navbar-item" to="/master">
+            <Link
+              className="navbar-item" to="/studenti#progetti"
+              onClick={() => this.toggleHamburger()}>
+              Progetti
+            </Link>
+            <Link
+              className="navbar-item" to="/master"
+              onClick={() => this.toggleHamburger()}>
               Master
             </Link>
-            <Link className="navbar-item" to="/programma">
+            <Link
+              className="navbar-item" to="/programma"
+              onClick={() => this.toggleHamburger()}>
               Programma
             </Link>
-            <Link className="navbar-item" to="/master/#iscrizioni">
+            <Link
+              className="navbar-item" to="/master/#iscrizioni"
+              onClick={() => this.toggleHamburger()}>
               Iscrizioni
             </Link>
-            <Link className="navbar-item" to="/blog">
+            <Link
+              className="navbar-item" to="/blog"
+              onClick={() => this.toggleHamburger()}>
               Blog
             </Link>
-            <Link className="navbar-item" to="/contatti">
+            <Link
+              className="navbar-item" to="/contatti"
+              onClick={() => this.toggleHamburger()}>
               Contatti
             </Link>
           </div>

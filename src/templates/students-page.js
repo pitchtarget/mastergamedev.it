@@ -42,7 +42,7 @@ export const StudentsPageTemplate = ({
         <section className="section container">
           <SignupBox id="studentsSignup" styles="is-moveup"/>
         </section>
-        <div className="section has-background-white">
+        <div className="section" id="progetti">
           <div className="container is-horizontal-spaced">
             <div className="columns is-tablet">
               <div className="column is-10-desktop is-offset-1-desktop">
