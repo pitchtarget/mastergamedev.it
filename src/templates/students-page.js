@@ -5,6 +5,7 @@ import { v4 } from 'uuid'
 import Layout from '../components/Layout'
 import SignupBox from '../components/SignupBox'
 import Image from '../components/elements/Image'
+import ImageGallery from '../components/ImageGallery'
 import Row from '../components/Row'
 import Students from '../components/Students'
 import MarkdownContent from '../components/MarkdownContent'
@@ -15,6 +16,8 @@ export const StudentsPageTemplate = ({
   title,
   description,
   students,
+  titleLabProjects,
+  labProjects,
   titleProjects,
   projects,
   projectsMedia,
@@ -26,7 +29,7 @@ export const StudentsPageTemplate = ({
       <section className="section is-medium has-background-white is-horizontal-spaced">
         <div className="container">
           <div className="columns is-tablet">
-            <div className="column is-8-desktop is-offset-1-desktop">
+            <div className="column">
               <h1 className="title is-1">{title}</h1>
               <p>{description}</p>
             </div>
@@ -42,8 +45,33 @@ export const StudentsPageTemplate = ({
         <section className="section container">
           <SignupBox id="studentsSignup" styles="is-moveup"/>
         </section>
-        <div className="section has-background-white">
-          <div className="container is-horizontal-spaced">
+        <div className="section" id="progetti">
+          <div className="is-horizontal-spaced">
+            <div className="columns is-tablet">
+              <div className="column is-10-desktop is-offset-1-desktop">
+                <h2 className="title is-1 is-spaced">{titleLabProjects}</h2>
+                <div style={{marginBottom: '3rem'}}>
+                  { labProjects.length > 0 && labProjects.map( (project, id) => {
+                    const reverse = id % 2
+                    return (
+                      <div key={v4()} className="section">
+                        <div className="content">
+                          <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
+                              {project.title}
+                          </h3>
+                          <MarkdownContent content={project.description}/>
+                        </div>
+                        <Image src={project.video} alt={project.altVideo} size="lg"/>
+                        <ImageGallery images={project.images}/>
+                      </div>
+                    )})
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="is-horizontal-spaced">
             <div className="columns is-tablet">
               <div className="column is-10-desktop is-offset-1-desktop">
                 <h2 className="title is-2 is-spaced">{titleProjects}</h2>
@@ -186,6 +214,21 @@ StudentsPageTemplate.propTypes = {
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     }),
   ),
+  titleLabProjects: PropTypes.string,
+  labProjects: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      description: PropTypes.string,
+      altVideo: PropTypes.string,
+      video: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+      images: PropTypes.arrayOf(
+        PropTypes.shape({
+          altImage: PropTypes.string,
+          image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+        }),
+      ),
+    }),
+  ),
   titleProjects: PropTypes.string,
   projects: PropTypes.arrayOf(
     PropTypes.shape({
@@ -211,6 +254,8 @@ const StudentsPage = ({ data }) => {
         title={frontmatter.title}
         description={frontmatter.description}
         students={frontmatter.students}
+        titleLabProjects={frontmatter.titleLabProjects}
+        labProjects={frontmatter.labProjects}
         titleProjects={frontmatter.titleProjects}
         projects={frontmatter.projects}
         projectsMedia={frontmatter.projectsMedia}
@@ -265,6 +310,33 @@ export const studentsPageQuery = graphql`
             childImageSharp {
               fluid(maxWidth: 300, quality: 80) {
                 ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        titleLabProjects
+        labProjects {
+          title
+          description
+          altVideo
+          video {
+            extension
+            publicURL
+            childImageSharp {
+              fluid(maxWidth: 1240, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          images {
+            altImage
+            image {
+              extension
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1240, quality: 80) {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
           }

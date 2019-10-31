@@ -189,6 +189,7 @@ $menu-label-color: $white-ter;
 @import "../styles/navbar";
 @import "../styles/row";
 @import "../styles/sidebar";
+@import "../styles/gallery";
 
 @include until($desktop) {
   .columns {
