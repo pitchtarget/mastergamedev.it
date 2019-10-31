@@ -107,6 +107,18 @@ students:
       Approfittate delle opportunita' che il master vi dara' di mettere in pratica le conoscenze acquisite per sviluppare un vostro portfolio da presentare alle aziende e questo vi aiutera' immensamente a trovare un lavoro nell'industria dei videogames.
     games: >-
       Battlefield V, Star Wars: Battlefront II, Total War: Warhammer, Tom Clancy's Ghost Recon: Wildlands
+  - fullName: Andrea Cavicchia
+    linkedin: https://www.linkedin.com/in/andrea-cavicchia-b4a45482/
+    main: true
+    image: /img/andrea-cavicchia.jpg
+    altImage: student-1
+    master: 2013
+    company: Codemasters
+    compLink: http://www.codemasters.com/
+    quote: >-
+      Non importa il vostro grado di conoscenza, esponetevi con entusiasmo e con voglia di fare, senza paura di sbagliare. Nel contempo, siate umili e accettate critiche e correzioni. In men che non si dica imparerete a volare da soli.
+    games: >-
+      @Milestone: Ride, MotoGP™15, Sébastien Loeb Rally Evo, MXGP2 The Official Motocross Videogame, Valentino Rossi The Game, Ride 2, MotoGP™17, @Codemasters: F1® 2019
   - fullName: Dario Zampini
     linkedin: http://linkedin.com/in/dariozampini
     main: true
