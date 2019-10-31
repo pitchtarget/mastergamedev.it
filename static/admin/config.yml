@@ -216,7 +216,7 @@ collections:
                 {label: Alt image, name: altImage, widget: string},
               ],
             }
-          - {label: Projects media, name: projectsMedia, widget: image}
+          - {label: Projects media, name: projectsMedia, widget: image, media_library: { config: { multiple: true }}}
 
       # PARTNERS PAGE
       - file: "src/pages/partners/index.md"
