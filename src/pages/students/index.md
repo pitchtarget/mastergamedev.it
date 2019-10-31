@@ -6,18 +6,40 @@ description: >
   A communi observantia non est recedendum. Quis aute iure reprehenderit in voluptate velit esse. Ambitioni dedisse scripsisse iudicaretur.
 image: /img/scuola.jpg
 altImage: students
-titleProjects: I Progetti
+
+titleLabProjects: I progetti di laboratorio
+labProjects:
+  - title: Progetto di test
+    description: >
+      Idque Caesaris facere voluntate liceret: sese habere. Non equidem invideo, miror magis posuere velit aliquet. Quisque placerat facilisis egestas cillum dolore. Prima luce, cum quibus mons aliud  consensu ab eo. Qui ipsorum lingua Celtae, nostra Galli appellantur.
+    video: /img/CloneHunting.mp4
+    altVideo: video
+    images:
+      - image: /img/mobileGames.png
+        altImage: placeholder
+      - image: /img/Clone_Hunting_1.png
+        altImage: placeholder
+      - image: /img/phisics.png
+        altImage: placeholder
+      - image: /img/Diary_Madness_2.jpg
+        altImage: placeholder
+      - image: /img/Clone_Hunting_2.png
+        altImage: placeholder
+      - image: /img/placeholder.png
+        altImage: placeholder
+
+titleProjects: I progetti dei corsi
 projects:
   - title: Progetti Mobile
     description: >
       II modulo di Mobile Programming insegna tutte le basi per creare un gioco per smartphone: ogni anno, con la guida del docente, gli studenti sono invitati a realizzare progetti e pubblicarli sugli store.
     image: /img/mobileGames.png
-    altImage: placeholder
+    altImage: mobile games
   - title: Progetti phisics
     description: >
       Il modulo di Physics programming insegna le basi della fisica legate allo sviluppo di videogiochi. Con le basi ottenuti gli studenti si cimentano nella creazione dei gameplay più disparati per testare e provare le conoscenze acquisite.
     image: /img/phisics.png
-    altImage: placeholder
+    altImage: phisics experiments
   - title: Game jam
     description: >
       Il Master partecipa attivamente sia alla Global Game Jam, dove è accreditata come sede attiva dell’evento, che alla Ludum Dare organizzata insieme ai docenti. Ogni anno questi eventi vedono nascere esperienze importanti e progetti creativi.
