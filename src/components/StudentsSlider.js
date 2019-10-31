@@ -25,7 +25,6 @@ class StudentsSlider extends React.Component {
       }
       return '/img/studente.png'
     }
-    console.log(filteredStudents)
     return (
       <Slider {...settings}>
         { filteredStudents.length > 0 && filteredStudents.map( student => (
