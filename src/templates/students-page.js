@@ -117,25 +117,33 @@ export const StudentsPageTemplate = ({
                   <div className="tile is-vertical is-8">
                     <div className="tile is-parent">
                       <div className="tile is-child">
-                        { projectsMedia.length > 0 && <Image src={projectsMedia[0]} alt={altImage} size="md"/>}
+                        { projectsMedia.length > 0 &&
+                          <Image src={projectsMedia[0].image} alt={projectsMedia[0].altImage} size="md"/>
+                        }
                       </div>
                     </div>
                     <div className="tile">
                       <div className="tile is-parent">
                         <div className="tile is-child">
-                          { projectsMedia.length > 1 && <Image src={projectsMedia[1]} alt={altImage} styles=""/>}
+                          { projectsMedia.length > 1 &&
+                            <Image src={projectsMedia[1].image} alt={projectsMedia[1].altImage} styles=""/>
+                          }
                         </div>
                       </div>
                       <div className="tile is-parent">
                         <div className="tile is-child">
-                          { projectsMedia.length > 2 && <Image src={projectsMedia[2]} alt={altImage} styles=""/>}
+                          { projectsMedia.length > 2 &&
+                            <Image src={projectsMedia[2].image} alt={projectsMedia[2].altImage} styles=""/>
+                          }
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="tile is-parent">
                     <div className="tile is-child">
-                      { projectsMedia.length > 3 && <Image src={projectsMedia[3]} alt={altImage} size="md" vertical/>}
+                      { projectsMedia.length > 3 &&
+                        <Image src={projectsMedia[3].image} alt={projectsMedia[3].altImage} size="md" vertical/>
+                      }
                     </div>
                   </div>
                 </div>
@@ -143,24 +151,32 @@ export const StudentsPageTemplate = ({
                 <div className="tile is-ancestor">
                   <div className="tile is-parent">
                     <div className="tile is-child">
-                      { projectsMedia.length > 4 && <Image src={projectsMedia[4]} alt={altImage} size="md" vertical/>}
+                      { projectsMedia.length > 4 &&
+                        <Image src={projectsMedia[4].image} alt={projectsMedia[4].altImage} size="md" vertical/>
+                      }
                     </div>
                   </div>
                   <div className="tile is-vertical is-8">
                     <div className="tile is-parent">
                       <div className="tile is-child">
-                        { projectsMedia.length > 5 && <Image src={projectsMedia[5]} alt={altImage} size="md"/>}
+                        { projectsMedia.length > 5 &&
+                          <Image src={projectsMedia[5].image} alt={projectsMedia[5].altImage} size="md"/>
+                        }
                       </div>
                     </div>
                     <div className="tile">
                       <div className="tile is-parent">
                         <div className="tile is-child">
-                          { projectsMedia.length > 6 && <Image src={projectsMedia[6]} alt={altImage} styles=""/>}
+                          { projectsMedia.length > 6 &&
+                            <Image src={projectsMedia[6].image} alt={projectsMedia[6].altImage} styles=""/>
+                          }
                         </div>
                       </div>
                       <div className="tile is-parent">
                         <div className="tile is-child">
-                          { projectsMedia.length > 7 && <Image src={projectsMedia[7]} alt={altImage} styles=""/>}
+                          { projectsMedia.length > 7 &&
+                            <Image src={projectsMedia[7].image} alt={projectsMedia[7].altImage} styles=""/>
+                          }
                         </div>
                       </div>
                     </div>
@@ -171,25 +187,33 @@ export const StudentsPageTemplate = ({
                   <div className="tile is-vertical is-8">
                     <div className="tile is-parent">
                       <div className="tile is-child">
-                        { projectsMedia.length > 8 && <Image src={projectsMedia[8]} alt={altImage} size="md"/>}
+                        { projectsMedia.length > 8 &&
+                          <Image src={projectsMedia[8].image} alt={projectsMedia[8].altImage} size="md"/>
+                        }
                       </div>
                     </div>
                     <div className="tile">
                       <div className="tile is-parent">
                         <div className="tile is-child">
-                          { projectsMedia.length > 9 && <Image src={projectsMedia[9]} alt={altImage} styles=""/>}
+                          { projectsMedia.length > 9 &&
+                            <Image src={projectsMedia[9].image} alt={projectsMedia[9].altImage} styles=""/>
+                          }
                         </div>
                       </div>
                       <div className="tile is-parent">
                         <div className="tile is-child">
-                          { projectsMedia.length > 10 && <Image src={projectsMedia[10]} alt={altImage} styles=""/>}
+                          { projectsMedia.length > 10 &&
+                            <Image src={projectsMedia[10].image} alt={projectsMedia[10].altImage} styles=""/>
+                          }
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="tile is-parent">
                     <div className="tile is-child">
-                      { projectsMedia.length > 11 && <Image src={projectsMedia[11]} alt={altImage} size="md" vertical/>}
+                      { projectsMedia.length > 11 &&
+                        <Image src={projectsMedia[11].image} alt={projectsMedia[11].altImage} size="md" vertical/>
+                      }
                     </div>
                   </div>
                 </div>
@@ -241,9 +265,12 @@ StudentsPageTemplate.propTypes = {
     }),
   ),
   projectsMedia: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+    PropTypes.shape({
+      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+      altImage: PropTypes.string,
+    })
   ),
-  banner: PropTypes.object,
+  banner: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
 }
 
 const StudentsPage = ({ data }) => {
