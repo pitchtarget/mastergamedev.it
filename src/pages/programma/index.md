@@ -66,7 +66,10 @@ paragraphs:
     description: >
       A conclusione del processo formativo è prevista una fase di laboratorio mirata alla realizzazione una porzione di un videogioco complesso. Particolare attenzione verrà posta nella suddivisione dei compiti del team, nella strutturazione del progetto, nella condivisione delle scelte e nello sfruttamento ottimale delle risorse a disposizione. </br>Grazie alle conoscenze e al software messi a disposizione dai corsi specifici si giungerà alla creazione di un prototipo di videogioco, simulando il più fedelmente possibile l’effettivo ambiente lavorativo di produzione.
 
-scientificCommittee: Comitato Scientifico
+scientificCommittee:
+  title: Comitato Scientifico
+  description: >
+      Il Comitato Scientifico ha la responsabilità di indirizzo e di gestione del Master.<br/> È composto da docenti dell’Università di Verona e dai persone provenienti dall’industria videoludica con provata esperienza. Il Comitato Scientifico è nominato, contestualmente all’approvazione della proposta istitutiva, dal Consiglio di Dipartimento ed è composto da almeno cinque componenti: il Comitato Scientifico provvede alla programmazione delle attività formative, all’eventuale riconoscimento allo studente di crediti, alla definizione dei criteri di valutazione e delle modalità di espletamento delle procedure selettive, delle verifiche periodiche e della prova finale. Inoltre, per le attività di stage, individua uno o più referenti sia per il coordinamento delle attività sia per gli aspetti organizzativi e la stipula delle convenzioni.
 people:
   - title: Umberto Castellani
     description: >

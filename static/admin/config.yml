@@ -123,6 +123,8 @@ collections:
         fields:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "master-page"}
           - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: "Alt image", name: altImage, widget: string}
           - {
               label: Paragraphs,
               name: paragraphs,
@@ -155,6 +157,24 @@ collections:
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]}
           - {label: Title paragraphs, name: titleParagraphs, widget: string}
+          - {
+              label: Scientific Committee,
+              name: scientificCommittee,
+              widget: object,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
+              ],
+            }
+          - {
+              label: People,
+              name: people,
+              widget: list,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
+              ],
+            }
           - {
               label: Paragraphs,
               name: paragraphs,

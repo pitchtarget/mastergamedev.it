@@ -6,6 +6,8 @@ const ProgramPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
   const entryParagraphs = entry.getIn(['data', 'paragraphs'])
   const paragraphs = entryParagraphs ? entryParagraphs.toJS() : []
+  const entryPeople = entry.getIn(['data', 'people'])
+  const people = entryPeople ? entryPeople.toJS() : []
 
   if (data) {
     return (
@@ -15,6 +17,8 @@ const ProgramPagePreview = ({ entry, getAsset }) => {
         description={data.description}
         titleParagraphs={data.titleParagraphs}
         paragraphs={paragraphs}
+        scientificCommittee={data.scientificCommittee}
+        people={people}
         bannerMaster={false}
         bannerStudents={false}
       />
