@@ -386,11 +386,14 @@ export const studentsPageQuery = graphql`
           }
         }
         projectsMedia {
-          extension
-          publicURL
-          childImageSharp {
-            fluid(maxWidth: 1240, quality: 80) {
-              ...GatsbyImageSharpFluid
+          altImage
+          image {
+            extension
+            publicURL
+            childImageSharp {
+              fluid(maxWidth: 1240, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }
