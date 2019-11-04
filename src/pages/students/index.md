@@ -46,18 +46,30 @@ projects:
     image: /img/gameJam.png
     altImage: game-jam
 projectsMedia:
-  - /img/CloneHunting.mp4
-  - /img/Clone_Hunting_1.png
-  - /img/Clone_Hunting_2.png
-  - /img/ChildhoodNightmares.mp4
-  - /img/CubeFall.mp4
-  - /img/DiaryMadness.mp4
-  - /img/Diary_Madness_1.jpg
-  - /img/Diary_Madness_2.jpg
-  - /img/pcGameplay.mp4
-  - /img/RobberRunner.mp4
-  - /img/TheIncredibleMachine.mp4
-  - /img/StrategyBots.mp4
+  - image: /img/CloneHunting.mp4
+    altImage: clone hunting video
+  - image: /img/Clone_Hunting_1.png
+    altImage: clone hunting picture
+  - image: /img/Clone_Hunting_2.png
+    altImage: clone hunting picture
+  - image: /img/ChildhoodNightmares.mp4
+    altImage: childhood nightmares video
+  - image: /img/CubeFall.mp4
+    altImage: cube fall video
+  - image: /img/DiaryMadness.mp4
+    altImage: diary madness video
+  - image: /img/Diary_Madness_1.jpg
+    altImage: diary madness picture
+  - image: /img/Diary_Madness_2.jpg
+    altImage: diary madness picture
+  - image: /img/pcGameplay.mp4
+    altImage: game play video
+  - image: /img/RobberRunner.mp4
+    altImage: robber runner video
+  - image: /img/TheIncredibleMachine.mp4
+    altImage: the incredible machine video
+  - image: /img/StrategyBots.mp4
+    altImage: stategy bots video
 students:
   - fullName: Riccardo Reffato
     linkedin: https://www.linkedin.com/in/riccardo-reffato

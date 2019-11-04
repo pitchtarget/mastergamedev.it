@@ -49,7 +49,9 @@ export const StudentsPageTemplate = ({
           <div className="is-horizontal-spaced">
             <div className="columns is-tablet">
               <div className="column is-10-desktop is-offset-1-desktop">
-                <h2 className="title is-1 is-spaced">{titleLabProjects}</h2>
+                <h2 className="title is-1 is-spaced">
+                  {labProjects.length > 0 && titleLabProjects}
+                </h2>
                 <div style={{marginBottom: '3rem'}}>
                   { labProjects.length > 0 && labProjects.map( (project, id) => {
                     const reverse = id % 2

@@ -199,9 +199,17 @@ collections:
               fields: [
                 {label: Title, name: title, widget: string},
                 {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
-                {label: Video, name: video, widget: image},
+                {label: Video, name: video, widget: file},
                 {label: Alt video, name: altVideo, widget: string},
-                {label: Gallery, name: images, widget: list, [{label: Image, name: image, widget: image},{label: Alt image, name: altImage, widget: string}]}
+                {
+                  label: Gallery,
+                  name: images,
+                  widget: list,
+                  fields: [
+                    {label: Image, name: image, widget: image},
+                    {label: Alt image, name: altImage, widget: string}
+                  ],
+                }
               ],
             }
           - {label: Projects title, name: titleProjects, widget: string}
@@ -216,7 +224,15 @@ collections:
                 {label: Alt image, name: altImage, widget: string},
               ],
             }
-          - {label: Projects media, name: projectsMedia, widget: image, media_library: { config: { multiple: true }}}
+          - {
+              label: Projects media,
+              name: projectsMedia,
+              widget: list,
+              fields: [
+                {label: Image, name: image, widget: image},
+                {label: Alt image, name: altImage, widget: string},
+              ],
+            }
 
       # PARTNERS PAGE
       - file: "src/pages/partners/index.md"
