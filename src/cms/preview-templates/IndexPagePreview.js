@@ -12,10 +12,10 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         topSignIn={data.topSignIn}
         partnersSection={data.partnersSection}
         schoolSection={data.schoolSection}
-        // studentsSection={data.studentsSection}
+        studentsSection={data.studentsSection}
         bottomSignIn={data.bottomSignIn}
         teachersSection={data.teachersSection}
-        // newsSection={data.newsSection}
+        newsSection={data.newsSection}
       />
     )
   } else {
