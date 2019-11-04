@@ -13,9 +13,12 @@ const MasterPagePreview = ({ entry, getAsset }) => {
     return (
       <MasterPageTemplate
         title={data.title}
+        altImage={data.altImage}
+        image={data.image}
         serviceTitle={data.serviceTitle}
         paragraphs={paragraphs}
         services={services}
+        banner={false}
       />
     )
   } else {
