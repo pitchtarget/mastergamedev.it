@@ -6,7 +6,7 @@ const ProgramPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
   const entryParagraphs = entry.getIn(['data', 'paragraphs'])
   const paragraphs = entryParagraphs ? entryParagraphs.toJS() : []
-  const entryPeople = entry.getIn(['data', 'people'])
+  const entryPeople = entry.getIn(['data.scientificCommittee', 'people'])
   const people = entryPeople ? entryPeople.toJS() : []
 
   if (data) {

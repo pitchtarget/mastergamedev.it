@@ -7,13 +7,14 @@ import { v4 } from 'uuid'
 const BannerList = ({ banners }) => {
   return (
     <>
-      { banners.length > 0 && banners.map(
-          banner => (
+      { banners.length > 0 && banners.map((banner, id) => {
+          const reverse = id % 2
+          return (
             <section className="section">
-              <Row key={v4()} data={banner} />
+              <Row key={v4()} data={banner} color={reverse ? "primary" : "secondary"}/>
             </section>
           )
-        )
+        })
       }
     </>
   )
