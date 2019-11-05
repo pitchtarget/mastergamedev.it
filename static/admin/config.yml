@@ -247,7 +247,7 @@ collections:
           - {
               label: Projects media,
               name: projectsMedia,
-              hint: maximum number of 12 items
+              hint: maximum number of 12 items,
               widget: list,
               fields: [
                 {label: Image, name: image, widget: image, default: /img/placeholder.png},

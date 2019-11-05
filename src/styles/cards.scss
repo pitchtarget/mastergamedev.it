@@ -74,11 +74,10 @@
   width: 16rem;
   height: 22rem;
   &--content {
-    padding: 1rem 0;
+    padding: 1rem;
     overflow: scroll;
   }
   &--preview {
-    padding: 1rem;
     transition-delay: all .5s;
     transition:
       opacity .19s ease-out,
@@ -87,7 +86,6 @@
     opacity: 1;
   }
   &--details {
-    padding: 1rem;
     transition-delay: all .5s;
     transition:
       opacity .19s ease-out,

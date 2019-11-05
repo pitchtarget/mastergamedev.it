@@ -6,14 +6,16 @@ import { v4 } from 'uuid'
 
 const BannerList = ({ banners }) => {
   return (
-    <section className="section">
+    <>
       { banners.length > 0 && banners.map(
           banner => (
-            <Row key={v4()} data={banner} />
+            <section className="section">
+              <Row key={v4()} data={banner} />
+            </section>
           )
         )
       }
-    </section>
+    </>
   )
 }
 
