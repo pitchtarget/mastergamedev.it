@@ -11,7 +11,7 @@ const BannerList = ({ banners }) => {
           const reverse = id % 2
           return (
             <section className="section">
-              <Row key={v4()} data={banner} color={reverse ? "primary" : "secondary"}/>
+              <Row key={v4()} data={banner} color={reverse ? "primary" : "invert"}/>
             </section>
           )
         })

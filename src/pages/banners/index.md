@@ -12,13 +12,13 @@ banners:
   - name: students
     title: I risultati dei nostri studenti sono la nostra più grande soddisfazione
     text: >
-      Al termine del master i nostri ragazzi intraprendono diversi percorsi di carriera chi all'interno di grandi company chi invece in aziende più piccole dal forte valore tecnologico. 
+      Al termine del master i nostri ragazzi intraprendono diversi percorsi di carriera chi all'interno di grandi company chi invece in aziende più piccole dal forte valore tecnologico.
     cta: studenti
     link: /studenti/#students
     image: /img/placeholder.png
     alt: placeholder
   - name: partners
-    title: Mettiamo in contatto le migliori aziende di gameing con i talenti di domani
+    title: Mettiamo in contatto le migliori aziende di gaming con i talenti di domani
     text: >
       Crediamo nella collaborazione, non solo con talenti professionisti, ma anche con le migliori aziende del settore videoludico per creare un ponte tra formazione e il mondo del lavoro.
     cta: i nostri partner

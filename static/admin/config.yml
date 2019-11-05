@@ -164,17 +164,17 @@ collections:
               fields: [
                 {label: Title, name: title, widget: string},
                 {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
-                {
-                  label: People,
-                  name: people,
-                  widget: list,
-                  fields: [
-                    {label: Title, name: title, widget: string},
-                    {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
-                  ],
-                },
               ],
-            }
+            },
+          - {
+              label: People,
+              name: people,
+              widget: list,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
+              ],
+            },
           - {
               label: Paragraphs,
               name: paragraphs,

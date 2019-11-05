@@ -13,6 +13,7 @@ export const ProgramPageTemplate = ({
   titleParagraphs,
   paragraphs,
   scientificCommittee,
+  people,
   bannerStudents,
   bannerMaster,
 }) => {
@@ -49,11 +50,11 @@ export const ProgramPageTemplate = ({
           </section>
           <div className="columns is-multiline">
             {
-              scientificCommittee.people.length > 0 &&
-              scientificCommittee.people.map( people => (
+              people.length > 0 &&
+              people.map( doc => (
                 <div key={v4()} className="column is-6-tablet">
-                  <h3 className="title is-5">{people.title}</h3>
-                  <MarkdownContent content={people.description}/>
+                  <h3 className="title is-5">{doc.title}</h3>
+                  <MarkdownContent content={doc.description}/>
                 </div>
               ))
             }
@@ -63,7 +64,7 @@ export const ProgramPageTemplate = ({
       { !!bannerStudents && !!bannerMaster &&
         <section className="section has-double-background">
           <div className="container is-horizontal-spaced">
-            <div className="columns is-tablet">
+            <div className="columns is-tablet is-vcentered">
               <div className="column">
                 <div className="has-text-primary-invert" style={{padding: '5%'}}>
                   <h3 className="title is-2 is-spaced is-size-3-mobile is-size-2-tablet">
@@ -111,13 +112,13 @@ ProgramPageTemplate.propTypes = {
     PropTypes.shape({
       title: PropTypes.string,
       description: PropTypes.string,
-      people: PropTypes.arrayOf(
-        PropTypes.shape({
-          title: PropTypes.string,
-          description: PropTypes.string,
-        })
-      ),
     }
+  ),
+  people: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      description: PropTypes.string,
+    })
   ),
   paragraphs: PropTypes.arrayOf(
     PropTypes.shape({
@@ -140,6 +141,7 @@ const ProgramPage = ({ data }) => {
         titleParagraphs={frontmatter.titleParagraphs}
         paragraphs={frontmatter.paragraphs}
         scientificCommittee={frontmatter.scientificCommittee}
+        people={frontmatter.people}
         bannerMaster={bannerMaster[0]}
         bannerStudents={bannerStudents[0]}
       />
@@ -177,10 +179,10 @@ export const masterPageQuery = graphql`
         scientificCommittee {
           title
           description
-          people {
-            title
-            description
-          }
+        }
+        people {
+          title
+          description
         }
       }
     }
