@@ -47,28 +47,40 @@ projects:
     altImage: game-jam
 projectsMedia:
   - image: /img/CloneHunting.mp4
+    video: https://www.youtube.com/embed/HxWohc7-IYc
     altImage: clone hunting video
   - image: /img/Clone_Hunting_1.png
+    video:
     altImage: clone hunting picture
   - image: /img/Clone_Hunting_2.png
+    video:
     altImage: clone hunting picture
   - image: /img/ChildhoodNightmares.mp4
+    video:
     altImage: childhood nightmares video
   - image: /img/CubeFall.mp4
+    video:
     altImage: cube fall video
   - image: /img/DiaryMadness.mp4
+    video:
     altImage: diary madness video
   - image: /img/Diary_Madness_1.jpg
+    video:
     altImage: diary madness picture
   - image: /img/Diary_Madness_2.jpg
+    video:
     altImage: diary madness picture
   - image: /img/pcGameplay.mp4
+    video:
     altImage: game play video
   - image: /img/RobberRunner.mp4
+    video:
     altImage: robber runner video
   - image: /img/TheIncredibleMachine.mp4
+    video:
     altImage: the incredible machine video
   - image: /img/StrategyBots.mp4
+    video:
     altImage: stategy bots video
 students:
   - fullName: Riccardo Reffato

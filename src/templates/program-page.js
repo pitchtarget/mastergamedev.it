@@ -13,7 +13,6 @@ export const ProgramPageTemplate = ({
   titleParagraphs,
   paragraphs,
   scientificCommittee,
-  people,
   bannerStudents,
   bannerMaster,
 }) => {
@@ -50,10 +49,11 @@ export const ProgramPageTemplate = ({
           </section>
           <div className="columns is-multiline">
             {
-              people.length > 0 && people.map( paragraph =>(
+              scientificCommittee.people.length > 0 &&
+              scientificCommittee.people.map( people => (
                 <div key={v4()} className="column is-6-tablet">
-                  <h3 className="title is-5">{paragraph.title}</h3>
-                  <MarkdownContent content={paragraph.description}/>
+                  <h3 className="title is-5">{people.title}</h3>
+                  <MarkdownContent content={people.description}/>
                 </div>
               ))
             }
@@ -111,13 +111,13 @@ ProgramPageTemplate.propTypes = {
     PropTypes.shape({
       title: PropTypes.string,
       description: PropTypes.string,
+      people: PropTypes.arrayOf(
+        PropTypes.shape({
+          title: PropTypes.string,
+          description: PropTypes.string,
+        })
+      ),
     }
-  ),
-  people: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string,
-      description: PropTypes.string,
-    })
   ),
   paragraphs: PropTypes.arrayOf(
     PropTypes.shape({
@@ -140,7 +140,6 @@ const ProgramPage = ({ data }) => {
         titleParagraphs={frontmatter.titleParagraphs}
         paragraphs={frontmatter.paragraphs}
         scientificCommittee={frontmatter.scientificCommittee}
-        people={frontmatter.people}
         bannerMaster={bannerMaster[0]}
         bannerStudents={bannerStudents[0]}
       />
@@ -178,10 +177,10 @@ export const masterPageQuery = graphql`
         scientificCommittee {
           title
           description
-        }
-        people {
-          title
-          description
+          people {
+            title
+            description
+          }
         }
       }
     }

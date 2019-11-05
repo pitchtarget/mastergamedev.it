@@ -164,15 +164,15 @@ collections:
               fields: [
                 {label: Title, name: title, widget: string},
                 {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
-              ],
-            }
-          - {
-              label: People,
-              name: people,
-              widget: list,
-              fields: [
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
+                {
+                  label: People,
+                  name: people,
+                  widget: list,
+                  fields: [
+                    {label: Title, name: title, widget: string},
+                    {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
+                  ],
+                },
               ],
             }
           - {
@@ -247,9 +247,11 @@ collections:
           - {
               label: Projects media,
               name: projectsMedia,
+              hint: maximum number of 12 items
               widget: list,
               fields: [
-                {label: Image, name: image, widget: image},
+                {label: Image, name: image, widget: image, default: /img/placeholder.png},
+                {label: Video url, name: video, string},
                 {label: Alt image, name: altImage, widget: string},
               ],
             }
