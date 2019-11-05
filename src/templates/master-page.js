@@ -115,6 +115,7 @@ MasterPageTemplate.propTypes = {
   serviceTitle: PropTypes.string,
   paragraphs: PropTypes.array,
   services: PropTypes.array,
+  banner: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
 }
 
 const MasterPage = ({ data }) => {

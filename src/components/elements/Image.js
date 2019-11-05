@@ -7,7 +7,10 @@ const Image = ({ src, alt, children, styles, rounded, size, vertical }) => {
     if(!!src.childImageSharp) { media = src.childImageSharp.fluid.src }
     else if(!!src.publicURL){ media = src.publicURL }
     else { media = src }
-  } else { media = '/img/placeholder.png' }
+  }
+  else {
+    media = '/img/placeholder.png'
+  }
 
   let videoSize
   if (size === 'sm') { videoSize = {w: 400, h: 300} }

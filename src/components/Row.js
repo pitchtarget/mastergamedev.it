@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Image from './elements/Image'
 import Button from './elements/Button'
 
 const ctaStyle = (color) => {
@@ -26,8 +27,7 @@ const Row = ({ data, reverse, color }) => {
             className="row-wrapper"
             style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
           >
-            <div className="row--image" title={alt} style={{backgroundImage: `url(${image.childImageSharp.fluid.src})`}}>
-            </div>
+            <Image src={image} alt={alt} styles="row--image" children/>
             <div className="row--content" >
               <div className="content" style={{padding: '5%'}}>
                 {title &&

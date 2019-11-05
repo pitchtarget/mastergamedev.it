@@ -39,7 +39,9 @@ export const TeachersPageTemplate = ({
         <div className="columns is-tablet">
           <div className="column is-10-desktop is-offset-1-desktop">
             <div className="section is-medium">
-              <h2 className="title is-2 is-spaced">{teachersTitle}</h2>
+              {!!teachersTitle &&
+                <h2 className="title is-2 is-spaced">{teachersTitle}</h2>
+              }
               <Teachers teachers={teachers} />
             </div>
           </div>
