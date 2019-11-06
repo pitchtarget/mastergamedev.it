@@ -47,7 +47,7 @@ projects:
     altImage: game-jam
 projectsMedia:
   - image: /img/CloneHunting.mp4
-    video: https://www.youtube.com/embed/HxWohc7-IYc
+    video:
     altImage: clone hunting video
   - image: /img/Clone_Hunting_1.png
     video:
