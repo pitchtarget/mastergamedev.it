@@ -278,17 +278,92 @@
 }
 .studentSlide {
   background-color: white;
+  display: flex;
+  align-items: center;
+  @include until($tablet) {
+    flex-direction: column;
+  }
 
   &--image {
     min-height: 24rem;
     @include until($tablet) {
       min-height: 16rem;
+      width: 100%;
     }
+    width: 50%;
+    height: auto;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
   &--content {
-    padding: 1.5rem;
+    margin: 2.5rem;
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    @include until($tablet) {
+      margin: 0;
+      padding: 1.5rem;
+    }
+  }
+  &--quote {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    @include until($tablet) {
+      margin: 0;
+    }
+
+    & h4 {
+      font-size: 1.25rem;
+      line-height: 1.5;
+      font-style: italic;
+      color: $gray-dark;
+      margin: 0 1.5rem;
+      @include until($tablet) {
+        margin: 0;
+        line-height: 1.25;
+      }
+    }
+    & .quote {
+      font-family: 'Playfair Display', serif;
+      font-size: 6rem;
+      font-weight: 200;
+      color: $gray-light;
+      position: absolute;
+      @include until($tablet) {
+        position: relative;
+        display: block;
+        font-size: 3rem;
+      }
+      & p.subtitle.is-spaced{
+        @include until($tablet) {
+          margin-bottom: 0;
+        }
+      }
+
+      &.first {
+        @include until($tablet) {
+          line-height: 20px;
+          top: 0;
+          left: 0;
+        }
+        line-height: 1rem;
+        top: 20px;
+        left: -20px;
+      }
+      &.last {
+        @include until($tablet) {
+          margin-top: .5rem;
+          text-align: right;
+          line-height: 20px;
+          bottom: 0;
+          right: 0;
+        }
+        line-height: 1rem;
+        bottom: -20px;
+        right: -20px;
+      }
+    }
   }
 }

@@ -28,30 +28,26 @@ class StudentsSlider extends React.Component {
     return (
       <Slider {...settings}>
         { filteredStudents.length > 0 && filteredStudents.map( student => (
-            <div key={v4()} className="studentSlide">
-              <div className="columns is-tablet is-gapless">
-                <div
-                  className="studentSlide--image column is-4"
-                  style={{ backgroundImage:
-                  `url(${validateImages(student.image)})`
-                  }}
-                />
-                <div className="column">
-                  <div className="studentSlide--content">
-                    <h3 className="title is-5" style={{margin:'0'}}>{student.fullName}</h3><br/>
-                    <span className="subtitle is-5">
-                      <a href={student.compLink} target="_blanck">{student.company}</a>
-                    </span><br/>
-                    <small className="">Master: {student.master}</small>
-                  </div>
-                  <div className="studentCard--quote" style={{margin: '1.5rem'}}>
-                    <span>“</span>
-                    <h4>{student.quote}</h4>
-                    <span>”</span>
-                  </div>
+          <div key={v4()} className="slide-wrapper">
+            <div className="studentSlide">
+              <div
+                className="studentSlide--image"
+                style={{ backgroundImage:`url(${validateImages(student.image)})` }}
+              />
+              <div className="studentSlide--content">
+                <h3 className="title is-4">{student.fullName}</h3>
+                <p className="subtitle is-5 is-spaced">
+                  <a href={student.compLink} target="_blanck">{student.company}</a><br/>
+                  <small>Master: {student.master}</small>
+                </p>
+                <div className="studentSlide--quote">
+                  <span className="quote first">“</span>
+                  <h4>{student.quote}</h4>
+                  <span className="quote last">”</span>
                 </div>
               </div>
             </div>
+          </div>
           ))
         }
       </Slider>

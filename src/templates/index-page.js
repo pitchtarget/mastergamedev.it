@@ -147,7 +147,7 @@ export const IndexPageTemplate = ({
               </div>
             </div>
           </div>
-          <div className="container">
+          <div className="container is-horizontal-spaced">
             <StudentsSlider />
           </div>
         </section>
