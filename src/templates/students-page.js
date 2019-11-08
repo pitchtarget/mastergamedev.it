@@ -119,7 +119,7 @@ export const StudentsPageTemplate = ({
                       <div className="tile is-child">
                         { projectsMedia.length > 0 &&
                           <Image
-                            src={!!projectsMedia[0].video ? projectsMedia[0].video : projectsMedia[0].image}
+                            src={projectsMedia[0].image}
                             alt={projectsMedia[0].altImage} size="md"
                           />
                         }
@@ -130,7 +130,7 @@ export const StudentsPageTemplate = ({
                         <div className="tile is-child">
                           { projectsMedia.length > 1 &&
                             <Image
-                              src={!!projectsMedia[1].video ? projectsMedia[1].video : projectsMedia[1].image}
+                              src={projectsMedia[1].image}
                               alt={projectsMedia[1].altImage} styles=""
                             />
                           }
@@ -140,7 +140,7 @@ export const StudentsPageTemplate = ({
                         <div className="tile is-child">
                           { projectsMedia.length > 2 &&
                             <Image
-                              src={!!projectsMedia[2].video ? projectsMedia[2].video : projectsMedia[2].image}
+                              src={projectsMedia[2].image}
                               alt={projectsMedia[2].altImage} styles=""
                             />
                           }
@@ -152,7 +152,7 @@ export const StudentsPageTemplate = ({
                     <div className="tile is-child">
                       { projectsMedia.length > 3 &&
                         <Image
-                          src={!!projectsMedia[3].video ? projectsMedia[3].video : projectsMedia[3].image}
+                          src={projectsMedia[3].image}
                           alt={projectsMedia[3].altImage} size="md" vertical
                         />
                       }
@@ -165,7 +165,7 @@ export const StudentsPageTemplate = ({
                     <div className="tile is-child">
                       { projectsMedia.length > 4 &&
                         <Image
-                          src={!!projectsMedia[4].video ? projectsMedia[4].video : projectsMedia[4].image}
+                          src={projectsMedia[4].image}
                           alt={projectsMedia[4].altImage} size="md" vertical
                         />
                       }
@@ -176,7 +176,7 @@ export const StudentsPageTemplate = ({
                       <div className="tile is-child">
                         { projectsMedia.length > 5 &&
                           <Image
-                            src={!!projectsMedia[5].video ? projectsMedia[5].video : projectsMedia[5].image}
+                            src={projectsMedia[5].image}
                             alt={projectsMedia[5].altImage} size="md"
                           />
                         }
@@ -187,7 +187,7 @@ export const StudentsPageTemplate = ({
                         <div className="tile is-child">
                           { projectsMedia.length > 6 &&
                             <Image
-                              src={!!projectsMedia[6].video ? projectsMedia[6].video : projectsMedia[6].image}
+                              src={projectsMedia[6].image}
                               alt={projectsMedia[6].altImage} styles=""
                             />
                           }
@@ -197,7 +197,7 @@ export const StudentsPageTemplate = ({
                         <div className="tile is-child">
                           { projectsMedia.length > 7 &&
                             <Image
-                              src={!!projectsMedia[7].video ? projectsMedia[7].video : projectsMedia[7].image}
+                              src={projectsMedia[7].image}
                               alt={projectsMedia[7].altImage} styles=""
                             />
                           }
@@ -213,7 +213,7 @@ export const StudentsPageTemplate = ({
                       <div className="tile is-child">
                         { projectsMedia.length > 8 &&
                           <Image
-                            src={!!projectsMedia[8].video ? projectsMedia[8].video : projectsMedia[8].image}
+                            src={projectsMedia[8].image}
                             alt={projectsMedia[8].altImage} size="md"
                           />
                         }
@@ -224,7 +224,7 @@ export const StudentsPageTemplate = ({
                         <div className="tile is-child">
                           { projectsMedia.length > 9 &&
                             <Image
-                              src={!!projectsMedia[9].video ? projectsMedia[9].video : projectsMedia[9].image}
+                              src={projectsMedia[9].image}
                               alt={projectsMedia[9].altImage} styles=""
                             />
                           }
@@ -234,7 +234,7 @@ export const StudentsPageTemplate = ({
                         <div className="tile is-child">
                           { projectsMedia.length > 10 &&
                             <Image
-                              src={!!projectsMedia[10].video ? projectsMedia[10].video : projectsMedia[10].image}
+                              src={projectsMedia[10].image}
                               alt={projectsMedia[10].altImage} styles=""
                             />
                           }
@@ -246,7 +246,7 @@ export const StudentsPageTemplate = ({
                     <div className="tile is-child">
                       { projectsMedia.length > 11 &&
                         <Image
-                          src={!!projectsMedia[11].video ? projectsMedia[11].video : projectsMedia[11].image}
+                          src={projectsMedia[11].image}
                           alt={projectsMedia[11].altImage} size="md" vertical
                         />
                       }
@@ -303,7 +303,6 @@ StudentsPageTemplate.propTypes = {
   projectsMedia: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      video: PropTypes.string,
       altImage: PropTypes.string,
     })
   ),
@@ -424,7 +423,6 @@ export const studentsPageQuery = graphql`
         }
         projectsMedia {
           altImage
-          video
           image {
             extension
             publicURL
