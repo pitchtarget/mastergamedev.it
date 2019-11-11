@@ -32,7 +32,7 @@ export const HistoryPageTemplate = ({
               </div>
               <div className="section">
                 <h3 className="title is-3 is-spaced">{paragraphs[0].title}</h3>
-                <p>{paragraphs[0].description}</p>
+                <MarkdownContent content={paragraphs[0].description}/>
               </div>
               <div className="columns is-multiline is-tablet">
                 { topParagraphs.length > 0 && topParagraphs.map((paragraph, id) => (
@@ -106,7 +106,6 @@ HistoryPageTemplate.propTypes = {
 
 const HistoryPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  debugger
   const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === frontmatter.bannerName)
 
   return (

@@ -80,10 +80,10 @@ export const IndexPageTemplate = ({
                 />
               </div>
               { coffeeType.coffees.length > 0 && coffeeType.coffees.map( coffee =>(
-                  <div key={v4()} className="column is-4-desktop is-offset-1-desktop">
+                  <div key={v4()} className="coffee-card column is-4-desktop is-offset-1-desktop">
                     <div className="card" style={{paffing: "2rem"}}>
                       <div className="card-image">
-                        <figure className="image is-4by3">
+                        <figure className="image">
                           <img src={validateImages(coffee.image)} alt={coffee.altImage}/>
                         </figure>
                       </div>
@@ -121,24 +121,39 @@ export const IndexPageTemplate = ({
           </div>
         </section>
 
-        <section id="studentsSection" className="section is-medium" style={{backgroundColor: "#795336"}}>
-          <div className="container is-horizontal-spaced">
-            <div className="columns">
-              <div className="column is-6-desktop is-offset-1-desktop">
-                <h3 className="content">
-                  <p className="title is-2">{mokaSecrets.heading}</p>
-                  <p className="subtitle is-5">{mokaSecrets.subheading}</p>
-                </h3>
-                <Button
-                  text={mokaSecrets.cta}
-                  link={mokaSecrets.link}
-                  styles="cta cta-large cta__light"
-                />
+        <section style={{backgroundColor: "#795336"}}>
+          <div className="section is-medium">
+            <div className="container is-horizontal-spaced">
+              <h3 className="content">
+                <p className="title has-text-white is-2 is-spaced">{mokaSecrets.heading}</p>
+                <p className="subtitle has-text-white is-5">{mokaSecrets.subheading}</p>
+              </h3>
+            </div>
+            <div className="container is-horizontal-spaced">
+              <div className="columns is-gapless">
+                <div className="column is-10-desktop is-offset-1-desktop">
+                  { mokaSecrets.secrets.length > 0 && mokaSecrets.secrets.map( secret => (
+                      <div key={v4()} className="mokaSecret columns is-tablet is-gapless" style={{margin: '2rem 0'}}>
+                        <div className="column is-2-tablet">
+                          <figure className="image">
+                            <img
+                              src={!!secret.image.childImageSharp ? secret.image.childImageSharp.fluid.src : secret.image}
+                              alt={secret.altImage}
+                            />
+                          </figure>
+                        </div>
+                        <div className="column">
+                          <div className="content secret">
+                            <h4 className="title is-5 is-spaced">{secret.title}</h4>
+                            <p className="subtitle is-size-6">{secret.description}</p>
+                          </div>
+                        </div>
+                      </div>
+                    ))
+                  }
+                </div>
               </div>
             </div>
-          </div>
-          <div className="container">
-            <MokaSlider />
           </div>
         </section>
       </>
@@ -224,6 +239,18 @@ export const pageQuery = graphql`
           subheading
           cta
           link
+          secrets {
+            title
+            description
+            altImage
+            image {
+              childImageSharp {
+                fluid(maxWidth: 300, quality: 80) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
       }
     }

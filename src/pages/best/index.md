@@ -2,9 +2,9 @@
 templateKey: 'coffee-page'
 bannerName: blend
 path: /la-migliore
-cover: /img/scuola.jpg
+cover: /img/NostreMiscele.jpg
 altCover: image
-image: /img/scuola.jpg
+image: /img/NostreMiscele.jpg
 altImage: image
 title: La Migliore
 subtitle: é buono perchè

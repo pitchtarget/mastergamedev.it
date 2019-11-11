@@ -383,3 +383,20 @@ $slider-arrow: url('../img/arrow.svg');
     }
   }
 }
+
+.mokaSecret {
+  .content {
+    &.secret {
+      margin: 0 0 0 1.5rem;
+      @include until($tablet) {
+        margin: 1.5rem 0;
+      }
+    }
+    .title {
+      color: #cabeb5;
+    }
+    .subtitle {
+      color: #dad2cb;
+    }
+  }
+}

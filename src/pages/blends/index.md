@@ -5,13 +5,13 @@ bannerName: history
 title: Le miscele dei migliori caffè
 description: >
   A communi observantia non est recedendum. Quis aute iure reprehenderit in voluptate velit esse. Ambitioni dedisse scripsisse iudicaretur.
-image: /img/scuola.jpg
+image: /img/NostreMiscele.jpg
 altImage: students
 blendSelection:
   - title: Come facciamo le nostre selezioni
     description: >
       Non equidem invideo, miror magis posuere velit aliquet. Quis aute iure reprehenderit in voluptate velit esse. Unam incolunt Belgae, aliam Aquitani, tertiam. Fictum,  deserunt mollit anim laborum astutumque! Gallia est omnis divisa in partes tres, quarum. A communi observantia non est recedendum.
-    image: /img/student-image.jpg
+    image: /img/cover-image.jpg
     altImage: placeholder
 blendTitle: Le nostre selezioni
 blends:

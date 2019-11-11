@@ -15,7 +15,7 @@ coffeeType:
   cta: Vedi il programma
   link: /miscele
   coffees:
-    - image: /img/packaging.jpg
+    - image: /img/packaging.png
       altImage: packaging
       heading: 'Melody'
       subheading: 'Microlots of coffee selected from Brazilian, Central American and Ethiopian plantations. Rigorous Italian roasting'
@@ -50,13 +50,13 @@ mokaSecrets:
       altImage: Moka  
 ---
 <!--
-- image: /img/packaging.jpg
+- image: /img/packaging.png
   altImage: packaging
   heading: La Migliore
   subheading: Etiam habebis sem dicantur magna mollis euismod. Cras mattis iudicium purus sit amet fermentum.
   cta: vedi scheda
   link: /la-migliore
-- image: /img/packaging.jpg
+- image: /img/packaging.png
   altImage: packaging
   heading: La ancora meglio
   subheading: Quam temere in vitiis, legem sancimus haerentia. Ullamco laboris nisi ut aliquid ex ea commodi consequat.

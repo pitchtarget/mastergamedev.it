@@ -2,9 +2,9 @@
 templateKey: 'coffee-page'
 path: /la-buona
 bannerName: excellent
-cover: /img/scuola.jpg
+cover: /img/NostreMiscele.jpg
 altCover: image
-image: /img/scuola.jpg
+image: /img/packaging.png
 altImage: image
 title: La Buona
 subtitle: é buono perchè
