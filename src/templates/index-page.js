@@ -32,7 +32,7 @@ export const IndexPageTemplate = ({
               <div className="cover--content">
                 <div>
                   <h1 className="title is-spaced is-size-2-mobile is-size-1-tablet">{mainCover.heading}</h1>
-                  <p className="subtitle is-size-6">{mainCover.subheading}</p>
+                  <p className="subtitle is-size-5">{mainCover.subheading}</p>
                 </div>
               </div>
             </div>
@@ -54,7 +54,7 @@ export const IndexPageTemplate = ({
 
         <section id="schoolSection" className="section">
           <div className="container">
-            <div className="columns section is-horizontal-spaced is-mobile"
+            <div className="columns section is-horizontal-spaced"
             style={{
               minHeight: "32rem",
               backgroundPosition: "70% center",
@@ -63,12 +63,12 @@ export const IndexPageTemplate = ({
                 validateImages(coffeeType.image)
               })`
             }}>
-              <div className="column is-6-desktop is-offset-1-desktop">
+              <div className="column is-5-desktop is-offset-1-desktop">
                 <h3 className="content">
                   <p className="title is-size-2-mobile is-size-1-tablet has-text-white">
                     {coffeeType.heading}
                   </p>
-                  <p className="subtitle is-size-6 has-text-white">
+                  <p className="subtitle is-size-5 has-text-white">
                     {coffeeType.subheading}
                   </p>
                 </h3>
@@ -79,8 +79,25 @@ export const IndexPageTemplate = ({
                   styles="cta cta-large cta__light"
                 />
               </div>
+              { coffeeType.coffees.length > 0 && coffeeType.coffees.map( coffee =>(
+                  <div key={v4()} className="column is-4-desktop is-offset-1-desktop">
+                    <div className="card" style={{paffing: "2rem"}}>
+                      <div className="card-image">
+                        <figure className="image is-4by3">
+                          <img src={validateImages(coffee.image)} alt={coffee.altImage}/>
+                        </figure>
+                      </div>
+                      <div className="card-content" style={{minHeight: "13rem"}}>
+                        <h4 className="title is-4 has-text-weight-medium">{coffee.heading}</h4>
+                        <p className="subtitle is-6 has-text-weight-normal">{coffee.subheading}</p>
+                        <Link to={coffee.link} className="">{coffee.cta}</Link>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              }
             </div>
-
+          {/*
             <div className="columns is-centered" style={{marginTop: "-4rem"}}>
               { coffeeType.coffees.length > 0 && coffeeType.coffees.map( coffee =>(
                   <div key={v4()} className="column is-4-desktop ">
@@ -100,6 +117,7 @@ export const IndexPageTemplate = ({
                 ))
               }
             </div>
+          */}
           </div>
         </section>
 

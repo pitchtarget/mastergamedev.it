@@ -49,6 +49,8 @@ export const HistoryPageTemplate = ({
           </div>
         </div>
       </section>
+    {/*
+      TIMELINE
       <section className="section is-medium has-background-primary">
         <div className="container is-horizontal-spaced">
           <h2 className="title is-2">{historyTitle}</h2>
@@ -64,6 +66,10 @@ export const HistoryPageTemplate = ({
           </div>
         </div>
       </section>
+    */}
+
+    {/*
+      PARAGRAPHS
       <section className="section has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
@@ -83,6 +89,7 @@ export const HistoryPageTemplate = ({
           </div>
         </div>
       </section>
+    */}
       { !!banner && <Row data={banner} color="dark"/> }
     </>
   )

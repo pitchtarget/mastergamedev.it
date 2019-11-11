@@ -21,18 +21,6 @@ coffeeType:
       subheading: 'Microlots of coffee selected from Brazilian, Central American and Ethiopian plantations. Rigorous Italian roasting'
       cta: vedi scheda
       link: /la-buona
-    - image: /img/packaging.jpg
-      altImage: packaging
-      heading: La Migliore
-      subheading: Etiam habebis sem dicantur magna mollis euismod. Cras mattis iudicium purus sit amet fermentum.
-      cta: vedi scheda
-      link: /la-migliore
-    - image: /img/packaging.jpg
-      altImage: packaging
-      heading: La ancora meglio
-      subheading: Quam temere in vitiis, legem sancimus haerentia. Ullamco laboris nisi ut aliquid ex ea commodi consequat.
-      cta: vedi scheda
-      link: /la-ancora-meglio
 
 mokaSecrets:
   heading: The real coffee enemy is the haste!
@@ -52,13 +40,26 @@ mokaSecrets:
       altImage: Moka
     - title: 3. Whole coffee beans? Get the grind size right
       description: >
-        The filter must be fully filled with the coffee powder: the right quantity of coffee is from six to eight grams per cup. Remember also that grind size of coffee is very important in order to obtain a full-bodied aromatic coffee. 
+        The filter must be fully filled with the coffee powder: the right quantity of coffee is from six to eight grams per cup. Remember also that grind size of coffee is very important in order to obtain a full-bodied aromatic coffee.
       image: /img/flavor_wheel.jpg
       altImage: Moka
     - title: 4. The Preparation
       description: >
         Put and keep the heat low: the water must pass through the filter of the Moka machine in a smooth manner. Don't rush, haste spoils the coffee. Check and periodically replace the rubber gasket: even a very small leak can compromise the pressure of the water and the quality of your coffee.
       image: /img/flavor_wheel.jpg
-      altImage: Moka
-      
+      altImage: Moka  
 ---
+<!--
+- image: /img/packaging.jpg
+  altImage: packaging
+  heading: La Migliore
+  subheading: Etiam habebis sem dicantur magna mollis euismod. Cras mattis iudicium purus sit amet fermentum.
+  cta: vedi scheda
+  link: /la-migliore
+- image: /img/packaging.jpg
+  altImage: packaging
+  heading: La ancora meglio
+  subheading: Quam temere in vitiis, legem sancimus haerentia. Ullamco laboris nisi ut aliquid ex ea commodi consequat.
+  cta: vedi scheda
+  link: /la-ancora-meglio
+ -->
