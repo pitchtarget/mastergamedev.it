@@ -130,8 +130,8 @@ export const IndexPageTemplate = ({
               </h3>
             </div>
             <div className="container is-horizontal-spaced">
-              <div className="columns is-gapless">
-                <div className="column is-10-desktop is-offset-1-desktop">
+              <div className="columns is-vcentered">
+                <div className="column is-10-tablet is-offset-1-tablet">
                   { mokaSecrets.secrets.length > 0 && mokaSecrets.secrets.map( secret => (
                       <div key={v4()} className="mokaSecret columns is-tablet is-gapless" style={{margin: '2rem 0'}}>
                         <div className="column is-2-tablet">
