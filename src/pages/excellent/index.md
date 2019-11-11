@@ -2,9 +2,9 @@
 templateKey: 'coffee-page'
 path: /la-ancora-meglio
 bannerName: best
-cover: /img/scuola.jpg
+cover: /img/NostreMiscele.jpg
 altCover: image
-image: /img/scuola.jpg
+image: /img/NostreMiscele.jpg
 altImage: image
 title: La Ancora Meglio
 subtitle: é buono perchè

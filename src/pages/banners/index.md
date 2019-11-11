@@ -6,8 +6,8 @@ box:
   title: La Nostra storia
   text: >
     Produciamo caffè fin dal 1948 e la nostra attenzione è rivolta attualmente soprattutto ai...
-  cta: partecipa ora
-  link: /contact
+  cta: scopri di più
+  link: /storia
 banners:
   - name: good
     title: La buona
@@ -40,7 +40,7 @@ banners:
       Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi.
     cta: le migliori selezioni
     link: /miscele
-    image: /img/scuola.jpg
+    image: /img/NostreMiscele.jpg
     alt: scuola
   - name: history
     title: La storia
@@ -48,6 +48,6 @@ banners:
       Ut enim ad minim veniam, quis nostrud exercitation. Salutantibus vitae elit libero, a pharetra augue. Curabitur blandit tempus ardua ridiculus sed magna. Praeterea iter est quasdam res quas ex communi.
     cta: programma completo
     link: /storia
-    image: /img/scuola.jpg
+    image: /img/NostreMiscele.jpg
     alt: scuola
 ---
