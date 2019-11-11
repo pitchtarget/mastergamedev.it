@@ -79,19 +79,17 @@ teachers:
       Laureato presso l’università di Salerno in Informatica Applicata, frequenta la prima edizione del Master in Computer Game Development nel 2010. Per anni ha lavorato come Developer, Game Designer e Producer nel settore dei videogiochi. Oggi è Direttore Creativo presso Uqido, azienda specializzata in Realtà Virtuale e Aumentata.
     link: https://www.linkedin.com/in/gianpaologreco/
   - fullName: Nicholas Roncatti
-    role:
+    role: Mobile Programming, Unity
     image: /img/nicholas-roncatti.jpg
-    altImage: docente
+    altImage: nicholas-roncatti
     bio: >
       Laureato presso l’Università degli Studi di Ferrara in Ingegneria Informatica, attualmente si occupa di sviluppo software come Senior Gameplay Programmer, in special modo per piattaforme mobile, presso Just Funny Games Srl.
     link: https://www.linkedin.com/in/nicholasroncatti/
----
-<!--   - fullName: Daniele Colombo
-    role: Da completare
-    image:
+  - fullName: Daniele Colombo
+    role: C++, Graphics Programming
+    image: /img/daniele-colombo.jpg
     altImage: docente
     bio: >
       Professionista nel campo video ludico ha partecipato a grandi titoli come Forza Motosport o Pay Day sotto le vesti di Programmatore Grafico, dopo aver lavorato diversi anni per grandi case ha deciso di crearsi il suo futuro come lavoratore autonomo e Freelancer.
     link:
-
- -->
+---
