@@ -88,8 +88,15 @@ teachers:
   - fullName: Daniele Colombo
     role: C++, Graphics Programming
     image: /img/daniele-colombo.jpg
-    altImage: docente
+    altImage: Daniele Colombo
     bio: >
       Professionista nel campo video ludico ha partecipato a grandi titoli come Forza Motosport o Pay Day sotto le vesti di Programmatore Grafico, dopo aver lavorato diversi anni per grandi case ha deciso di crearsi il suo futuro come lavoratore autonomo e Freelancer.
+    link:
+  - fullName: Andrea Rossini
+    role: Ai Programming
+    image: /img/andrea-rossini.jpg
+    altImage: Andrea Rossini
+    bio: >
+      Laureato presso l’Universita’ degli Studi di Trento. Inizia a lavorare nel game development collaborando con vari studi, principalmente su titoli mobile. Negli ultimi anni partecipa a diverse produzioni tripla AAA italiane. Nel 2016 fonda 3Go Games con cui continua attualmente la sua attivita’.
     link:
 ---
