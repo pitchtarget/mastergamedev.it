@@ -20,7 +20,7 @@ const Image = ({ src, alt, children, styles, rounded, size, vertical }) => {
 
   if(!!vertical) {videoSize = {w: videoSize.h, h: videoSize.w} }
 
-  const isVideo = !!src.extension ? src.extension === "mp4" || src.includes(".mp4") : false
+  const isVideo = !!src.extension ? src.extension === "mp4" : false || src.includes(".mp4")
 
   return (
     <>
