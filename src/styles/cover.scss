@@ -1,0 +1,67 @@
+$cover-height: 100vh;
+
+.cover {
+  @include from($desktop) {
+    margin-top: -$navbar-height;
+  }
+  margin-top: -3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__main {
+    background-color: $primary-invert;
+    display: flex;
+    align-items: center;
+    @include until($desktop) {
+      .columns {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+    @include from($fullhd) {
+      .columns {
+        width: 100%;
+      }
+    }
+  }
+
+  &.align-top {
+    background-position: top;
+  }
+
+  &.is-small {
+    min-height: 320px;
+  }
+
+  .title {
+    color: $primary;
+  }
+  .subtitle {
+    color: $primary;
+  }
+  .cover--image {
+    width: 100%;
+    min-height: 50vh;
+    @include from($desktop) {
+      height: $cover-height;
+      min-height: 700px;
+      clip-path: polygon(0% 0%, 15% 100%,100% 100%, 100% 0%);
+    }
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0% 0%, 0% 85%,100% 100%, 100% 0%)
+  }
+
+  .cover--content {
+    display: flex;
+    align-items: center;
+    @include until($desktop) {
+      padding: 2rem;
+    }
+    @include until($tablet) {
+      padding: 1rem;
+    }
+  }
+}

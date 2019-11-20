@@ -1,0 +1,57 @@
+.cta {
+  font-weight: 900;
+  font-size: 1rem;
+  padding: .5rem 0;
+  align-items: center;
+  display: flex;
+  .text {
+    margin-right: 1rem;
+  }
+  .icon {
+    transition: transform 1s ease;
+    transform: translateX(0);
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+  &:hover .icon {
+    transform: translateX(1rem);
+    transition: transform .32s ease;
+  }
+  &__align_right {
+    justify-content: flex-end;
+  }
+}
+
+.cta-large {
+  font-size: 1.5rem;
+  padding: .75rem 0;
+  .text {
+    margin-right: 1.5rem;
+  }
+  .icon svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@mixin ctaStyle($color) {
+  color: $color;
+  &:hover {
+    color: $color;
+  }
+}
+
+.cta__primary {
+  @include ctaStyle($primary);
+}
+.cta__invert {
+  @include ctaStyle($primary-invert);
+}
+.cta__dark {
+  @include ctaStyle($black);
+}
+.cta__light {
+  @include ctaStyle($white);
+}

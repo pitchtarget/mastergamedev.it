@@ -1,0 +1,70 @@
+#sidebar {
+  background-color: transparent;
+  @include until($desktop) {
+    background-color: $primary-invert;
+    min-height: 3rem;
+    & > .container,
+    & .navbar-brand {
+      min-height: 3rem;
+    }
+  }
+  transition: background-color .19s;
+
+  .navbar-burger {
+    height: auto;
+    width: 3rem;
+  	display: none;
+  }
+  .navbar-burger span {
+    height: 2px;
+    width: 22px;
+    left: calc(50% - 12px);
+  }
+
+  &.has-background {
+    transition: background-color .19s;
+    background-color: $primary-invert;
+  }
+
+  .sidebar-list {
+    display: flex;
+    flex-direction: column;
+
+    @include from($desktop) {
+      margin-right: 7.5rem;
+    }
+
+    a.navbar-item {
+      color: $primary;
+      background-color: transparent;
+      opacity: .75;
+      font-size: $size-5;
+      font-weight: bold;
+      @include from($desktop) {
+        text-align: right;
+        justify-content: flex-end;
+      }
+      text-align: center;
+      justify-content: center;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .sidebar-menu {
+    cursor: pointer;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: $primary;
+    strong {
+      color:inherit;
+    }
+  }
+  @include from($desktop) {
+    .modal {
+      align-items: flex-end;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.signupBox {
+  min-height: 160px;
+
+  &--image {
+    min-height: 160px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__regular {
+    background-color: $primary;
+  }
+  &__invert {
+    background-color: $primary-invert;
+  }
+  &--text {
+    max-width: 600px;
+    padding: 1.5rem;
+    .title {
+      color: inherit;
+    }
+    .subtitle {
+      color: inherit;
+    }
+    &__regular {
+      color: $primary-invert;
+    }
+    &__invert {
+      color: $primary;
+    }
+  }
+  &--cta {
+    min-width: 200px;
+    padding: 0 1.5rem;
+  }
+
+}
+@include from($desktop) {
+  .is-moveup {
+    margin-top: -80px;
+  }
+}

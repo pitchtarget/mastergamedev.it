@@ -18,6 +18,7 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               tags
               templateKey
+              path
             }
           }
         }
@@ -29,12 +30,20 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    // Filter out the menu so we don't create pages for those
+    const posts = result.data.allMarkdownRemark.edges.filter(edge => {
+      if (edge.node.frontmatter.templateKey === "banners") {
+        return false;
+      } else {
+        return result.data.allMarkdownRemark.edges;
+      }
+    });
 
     posts.forEach(edge => {
       const id = edge.node.id
+      const customPath = edge.node.frontmatter.path
       createPage({
-        path: edge.node.fields.slug,
+        path: !!customPath ? customPath : edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`

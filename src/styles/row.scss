@@ -1,0 +1,64 @@
+// Colors of Rows
+@mixin rowStyle($background,$title,$text) {
+  background-color: $background;
+  .content {
+    color: $text;
+    .title {
+      color: $title;
+    }
+  }
+}
+
+.row {
+  &__primary {
+    @include rowStyle($primary,$primary-invert,#3a3250);
+  }
+  &__invert {
+    @include rowStyle($primary-invert,$primary,#d2a43f);
+  }
+  &__dark {
+    @include rowStyle($gray-dark,$white,$gray-light);
+  }
+  &__light {
+    @include rowStyle($gray-light,$black,$gray-dark);
+  }
+}
+// remove padding and margin
+.row-wrapper {
+  display: flex;
+  @include until($tablet) {
+    flex-direction: column !important;
+  }
+  margin-top: 0px;
+  margin-bottom: 0px !important;
+}
+.row--image {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  @include until($desktop) {
+    padding: 0;
+  }
+}
+.row--image {
+  @include from($tablet) {
+    width: 50%;
+    min-height: auto;
+  }
+  width: 100%;
+  min-height: 10rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.row--content {
+  @include from($tablet) {
+    width: 50%;
+  }
+  @include from($desktop) {
+    width: 35%;
+  }
+  width: 100%;
+  min-height: 24rem;
+  display: inherit;
+  align-items: center;
+}

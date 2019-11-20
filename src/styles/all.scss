@@ -1,0 +1,421 @@
+@import "~bulma/sass/utilities/initial-variables";
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+// Config vars
+$body-background-color: #F0F0F2;
+$family-sans-serif: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+$size-1:  3.25rem;
+$size-2:  2.25rem;
+$size-3:  1.75rem;
+$size-4:  1.5rem;
+$size-5:  1.25rem;
+$size-6:  1rem;
+$size-7:  .75rem;
+
+$weight-bold: 900;
+$body-line-height: 1.25;
+
+$primary: #FFC74D;
+$primary-invert: #352857;
+$gray-dark: #3D3A45;
+$gray-light: #CBC9D1;
+$grey-lighter: $gray-light;
+$grey-darker: $gray-dark;
+
+$body-color: #333;
+$black: #2b2523;
+
+$modal-background: #211d2bf5;
+
+$section-padding: 3rem 0;
+$section-padding-small: 1.5rem 0;
+$section-padding-medium: 6rem 0;
+$section-padding-large: 9rem 0;
+
+$title-color: $primary-invert;
+$subtitle-color: $primary-invert;
+$title-weight: 900;
+
+$navbar-height: 6rem;
+
+//Custom breakpoints
+$tablet: 768px;
+$fullhd: 1980px;
+
+$navbar-burger-color: $primary;
+
+.main {
+  min-height: calc(100vh - 320px);
+}
+
+.content .taglist {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  li {
+    cursor: pointer;
+    padding: 0 2rem 1rem 0;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+  }
+  li.active {
+    font-weight: bold;
+  }
+}
+
+// Helper Classes
+.full-width-image-container {
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 2em -50vw;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full-width-image {
+    width: 100vw;
+    height: 400px;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 16px 10px;
+    font-size: 18px;
+    font-size: 1rem;
+    line-height: 1.25;
+    background-color: #fff;
+    border-radius: .25rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: #CC3700;
+    text-align: center;
+    -webkit-box-shadow: inset 0 0 0 2px #CC3700;
+    box-shadow: inset 0 0 0 2px #f40;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+}
+.margin-top-0 {
+  margin-top: 0 !important;
+}
+.navbar-item .icon {
+  color: $primary;
+}
+
+.modal-background {
+  background-color: $modal-background !important;
+}
+
+// Override for use of svg's from https://simpleicons.org/
+.icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;
+}
+
+footer.footer {
+  padding: 3rem 0rem 0rem;
+  background-color: #3D3A45;
+}
+footer.content {
+  background-color: #3D3A45;
+}
+//Menu overrides
+$menu-item-color: $white-ter;
+$menu-item-hover-color: $black !important;
+$menu-item-hover-background-color: $black;
+// $menu-item-active-color: $kaldi-red-invert;
+// $menu-item-active-background-color:	$kaldi-red-invert;
+// $menu-list-border-left: 1px solid $kaldi-red-invert;
+$menu-label-color: $white-ter;
+
+.menu-label {
+  font-size: 1em !important;
+  text-align: left;
+}
+.menu-list {
+  list-style: none !important;
+  text-align: left;
+}
+.social {
+  padding: 2rem 0rem;
+  text-align: right;
+}
+.social a {
+    padding: .5em .5em .3em .5em;
+    border-radius: 1em;
+    background-color: $white-ter;
+    margin: .5em;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    display: inline;
+}
+// blog roll
+.blog-list-item.is-featured {
+  background-color: #d6400033;
+}
+.blog-list-item header {
+  display: flex;
+  margin-bottom: 1em;
+}
+.blog-list-item .featured-thumbnail {
+  flex-basis: 35%;
+  margin: 0 1.5em 0 0;
+}
+
+@import "~bulma";
+@import "../styles/cta";
+@import "../styles/signupBox";
+@import "../styles/cover";
+@import "../styles/cards";
+@import "../styles/navbar";
+@import "../styles/row";
+@import "../styles/sidebar";
+@import "../styles/gallery";
+
+@include until($desktop) {
+  .columns {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+.hide-last-child:last-child {
+  @include until($desktop) {
+    display: none !important;
+  }
+}
+
+// list
+ul.markdown-list {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 2rem;
+  list-style-type: disc;
+  &>li {
+    padding-bottom: .5rem;
+  }
+}
+
+
+// section
+.section.is-small {
+  padding: $section-padding-small;
+}
+// image
+.image--tag {
+  margin: auto;
+}
+
+@mixin imageSize($mobileSize ,$tabletSize ,$desktopSize ,$fullhdSize) {
+  @include until($tablet) {
+    min-height: $mobileSize;
+    min-width: $mobileSize;
+  }
+  @include from($tablet) {
+    min-height: $tabletSize;
+    &.is-tile { min-height: $tabletSize - $column-gap}
+  }
+  @include from($desktop) {
+    min-height: $desktopSize;
+    &.is-tile { min-height: $desktopSize - $column-gap}
+  }
+  @include from($fullhd) {
+    min-height: $fullhdSize;
+    &.is-tile { min-height: $fullhdSize - $column-gap}
+  }
+}
+
+.video--bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.image--bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &.is-sm {
+    @include imageSize(8rem,12rem,16rem,20rem);
+  }
+  &.is-md {
+    @include imageSize(12rem,16rem,20rem,32rem);
+  }
+  &.is-lg {
+    @include imageSize(16rem,20rem,32rem,40rem);
+  }
+}
+
+
+// responsiveness
++tablet-only {
+  .blog-list-item .featured-thumbnail {
+    flex-basis: 50%;
+  }
+}
++mobile {
+  .blog-list-item header {
+    display: block;
+  }
+  .blog-list-item .featured-thumbnail {
+    text-align: center;
+    max-width: 70%;
+    margin: 0 0 1em;
+  }
+}
+
+.has-double-background {
+  background: -webkit-linear-gradient(top, $primary, $primary 50%, $primary-invert 50%, $primary-invert);
+  @include from($tablet) {
+    background: -webkit-linear-gradient(left, $primary, $primary 50%, $primary-invert 50%, $primary-invert);
+  }
+}
+
+.has-text-primary-invert {
+  color: $primary-invert !important;
+}
+
+.is-horizontal-spaced {
+  @include until($tablet) {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+  @include until($desktop) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+footer .footer-list {
+  display: flex;
+  flex-direction: column;
+  a.navbar-item {
+    color: white;
+    opacity: .75;
+    font-size: $size-7;
+    font-weight: bold;
+    &:hover {
+      background-color: transparent;
+      opacity: 1;
+    }
+  }
+}
+.footer--info {
+  text-align: right;
+}
+.footer--info,
+.footer--logo {
+  @include until($tablet) {
+    text-align: center;
+  }
+}
+// Set slider width
+#studentSlider {
+  .slick-list,
+  .slick-slide {
+    @include from($tablet) {
+      width: 90vw;
+    }
+    @include from($desktop) {
+      width: 70vw;
+    }
+    @include from($widescreen) {
+      width: 60vw;
+    }
+    width: 100vw;
+  }
+  .slick-list {
+    margin: auto;
+  }
+  $slider-arrow: url('../img/arrow.svg');
+  .slick-arrow,
+  .slick-arrow:hover,
+  .slick-prev:hover,
+  .slick-next:hover,
+  .slick-prev:focus,
+  .slick-next:focus, {
+    color: white;
+    width: 1.5rem;
+    height: 2rem;
+    background: $slider-arrow;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: transparent;
+  }
+  .slick-arrow {
+    opacity: .75;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .slick-prev {
+    @include until($desktop) {
+      display: none !important;
+    }
+    @include from($desktop) {
+      left: 20px;
+    }
+    @include until($fullhd) {
+      left: -10%;
+    }
+    left: -30%;
+    transform: translateY(-50%) rotate(180deg);
+  }
+  .slick-next {
+    @include until($desktop) {
+      display: none !important;
+    }
+    @include from($desktop) {
+      right: 20px;
+    }
+    @include until($fullhd) {
+      right: -10%;
+    }
+    right: -30%;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    content: none;
+  }
+}
+@include until($fullhd) {
+  .blog-roll > .column:last-child {
+    display: none;
+  }
+}
+
+.page-404 {
+  @include from($desktop) {
+    padding-left: 30%;
+  }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10%;
+  background: -webkit-linear-gradient(-20deg, $primary, $primary 30%, $primary-invert 30%, $primary-invert);
+}

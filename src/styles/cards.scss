@@ -1,0 +1,369 @@
+.partnerCard {
+  min-width: 10rem;
+  min-height: 10rem;
+  margin: auto;
+  cursor: pointer;
+  :focus {
+    outline: none;
+  }
+
+  .image {
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1.5rem;
+
+    margin: auto;
+    width: 8rem;
+    height: auto;
+
+    box-shadow: 0 0 20px #00000026;
+  }
+
+  .text {
+    font-size: .875rem;
+    font-weight: normal;
+    color: $grey-dark;
+    text-align: center;
+    line-height: 1;
+    transform: scale(1);
+    transition: transform .47s ease-in .19;
+
+    margin-top: .75rem;
+  }
+
+  &.animate:hover .image {
+    transform: scale(1.15);
+    transform-origin: 50% 100%;
+    transition: transform .19s ease-out;
+  }
+
+  &.is-grid {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &.is-carousel {
+    @include until($desktop) {
+      margin: 1rem;
+    }
+    @include from($desktop) {
+      margin: 1.5rem;
+      &:first-child {
+        margin-left: 3rem;
+      }
+      &:last-child {
+        margin-right: 3rem;
+      }
+    }
+  }
+}
+
+.partnersCarousel {
+  overflow-y: scroll;
+  padding: 1rem 0;
+  &::-webkit-scrollbar { width: 0 !important }
+
+  .wrapper {
+    display: flex;
+  }
+}
+
+.teacherCard {
+  margin: auto;
+  overflow: hidden;
+  width: 16rem;
+  height: 22rem;
+  &--content {
+    padding: 1rem;
+    overflow: scroll;
+  }
+  &--preview {
+    transition-delay: all .5s;
+    transition:
+      opacity .19s ease-out,
+      display .19s
+    ;
+    opacity: 1;
+  }
+  &--details {
+    transition-delay: all .5s;
+    transition:
+      opacity .19s ease-out,
+      display .19s
+    ;
+    opacity: 0;
+    display: none;
+  }
+  &--image {
+    transition-delay: all .5s;
+    transition: height .19s ease-out;
+    height: 16rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &:hover {
+    .teacherCard,
+    .studentCard {
+      &--preview {
+        transition:
+        opacity .19s ease-in,
+        display 0s .3s
+        ;
+        opacity: 0;
+        display: none;
+      }
+      &--details {
+        transition:
+        opacity .19s ease-in,
+        display 0s .3s;
+        opacity: 1;
+        display: block;
+      }
+      &--image {
+        transition: height .19s ease-in;
+        height: 0px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.postCard {
+  @include from($desktop) {
+    min-height: 16rem;
+  }
+  @include from($fullhd) {
+    min-height: auto;
+    height: auto;
+  }
+  background-color: white;
+  box-shadow: 0 0 10px rgba(255,255,255,.15);
+  &--content,
+  &--quote {
+    padding: 1rem;
+    .title,
+    .subtitle {
+      color: $primary-invert !important;
+    }
+  }
+  &--image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include until($desktop) {
+      height: 12rem;
+    }
+  }
+  &--header {
+    margin-bottom: 1rem;
+  }
+}
+
+.studentCard {
+  min-height: 300px;
+  position: relative;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  @include until($tablet) {
+    margin: 2rem -1.5rem;
+  }
+
+  @mixin cardBlock($opacity,$tranlate) {
+    display: flex;
+    align-items: center;
+    @include until($tablet) {
+      flex-direction: column;
+    }
+    flex-direction: row;
+    position: absolute;
+    transform: translateY($tranlate);
+    transition: transform .32s, opacity .28s;
+    width: 100%;
+    opacity: $opacity;
+    @include from($desktop) {
+      padding: 2rem;
+    }
+  }
+
+  &--preview {
+    @include cardBlock(1,0);
+    @include until($tablet) {
+      position: relative;
+    }
+  }
+  &--details {
+    @include cardBlock(0,-10%);
+  }
+
+  &--quote {
+    position: relative;
+    min-width: calc(100% - 332px);
+    @include from($tablet) {
+      min-width: calc(100% - 232px);
+    }
+  }
+
+  &--quote h4 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-style: italic;
+    color: $gray-dark;
+    margin: 1.5rem;
+  }
+  &--quote .quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    font-weight: 200;
+    color: $gray-light;
+    position: absolute;
+    &.first {
+      line-height: 1rem;
+      top: 80px;
+      left: 0px;
+    }
+    &.last {
+      line-height: 1rem;
+      bottom: -10px;
+      right: 0px;
+    }
+  }
+  &--icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  &--image {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+
+    @include from($tablet) {
+      width: 200px;
+      height: 200px;
+      margin-right: 2rem;
+    }
+  }
+  &--content,
+  &--quote {
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+  }
+}
+
+.studentCard {
+  transition: box-shadow .28s;
+  box-shadow: 0px 0px 0px #00000014;
+  &:hover {
+    transition: box-shadow .28s;
+    box-shadow: 0px 0px 20px #00000014;
+  }
+  &.is-active {
+    .studentCard--preview {
+      transition: transform .32s, opacity .28s;
+      transform: translateY(10%);
+      opacity: 0;
+    }
+    .studentCard--details {
+      transition: transform .32s, opacity .28s;
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+}
+.studentSlide {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  @include until($tablet) {
+    flex-direction: column;
+  }
+
+  &--image {
+    min-height: 24rem;
+    @include until($tablet) {
+      min-height: 16rem;
+      width: 100%;
+    }
+    width: 50%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &--content {
+    margin: 2.5rem;
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    @include until($tablet) {
+      margin: 0;
+      padding: 1.5rem;
+    }
+  }
+  &--quote {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    @include until($tablet) {
+      margin: 0;
+    }
+
+    & h4 {
+      font-size: 1.25rem;
+      line-height: 1.5;
+      font-style: italic;
+      color: $gray-dark;
+      margin: 0 1.5rem;
+      @include until($tablet) {
+        margin: 0;
+        line-height: 1.25;
+      }
+    }
+    & .quote {
+      font-family: 'Playfair Display', serif;
+      font-size: 6rem;
+      font-weight: 200;
+      color: $gray-light;
+      position: absolute;
+      @include until($tablet) {
+        position: relative;
+        display: block;
+        font-size: 3rem;
+      }
+      & p.subtitle.is-spaced{
+        @include until($tablet) {
+          margin-bottom: 0;
+        }
+      }
+
+      &.first {
+        @include until($tablet) {
+          line-height: 20px;
+          top: 0;
+          left: 0;
+        }
+        line-height: 1rem;
+        top: 20px;
+        left: -20px;
+      }
+      &.last {
+        @include until($tablet) {
+          margin-top: .5rem;
+          text-align: right;
+          line-height: 20px;
+          bottom: 0;
+          right: 0;
+        }
+        line-height: 1rem;
+        bottom: -20px;
+        right: -20px;
+      }
+    }
+  }
+}
