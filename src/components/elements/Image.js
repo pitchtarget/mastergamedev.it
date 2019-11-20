@@ -20,12 +20,13 @@ const Image = ({ src, alt, children, styles, rounded, size, vertical }) => {
 
   if(!!vertical) {videoSize = {w: videoSize.h, h: videoSize.w} }
 
-  const isString = typeof src === 'string'
   let isVideo
-  if(isString){
+  if(typeof src === 'object'){
+    isVideo = src.extension === "mp4"
+  } else if(typeof src === 'string'){
     isVideo = src.includes(".mp4")
   } else {
-    isVideo = src.extension === "mp4"
+    isVideo = false
   }
 
   return (
