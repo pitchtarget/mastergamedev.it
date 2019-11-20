@@ -22,7 +22,7 @@ const Image = ({ src, alt, children, styles, rounded, size, vertical }) => {
 
   return (
     <>
-      { src.extension === "mp4"
+      { !!src.extension && src.extension === "mp4"
         ? <video autoPlay loop muted width={`${videoSize.w}`} height={`${videoSize.h}`}>
             <source src={media} type="video/mp4"/>
             Sorry, your browser doesn't support embedded videos.
