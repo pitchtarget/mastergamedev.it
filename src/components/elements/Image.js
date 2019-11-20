@@ -19,8 +19,8 @@ const Image = ({ src, alt, children, styles, rounded, size, vertical }) => {
   else { videoSize = {w: 800, h: 600} }
 
   if(!!vertical) {videoSize = {w: videoSize.h, h: videoSize.w} }
-
-  const isVideo = !!src.extension ? src.extension === "mp4" : false || src.includes(".mp4")
+  const isString = typeof src === 'string'
+  const isVideo = isString ? src.includes(".mp4") : !!src.extension ? src.extension === "mp4" : false
 
   return (
     <>
