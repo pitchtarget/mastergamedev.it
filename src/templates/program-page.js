@@ -44,9 +44,7 @@ export const ProgramPageTemplate = ({
         <section className="section is-medium" style={{paddingTop: '0px'}}>
           <h2 className="title is-2 is-spaced">{scientificCommittee.title}</h2>
           <section className="section is-medium" style={{paddingTop: '0px'}}>
-            <p>
-              {scientificCommittee.description}
-            </p>
+            <MarkdownContent content={scientificCommittee.description}/>
           </section>
           <div className="columns is-multiline">
             {
