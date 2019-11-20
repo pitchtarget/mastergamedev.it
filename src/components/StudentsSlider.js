@@ -3,8 +3,11 @@ import PropTypes from 'prop-types'
 import Slider from "react-slick";
 import { graphql, StaticQuery } from 'gatsby'
 import { v4 } from 'uuid'
+import {isMobile} from 'react-device-detect'
+
 
 class StudentsSlider extends React.Component {
+
   render() {
     const settings = {
       infinite: true,
@@ -15,6 +18,7 @@ class StudentsSlider extends React.Component {
       centerMode: true,
       adaptiveHeight: true,
       centerPadding: "0px 0px",
+      arrows: !isMobile,
     };
     const { data } = this.props
     const students = data.markdownRemark.frontmatter.students

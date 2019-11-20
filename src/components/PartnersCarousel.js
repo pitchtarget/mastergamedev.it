@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
+import {isMobile} from 'react-device-detect'
 import Slider from "react-slick";
 import PartnerCard from '../components/cards/partnerCard'
 import { v4 } from 'uuid'
@@ -15,6 +16,7 @@ class PartnersCarousel extends React.Component {
       slidesToScroll: 4,
       autoplay: true,
       autoplaySpeed: 2000,
+      arrows: !isMobile,
       responsive: [
       {
         breakpoint: 1280,
