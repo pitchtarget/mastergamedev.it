@@ -9,7 +9,7 @@ const ImageGallery = class extends React.Component {
     this.state = {
       active: false,
       index: null,
-      imagesLength: this.props.images.length,
+      imagesLength: !!this.props.images ? this.props.images.length : 0,
       modalActiveClass: '',
     }
   }
@@ -48,7 +48,7 @@ const ImageGallery = class extends React.Component {
     return (
       <>
         <div className="gallery">
-          { images.length > 0 && images.map( (image, i) => {
+          { !!images && images.length > 0 && images.map( (image, i) => {
             return (
               <div key={v4()} onClick={() => this.toggleModal(i)}>
                 <Image

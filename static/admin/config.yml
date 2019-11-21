@@ -251,8 +251,8 @@ collections:
               widget: list,
               fields: [
                 {label: Image, name: image, widget: image, default: /img/placeholder.png},
-                {label: Video url, name: video, widget: string},
-                {label: Alt image, name: altImage, widget: string},
+                {label: Video, name: video, widget: file},
+                {label: Alt, name: altImage, widget: string},
               ],
             }
 
