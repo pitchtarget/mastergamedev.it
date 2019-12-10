@@ -18,7 +18,7 @@ export const TeachersPageTemplate = ({
 }) => {
   return (
     <>
-      <Image src={image} alt={altImage} styles="cover is-small" children/>
+      <Image src={image} alt={altImage} styles="cover is-small align-top" children/>
       <section className="has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
