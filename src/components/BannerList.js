@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Row from './Row'
-import SignupBox from './SignupBox'
 import { v4 } from 'uuid'
 
 const BannerList = ({ banners }) => {

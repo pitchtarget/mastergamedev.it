@@ -108,12 +108,12 @@ const Sidebar = class extends React.Component {
               Docenti
             </Link>
             <Link
-              className="navbar-item" to="/studenti"
+              className="navbar-item" to="/alumni"
               onClick={() => this.toggleHamburger()}>
-              Studenti
+              Alumni
             </Link>
             <Link
-              className="navbar-item" to="/studenti#progetti"
+              className="navbar-item" to="/alumni#progetti"
               onClick={() => this.toggleHamburger()}>
               Progetti
             </Link>
