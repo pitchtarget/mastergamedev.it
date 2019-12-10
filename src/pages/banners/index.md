@@ -5,9 +5,9 @@ box:
   alt: open day
   title: Corso 2019-2020
   text: >
-    Le iscrizioni al master chiuderanno a breve
-  cta: Iscriviti ora
-  link: http://www.scienzeingegneria.univr.it//fol/?ent=iscrizionecs&cs=406&aa=2019%2F2020&lang=it
+    Iscrizioni chiuse! Vuoi sapere quando partirà il prossimo master?
+  cta: Contattaci
+  link: https://5dd6c2b2a8b4450008047b51--quizzical-goodall-fe32e5.netlify.com/contatti
 banners:
   - name: students
     title: I risultati dei nostri studenti sono la nostra più grande soddisfazione

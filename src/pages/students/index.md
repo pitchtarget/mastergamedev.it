@@ -3,7 +3,7 @@ templateKey: 'students-page'
 path: /alumni
 title: Alumni
 description: >
-  A communi observantia non est recedendum. Quis aute iure reprehenderit in voluptate velit esse. Ambitioni dedisse scripsisse iudicaretur.
+  La sezione alumni raccoglie consigli e testimonianze di ex studenti che oggi lavorano nella industry.
 image: /img/scuola.jpg
 altImage: students
 
