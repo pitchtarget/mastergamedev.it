@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import SignupBox from '../components/SignupBox'
 import Image from '../components/elements/Image'
 import Partners from '../components/Partners'
 import Row from '../components/Row'
@@ -24,16 +23,13 @@ export const PartnersPageTemplate = ({
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
             <div className="column is-7-desktop is-offset-1-desktop">
-              <div className="section is-large">
+              <div className="section">
                 <h1 className="title is-1">{title}</h1>
                 <MarkdownContent content={description}/>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section className="container">
-        <SignupBox id="partnersSignup" styles="is-moveup"/>
       </section>
       <div className="container is-horizontal-spaced">
         <div className="columns is-tablet">
