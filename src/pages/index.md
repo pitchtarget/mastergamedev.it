@@ -40,7 +40,7 @@ studentsSection:
   heading: Una scuola che ti apre le porte a mondo del lavoro
   subheading: I nostri studenti lavorano su progetti che li portano su strade diverse, sviluppa i requisiti per entrare anche tu nella game industry.
   cta: Chi ti ha preceduto
-  link: /studenti
+  link: /alumni
 
 teachersSection:
   heading: Chi saranno i tuoi mentor

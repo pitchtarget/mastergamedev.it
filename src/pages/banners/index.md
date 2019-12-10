@@ -14,7 +14,7 @@ banners:
     text: >
       Al termine del master i nostri ragazzi intraprendono diversi percorsi di carriera chi all'interno di grandi company chi invece in aziende più piccole dal forte valore tecnologico.
     cta: studenti
-    link: /studenti/#students
+    link: /alumni/#students
     image: /img/placeholder.png
     alt: placeholder
   - name: partners
