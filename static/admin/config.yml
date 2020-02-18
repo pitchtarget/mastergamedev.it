@@ -17,10 +17,10 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "Featured Post", name: "featuredpost", widget: "boolean", required: false}
+      - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
 
   - name: "pages"
     label: "Pages"
@@ -39,9 +39,9 @@ collections:
               fields: [
                 {label: Image, name: image, widget: image},
                 {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: text},
+                {label: Subheading, name: subheading, widget: text, required: false},
                 {label: Call to action, name: cta, widget: string},
-                {label: Link to, name: link, widget: string},
+                {label: Link to, name: link, widget: string, required: false},
               ],
             }
           # Partners section
@@ -51,9 +51,9 @@ collections:
               widget: object,
               fields: [
                 {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: text},
+                {label: Subheading, name: subheading, widget: text, required: false},
                 {label: Call to action, name: cta, widget: string},
-                {label: Link to, name: link, widget: string},
+                {label: Link to, name: link, widget: string, required: false},
               ],
             }
           # School section
@@ -64,18 +64,18 @@ collections:
               fields: [
                 {label: Image, name: image, widget: image},
                 {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: text},
+                {label: Subheading, name: subheading, widget: text, required: false},
                 {label: Call to action, name: cta, widget: string},
-                {label: Link to, name: link, widget: string},
+                {label: Link to, name: link, widget: string, required: false},
                 {
                   label: Bullet,
                   name: bullet,
                   widget: list,
                   fields: [
                     {label: Heading, name: heading, widget: string},
-                    {label: Subheading, name: subheading, widget: text},
+                    {label: Subheading, name: subheading, widget: text, required: false},
                     {label: Call to action, name: cta, widget: string},
-                    {label: Link, name: link, widget: string},
+                    {label: Link, name: link, widget: string, required: false},
                   ],
                 },
               ],
@@ -87,9 +87,9 @@ collections:
               widget: object,
               fields: [
                 {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: text},
+                {label: Subheading, name: subheading, widget: text, required: false},
                 {label: Call to action, name: cta, widget: string},
-                {label: Link to, name: link, widget: string},
+                {label: Link to, name: link, widget: string, required: false},
               ],
             }
           # Teachers section
@@ -99,9 +99,9 @@ collections:
               widget: object,
               fields: [
                 {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: text},
+                {label: Subheading, name: subheading, widget: text, required: false},
                 {label: Call to action, name: cta, widget: string},
-                {label: Link to, name: link, widget: string},
+                {label: Link to, name: link, widget: string, required: false},
               ],
             }
           # News section
@@ -112,7 +112,7 @@ collections:
               fields: [
                 {label: Heading news, name: heading, widget: string},
                 {label: Call to action, name: cta, widget: string},
-                {label: Link to , name: link, widget: string},
+                {label: Link to , name: link, widget: string, required: false},
               ],
             }
 
@@ -129,6 +129,7 @@ collections:
               label: Paragraphs,
               name: paragraphs,
               widget: list,
+              required: false,
               fields: [
                 {label: Title, name: title, widget: string},
                 {label:Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
@@ -143,7 +144,7 @@ collections:
                 {label: Image, name: image, widget: image, default: /img/service-placeholder.png},
                 {label: "Alt image", name: alt, widget: string},
                 {label: Heading, name: heading, widget: string},
-                {label: Subheading, name: subheading, widget: string},
+                {label: Subheading, name: subheading, widget: string, required: false},
               ],
             }
 
@@ -154,13 +155,14 @@ collections:
         fields:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "program-page"}
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string, required: false}
           - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]}
           - {label: Title paragraphs, name: titleParagraphs, widget: string}
           - {
               label: Scientific Committee,
               name: scientificCommittee,
               widget: object,
+              required: false,
               fields: [
                 {label: Title, name: title, widget: string},
                 {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
@@ -170,6 +172,7 @@ collections:
               label: People,
               name: people,
               widget: list,
+              required: false,
               fields: [
                 {label: Title, name: title, widget: string},
                 {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
@@ -179,6 +182,7 @@ collections:
               label: Paragraphs,
               name: paragraphs,
               widget: list,
+              required: false,
               fields: [
                 {label: Title, name: title, widget: string},
                 {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
@@ -200,15 +204,15 @@ collections:
               widget: list,
               fields: [
                 {label: Full name, name: fullName, widget: string},
-                {label: Linkedin link, name: linkedin, widget: string},
-                {label: "Visible on homepage", name: main, widget: boolean},
+                {label: Linkedin link, name: linkedin, widget: string, required: false},
+                {label: "Visible on homepage", name: main, widget: boolean, required: false},
                 {label: Image, name: image, widget: image, default: /img/student-img.png},
                 {label: "Alt image", name: altImage, widget: string},
                 {label: Master, name: master, widget: number, default: 2010, valueType: int, min: 2010, max: 2030},
-                {label: Company, name: company, widget: string},
-                {label: Company website, name: compLink, widget: string},
+                {label: Company, name: company, widget: string, required: false},
+                {label: Company website, name: compLink, widget: string, required: false},
                 {label: Quote, name: quote, widget: text},
-                {label: Games, name: games, widget: markdown},
+                {label: Games, name: games, widget: markdown, required: false},
               ],
             }
           - {label: Lab projects title, name: titleLabProjects, widget: string}
@@ -219,12 +223,13 @@ collections:
               fields: [
                 {label: Title, name: title, widget: string},
                 {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
-                {label: Video, name: video, widget: file},
-                {label: Alt video, name: altVideo, widget: string},
+                {label: Video, name: video, widget: file, required: false},
+                {label: Alt video, name: altVideo, widget: string, required: false},
                 {
                   label: Gallery,
                   name: images,
                   widget: list,
+                  required: false,
                   fields: [
                     {label: Image, name: image, widget: image},
                     {label: Alt image, name: altImage, widget: string}
@@ -249,9 +254,10 @@ collections:
               name: projectsMedia,
               hint: maximum number of 12 items,
               widget: list,
+              required: false,
               fields: [
-                {label: Image, name: image, widget: image, default: /img/placeholder.png},
-                {label: Video, name: video, widget: file},
+                {label: Image, name: image, widget: image, default: /img/placeholder.png, required: false},
+                {label: Video, name: video, widget: file, required: false},
                 {label: Alt, name: altImage, widget: string},
               ],
             }
@@ -262,7 +268,7 @@ collections:
         name: "partners"
         fields:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "partners-page"}
-          - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png}
+          - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png, required: false}
           - {label: "Alt image", name: altImage, widget: string}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]}
@@ -276,8 +282,8 @@ collections:
                 {label: Image, name: image, widget: image, default: /img/student-img.png},
                 {label: "Alt image", name: altImage, widget: string},
                 {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
-                {label: "Link", name: link, widget: string},
-                {label: "Show in home", name: main, widget: boolean}
+                {label: "Link", name: link, widget: string, required: false},
+                {label: "Show in home", name: main, widget: boolean, required: false}
               ],
             }
 
@@ -298,11 +304,11 @@ collections:
               widget: list,
               fields: [
                 {label: Full name, name: fullName, widget: string},
-                {label: Image, name: image, widget: image, default: /img/student-img.png},
-                {label: "Alt image", name: altImage, widget: string},
-                {label: Link, name: link, widget: string},
-                {label: Role, name: role, widget: string},
-                {label: Biography, name: bio, widget: string}
+                {label: Image, name: image, widget: image, default: /img/student-img.png, required: false},
+                {label: "Alt image", name: altImage, widget: stringv},
+                {label: Link, name: link, widget: string, required: false},
+                {label: Role, name: role, widget: string, required: false},
+                {label: Biography, name: bio, widget: string, required: false}
               ],
             }
 
@@ -318,10 +324,10 @@ collections:
               name: box,
               widget: object,
               fields: [
-                {label: Image, name: image, widget: image},
-                {label: Alt image, name: alt, widget: string},
+                {label: Image, name: image, widget: image, required: false},
+                {label: Alt image, name: alt, widget: string, required: false},
                 {label: Title, name: title, widget: string},
-                {label: Text, name: text, widget: text},
+                {label: Text, name: text, widget: text, required: false},
                 {label: Call to action, name: cta, widget: string},
                 {label: Link to, name: link, widget: string},
               ],
@@ -332,9 +338,9 @@ collections:
               name: banners,
               widget: list,
               fields: [
-                {label: Name, name: name, widget: string},
-                {label: Image, name: image, widget: image, default: "/img/placeholder.png"},
-                {label: Alt image, image: alt, widget: string},
+                {label: Name, name: name, widget: string, required: false},
+                {label: Image, name: image, widget: image, default: "/img/placeholder.png", required: false},
+                {label: Alt image, image: alt, widget: string, required: false},
                 {label: Banner title, name: title, widget: string},
                 {label: Banner text, name: text, widget: text},
                 {label: Call to action, name: cta, widget: string},
