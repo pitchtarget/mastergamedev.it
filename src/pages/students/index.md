@@ -1,6 +1,9 @@
 ---
 templateKey: students-page
+path: /alumni
 title: Alumni
+description: >
+  La sezione alumni raccoglie consigli e testimonianze di ex studenti che oggi lavorano nella industry.
 image: /img/scuola.jpg
 altImage: students
 students:
@@ -112,14 +115,14 @@ labProjects:
   - altVideo: video
     description: >-
       Arrrrrr! E' un gioco competitivo locale che nasce dal laboratorio del
-      Master in Computer Game Development 2018/2019! 
+      Master in Computer Game Development 2018/2019!
 
 
       Dal gameplay semplice e intuitivo l'idea è stata pensata per Nintendo
       Switch per più giocatori. Si dovrà manovrare una nave pirata con il
       compito di affondare altri concorrenti tramite l’ausilio di bizzarre e
       imprevedibili armi. Il gioco pone come obiettivo principale il
-      divertimento in compagnia nello stile dei couch game competitivi. 
+      divertimento in compagnia nello stile dei couch game competitivi.
 
 
       **Modalità di gioco**
@@ -200,4 +203,3 @@ projectsMedia:
   - image: /img/StrategyBots.mp4
     altImage: stategy bots video
 ---
-

@@ -31,6 +31,7 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/alumni"}
           # Main cover fields
           - {
               label: Main cover,
@@ -122,6 +123,7 @@ collections:
         name: "master"
         fields:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "master-page"}
+          - {label: "Redirect from", name: "redirect_from", widget: "hidden", default: "/il-master"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: "Alt image", name: altImage, widget: string}
@@ -154,6 +156,7 @@ collections:
         name: "program"
         fields:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "program-page"}
+          - {label: "Redirect from", name: "redirect_from", widget: "hidden", default: "/struttura"}
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string, required: false}
           - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]}
@@ -195,7 +198,9 @@ collections:
         name: "students"
         fields:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "students-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/alumni"}
           - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text}
           - {label: Image, name: image, widget: image}
           - {label: Alt image, name: altImage, widget: string}
           - {
@@ -268,6 +273,7 @@ collections:
         name: "partners"
         fields:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "partners-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/collaborazioni"}
           - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png, required: false}
           - {label: "Alt image", name: altImage, widget: string}
           - {label: Title, name: title, widget: string}
@@ -293,6 +299,7 @@ collections:
         name: "teachers"
         fields:
           - {label: "Template key", name: "templateKey", widget: "hidden", default: "teachers-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/docenti"}
           - {label: "Cover image", name: image, widget: image, default: /img/placeholder.png}
           - {label: "Alt image", name: altImage, widget: string}
           - {label: Title, name: title, widget: string}
@@ -305,7 +312,7 @@ collections:
               fields: [
                 {label: Full name, name: fullName, widget: string},
                 {label: Image, name: image, widget: image, default: /img/student-img.png, required: false},
-                {label: "Alt image", name: altImage, widget: stringv},
+                {label: "Alt image", name: altImage, widget: string},
                 {label: Link, name: link, widget: string, required: false},
                 {label: Role, name: role, widget: string, required: false},
                 {label: Biography, name: bio, widget: string, required: false}
