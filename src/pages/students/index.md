@@ -3,7 +3,8 @@ templateKey: students-page
 path: /alumni
 title: Alumni
 description: >
-  La sezione alumni raccoglie consigli e testimonianze di ex studenti che oggi lavorano nella industry.
+  La sezione alumni raccoglie consigli e testimonianze di ex studenti che oggi
+  lavorano nella industry.
 image: /img/scuola.jpg
 altImage: students
 students:
@@ -110,9 +111,26 @@ students:
     main: true
     master: 2011
     quote: 'Creare videogiochi non è come giocarli: è meglio!'
+  - altImage: fabio-di-giorgi
+    compLink: 'https://www.reply.com/forge-reply/en/'
+    company: Forge Reply
+    fullName: Fabio di Giorgi
+    games: |-
+      [Joe Dever’s Lone Wolf](https://www.youtube.com/watch?v=kjiskI3GhcY)
+
+      [In Space We Brawl](https://www.youtube.com/watch?v=oQFYAkPbyCY)
+
+      [Aloha from Hawaii](https://www.youtube.com/watch?v=_LXmtoLQ5z8)
+    image: /img/0.jpg
+    linkedin: 'https://www.linkedin.com/in/fabio-di-giorgi-67698361'
+    master: 2011
+    quote: >-
+      “Siate curiosi... Sperimentate!!! Quello che imparerete al master sarà
+      solo la punta dell’iceberg... :)”
 titleLabProjects: I progetti di laboratorio
 labProjects:
   - altVideo: video
+    title: Arrrrrr! un gioco per veri pirati
     description: >-
       Arrrrrr! E' un gioco competitivo locale che nasce dal laboratorio del
       Master in Computer Game Development 2018/2019!
@@ -150,31 +168,30 @@ labProjects:
         altImage: creare un prototipo
       - image: /img/work-2.jpg
         altImage: inizio dei lavori
-    title: Arrrrrr! un gioco per veri pirati
     video: /img/video_lab_mgd.mp4
 titleProjects: I progetti dei corsi
 projects:
-  - description: >
+  - title: Progetti Mobile
+    description: >
       II modulo di Mobile Programming insegna tutte le basi per creare un gioco
       per smartphone: ogni anno, con la guida del docente, gli studenti sono
       invitati a realizzare progetti e pubblicarli sugli store.
-    title: Progetti Mobile
     image: /img/mobileGames.png
     altImage: mobile games
-  - description: >
+  - title: Progetti phisics
+    description: >
       Il modulo di Physics programming insegna le basi della fisica legate allo
       sviluppo di videogiochi. Con le basi ottenuti gli studenti si cimentano
       nella creazione dei gameplay più disparati per testare e provare le
       conoscenze acquisite.
-    title: Progetti phisics
     image: /img/phisics.png
     altImage: phisics experiments
-  - description: >
+  - title: Game jam
+    description: >
       Il Master partecipa attivamente sia alla Global Game Jam, dove è
       accreditata come sede attiva dell’evento, che alla Ludum Dare organizzata
       insieme ai docenti. Ogni anno questi eventi vedono nascere esperienze
       importanti e progetti creativi.
-    title: Game jam
     image: /img/gameJam.png
     altImage: game-jam
 projectsMedia:
@@ -203,3 +220,4 @@ projectsMedia:
   - image: /img/StrategyBots.mp4
     altImage: stategy bots video
 ---
+
