@@ -54,7 +54,7 @@ const StudentCard = class extends React.Component {
             </a>
             <p style={{marginBottom: "1rem"}}>Master {student.master}</p>
             <MarkdownContent content={student.games}/>
-            <a href={student.linkedin} className="studentCard--icon">
+            <a href={student.linkedin} className="studentCard--icon" target="_blanck">
               <span className="icon has-text-dark">
                 <i className="fab fa-3x fa-linkedin"></i>
               </span>
