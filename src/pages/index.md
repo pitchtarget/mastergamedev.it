@@ -4,9 +4,9 @@ mainCover:
   image: /img/cover-image.jpg
   altImage: immagine di copertina
   heading: 'Amore per una dimensione: quella artigianale.'
-  subheading: 'Qualità e quantità non sono mai andate troppo d’accordo. Basterebbe uno sguardo alle offerte delle “specialità”, i caffè di piantagioni particolari, per accorgersi che i caffè migliori vengono offerti in piccoli, a volte piccolissimi lotti. E i piccoli lotti non sono prestano alle grandi lavorazioni: di caffè veramente buono se ne raccoglie poco.
-  <br/>
-  Quale dimensione, allora, per chi vuole produrre un buon caffè? La risposta sembra ovvia.'
+  subheading: >-
+    Qualità e quantità non sono mai andate troppo d’accordo. Basterebbe uno sguardo alle offerte delle “specialità”, i caffè di piantagioni particolari, per accorgersi che i caffè migliori vengono offerti in piccoli, a volte piccolissimi lotti. E i piccoli lotti non sono prestano alle grandi lavorazioni: di caffè veramente buono se ne raccoglie poco.
+    Quale dimensione, allora, per chi vuole produrre un buon caffè? La risposta sembra ovvia.
   #link: /storia
 
 coffeeType:
