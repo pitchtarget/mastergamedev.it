@@ -40,7 +40,7 @@ mokaSecrets:
         Il caffè non ama il freddo. Conservatelo ben chiuso in un barattolo a temperatura ambiente. Se si ha una scorta eccessiva può essere tenuto in frigorifero, ricordando che il caffè assorbe facilmente umidità e odori: va tenuto sempre ben chiuso. Prima di utilizzarlo attendete che si sia “ripreso” dal freddo: il caffè è ricco di oli aromatici che, se solidificano a basse temperature, rendono meno.
       image: /img/flavor_wheel.jpg
       altImage: Moka
-    - title: 3. Whole coffee beans? Get the grind size right
+    - title: 3. Come riempire il filtro
       description: >
         Il filtro deve essere riempito in modo compatto e con una appena accennata “cupoletta”: calcolate dai sei agli otto grammi per tazza. Ricordate, inoltre, che un giusto grado di macinazione è importante per ottenere un caffè corposo ed aromatico.
       image: /img/flavor_wheel.jpg
@@ -50,17 +50,17 @@ mokaSecrets:
         Mettere e mantenere il fuoco basso: l’acqua deve attraversare il filtro della moka in modo dolce e regolare. La fretta rovina il caffè. 
       image: /img/flavor_wheel.jpg
       altImage: Moka  
-    - title: 6. Siate pazienti
+    - title: 5. Prima di versare il caffe
       description: >
-        Mettere e mantenere il fuoco basso: l’acqua deve attraversare il filtro della moka in modo dolce e regolare. La fretta rovina il caffè. 
+        Una volta spenta la fiamma alzare il coperchio della moka per evitare che il vapore bruci il caffè.
       image: /img/flavor_wheel.jpg
       altImage: Moka
-    - title: 7. Mescolate prima di servire
+    - title: 6. Mescolate prima di servire
       description: >
         Mescolare sempre con un cucchiaino il caffè raccolto nel bricco.
       image: /img/flavor_wheel.jpg
       altImage: Moka 
-    - title: La manutenzione periodica è importante
+    - title: 7. La manutenzione periodica è importante
       description: >
         Controllate, e sostituite, periodicamente la guarnizione di gomma: anche una piccolissima perdita può vanificare la spinta pressoria dell’acqua e la qualità della vostra tazzina.
       image: /img/flavor_wheel.jpg
