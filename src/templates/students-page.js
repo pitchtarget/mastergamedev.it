@@ -20,6 +20,7 @@ export const StudentsPageTemplate = ({
   labProjects,
   titleProjects,
   projects,
+  titleProjectsMedia,
   projectsMedia,
   banner,
 }) => {
@@ -106,10 +107,10 @@ export const StudentsPageTemplate = ({
             </div>
           </div>
         </div>
-
       </div>
-      <div className="section">
-        <div className="container is-horizontal-spaced">
+      <div className="container is-horizontal-spaced">
+        <h3 class="title is-2 is-spaced">{titleProjectsMedia}</h3>
+        <section className="section">
           <div className="columns is-tablet">
             <div className="column is-10-desktop is-offset-1-desktop">
               <div id="tiles">
@@ -257,7 +258,7 @@ export const StudentsPageTemplate = ({
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
       { !!banner && <Row data={banner} color="primary" reverse/> }
     </>
@@ -300,6 +301,7 @@ StudentsPageTemplate.propTypes = {
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     }),
   ),
+  titleProjectsMedia: PropTypes.string,
   projectsMedia: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -323,6 +325,7 @@ const StudentsPage = ({ data }) => {
         labProjects={frontmatter.labProjects}
         titleProjects={frontmatter.titleProjects}
         projects={frontmatter.projects}
+        titleProjectsMedia={frontmatter.titleProjectsMedia}
         projectsMedia={frontmatter.projectsMedia}
         banner={banner[0]}
       />
@@ -421,6 +424,7 @@ export const studentsPageQuery = graphql`
             }
           }
         }
+        titleProjectsMedia
         projectsMedia {
           altImage
           image {
