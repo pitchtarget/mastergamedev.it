@@ -222,6 +222,7 @@ projects:
       importanti e progetti creativi.
     image: /img/gameJam.png
     altImage: game-jam
+titleProjectsMedia: Alcuni progetti degli studenti
 projectsMedia:
   - image: /img/CloneHunting.mp4
     altImage: clone hunting video

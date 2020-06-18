@@ -254,6 +254,7 @@ collections:
                 {label: Alt image, name: altImage, widget: string},
               ],
             }
+          - {label: Projects media title, name: titleProjectsMedia, widget: string}
           - {
               label: Projects media,
               name: projectsMedia,
