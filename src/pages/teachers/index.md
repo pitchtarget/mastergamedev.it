@@ -15,7 +15,7 @@ teachers:
     bio: >
       Ricercatore del Dipartimento di Informatica dell‘Università di Verona. Direttore del master, i suo interessi di ricerca riguardano l’elaborazione di dati 3D, l’addestramento statistico e l’elaborazione di dati biomedicali.
     link:
-  - fullName: Gianpaolo Greco
+  - fullName: Marco Tarini
     role: Advanced Graphics programming
     image: /img/tarini.jpg
     altImage: Marco Tarini
@@ -56,7 +56,7 @@ teachers:
     altImage: Matteo Cristani
     bio: >
       Ricercatore all’Università di Verona dal 1997. È stato visiting scholar presso l’Università di Rochester nel 1993-1994 e presso l’Università di Leeds nel 1999 e nel 2004.
-    link: https://it.linkedin.com/in/diego-zamprogno-9272419
+    link: https://www.linkedin.com/in/matteo-cristani-3573575
   - fullName: Fabio Pellacini
     role: Physics programming
     image: /img/pellacini.jpg
