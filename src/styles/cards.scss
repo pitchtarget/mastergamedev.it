@@ -223,12 +223,12 @@
     position: absolute;
     &.first {
       line-height: 1rem;
-      top: 80px;
+      top: 110px;
       left: 0px;
     }
     &.last {
       line-height: 1rem;
-      bottom: -10px;
+      bottom: 0px;
       right: 0px;
     }
   }
