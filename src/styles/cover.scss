@@ -29,6 +29,9 @@ $cover-height: 100vh;
   &.align-top {
     background-position: top;
   }
+  &.align-bottom {
+    background-position: bottom;
+  }
 
   &.is-small {
     min-height: 320px;

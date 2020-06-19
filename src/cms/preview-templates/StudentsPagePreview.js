@@ -25,6 +25,7 @@ const StudentsPagePreview = ({ entry, getAsset }) => {
       labProjects={labProjects}
       titleProjects={data.titleProjects}
       projects={projects}
+      titleProjectsMedia={data.titleProjectsMedia}
       projectsMedia={projectsMedia}
       banner={false}
     />
