@@ -64,7 +64,16 @@ const StudentCard = class extends React.Component {
         <div className="studentCard--preview">
           <img src={validatedImage} alt="" className="studentCard--image"/>
           <div className="studentCard--quote">
-            <h3 className="title" style={{margin: '0 0 1.5rem 0'}}>{student.fullName}</h3>
+            <div style={{margin: '0 0 1rem 0'}}>
+              <h3 className="title" style={{margin: '0 0 .5rem 0'}}>{student.fullName}</h3>
+              <a
+                className="studentCard--company"
+                href={!!student.compLink ? student.compLink : ""}
+                target="_blanck"
+              >
+                <strong style={{lineHeight: '1'}}>{student.company}</strong>
+              </a>
+            </div>
             <span className="quote first">“</span>
             <h4>{student.quote}</h4>
             <span className="quote last">”</span>

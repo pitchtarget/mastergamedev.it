@@ -162,6 +162,16 @@ collections:
           - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]}
           - {label: Title paragraphs, name: titleParagraphs, widget: string}
           - {
+              label: Paragraphs,
+              name: paragraphs,
+              widget: list,
+              required: false,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
+              ],
+            }
+          - {
               label: Scientific Committee,
               name: scientificCommittee,
               widget: object,
@@ -174,16 +184,6 @@ collections:
           - {
               label: People,
               name: people,
-              widget: list,
-              required: false,
-              fields: [
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
-              ],
-            }
-          - {
-              label: Paragraphs,
-              name: paragraphs,
               widget: list,
               required: false,
               fields: [
@@ -216,7 +216,7 @@ collections:
                 {label: Master, name: master, widget: number, default: 2010, valueType: int, min: 2010, max: 2030},
                 {label: Company, name: company, widget: string, required: false},
                 {label: Company website, name: compLink, widget: string, required: false},
-                {label: Quote, name: quote, widget: text},
+                {label: Quote, name: quote, widget: text, hint: 'We recommend not to exceed 240 characters'},
                 {label: Games, name: games, widget: markdown, required: false},
               ],
             }
