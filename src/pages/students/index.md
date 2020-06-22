@@ -178,14 +178,14 @@ projects:
       invitati a realizzare progetti e pubblicarli sugli store.
     image: /img/mobileGames.png
     altImage: mobile games
-  - title: Progetti phisics
+  - title: Progetti physics
     description: >
       Il modulo di Physics programming insegna le basi della fisica legate allo
       sviluppo di videogiochi. Con le basi ottenuti gli studenti si cimentano
       nella creazione dei gameplay più disparati per testare e provare le
       conoscenze acquisite.
     image: /img/phisics.png
-    altImage: phisics experiments
+    altImage: physics experiments
   - title: Game jam
     description: >
       Il Master partecipa attivamente sia alla Global Game Jam, dove è
