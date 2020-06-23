@@ -53,9 +53,9 @@ const Footer = class extends React.Component {
                   <Link className="navbar-item" to="/blog">
                     Blog
                   </Link>
-                  <Link className="navbar-item" to="/contatti">
+                  <a href="mailto:gamedev@ateneo.univr.it" className="navbar-item">
                     Contatti
-                  </Link>
+                  </a>
                 </div>
               </div>
               <div className="column is-4-desktop is-6-widescreen">
