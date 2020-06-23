@@ -137,11 +137,6 @@ const Sidebar = class extends React.Component {
               onClick={() => this.toggleHamburger()}>
               Blog
             </Link>
-            <Link
-              className="navbar-item" to="/contatti"
-              onClick={() => this.toggleHamburger()}>
-              Contatti
-            </Link>
           </div>
         </div>
       </nav>
