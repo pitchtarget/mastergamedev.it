@@ -4,6 +4,7 @@ mainCover:
   cta: Diventa un master developer
   heading: Inizia la tua carriera con il master certificato in game development
   image: /img/main-cover.jpg
+  altImage: copertina di pagina
   link: /master
   subheading: >-
     Specializzati nella programmazione di videogiochi e applicazioni
@@ -39,6 +40,7 @@ schoolSection:
   cta: Dimmi di più
   heading: Un percorso formativo completo e all'avanguardia
   image: /img/scuola.jpg
+  altImage: studenti in classe
   link: /programma
   subheading: >
     C’è differenza tra saper fare, e saper fare bene: specializzati per

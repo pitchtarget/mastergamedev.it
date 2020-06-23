@@ -39,6 +39,7 @@ collections:
               widget: object,
               fields: [
                 {label: Image, name: image, widget: image},
+                {label: "Alt image", name: altImage, widget: string },
                 {label: Heading, name: heading, widget: string},
                 {label: Subheading, name: subheading, widget: text, required: false},
                 {label: Call to action, name: cta, widget: string},
@@ -64,6 +65,7 @@ collections:
               widget: object,
               fields: [
                 {label: Image, name: image, widget: image},
+                {label: "Alt image", name: altImage, widget: string },
                 {label: Heading, name: heading, widget: string},
                 {label: Subheading, name: subheading, widget: text, required: false},
                 {label: Call to action, name: cta, widget: string},
