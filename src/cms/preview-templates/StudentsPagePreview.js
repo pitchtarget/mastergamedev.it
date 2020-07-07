@@ -6,13 +6,6 @@ const StudentsPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
   const entryStudents = entry.getIn(['data', 'students'])
   const students = entryStudents ? entryStudents.toJS() : []
-  const entryLabProjects = entry.getIn(['data', 'labProjects'])
-  const labProjects = entryLabProjects ? entryLabProjects.toJS() : []
-  const entryProjects = entry.getIn(['data', 'projects'])
-  const projects = entryProjects ? entryProjects.toJS() : []
-  const entryProjectsMedia = entry.getIn(['data', 'projectsMedia'])
-  const projectsMedia = entryProjectsMedia ? entryProjectsMedia.toJS() : []
-
 
   return (
     <StudentsPageTemplate
@@ -21,12 +14,6 @@ const StudentsPagePreview = ({ entry, getAsset }) => {
       title={data.title}
       description={data.description}
       students={students}
-      titleLabProjects={data.titleLabProjects}
-      labProjects={labProjects}
-      titleProjects={data.titleProjects}
-      projects={projects}
-      titleProjectsMedia={data.titleProjectsMedia}
-      projectsMedia={projectsMedia}
       banner={false}
     />
   )
