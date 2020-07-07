@@ -118,7 +118,7 @@ const Sidebar = class extends React.Component {
               Collaborazioni
             </Link>
             <Link
-              className="navbar-item" to="/alumni#progetti"
+              className="navbar-item" to="/progetti"
               onClick={() => this.toggleHamburger()}>
               Progetti
             </Link>

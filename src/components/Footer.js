@@ -44,7 +44,7 @@ const Footer = class extends React.Component {
               </div>
               <div className="column is-2-tablet is-1-desktop is-offset-1-desktop">
                 <div className="footer-list">
-                  <Link className="navbar-item" to="/alumni#progetti">
+                  <Link className="navbar-item" to="/progetti">
                     Progetti
                   </Link>
                   <Link className="navbar-item" to="/alumni">
