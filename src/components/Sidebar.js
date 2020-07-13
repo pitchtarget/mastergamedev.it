@@ -98,26 +98,6 @@ const Sidebar = class extends React.Component {
               Home
             </Link>
             <Link
-              className="navbar-item" to="/collaborazioni"
-              onClick={() => this.toggleHamburger()}>
-              Collaborazioni
-            </Link>
-            <Link
-              className="navbar-item" to="/docenti"
-              onClick={() => this.toggleHamburger()}>
-              Docenti
-            </Link>
-            <Link
-              className="navbar-item" to="/alumni"
-              onClick={() => this.toggleHamburger()}>
-              Alumni
-            </Link>
-            <Link
-              className="navbar-item" to="/alumni#progetti"
-              onClick={() => this.toggleHamburger()}>
-              Progetti
-            </Link>
-            <Link
               className="navbar-item" to="/master"
               onClick={() => this.toggleHamburger()}>
               Master
@@ -126,6 +106,26 @@ const Sidebar = class extends React.Component {
               className="navbar-item" to="/programma"
               onClick={() => this.toggleHamburger()}>
               Programma
+            </Link>
+            <Link
+              className="navbar-item" to="/docenti"
+              onClick={() => this.toggleHamburger()}>
+              Docenti
+            </Link>
+            <Link
+              className="navbar-item" to="/collaborazioni"
+              onClick={() => this.toggleHamburger()}>
+              Collaborazioni
+            </Link>
+            <Link
+              className="navbar-item" to="/progetti"
+              onClick={() => this.toggleHamburger()}>
+              Progetti
+            </Link>
+            <Link
+              className="navbar-item" to="/alumni"
+              onClick={() => this.toggleHamburger()}>
+              Alumni
             </Link>
             <Link
               className="navbar-item" to="/master/#iscrizioni"
@@ -137,11 +137,9 @@ const Sidebar = class extends React.Component {
               onClick={() => this.toggleHamburger()}>
               Blog
             </Link>
-            <Link
-              className="navbar-item" to="/contatti"
-              onClick={() => this.toggleHamburger()}>
-              Contatti
-            </Link>
+            {/* <a href="mailto:gamedev@ateneo.univr.it" className="navbar-item">
+              contatti
+            </a> */}
           </div>
         </div>
       </nav>

@@ -28,34 +28,37 @@ const Footer = class extends React.Component {
                   <Link className="navbar-item" to="/">
                     Home
                   </Link>
-                  <Link className="navbar-item" to="/alumni">
-                    Alumni
-                  </Link>
-                  <Link className="navbar-item" to="/alumni#progetti">
-                    Progetti
-                  </Link>
-                  <Link className="navbar-item" to="/collaborazioni">
-                    Collaborazioni
-                  </Link>
-                  <Link className="navbar-item" to="/docenti">
-                    Docenti
-                  </Link>
-                </div>
-              </div>
-              <div className="column is-2-tablet is-1-desktop is-offset-1-desktop">
-                <div className="footer-list">
                   <Link className="navbar-item" to="/master">
                     Master
                   </Link>
                   <Link className="navbar-item" to="/programma">
                     Programma
                   </Link>
+                  <Link className="navbar-item" to="/docenti">
+                    Docenti
+                  </Link>
+                  <Link className="navbar-item" to="/collaborazioni">
+                    Collaborazioni
+                  </Link>
+                </div>
+              </div>
+              <div className="column is-2-tablet is-1-desktop is-offset-1-desktop">
+                <div className="footer-list">
+                  <Link className="navbar-item" to="/progetti">
+                    Progetti
+                  </Link>
+                  <Link className="navbar-item" to="/alumni">
+                    Alumni
+                  </Link>
                   <Link className="navbar-item" to="/blog">
                     Blog
                   </Link>
-                  <Link className="navbar-item" to="/contatti">
-                    Contatti
+                  <Link className="navbar-item" to="/master/#iscrizioni">
+                    Iscrizioni
                   </Link>
+                  {/* <a href="mailto:gamedev@ateneo.univr.it" className="navbar-item">
+                    contatti
+                  </a> */}
                 </div>
               </div>
               <div className="column is-4-desktop is-6-widescreen">
