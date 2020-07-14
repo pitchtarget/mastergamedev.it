@@ -4,24 +4,25 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 // Config vars
-$body-background-color: #F0F0F2;
-$family-sans-serif: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$body-background-color: #f0f0f2;
+$family-sans-serif: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
-$size-1:  3.25rem;
-$size-2:  2.25rem;
-$size-3:  1.75rem;
-$size-4:  1.5rem;
-$size-5:  1.25rem;
-$size-6:  1rem;
-$size-7:  .75rem;
+$size-1: 3.25rem;
+$size-2: 2.25rem;
+$size-3: 1.75rem;
+$size-4: 1.5rem;
+$size-5: 1.25rem;
+$size-6: 1rem;
+$size-7: 0.75rem;
 
 $weight-bold: 900;
 $body-line-height: 1.25;
 
-$primary: #FFC74D;
+$primary: #ffc74d;
 $primary-invert: #352857;
-$gray-dark: #3D3A45;
-$gray-light: #CBC9D1;
+$gray-dark: #3d3a45;
+$gray-light: #cbc9d1;
 $grey-lighter: $gray-light;
 $grey-darker: $gray-dark;
 
@@ -71,6 +72,9 @@ $navbar-burger-color: $primary;
     font-weight: bold;
   }
 }
+#iscrizioni {
+  scroll-margin-top: 4rem;
+}
 
 // Helper Classes
 .full-width-image-container {
@@ -87,30 +91,30 @@ $navbar-burger-color: $primary;
   align-items: center;
 }
 .full-width-image {
-    width: 100vw;
-    height: 400px;
-    background-size: cover;
-    background-position: bottom;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  height: 400px;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn {
-    display: inline-block;
-    padding: 12px 16px 10px;
-    font-size: 18px;
-    font-size: 1rem;
-    line-height: 1.25;
-    background-color: #fff;
-    border-radius: .25rem;
-    text-decoration: none;
-    font-weight: 700;
-    color: #CC3700;
-    text-align: center;
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700;
-    box-shadow: inset 0 0 0 2px #f40;
-    -webkit-transition: all .15s ease;
-    transition: all .15s ease;
+  display: inline-block;
+  padding: 12px 16px 10px;
+  font-size: 18px;
+  font-size: 1rem;
+  line-height: 1.25;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #cc3700;
+  text-align: center;
+  -webkit-box-shadow: inset 0 0 0 2px #cc3700;
+  box-shadow: inset 0 0 0 2px #f40;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 .margin-top-0 {
   margin-top: 0 !important;
@@ -132,10 +136,10 @@ $navbar-burger-color: $primary;
 
 footer.footer {
   padding: 3rem 0rem 0rem;
-  background-color: #3D3A45;
+  background-color: #3d3a45;
 }
 footer.content {
-  background-color: #3D3A45;
+  background-color: #3d3a45;
 }
 //Menu overrides
 $menu-item-color: $white-ter;
@@ -159,14 +163,14 @@ $menu-label-color: $white-ter;
   text-align: right;
 }
 .social a {
-    padding: .5em .5em .3em .5em;
-    border-radius: 1em;
-    background-color: $white-ter;
-    margin: .5em;
-    width: 1em;
-    height: 1em;
-    vertical-align: middle;
-    display: inline;
+  padding: 0.5em 0.5em 0.3em 0.5em;
+  border-radius: 1em;
+  background-color: $white-ter;
+  margin: 0.5em;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  display: inline;
 }
 // blog roll
 .blog-list-item.is-featured {
@@ -212,11 +216,10 @@ ul.markdown-list {
   margin-inline-end: 0px;
   padding-inline-start: 2rem;
   list-style-type: disc;
-  &>li {
-    padding-bottom: .5rem;
+  & > li {
+    padding-bottom: 0.5rem;
   }
 }
-
 
 // section
 .section.is-small {
@@ -227,22 +230,28 @@ ul.markdown-list {
   margin: auto;
 }
 
-@mixin imageSize($mobileSize ,$tabletSize ,$desktopSize ,$fullhdSize) {
+@mixin imageSize($mobileSize, $tabletSize, $desktopSize, $fullhdSize) {
   @include until($tablet) {
     min-height: $mobileSize;
     min-width: $mobileSize;
   }
   @include from($tablet) {
     min-height: $tabletSize;
-    &.is-tile { min-height: $tabletSize - $column-gap}
+    &.is-tile {
+      min-height: $tabletSize - $column-gap;
+    }
   }
   @include from($desktop) {
     min-height: $desktopSize;
-    &.is-tile { min-height: $desktopSize - $column-gap}
+    &.is-tile {
+      min-height: $desktopSize - $column-gap;
+    }
   }
   @include from($fullhd) {
     min-height: $fullhdSize;
-    &.is-tile { min-height: $fullhdSize - $column-gap}
+    &.is-tile {
+      min-height: $fullhdSize - $column-gap;
+    }
   }
 }
 
@@ -258,24 +267,23 @@ ul.markdown-list {
   background-size: cover;
   background-repeat: no-repeat;
   &.is-sm {
-    @include imageSize(8rem,12rem,16rem,20rem);
+    @include imageSize(8rem, 12rem, 16rem, 20rem);
   }
   &.is-md {
-    @include imageSize(12rem,16rem,20rem,32rem);
+    @include imageSize(12rem, 16rem, 20rem, 32rem);
   }
   &.is-lg {
-    @include imageSize(16rem,20rem,32rem,40rem);
+    @include imageSize(16rem, 20rem, 32rem, 40rem);
   }
 }
 
-
 // responsiveness
-+tablet-only {
++ tablet-only {
   .blog-list-item .featured-thumbnail {
     flex-basis: 50%;
   }
 }
-+mobile {
++ mobile {
   .blog-list-item header {
     display: block;
   }
@@ -287,9 +295,21 @@ ul.markdown-list {
 }
 
 .has-double-background {
-  background: -webkit-linear-gradient(top, $primary, $primary 50%, $primary-invert 50%, $primary-invert);
+  background: -webkit-linear-gradient(
+    top,
+    $primary,
+    $primary 50%,
+    $primary-invert 50%,
+    $primary-invert
+  );
   @include from($tablet) {
-    background: -webkit-linear-gradient(left, $primary, $primary 50%, $primary-invert 50%, $primary-invert);
+    background: -webkit-linear-gradient(
+      left,
+      $primary,
+      $primary 50%,
+      $primary-invert 50%,
+      $primary-invert
+    );
   }
 }
 
@@ -299,8 +319,8 @@ ul.markdown-list {
 
 .is-horizontal-spaced {
   @include until($tablet) {
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   @include until($desktop) {
     padding-left: 1.5rem;
@@ -313,7 +333,7 @@ footer .footer-list {
   flex-direction: column;
   a.navbar-item {
     color: white;
-    opacity: .75;
+    opacity: 0.75;
     font-size: $size-7;
     font-weight: bold;
     &:hover {
@@ -349,13 +369,13 @@ footer .footer-list {
   .slick-list {
     margin: auto;
   }
-  $slider-arrow: url('../img/arrow.svg');
+  $slider-arrow: url("../img/arrow.svg");
   .slick-arrow,
   .slick-arrow:hover,
   .slick-prev:hover,
   .slick-next:hover,
   .slick-prev:focus,
-  .slick-next:focus, {
+  .slick-next:focus {
     color: white;
     width: 1.5rem;
     height: 2rem;
@@ -366,7 +386,7 @@ footer .footer-list {
     color: transparent;
   }
   .slick-arrow {
-    opacity: .75;
+    opacity: 0.75;
     &:hover {
       opacity: 1;
     }
@@ -417,5 +437,11 @@ footer .footer-list {
   align-items: center;
   justify-content: flex-start;
   padding: 10%;
-  background: -webkit-linear-gradient(-20deg, $primary, $primary 30%, $primary-invert 30%, $primary-invert);
+  background: -webkit-linear-gradient(
+    -20deg,
+    $primary,
+    $primary 30%,
+    $primary-invert 30%,
+    $primary-invert
+  );
 }

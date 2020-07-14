@@ -151,6 +151,26 @@ collections:
                 {label: Subheading, name: subheading, widget: string, required: false},
               ],
             }
+          - {
+              label: Scientific Committee,
+              name: scientificCommittee,
+              widget: object,
+              required: false,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
+              ],
+            }
+          - {
+              label: People,
+              name: people,
+              widget: list,
+              required: false,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
+              ],
+            }
 
       # PROGRAM PAGE
       - file: "src/pages/programma/index.md"
@@ -166,26 +186,6 @@ collections:
           - {
               label: Paragraphs,
               name: paragraphs,
-              widget: list,
-              required: false,
-              fields: [
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
-              ],
-            }
-          - {
-              label: Scientific Committee,
-              name: scientificCommittee,
-              widget: object,
-              required: false,
-              fields: [
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
-              ],
-            }
-          - {
-              label: People,
-              name: people,
               widget: list,
               required: false,
               fields: [

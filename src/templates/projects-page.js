@@ -103,7 +103,7 @@ export const ProjectsPageTemplate = ({
         </div>
       </div>
       <div className="container is-horizontal-spaced">
-        <h3 class="title is-2 is-spaced">{titleProjectsMedia}</h3>
+        <h3 className="title is-2 is-spaced">{titleProjectsMedia}</h3>
         <section className="section">
           <div className="columns is-tablet">
             <div className="column is-10-desktop is-offset-1-desktop">
