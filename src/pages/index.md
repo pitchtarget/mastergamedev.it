@@ -2,7 +2,7 @@
 templateKey: index-page
 mainCover:
   cta: Diventa un game developer
-  heading: Inizia la tua carriera con il master certificato in game development
+  heading: Inizia la tua carriera con il master universitario certificato in game development
   image: /img/main-cover.jpg
   altImage: copertina di pagina
   link: /master
