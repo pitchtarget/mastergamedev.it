@@ -7,18 +7,17 @@ import SignupBox from '../components/SignupBox'
 import Image from '../components/elements/Image'
 import ImageGallery from '../components/ImageGallery'
 import Row from '../components/Row'
-import Students from '../components/Students'
 import MarkdownContent from '../components/MarkdownContent'
 
 export const ProjectsPageTemplate = ({
   image,
   altImage,
-  title,
-  description,
   titleLabProjects,
   labProjects,
   titleProjects,
   projects,
+  titleGameJam,
+  gameJam,
   titleProjectsMedia,
   projectsMedia,
   banner,
@@ -26,87 +25,94 @@ export const ProjectsPageTemplate = ({
   return (
     <>
       <Image src={image} alt={altImage} styles="cover align-top is-small" children/>
-      <section className="section is-medium has-background-white is-horizontal-spaced">
-        <div className="container">
-          <div className="columns is-tablet">
-            <div className="column">
-              <h1 className="title is-1">{title}</h1>
-              <p>{description}</p>
-            </div>
+      <div className="container">
+        <div className="columns is-tablet">
+          <div className="column is-10-desktop is-offset-1-desktop">
+            <section className="section">
+              <h1 className="title is-1 is-spaced">
+                {titleLabProjects}
+              </h1>
+              { labProjects.length > 0 && labProjects.map( (project, id) => {
+                const reverse = id % 2
+                return (
+                  <div key={v4()}>
+                    <div className="content">
+                      <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
+                          {project.title}
+                      </h3>
+                      <MarkdownContent content={project.description}/>
+                    </div>
+                    <Image src={project.video} alt={project.altVideo} size="lg"/>
+                    <ImageGallery images={project.images}/>
+                  </div>
+                )})
+              }
+            </section>
           </div>
         </div>
+      </div>
+
+      <section className="section container">
+        <SignupBox id="studentsSignup"/>
       </section>
+
       <div className="container">
-        <div className="section" id="progetti">
-          <div className="is-horizontal-spaced">
-            <div className="columns is-tablet">
-              <div className="column is-10-desktop is-offset-1-desktop">
-                <h2 className="title is-1 is-spaced">
-                  {labProjects.length > 0 && titleLabProjects}
-                </h2>
-                <div style={{marginBottom: '3rem'}}>
-                  { labProjects.length > 0 && labProjects.map( (project, id) => {
-                    const reverse = id % 2
-                    return (
-                      <div key={v4()} className="section">
+        <div className="columns is-tablet">
+          <div className="column is-10-desktop is-offset-1-desktop">
+            <section className="section">
+              {!!titleProjects && <h2 className="title is-1 is-spaced">{titleProjects}</h2>}
+              { projects.length > 0 && projects.map( (project, id) => {
+                const reverse = id % 2
+                return (
+                  <div key={v4()}>
+                    <div
+                      className="columns is-vcentered"
+                      style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
+                    >
+                      <div className="column">
+                        <Image src={project.image} alt={project.alt}/>
+                      </div>
+                      <div className="column">
                         <div className="content">
                           <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
                               {project.title}
                           </h3>
                           <MarkdownContent content={project.description}/>
                         </div>
-                        <Image src={project.video} alt={project.altVideo} size="lg"/>
-                        <ImageGallery images={project.images}/>
                       </div>
-                    )})
-                  }
-                </div>
-              </div>
-            </div>
-          </div>
-          <section className="section container">
-            <SignupBox id="studentsSignup" styles="is-moveup"/>
-          </section>
-
-          <div className="is-horizontal-spaced">
-            <div className="columns is-tablet">
-              <div className="column is-10-desktop is-offset-1-desktop">
-                <h2 className="title is-2 is-spaced">{titleProjects}</h2>
-                <div style={{marginBottom: '3rem'}}>
-                  { projects.length > 0 && projects.map( (project, id) => {
-                    const reverse = id % 2
-                    return (
-                      <div key={v4()} className="section">
-                        <div
-                          className="columns is-vcentered"
-                          style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
-                        >
-                          <div className="column">
-                            <Image src={project.image} alt={project.alt}/>
-                          </div>
-                          <div className="column">
-                            <div className="content">
-                              <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
-                                  {project.title}
-                              </h3>
-                              <MarkdownContent content={project.description}/>
-                            </div>
-                          </div>
+                    </div>
+                  </div>
+                )})
+              }
+            </section>
+            <section className="section">
+              { !!titleGameJam &&  <h2 className="title is-1 is-spaced">{titleGameJam}</h2> }
+              { gameJam.length > 0 && gameJam.map( (jam, id) => {
+                const reverse = id % 2
+                return (
+                  <div key={v4()}>
+                    <div
+                      className="columns is-vcentered"
+                      style={{flexDirection: reverse ? 'row-reverse' : 'row'}}
+                    >
+                      <div className="column">
+                        <Image src={jam.image} alt={jam.alt}/>
+                      </div>
+                      <div className="column">
+                        <div className="content">
+                          <h3 className="title is-spaced is-size-3-mobile is-size-2-tablet">
+                              {jam.title}
+                          </h3>
+                          <MarkdownContent content={jam.description}/>
                         </div>
                       </div>
-                    )})
-                  }
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container is-horizontal-spaced">
-        <h3 className="title is-2 is-spaced">{titleProjectsMedia}</h3>
-        <section className="section">
-          <div className="columns is-tablet">
-            <div className="column is-10-desktop is-offset-1-desktop">
+                    </div>
+                  </div>
+                )})
+              }
+            </section>
+            <section className="section">
+              <h3 className="title is-2 is-spaced">{titleProjectsMedia}</h3>
               <div id="tiles">
                 <div className="tile is-ancestor">
                   <div className="tile is-vertical is-8">
@@ -248,11 +254,10 @@ export const ProjectsPageTemplate = ({
                     </div>
                   </div>
                 </div>
-
               </div>
-            </div>
+            </section>
           </div>
-        </section>
+        </div>
       </div>
       { !!banner && <Row data={banner} color="primary" reverse/> }
     </>
@@ -261,8 +266,6 @@ export const ProjectsPageTemplate = ({
 
 ProjectsPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  description: PropTypes.string,
   titleLabProjects: PropTypes.string,
   labProjects: PropTypes.arrayOf(
     PropTypes.shape({
@@ -280,6 +283,15 @@ ProjectsPageTemplate.propTypes = {
   ),
   titleProjects: PropTypes.string,
   projects: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      description: PropTypes.string,
+      altImage: PropTypes.string,
+      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    }),
+  ),
+  titleGameJam: PropTypes.string,
+  gameJam: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
       description: PropTypes.string,
@@ -310,6 +322,8 @@ const ProjectsPage = ({ data }) => {
         labProjects={frontmatter.labProjects}
         titleProjects={frontmatter.titleProjects}
         projects={frontmatter.projects}
+        titleGameJam={frontmatter.titleGameJam}
+        gameJam={frontmatter.gameJam}
         titleProjectsMedia={frontmatter.titleProjectsMedia}
         projectsMedia={frontmatter.projectsMedia}
         banner={banner[0]}
@@ -377,6 +391,21 @@ export const projectsPageQuery = graphql`
         }
         titleProjects
         projects {
+          title
+          description
+          altImage
+          image {
+            extension
+            publicURL
+            childImageSharp {
+              fluid(maxWidth: 1240, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        titleGameJam
+        gameJam {
           title
           description
           altImage

@@ -65,7 +65,9 @@ projects:
       conoscenze acquisite.
     image: /img/phisics.png
     altImage: physics experiments
-  - title: Game jam
+titleGameJam: Game Jam
+gameJam:
+  - title:
     description: >
       Il Master partecipa attivamente sia alla Global Game Jam, dove è
       accreditata come sede attiva dell’evento, che alla Ludum Dare organizzata

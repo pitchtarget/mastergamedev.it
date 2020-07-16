@@ -239,6 +239,18 @@ collections:
                 {label: Alt image, name: altImage, widget: string},
               ],
             }
+          - {label: Game jam title, name: titleGameJam, widget: string}
+          - {
+              label: Game Jam,
+              name: gameJam,
+              widget: list,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
+                {label: Image, name: image, widget: image},
+                {label: Alt image, name: altImage, widget: string},
+              ],
+            }
           - {label: Projects media title, name: titleProjectsMedia, widget: string}
           - {
               label: Projects media,
