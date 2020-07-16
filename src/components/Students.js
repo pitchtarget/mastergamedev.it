@@ -1,14 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { v4 } from 'uuid'
-import StudentCard from './cards/studentCard'
-import NewStudentCard from './cards/newStudentCard'
+import StudentCard from './cards/StudentCard'
 
 const Students = ({ students }) => {
   return (
     <>
       {students.length > 0 && students.map(student => (
-        <NewStudentCard key={v4()} student={student} />
+        <StudentCard key={v4()} student={student} />
       ))}
     </>
   )

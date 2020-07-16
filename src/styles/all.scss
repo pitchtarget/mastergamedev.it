@@ -167,8 +167,6 @@ $menu-label-color: $white-ter;
   border-radius: 1em;
   background-color: $white-ter;
   margin: 0.5em;
-  width: 1em;
-  height: 1em;
   vertical-align: middle;
   display: inline;
 }
@@ -194,7 +192,6 @@ $menu-label-color: $white-ter;
 @import "../styles/row";
 @import "../styles/sidebar";
 @import "../styles/gallery";
-@import "../styles/new_card";
 
 @include until($desktop) {
   .columns {
