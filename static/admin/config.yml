@@ -278,7 +278,7 @@ collections:
                 {label: Company, name: company, widget: string, required: false},
                 {label: Company website, name: compLink, widget: string, required: false},
                 {label: Quote, name: quote, widget: text, hint: 'We recommend not to exceed 240 characters'},
-                {label: Games, name: games, widget: markdown, required: false},
+                {label: Games, name: games, widget: text, required: false},
               ],
             }
 

@@ -3,12 +3,9 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { v4 } from 'uuid'
 import Layout from '../components/Layout'
-import SignupBox from '../components/SignupBox'
 import Image from '../components/elements/Image'
-import ImageGallery from '../components/ImageGallery'
 import Row from '../components/Row'
 import Students from '../components/Students'
-import MarkdownContent from '../components/MarkdownContent'
 
 export const StudentsPageTemplate = ({
   image,
@@ -23,24 +20,11 @@ export const StudentsPageTemplate = ({
       <Image src={image} alt={altImage} styles="cover align-top is-small" children/>
       <section className="section is-medium has-background-white is-horizontal-spaced">
         <div className="container">
-          <div className="columns is-tablet">
-            <div className="column">
-              <h1 className="title is-1">{title}</h1>
-              <p>{description}</p>
-            </div>
-          </div>
-          <div className="columns is-tablet">
-            <div className="column is-10-desktop is-offset-1-desktop">
-              <Students students={students} />
-            </div>
-          </div>
+          <h1 className="title is-1">{title}</h1>
+          <p>{description}</p>
+          <Students students={students} />
         </div>
       </section>
-      <div className="container">
-        <section className="section container">
-          <SignupBox id="studentsSignup" styles="is-moveup"/>
-        </section>
-      </div>
       { !!banner && <Row data={banner} color="primary" reverse/> }
     </>
   )

@@ -23,8 +23,8 @@ $primary: #ffc74d;
 $primary-invert: #352857;
 $gray-dark: #3d3a45;
 $gray-light: #cbc9d1;
-$grey-lighter: $gray-light;
-$grey-darker: $gray-dark;
+$grey-lighter: lighten($gray-light,10%);
+$grey-darker: darken($gray-dark,10%);
 
 $body-color: #333;
 $black: #2b2523;
@@ -194,6 +194,7 @@ $menu-label-color: $white-ter;
 @import "../styles/row";
 @import "../styles/sidebar";
 @import "../styles/gallery";
+@import "../styles/new_card";
 
 @include until($desktop) {
   .columns {
@@ -318,11 +319,11 @@ ul.markdown-list {
 }
 
 .is-horizontal-spaced {
-  @include until($tablet) {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+  @include touch {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  @include until($desktop) {
+  @include desktop {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
