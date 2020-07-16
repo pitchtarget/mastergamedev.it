@@ -3,11 +3,11 @@ templateKey: 'banners'
 box:
   image: /img/open-day.jpg
   alt: open day
-  title: Corso 2019-2020
+  title: Master 2020-21
   text: >
-    Iscrizioni chiuse! Vuoi sapere quando partirà il prossimo master?
-  cta: Contattaci
-  link: mailto:gamedev@ateneo.univr.it
+    Le iscrizioni al master per l'anno accademico 2020-2021 sono aperte.
+  cta: Invia la candidatura
+  link: https://www.scienzeingegneria.univr.it/?ent=iscrizionecs&cs=406
 banners:
   - name: students
     title: I risultati dei nostri studenti sono la nostra più grande soddisfazione

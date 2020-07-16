@@ -26,7 +26,8 @@ students:
     compLink: 'https://www.ubisoft.com'
     company: Ubisoft Milano
     fullName: Riccardo Stucchi
-    games: 'Ghost Recon: Wildlands" e "Mario + Rabbids Kingdom Battle'
+    games: >-
+      Ghost Recon: Wildlands, Mario + Rabbids: Kingdom Battle
     image: /img/riccardo-stucchi.jpg
     linkedin: 'https://www.linkedin.com/in/riccardo-stucchi-66296896/'
     main: true
@@ -49,7 +50,7 @@ students:
     quote: >-
       Essere intraprendenti, non accontentarsi mai dei propri risultati e
       cercare sempre di migliorarsi.
-  - altImage: student-1
+  - altImage: Jacopo Vezzosi
     compLink: 'https://www.ea.com'
     company: Electronic Arts (EA)
     fullName: Jacopo Vezzosi
@@ -65,14 +66,12 @@ students:
       pratica le conoscenze acquisite per sviluppare un vostro portfolio da
       presentare alle aziende e questo vi aiutera' immensamente a trovare un
       lavoro nell'industria dei videogames.
-  - altImage: student-1
+  - altImage: Andrea Cavicchia
     compLink: 'http://www.codemasters.com/'
     company: Codemasters
     fullName: Andrea Cavicchia
     games: >-
-      @Milestone: Ride, MotoGP™15, Sébastien Loeb Rally Evo, MXGP2 The Official
-      Motocross Videogame, Valentino Rossi The Game, Ride 2, MotoGP™17,
-      @Codemasters: F1® 2019
+      Ride, MotoGP™15, Sébastien Loeb Rally Evo, MXGP2 The Official, Motocross Videogame, Valentino Rossi The Game,  Ride 2, MotoGP™17, F1® 2019
     image: /img/andrea-cavicchia.jpg
     linkedin: 'https://www.linkedin.com/in/andrea-cavicchia-b4a45482/'
     main: true
@@ -87,9 +86,9 @@ students:
     company: Activision Blizzard - King Berlin
     fullName: Dario Zampini
     games: >-
-      CalciAmo iOS, TapTalpa iOS, Rubbish! iOS, CineMaster iOS, Santa Claus
-      Zombie iOS, Cupets iOS, Soccer hero iOS, Drakensang online pc, Candy Crush
-      Jelly Saga Mobile/pc
+      CalciAmo, TapTalpa, Rubbish!, CineMaster, Santa Claus
+      Zombie, Cupets, Soccer hero, Drakensang, Candy Crush
+      Jelly Saga
     image: /img/dario-zampini.jpg
     linkedin: 'http://linkedin.com/in/dariozampini'
     main: true
@@ -104,8 +103,7 @@ students:
     company: Rockstar North
     fullName: Simone Straccia
     games: >-
-      Red Dead Redemption ( Rockstar North ), Mario + Rabbids: Kingdom Battle
-      (Ubisoft Milan)
+      Red Dead Redemption, Mario + Rabbids: Kingdom Battle
     image: /img/simone-straccia.jpg
     linkedin: 'https://www.linkedin.com/in/simone-straccia-93ab1224/'
     main: true
@@ -116,11 +114,7 @@ students:
     company: Forge Reply
     fullName: Fabio di Giorgi
     games: |-
-      [Joe Dever’s Lone Wolf](https://www.youtube.com/watch?v=kjiskI3GhcY)
-
-      [In Space We Brawl](https://www.youtube.com/watch?v=oQFYAkPbyCY)
-
-      [Aloha from Hawaii](https://www.youtube.com/watch?v=_LXmtoLQ5z8)
+      Joe Dever’s Lone Wolf, In Space We Brawl, Aloha from Hawaii
     image: /img/0.jpg
     linkedin: 'https://www.linkedin.com/in/fabio-di-giorgi-67698361'
     master: 2011

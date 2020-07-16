@@ -40,25 +40,7 @@ export const ProgramPageTemplate = ({
           </div>
         </section>
       </div>
-      <div className="container is-horizontal-spaced">
-        <section className="section is-medium" style={{paddingTop: '0px'}}>
-          <h2 className="title is-2 is-spaced">{scientificCommittee.title}</h2>
-          <section className="section is-medium" style={{paddingTop: '0px'}}>
-            <MarkdownContent content={scientificCommittee.description}/>
-          </section>
-          <div className="columns is-multiline">
-            {
-              people.length > 0 &&
-              people.map( doc => (
-                <div key={v4()} className="column is-6-tablet">
-                  <h3 className="title is-5">{doc.title}</h3>
-                  <MarkdownContent content={doc.description}/>
-                </div>
-              ))
-            }
-          </div>
-        </section>
-      </div>
+
       { !!bannerStudents && !!bannerMaster &&
         <section className="section has-double-background">
           <div className="container is-horizontal-spaced">
@@ -106,18 +88,6 @@ ProgramPageTemplate.propTypes = {
   titleParagraphs: PropTypes.string,
   bannerStudents: PropTypes.object,
   bannerMaster: PropTypes.object,
-  scientificCommittee:
-    PropTypes.shape({
-      title: PropTypes.string,
-      description: PropTypes.string,
-    }
-  ),
-  people: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string,
-      description: PropTypes.string,
-    })
-  ),
   paragraphs: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -138,8 +108,6 @@ const ProgramPage = ({ data }) => {
         description={frontmatter.description}
         titleParagraphs={frontmatter.titleParagraphs}
         paragraphs={frontmatter.paragraphs}
-        scientificCommittee={frontmatter.scientificCommittee}
-        people={frontmatter.people}
         bannerMaster={bannerMaster[0]}
         bannerStudents={bannerStudents[0]}
       />
@@ -171,14 +139,6 @@ export const masterPageQuery = graphql`
         description
         titleParagraphs
         paragraphs {
-          title
-          description
-        }
-        scientificCommittee {
-          title
-          description
-        }
-        people {
           title
           description
         }

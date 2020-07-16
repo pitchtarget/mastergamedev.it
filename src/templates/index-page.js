@@ -36,7 +36,7 @@ export const IndexPageTemplate = ({
             <div className="column is-offset-1-desktop is-5-desktop">
               <div className="cover--content">
                 <div>
-                  <h1 className="title is-spaced is-size-2-mobile is-size-1-tablet">{mainCover.heading}</h1>
+                  <h1 className="title is-spaced is-size-3-mobile is-size-2-tablet is-size-1-widescreen">{mainCover.heading}</h1>
                   <p className="subtitle is-size-6-mobile is-size-4-tablet">{mainCover.subheading}</p>
                   <Button
                     text={mainCover.cta}
