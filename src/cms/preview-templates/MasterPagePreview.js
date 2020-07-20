@@ -6,8 +6,11 @@ const MasterPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
   const entryParagraphs = entry.getIn(['data', 'paragraphs'])
   const paragraphs = entryParagraphs ? entryParagraphs.toJS() : []
+  const entryPeople = entry.getIn(['data', 'people'])
+  const people = entryPeople ? entryPeople.toJS() : []
   const entryServices = entry.getIn(['data', 'services'])
   const services = entryServices ? entryServices.toJS() : []
+  
 
   if (data) {
     return (
@@ -17,6 +20,8 @@ const MasterPagePreview = ({ entry, getAsset }) => {
         image={data.image}
         serviceTitle={data.serviceTitle}
         paragraphs={paragraphs}
+        scientificCommittee={data.scientificCommittee}
+        people={people}
         services={services}
         banner={false}
       />

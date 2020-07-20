@@ -8,6 +8,8 @@ const ProjectsPagePreview = ({ entry, getAsset }) => {
   const labProjects = entryLabProjects ? entryLabProjects.toJS() : []
   const entryProjects = entry.getIn(['data', 'projects'])
   const projects = entryProjects ? entryProjects.toJS() : []
+  const entryGameJam = entry.getIn(['data', 'gameJam'])
+  const gameJam = entryGameJam ? entryGameJam.toJS() : []
   const entryProjectsMedia = entry.getIn(['data', 'projectsMedia'])
   const projectsMedia = entryProjectsMedia ? entryProjectsMedia.toJS() : []
 
@@ -22,6 +24,8 @@ const ProjectsPagePreview = ({ entry, getAsset }) => {
       labProjects={labProjects}
       titleProjects={data.titleProjects}
       projects={projects}
+      titleGameJam={data.titleGameJam}
+      gameJam={gameJam}
       titleProjectsMedia={data.titleProjectsMedia}
       projectsMedia={projectsMedia}
       banner={false}

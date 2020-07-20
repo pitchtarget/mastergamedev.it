@@ -12,8 +12,6 @@ export const ProgramPageTemplate = ({
   description,
   titleParagraphs,
   paragraphs,
-  scientificCommittee,
-  people,
   bannerStudents,
   bannerMaster,
 }) => {
