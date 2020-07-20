@@ -1,87 +1,64 @@
 import React from 'react'
 import MarkdownContent from '../MarkdownContent'
 
-const StudentCard = class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      active: false,
-      flipCardClass: '',
-    }
+const StudentCard = ({student}) => {
+  let validatedImage
+  if(!!student.image) {
+    validatedImage = !!student.image.childImageSharp
+      ? student.image.childImageSharp.fluid.src
+      : student.image
+  } else {
+    validatedImage = '/img/studente.png'
   }
-
-  toggleClass = () => {
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              flipCardClass: 'is-active',
-            })
-          : this.setState({
-              flipCardClass: '',
-            })
-      }
-    )
+  const studentInfo = {
+    link: student.compLink,
+    company: student.company,
+    games: student.games,
+    lnkedin: student.linkedin,
   }
+  const cardInfo = (info,styles) => (
+  <div className={`studentCard-info ${styles}`}>
+    <div className="studentCard-field">
+      <h5 className="studentCard-label">Lavora presso:</h5>
+      <p>{info.company}</p>
+    </div>
+    <div className="studentCard-field">
+      <h5 className="studentCard-label">Partecipazione ai progetti</h5>
+      <MarkdownContent content={info.games}/>
+    </div>
+    <div className="studentCard-field">
+      <a href={info.linkedin} className="studentCard-link studentCard-icon" target="_blanck">
+        <h5 className="studentCard-label">Linkedin</h5>
+        <span className="icon has-text-dark">
+          <i className="fab fa-3x fa-linkedin"></i>
+        </span>
+      </a>
+    </div>
+  </div>
 
-  render() {
-    const student = this.props.student
-    let validatedImage
-    if(!!student.image) {
-      validatedImage = !!student.image.childImageSharp
-        ? student.image.childImageSharp.fluid.src
-        : student.image
-    } else {
-      validatedImage = '/img/studente.png'
-    }
-    return (
-      <div className={`studentCard ${this.state.flipCardClass}`} onClick={() => this.toggleClass()}>
-        <div className="studentCard--details">
-          <img src={validatedImage} alt="" className="studentCard--image"/>
-          <div className="studentCard--content">
-            <h3 className="title" style={{margin: '0'}}>{student.fullName}</h3>
-            <a
-              className="studentCard--company"
-              href={!!student.compLink ? student.compLink : ""}
-              target="_blanck"
-            >
-              <strong style={{lineHeight: '1'}}>{student.company}</strong>
-            </a>
-            <p style={{marginBottom: "1rem"}}>Master {student.master}</p>
-            <MarkdownContent content={student.games}/>
-            <a href={student.linkedin} className="studentCard--icon" target="_blanck">
-              <span className="icon has-text-dark">
-                <i className="fab fa-3x fa-linkedin"></i>
-              </span>
-            </a>
+  );
+  return (
+    <div className="studentCard">
+      <div className="studentCard-details">
+        <div className="studentCard-profile">
+          <img src={validatedImage} alt={student.altImage} className="studentCard-image"/>
+          <div>
+            <h3 className="studentCard-name">{student.fullName}</h3>
+            <small className="studentCard-master">Studente Master {student.master}</small>
           </div>
         </div>
-        <div className="studentCard--preview">
-          <img src={validatedImage} alt="" className="studentCard--image"/>
-          <div className="studentCard--quote">
-            <div style={{margin: '0 0 1rem 0'}}>
-              <h3 className="title" style={{margin: '0 0 .5rem 0'}}>{student.fullName}</h3>
-              <a
-                className="studentCard--company"
-                href={!!student.compLink ? student.compLink : ""}
-                target="_blanck"
-              >
-                <strong style={{lineHeight: '1'}}>{student.company}</strong>
-              </a>
-            </div>
-            <span className="quote first">“</span>
-            <h4>{student.quote}</h4>
-            <span className="quote last">”</span>
-          </div>
-        </div>
+        {cardInfo(studentInfo,"is-hidden-mobile")}
       </div>
-    )
-  }
+      <hr className="studentCard-division d-vertical is-hidden-mobile"/>
+      <div className="studentCard-quote">
+        <span className="quote first">“</span>
+          <h4 className="studentCard-quote-content">{student.quote}</h4>
+        <span className="quote last">”</span>
+      </div>
+      {cardInfo(studentInfo,"is-hidden-tablet")}
+      <hr className="studentCard-division d-horizontal is-hidden-tablet "/>
+    </div>
+  )
 }
 
 export default StudentCard

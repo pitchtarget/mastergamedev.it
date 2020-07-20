@@ -5,13 +5,11 @@ import StudentCard from './cards/studentCard'
 
 const Students = ({ students }) => {
   return (
-    <div className="columns is-multiline is-desktop">
+    <>
       {students.length > 0 && students.map(student => (
-        <div key={v4()} className="column is-12-desktop is-10-widescreen is-offset-1-widescreen">
-          <StudentCard student={student} />
-        </div>
+        <StudentCard key={v4()} student={student} />
       ))}
-    </div>
+    </>
   )
 }
 

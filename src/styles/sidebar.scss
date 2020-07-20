@@ -1,4 +1,5 @@
 #sidebar {
+  color: $primary-invert;
   background-color: transparent;
   @include until($desktop) {
     background-color: $primary-invert;
@@ -13,17 +14,26 @@
   .navbar-burger {
     height: auto;
     width: 3rem;
-  	display: none;
+    display: none;
+    color: inherit;
+    & span {
+      height: 2px;
+      width: 22px;
+      left: calc(50% - 12px);
+      color: inherit;
+    }
   }
-  .navbar-burger span {
-    height: 2px;
-    width: 22px;
-    left: calc(50% - 12px);
+  .navbar-burger,
+  .sidebar-menu {
+    &.is-active {
+      color: $primary;
+    }
   }
 
-  &.has-background {
+  &.is-visible {
     transition: background-color .19s;
     background-color: $primary-invert;
+    color: $primary;
   }
 
   .sidebar-list {
@@ -57,7 +67,7 @@
     display: flex;
     align-items: center;
     margin-left: auto;
-    color: $primary;
+    color: inherit;
     strong {
       color:inherit;
     }

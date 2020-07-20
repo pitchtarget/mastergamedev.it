@@ -161,123 +161,120 @@
 }
 
 .studentCard {
-  min-height: 300px;
-  position: relative;
-  z-index: 1;
-  margin: 2rem 0;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  cursor: pointer;
-
-  @include until($tablet) {
-    margin: 2rem -1.5rem;
+  margin-top: 6rem;
+  @include tablet-only {
+    margin-top: 4rem;
+  }
+  @include mobile {
+    margin-top: 2rem;
   }
 
-  @mixin cardBlock($opacity,$tranlate) {
-    display: flex;
+  &-details {
+    flex: 2 1 240px;
+    @include tablet {
+      text-align: right;
+    }
+  }
+  &-quote {
+    flex: 3 2 240px;
+    text-align: center;
+  }
+  &-image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+  }
+  &-profile {
+    display: inline-flex;
     align-items: center;
-    @include until($tablet) {
-      flex-direction: column;
+    margin: 0;
+    & > img {
+      margin-right: 1rem;
     }
-    flex-direction: row;
-    position: absolute;
-    transform: translateY($tranlate);
-    transition: transform .32s, opacity .28s;
-    width: 100%;
-    opacity: $opacity;
-    @include from($desktop) {
-      padding: 2rem;
-    }
-  }
-
-  &--preview {
-    @include cardBlock(1,0);
-    @include until($tablet) {
-      position: relative;
+    @include tablet {
+      flex-direction: row-reverse;
+      & > img{
+        margin-right: 0;
+        margin-left: 1rem;
+      }
     }
   }
-  &--details {
-    @include cardBlock(0,-10%);
+  &-division {
+    background-color: $grey-lighter;
+    &.d-vertical {
+      display: flex;
+      align-self: stretch;
+      margin: 0 1rem;
+      width: 1px;
+      height: auto;
+    }
+    &.d-horizontal {
+      margin-top: 2rem;
+      width: 100%;
+      height: 1px;
+    }
   }
-
-  &--quote {
+  &
+  &-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+  &-quote {
     position: relative;
-    min-width: calc(100% - 332px);
-    @include from($tablet) {
-      min-width: calc(100% - 232px);
+    padding: 2rem 0;
+    .quote {
+      position: absolute;
+      line-height: 1rem;
+      color: $gray-light;
+      font-family: 'Playfair Display', serif;
+      font-size: 6rem;
+      font-weight: 200;
+      &.first {
+        top: 2rem;
+        left: 0px;
+      }
+      &.last {
+        bottom: 0px;
+        right: 0px;
+      }
+    }
+    &-content {
+      font-size: 1.25rem;
+      line-height: 1.5;
+      font-style: italic;
+      color: $gray-dark;
+      margin: 1.5rem;
+      @include mobile {
+        margin: 1rem;
+      }
     }
   }
-
-  &--quote h4 {
-    font-size: 1.25rem;
-    line-height: 1.5;
-    font-style: italic;
+  &-link,
+  &-link:hover {
     color: $gray-dark;
-    margin: 1.5rem;
+    display: inline-flex;
+    align-items: center;
   }
-  &--quote .quote {
-    font-family: 'Playfair Display', serif;
-    font-size: 6rem;
-    font-weight: 200;
-    color: $gray-light;
-    position: absolute;
-    &.first {
-      line-height: 1rem;
-      top: 110px;
-      left: 0px;
-    }
-    &.last {
-      line-height: 1rem;
-      bottom: 0px;
-      right: 0px;
+  &-field {
+    margin-bottom: .75rem;
+    & > a > h5 {
+      margin-bottom: 0;
+      margin-right: .5rem;
     }
   }
-  &--icon {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+  &-label {
+    font-weight: 500;
+    color: $gray-dark;
+    margin-bottom: .25rem;
   }
-
-  &--image {
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-
-    @include from($tablet) {
-      width: 200px;
-      height: 200px;
-      margin-right: 2rem;
-    }
-  }
-  &--content,
-  &--quote {
-    width: 100%;
-    position: relative;
-    padding: 1rem;
-  }
+  
 }
 
-.studentCard {
-  transition: box-shadow .28s;
-  box-shadow: 0px 0px 0px #00000014;
-  &:hover {
-    transition: box-shadow .28s;
-    box-shadow: 0px 0px 20px #00000014;
-  }
-  &.is-active {
-    .studentCard--preview {
-      transition: transform .32s, opacity .28s;
-      transform: translateY(10%);
-      opacity: 0;
-    }
-    .studentCard--details {
-      transition: transform .32s, opacity .28s;
-      transform: translateY(0%);
-      z-index: 10;
-      opacity: 1;
-    }
-  }
-}
 .studentSlide {
   background-color: white;
   display: flex;

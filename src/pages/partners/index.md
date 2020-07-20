@@ -19,12 +19,6 @@ partners:
   altImage: ubisoft
   link: https://www.ubisoft.com/it-IT/
   description: Ubisoft Milan, studio Italiano del famoso gruppo Francese, con sede a Milano. Ha collaborato ad alcuni dei franchise più importanti di Ubisoft, tra i quali Splinter Cell, Just Dance e Assassin’s Creed. Negli ultimi anni ha sviluppato Mario + Rabbids Kingdom Battle in collaborazione con Nintendo
-- name: BADSEED ENTERTAINMENT
-  main: true
-  image: /img/badseed.jpg
-  altImage: bad entertainment
-  link: https://badseed.it/
-  description: Badseed Entertainment, con sede a Milano, si occupa della realizzazione di videogiochi mobile e per pc. Di recente pubblicazione e degna di nota, “The Beggar’s Ride” per dispositivi mobile e distribuito anche sulla piattaforma Steam.
 - name: 3DFLOW
   main: true
   image: /img/3dflow.jpg
@@ -37,12 +31,6 @@ partners:
   altImage: corehab
   link: https://www.corehab.it/it/
   description: Giovane azienda con sede a Trento, nata nel 2012, è concentrata sull’applicazione dei videogiochi nel mondo della riabilitazione.
-- name: APPFACTORY
-  main: true
-  image: /img/appfactory.jpg
-  altImage: appfactory
-  link: http://appfactory.it/
-  description: Azienda con sede a Genova, è principalmente concentrata sul mondo mobile, ha realizzato sia videogiochi che app di gamification.
 - name: STUDIO EVIL
   main: true
   image: /img/studioevil.jpg

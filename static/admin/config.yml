@@ -151,6 +151,26 @@ collections:
                 {label: Subheading, name: subheading, widget: string, required: false},
               ],
             }
+          - {
+              label: Scientific Committee,
+              name: scientificCommittee,
+              widget: object,
+              required: false,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
+              ],
+            }
+          - {
+              label: People,
+              name: people,
+              widget: list,
+              required: false,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
+              ],
+            }
 
       # PROGRAM PAGE
       - file: "src/pages/programma/index.md"
@@ -173,55 +193,18 @@ collections:
                 {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
               ],
             }
-          - {
-              label: Scientific Committee,
-              name: scientificCommittee,
-              widget: object,
-              required: false,
-              fields: [
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
-              ],
-            }
-          - {
-              label: People,
-              name: people,
-              widget: list,
-              required: false,
-              fields: [
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
-              ],
-            }
 
-      # STUDENTS PAGE
-      - file: "src/pages/students/index.md"
-        label: "Students page"
-        name: "students"
+      # PROJECTS PAGE
+      - file: "src/pages/projects/index.md"
+        label: "Projects page"
+        name: "projects"
         fields:
-          - {label: "Template key", name: "templateKey", widget: "hidden", default: "students-page"}
-          - {label: "Path", name: "path", widget: "hidden", default: "/alumni"}
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "projects-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/projects"}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: text}
           - {label: Image, name: image, widget: image}
           - {label: Alt image, name: altImage, widget: string}
-          - {
-              label: Students,
-              name: students,
-              widget: list,
-              fields: [
-                {label: Full name, name: fullName, widget: string},
-                {label: Linkedin link, name: linkedin, widget: string, required: false},
-                {label: "Visible on homepage", name: main, widget: boolean, required: false},
-                {label: Image, name: image, widget: image, default: /img/student-img.png},
-                {label: "Alt image", name: altImage, widget: string},
-                {label: Master, name: master, widget: number, default: 2010, valueType: int, min: 2010, max: 2030},
-                {label: Company, name: company, widget: string, required: false},
-                {label: Company website, name: compLink, widget: string, required: false},
-                {label: Quote, name: quote, widget: text, hint: 'We recommend not to exceed 240 characters'},
-                {label: Games, name: games, widget: markdown, required: false},
-              ],
-            }
           - {label: Lab projects title, name: titleLabProjects, widget: string}
           - {
               label: Lab projects,
@@ -256,6 +239,18 @@ collections:
                 {label: Alt image, name: altImage, widget: string},
               ],
             }
+          - {label: Game jam title, name: titleGameJam, widget: string}
+          - {
+              label: Game Jam,
+              name: gameJam,
+              widget: list,
+              fields: [
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
+                {label: Image, name: image, widget: image},
+                {label: Alt image, name: altImage, widget: string},
+              ],
+            }
           - {label: Projects media title, name: titleProjectsMedia, widget: string}
           - {
               label: Projects media,
@@ -267,6 +262,35 @@ collections:
                 {label: Image, name: image, widget: image, default: /img/placeholder.png, required: false},
                 {label: Video, name: video, widget: file, required: false},
                 {label: Alt, name: altImage, widget: string},
+              ],
+            }
+
+      # STUDENTS PAGE
+      - file: "src/pages/students/index.md"
+        label: "Students page"
+        name: "students"
+        fields:
+          - {label: "Template key", name: "templateKey", widget: "hidden", default: "students-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/alumni"}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text}
+          - {label: Image, name: image, widget: image}
+          - {label: Alt image, name: altImage, widget: string}
+          - {
+              label: Students,
+              name: students,
+              widget: list,
+              fields: [
+                {label: Full name, name: fullName, widget: string},
+                {label: Linkedin link, name: linkedin, widget: string, required: false},
+                {label: "Visible on homepage", name: main, widget: boolean, required: false},
+                {label: Image, name: image, widget: image, default: /img/student-img.png},
+                {label: "Alt image", name: altImage, widget: string},
+                {label: Master, name: master, widget: number, default: 2010, valueType: int, min: 2010, max: 2030},
+                {label: Company, name: company, widget: string, required: false},
+                {label: Company website, name: compLink, widget: string, required: false},
+                {label: Quote, name: quote, widget: text, hint: 'We recommend not to exceed 240 characters'},
+                {label: Games, name: games, widget: text, required: false},
               ],
             }
 

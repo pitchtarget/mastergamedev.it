@@ -22,25 +22,19 @@ export const PartnersPageTemplate = ({
       <section className="has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
-            <div className="column is-7-desktop is-offset-1-desktop">
+            <div className="column is-10-widescreen is-offset-1-widescreen">
               <div className="section">
                 <h1 className="title is-1">{title}</h1>
                 <MarkdownContent content={description}/>
+              </div>
+              <div className="section">
+                <h2 className="title is-spaced">{partnersTitle}</h2>
+                <Partners partners={partners} />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div className="container is-horizontal-spaced">
-        <div className="columns is-tablet">
-          <div className="column is-10-desktop is-offset-1-desktop">
-            <div className="section is-medium">
-              <h2 className="title is-spaced">{partnersTitle}</h2>
-              <Partners partners={partners} />
-            </div>
-          </div>
-        </div>
-      </div>
       { !!banner && <Row data={banner} color="invert"/> }
     </>
   )

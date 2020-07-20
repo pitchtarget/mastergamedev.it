@@ -1,11 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import { v4 } from 'uuid'
-import Layout from '../components/Layout'
-import Image from '../components/elements/Image'
-import Row from '../components/Row'
-import MarkdownContent from '../components/MarkdownContent'
+import React from "react"
+import PropTypes from "prop-types"
+import { graphql } from "gatsby"
+import { v4 } from "uuid"
+import Layout from "../components/Layout"
+import Image from "../components/elements/Image"
+import Row from "../components/Row"
+import MarkdownContent from "../components/MarkdownContent"
+import SignupBox from '../components/SignupBox'
 
 export const MasterPageTemplate = ({
   title,
@@ -13,36 +14,40 @@ export const MasterPageTemplate = ({
   altImage,
   serviceTitle,
   paragraphs,
+  scientificCommittee,
+  people,
   services,
   banner,
 }) => {
-  const topParagraphs = paragraphs.length > 0 && paragraphs.slice(1,4)
-  const bottomParagraphs = paragraphs.length > 0 && paragraphs.slice(4)
+  const topParagraphs = paragraphs.length > 0 && paragraphs.slice(1, 4);
+  const bottomParagraphs = paragraphs.length > 0 && paragraphs.slice(4);
 
   return (
     <>
-      <Image src={image} alt={altImage} styles="cover is-small" children/>
+      <Image src={image} alt={altImage} styles="cover is-small align-left" children />
       <section className="section has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
-            <div className="column is-10-desktop is-offset-1-desktop">
+            <div className="column is-10-widescreen is-offset-1-widescreen">
               <div className="section">
                 <h1 className="title is-1">{title}</h1>
               </div>
               <div className="section">
                 <h3 className="title is-3 is-spaced">{paragraphs[0].title}</h3>
-                <MarkdownContent content={paragraphs[0].description}/>
+                <MarkdownContent content={paragraphs[0].description} />
               </div>
               <div className="columns is-multiline is-tablet">
-                { topParagraphs.length > 0 && topParagraphs.map((paragraph, id) => (
-                    <div key={v4()} className="column is-12" >
+                {topParagraphs.length > 0 &&
+                  topParagraphs.map((paragraph, id) => (
+                    <div key={v4()} className="column is-12">
                       <div className="section is-small">
-                        <h3 className="title is-3 is-spaced">{paragraph.title}</h3>
-                        <MarkdownContent content={paragraph.description}/>
+                        <h3 className="title is-3 is-spaced">
+                          {paragraph.title}
+                        </h3>
+                        <MarkdownContent content={paragraph.description} />
                       </div>
                     </div>
-                  ))
-                }
+                  ))}
               </div>
             </div>
           </div>
@@ -52,36 +57,74 @@ export const MasterPageTemplate = ({
         <div className="container is-horizontal-spaced">
           <h2 className="title is-2">{serviceTitle}</h2>
           <div className="columns is-multiline is-centered">
-            { services.length > 0 && services.map( service => (
-                <div key={v4()} className="column is-4-tablet is-2-desktop is-1-fullhd has-text-centered">
-                  <Image src={service.image} alt={service.alt} styles="is-96x96 image--tag" rounded/>
-                  <h4 className="title is-5" style={{marginTop: '1rem'}}>{service.heading}</h4>
+            {services.length > 0 &&
+              services.map((service) => (
+                <div
+                  key={v4()}
+                  className="column is-4-tablet is-2-desktop is-1-fullhd has-text-centered"
+                >
+                  <Image
+                    src={service.image}
+                    alt={service.alt}
+                    styles="is-96x96 image--tag"
+                    rounded
+                  />
+                  <h4 className="title is-5" style={{ marginTop: "1rem" }}>
+                    {service.heading}
+                  </h4>
                 </div>
-              ))
-            }
+              ))}
           </div>
         </div>
       </section>
-      <section id="iscrizioni" className="section has-background-white">
+      <section className="section is-medium has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
-            <div className="column is-10-desktop is-offset-1-desktop">
-              <div className="columns is-multiline is-tablet">
-                { bottomParagraphs.length > 0 && bottomParagraphs.map((paragraph, id) => (
-                    <div key={v4()} className="column is-12">
-                      <div className="section is-small">
-                        <h3 className="title is-3 is-spaced">{paragraph.title}</h3>
-                        <MarkdownContent content={paragraph.description}/>
-                      </div>
+            <div className="column is-10-widescreen is-offset-1-widescreen">
+              <h2 className="title is-2 is-spaced">{scientificCommittee.title}</h2>
+              <section className="section is-medium" style={{ paddingTop: "0px" }}>
+                <MarkdownContent content={scientificCommittee.description} />
+              </section>
+              <div className="columns is-multiline">
+                {people.length > 0 &&
+                  people.map((doc) => (
+                    <div key={v4()} className="column is-6-tablet">
+                      <h3 className="title is-5">{doc.title}</h3>
+                      <MarkdownContent content={doc.description} />
                     </div>
-                  ))
-                }
+                  ))}
               </div>
             </div>
           </div>
         </div>
       </section>
-      { !!banner && <Row data={banner} color="light"/> }
+      <section className="has-background-white">
+        <div className="container">
+          <SignupBox id="bottomSignUp" color="invert"/>
+        </div>
+      </section>
+      <section id="iscrizioni" className="section has-background-white">
+        <div className="container is-horizontal-spaced">
+          <div className="columns is-tablet">
+            <div className="column is-10-widescreen is-offset-1-widescreen">
+              <div className="columns is-multiline is-tablet">
+                {bottomParagraphs.length > 0 &&
+                  bottomParagraphs.map((paragraph, id) => (
+                    <div key={v4()} className="column is-12">
+                      <div className="section is-small">
+                        <h3 className="title is-3 is-spaced">
+                          {paragraph.title}
+                        </h3>
+                        <MarkdownContent content={paragraph.description} />
+                      </div>
+                    </div>
+                  ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {!!banner && <Row data={banner} color="light" />}
       {/*
       <section id="postsSection" className="section is-horizontal-spaced" style={{backgroundColor: "#CBC9D1"}}>
         <div className="container">
@@ -103,8 +146,8 @@ export const MasterPageTemplate = ({
       </section>
       */}
     </>
-  )
-}
+  );
+};
 
 MasterPageTemplate.propTypes = {
   title: PropTypes.string,
@@ -113,12 +156,24 @@ MasterPageTemplate.propTypes = {
   serviceTitle: PropTypes.string,
   paragraphs: PropTypes.array,
   services: PropTypes.array,
+  scientificCommittee: PropTypes.shape({
+    title: PropTypes.string,
+    description: PropTypes.string,
+  }),
+  people: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      description: PropTypes.string,
+    })
+  ),
   banner: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
-}
+};
 
 const MasterPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'program')
+  const { frontmatter } = data.markdownRemark;
+  const banner = data.bannersData.frontmatter.banners.filter(
+    (banner) => banner.name === "program"
+  );
 
   return (
     <Layout>
@@ -128,12 +183,14 @@ const MasterPage = ({ data }) => {
         image={frontmatter.image}
         serviceTitle={frontmatter.serviceTitle}
         paragraphs={frontmatter.paragraphs}
+        scientificCommittee={frontmatter.scientificCommittee}
+        people={frontmatter.people}
         services={frontmatter.services}
         banner={banner[0]}
       />
     </Layout>
-  )
-}
+  );
+};
 
 MasterPage.propTypes = {
   data: PropTypes.shape({
@@ -146,13 +203,13 @@ MasterPage.propTypes = {
       }),
     }),
   }),
-}
+};
 
-export default MasterPage
+export default MasterPage;
 
 export const masterPageQuery = graphql`
   query MasterPage {
-    markdownRemark(frontmatter: { templateKey: { eq: "master-page"}}) {
+    markdownRemark(frontmatter: { templateKey: { eq: "master-page" } }) {
       frontmatter {
         title
         image {
@@ -167,6 +224,14 @@ export const masterPageQuery = graphql`
         altImage
         serviceTitle
         paragraphs {
+          title
+          description
+        }
+        scientificCommittee {
+          title
+          description
+        }
+        people {
           title
           description
         }
@@ -185,7 +250,9 @@ export const masterPageQuery = graphql`
         }
       }
     }
-    bannersData: markdownRemark(frontmatter: { templateKey: { eq: "banners"}}) {
+    bannersData: markdownRemark(
+      frontmatter: { templateKey: { eq: "banners" } }
+    ) {
       frontmatter {
         banners {
           name
@@ -207,4 +274,5 @@ export const masterPageQuery = graphql`
       }
     }
   }
-`
+
+`;
