@@ -36,10 +36,10 @@ export default class BlogIndexPage extends React.Component {
     return (
       <Layout>
         <Image src="/img/docenti.jpg" alt="blog-cover" styles="cover is-small" children/>
-        <section className="section">
+        <section className="section has-background-white">
           <div className="container is-horizontal-spaced">
             <div className="columns is-tablet is-multiline">
-              <div className="column is-offset-1">
+              <div className="column is-10-widescreen is-offset-1-widescreen">
                 <div className="content">
                   <h1 className="title is-1">Ultime news</h1>
                   <h4>Tags</h4>
@@ -56,52 +56,52 @@ export default class BlogIndexPage extends React.Component {
                     ))}
                   </ul>
                 </div>
-              </div>
-            </div>
-            <div className="columns is-multiline is-tablet">
-              { filteredPosts &&
-                filteredPosts.map(({ node: post }) => (
-                  <div className="column is-6-tablet" key={post.id}>
-                    <article className="postCard">
-                      <div className="columns is-gapless is-desktop">
-                          {post.frontmatter.featuredimage ? (
-                            <div className="postCard--image column is-one-third-desktop "
-                            style={{
-                              backgroundImage: `url(${
-                                !!post.frontmatter.featuredimage.childImageSharp
-                                ? post.frontmatter.featuredimage.childImageSharp.fluid.src
-                                : post.frontmatter.featuredimage.image
-                              })`
-                            }}/>
-                          ) : null}
-                        <div className="column">
-                          <div className="postCard--content">
-                            <p className="postCard--header">
-                              <Link
-                                className="title is-size-5-mobile is-size-4-desktop"
-                                to={post.fields.slug}
-                              >
-                                {post.frontmatter.title}
-                              </Link>
-                              <span> &bull; </span>
-                              <span className="subtitle is-size-7 is-block">
-                                {post.frontmatter.date}
-                              </span>
-                            </p>
-                            <p>
-                              {post.excerpt}
-                              <br />
-                              <br />
-                              <Link className="" to={post.fields.slug}>
-                                continua
-                              </Link>
-                            </p>
+                <div className="columns is-multiline">
+                  { filteredPosts &&
+                    filteredPosts.map(({ node: post }) => (
+                      <div className="column is-6-tablet" key={post.id}>
+                        <article className="postCard">
+                          <div className="columns is-gapless is-desktop">
+                              {post.frontmatter.featuredimage ? (
+                                <div className="postCard--image column is-one-third-desktop "
+                                style={{
+                                  backgroundImage: `url(${
+                                    !!post.frontmatter.featuredimage.childImageSharp
+                                    ? post.frontmatter.featuredimage.childImageSharp.fluid.src
+                                    : post.frontmatter.featuredimage.image
+                                  })`
+                                }}/>
+                              ) : null}
+                            <div className="column">
+                              <div className="postCard--content">
+                                <p className="postCard--header">
+                                  <Link
+                                    className="title is-size-5-mobile is-size-4-desktop"
+                                    to={post.fields.slug}
+                                  >
+                                    {post.frontmatter.title}
+                                  </Link>
+                                  <span> &bull; </span>
+                                  <span className="subtitle is-size-7 is-block">
+                                    {post.frontmatter.date}
+                                  </span>
+                                </p>
+                                <p>
+                                  {post.excerpt}
+                                  <br />
+                                  <br />
+                                  <Link className="" to={post.fields.slug}>
+                                    continua
+                                  </Link>
+                                </p>
+                              </div>
+                            </div>
                           </div>
-                        </div>
+                        </article>
                       </div>
-                    </article>
-                  </div>
-                ))}
+                    ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>

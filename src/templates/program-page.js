@@ -19,28 +19,29 @@ export const ProgramPageTemplate = ({
 }) => {
   return (
     <>
-      <section className="section is-medium">
+      <section className="section has-background-white">
         <div className="container is-horizontal-spaced">
-          <h1 className="title is-1 is-spaced">{title}</h1>
-          <h3 className="title is-3">{subtitle}</h3>
-          <MarkdownContent content={description}/>
+          <div className="columns is-tablet">
+            <div className="column is-10-widescreen is-offset-1-widescreen">
+              <div style={{marginBottom: "3rem"}}>
+                <h1 className="title is-1 is-spaced">{title}</h1>
+                <h3 className="title is-3">{subtitle}</h3>
+                <MarkdownContent content={description}/>
+              </div>
+              <h2 className="title is-2 is-spaced">{titleParagraphs}</h2>
+              <div className="columns is-multiline">
+                { paragraphs.length > 0 && paragraphs.map( paragraph =>(
+                    <div key={v4()} className="column is-6-tablet">
+                      <h3 className="title is-5">{paragraph.title}</h3>
+                      <MarkdownContent content={paragraph.description}/>
+                    </div>
+                  ))
+                }
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <div className="container is-horizontal-spaced">
-        <section className="section is-medium" style={{paddingTop: '0px'}}>
-          <h2 className="title is-2 is-spaced">{titleParagraphs}</h2>
-          <div className="columns is-multiline">
-            { paragraphs.length > 0 && paragraphs.map( paragraph =>(
-                <div key={v4()} className="column is-6-tablet">
-                  <h3 className="title is-5">{paragraph.title}</h3>
-                  <MarkdownContent content={paragraph.description}/>
-                </div>
-              ))
-            }
-          </div>
-        </section>
-      </div>
-
       { !!bannerStudents && !!bannerMaster &&
         <section className="section has-double-background">
           <div className="container is-horizontal-spaced">

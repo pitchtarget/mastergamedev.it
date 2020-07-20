@@ -33,7 +33,7 @@ export const TeachersPageTemplate = ({
       </section>
       <div className="container is-horizontal-spaced">
         <div className="columns is-tablet">
-          <div className="column is-10-desktop is-offset-1-desktop">
+          <div className="column is-10-widescreen is-offset-1-widescreen">
             <div className="section is-medium">
               {!!teachersTitle &&
                 <h2 className="title is-2 is-spaced">{teachersTitle}</h2>

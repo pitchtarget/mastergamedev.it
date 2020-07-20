@@ -25,9 +25,9 @@ export const ProjectsPageTemplate = ({
   return (
     <>
       <Image src={image} alt={altImage} styles="cover align-top is-small" children/>
-      <div className="container">
+      <div className="container is-horizontal-spaced">
         <div className="columns is-tablet">
-          <div className="column is-10-desktop is-offset-1-desktop">
+          <div className="column is-10-widescreen is-offset-1-widescreen">
             <section className="section">
               <h1 className="title is-1 is-spaced">
                 {titleLabProjects}
@@ -51,14 +51,15 @@ export const ProjectsPageTemplate = ({
           </div>
         </div>
       </div>
+      
 
       <section className="section container">
         <SignupBox id="studentsSignup"/>
       </section>
 
-      <div className="container">
+      <div className="container is-horizontal-spaced">
         <div className="columns is-tablet">
-          <div className="column is-10-desktop is-offset-1-desktop">
+          <div className="column is-10-widescreen is-offset-1-widescreen">
             <section className="section">
               {!!titleProjects && <h2 className="title is-1 is-spaced">{titleProjects}</h2>}
               { projects.length > 0 && projects.map( (project, id) => {

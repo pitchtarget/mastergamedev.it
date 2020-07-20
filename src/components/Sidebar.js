@@ -57,7 +57,7 @@ const Sidebar = class extends React.Component {
 
   render() {
     const { yPosition } = this.state
-    const sidebarBg = yPosition > 0 ? "has-background" : ""
+    const sidebarBg = yPosition > 0 ? "is-visible" : ""
 
     return (
       <nav
@@ -73,7 +73,7 @@ const Sidebar = class extends React.Component {
             </Link>
             {/* Hamburger menu */}
             <div
-              className="sidebar-menu"
+              className={`sidebar-menu ${this.state.navBarActiveClass}`}
               onClick={() => this.toggleHamburger()}
             >
               <strong>MENU</strong>

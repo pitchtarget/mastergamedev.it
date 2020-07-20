@@ -3,7 +3,7 @@ templateKey: master-page
 redirect_from:
   - /il-master
 title: Il master 2019
-image: /img/master-cover.png
+image: /img/master-cover.jpg
 altImage: programming
 paragraphs:
   - description: >

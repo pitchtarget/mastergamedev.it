@@ -24,11 +24,11 @@ export const MasterPageTemplate = ({
 
   return (
     <>
-      <Image src={image} alt={altImage} styles="cover is-small" children />
+      <Image src={image} alt={altImage} styles="cover is-small align-left" children />
       <section className="section has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
-            <div className="column is-10-desktop is-offset-1-desktop">
+            <div className="column is-10-widescreen is-offset-1-widescreen">
               <div className="section">
                 <h1 className="title is-1">{title}</h1>
               </div>
@@ -80,7 +80,7 @@ export const MasterPageTemplate = ({
       <section className="section is-medium has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
-            <div className="column is-10-desktop is-offset-1-desktop">
+            <div className="column is-10-widescreen is-offset-1-widescreen">
               <h2 className="title is-2 is-spaced">{scientificCommittee.title}</h2>
               <section className="section is-medium" style={{ paddingTop: "0px" }}>
                 <MarkdownContent content={scientificCommittee.description} />
@@ -106,7 +106,7 @@ export const MasterPageTemplate = ({
       <section id="iscrizioni" className="section has-background-white">
         <div className="container is-horizontal-spaced">
           <div className="columns is-tablet">
-            <div className="column is-10-desktop is-offset-1-desktop">
+            <div className="column is-10-widescreen is-offset-1-widescreen">
               <div className="columns is-multiline is-tablet">
                 {bottomParagraphs.length > 0 &&
                   bottomParagraphs.map((paragraph, id) => (

@@ -18,11 +18,15 @@ export const StudentsPageTemplate = ({
   return (
     <>
       <Image src={image} alt={altImage} styles="cover align-top is-small" children/>
-      <section className="section is-medium has-background-white is-horizontal-spaced">
-        <div className="container">
-          <h1 className="title is-1">{title}</h1>
-          <p>{description}</p>
-          <Students students={students} />
+      <section className="section has-background-white">
+        <div className="container is-horizontal-spaced">
+          <div className="columns is-tablet">
+            <div className="column is-10-widescreen is-offset-1-widescreen">
+              <h1 className="title is-1">{title}</h1>
+              <p>{description}</p>
+              <Students students={students} />
+            </div>
+          </div>
         </div>
       </section>
       { !!banner && <Row data={banner} color="primary" reverse/> }

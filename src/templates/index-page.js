@@ -63,7 +63,7 @@ export const IndexPageTemplate = ({
         <section id="partnersSection" className="section">
           <div className="container section is-horizontal-spaced">
             <div className="columns is-gapless is-centered is-mobile">
-              <div className="column is-6-desktop">
+              <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet">
                 <h3 className="content has-text-centered">
                   <p className="title is-size-3-mobile is-size-1-tablet">
                     {partnersSection.heading}
@@ -156,9 +156,9 @@ export const IndexPageTemplate = ({
         </section>
 
         <section id="teachersSection" className="section is-medium">
-          <div className="container section is-horizontal-spaced">
+          <div className="container is-horizontal-spaced">
             <div className="columns">
-              <div className="column is-6-desktop is-offset-1-desktop">
+              <div className="column is-10-widescreen is-offset-1-widescreen">
                 <h3 className="content">
                   <p className="title is-2">{teachersSection.heading}</p>
                   <p className="subtitle is-5">{teachersSection.subheading}</p>
@@ -168,13 +168,9 @@ export const IndexPageTemplate = ({
                   link={teachersSection.link}
                   styles="cta cta-large cta__invert"
                 />
-              </div>
-            </div>
-          </div>
-          <div className="container is-horizontal-spaced">
-            <div className="columns">
-              <div className="column is-offset-1-widescreen is-10-widescreen">
+                <div className="section">
                 <TeachersShortList />
+                </div>
               </div>
             </div>
           </div>
