@@ -1,7 +1,7 @@
 ---
 templateKey: students-page
 path: /alumni
-title: Alumni
+title: Cosa dicono coloro che ti hanno preceduto
 description: >
   La sezione alumni raccoglie consigli e testimonianze di ex studenti che oggi
   lavorano nella industry.

@@ -331,7 +331,6 @@ collections:
           - {label: "Alt image", name: altImage, widget: string}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]}
-          - {label: "Teachers title", name: techersTitle, widget: string}
           - {
               label: Teachers,
               name: teachers,

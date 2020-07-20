@@ -10,7 +10,6 @@ import MarkdownContent from '../components/MarkdownContent'
 export const TeachersPageTemplate = ({
   title,
   description,
-  teachersTitle,
   image,
   altImage,
   teachers,
@@ -27,22 +26,13 @@ export const TeachersPageTemplate = ({
                 <h1 className="title is-1">{title}</h1>
                 <MarkdownContent content={description}/>
               </div>
+              <div className="section is-medium">
+                <Teachers teachers={teachers} />
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <div className="container is-horizontal-spaced">
-        <div className="columns is-tablet">
-          <div className="column is-10-widescreen is-offset-1-widescreen">
-            <div className="section is-medium">
-              {!!teachersTitle &&
-                <h2 className="title is-2 is-spaced">{teachersTitle}</h2>
-              }
-              <Teachers teachers={teachers} />
-            </div>
-          </div>
-        </div>
-      </div>
       { !!banner && <Row data={banner} color="primary"/> }
     </>
   )
@@ -51,7 +41,6 @@ export const TeachersPageTemplate = ({
 TeachersPageTemplate.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  teachersTitle: PropTypes.string,
   altImage: PropTypes.string,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   banner: PropTypes.object,
@@ -75,7 +64,6 @@ const TeachersPage = ({ data }) => {
       <TeachersPageTemplate
         title={frontmatter.title}
         description={frontmatter.description}
-        teachersTitle={frontmatter.teachersTitle}
         altImage={frontmatter.altImage}
         image={frontmatter.image}
         teachers={frontmatter.teachers}
@@ -106,7 +94,6 @@ export const masterPageQuery = graphql`
       frontmatter {
         title
         description
-        teachersTitle
         altImage
         image {
           extension

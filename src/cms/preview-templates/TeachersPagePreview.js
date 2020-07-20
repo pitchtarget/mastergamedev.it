@@ -11,7 +11,6 @@ const TeachersPagePreview = ({ entry, getAsset }) => {
     <TeachersPageTemplate
       title={data.title}
       description={data.description}
-      teachersTitle={data.teachersTitle}
       altImage={data.altImage}
       image={data.image}
       teachers={teachers}
