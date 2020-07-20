@@ -91,55 +91,57 @@ const Sidebar = class extends React.Component {
         </div>
         <div className={`modal ${this.state.navBarActiveClass}`}>
           <div className="modal-background" onClick={() => this.toggleHamburger()}></div>
-          <div className="sidebar-list">
-            <Link
-              className="navbar-item" to="/"
-              onClick={() => this.toggleHamburger()}>
-              Home
-            </Link>
-            <Link
-              className="navbar-item" to="/master"
-              onClick={() => this.toggleHamburger()}>
-              Master
-            </Link>
-            <Link
-              className="navbar-item" to="/programma"
-              onClick={() => this.toggleHamburger()}>
-              Programma
-            </Link>
-            <Link
-              className="navbar-item" to="/docenti"
-              onClick={() => this.toggleHamburger()}>
-              Docenti
-            </Link>
-            <Link
-              className="navbar-item" to="/collaborazioni"
-              onClick={() => this.toggleHamburger()}>
-              Collaborazioni
-            </Link>
-            <Link
-              className="navbar-item" to="/progetti"
-              onClick={() => this.toggleHamburger()}>
-              Progetti
-            </Link>
-            <Link
-              className="navbar-item" to="/alumni"
-              onClick={() => this.toggleHamburger()}>
-              Alumni
-            </Link>
-            <Link
-              className="navbar-item" to="/master/#iscrizioni"
-              onClick={() => this.toggleHamburger()}>
-              Iscrizioni
-            </Link>
-            <Link
-              className="navbar-item" to="/blog"
-              onClick={() => this.toggleHamburger()}>
-              Blog
-            </Link>
-            {/* <a href="mailto:gamedev@ateneo.univr.it" className="navbar-item">
-              contatti
-            </a> */}
+          <div className="container">
+            <div className="sidebar-list">
+              <Link
+                className="navbar-item" to="/"
+                onClick={() => this.toggleHamburger()}>
+                Home
+              </Link>
+              <Link
+                className="navbar-item" to="/master"
+                onClick={() => this.toggleHamburger()}>
+                Master
+              </Link>
+              <Link
+                className="navbar-item" to="/programma"
+                onClick={() => this.toggleHamburger()}>
+                Programma
+              </Link>
+              <Link
+                className="navbar-item" to="/docenti"
+                onClick={() => this.toggleHamburger()}>
+                Docenti
+              </Link>
+              <Link
+                className="navbar-item" to="/collaborazioni"
+                onClick={() => this.toggleHamburger()}>
+                Collaborazioni
+              </Link>
+              <Link
+                className="navbar-item" to="/progetti"
+                onClick={() => this.toggleHamburger()}>
+                Progetti
+              </Link>
+              <Link
+                className="navbar-item" to="/alumni"
+                onClick={() => this.toggleHamburger()}>
+                Alumni
+              </Link>
+              <Link
+                className="navbar-item" to="/master/#iscrizioni"
+                onClick={() => this.toggleHamburger()}>
+                Iscrizioni
+              </Link>
+              <Link
+                className="navbar-item" to="/blog"
+                onClick={() => this.toggleHamburger()}>
+                Blog
+              </Link>
+              {/* <a href="mailto:gamedev@ateneo.univr.it" className="navbar-item">
+                contatti
+              </a> */}
+            </div>
           </div>
         </div>
       </nav>
