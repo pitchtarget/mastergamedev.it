@@ -176,10 +176,9 @@ collections:
               name: footerBanner,
               widget: "relation",
               collection: "pages",
-              file: "src/pages/banners/index.md",
               searchFields: "banners.banners.*.name",
-              displayFields: "banners.banners.*.name",
-              valueField: "banners.banners.name",
+              valueField: "banners.banners.*.name",
+              displayFields: "banners.banners.name",
             }
 
       # PROGRAM PAGE
