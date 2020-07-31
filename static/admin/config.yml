@@ -205,12 +205,12 @@ collections:
               widget: "select",
               options: ["teachers", "students", "partners","master","program","projects"]
             }
-            - {
-              label: "Footer right banner",
-              name: bannerRight,
-              widget: "select",
-              options: ["teachers", "students", "partners","master","program","projects"]
-            }
+          - {
+            label: "Footer right banner",
+            name: bannerRight,
+            widget: "select",
+            options: ["teachers", "students", "partners","master","program","projects"]
+          }
 
       # PROJECTS PAGE
       - file: "src/pages/projects/index.md"
