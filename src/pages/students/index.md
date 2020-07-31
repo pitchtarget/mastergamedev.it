@@ -7,6 +7,7 @@ description: >
   lavorano nella industry.
 image: /img/scuola.jpg
 altImage: students
+footerBanner: projects
 students:
   - altImage: Riccardo Reffato
     compLink: 'http://milestone.it/'

@@ -60,7 +60,7 @@ PartnersPageTemplate.propTypes = {
 
 const PartnersPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'master')
+  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === frontmatter.footerBanner)
   return (
     <Layout>
       <PartnersPageTemplate
@@ -98,6 +98,7 @@ export const masterPageQuery = graphql`
         title
         description
         partnersTitle
+        footerBanner
         altImage
         image {
           extension
@@ -123,6 +124,7 @@ export const masterPageQuery = graphql`
             }
           }
         }
+        
       }
     }
     bannersData: markdownRemark(frontmatter: { templateKey: { eq: "banners"}}) {

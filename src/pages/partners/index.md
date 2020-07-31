@@ -6,6 +6,7 @@ description: Il Master collabora con le più importanti aziende italiane del set
 image: /img/classroom.jpg
 altImage: programming
 partnersTitle: I Partners
+footerBanner: students
 partners:
 - name: MILESTONE
   main: true

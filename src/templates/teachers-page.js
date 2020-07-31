@@ -69,7 +69,7 @@ TeachersPageTemplate.propTypes = {
 
 const TeachersPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'partners')
+  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === frontmatter.footerBanner)
   return (
     <Layout>
       <TeachersPageTemplate
@@ -117,6 +117,7 @@ export const masterPageQuery = graphql`
             }
           }
         }
+        footerBanner
         teachers {
           fullName
           role

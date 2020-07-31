@@ -51,7 +51,7 @@ StudentsPageTemplate.propTypes = {
 
 const StudentsPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'partners')
+  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === frontmatter.footerBanner)
   return (
     <Layout>
       <StudentsPageTemplate
@@ -95,6 +95,7 @@ export const studentsPageQuery = graphql`
             }
           }
         }
+        footerBanner
         students {
           fullName
           linkedin

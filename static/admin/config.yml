@@ -171,6 +171,15 @@ collections:
                 {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
               ],
             }
+          - {
+              label: "Footer banner",
+              name: footerBanner,
+              widget: "relation",
+              collection: "pages",
+              searchFields: "banners.banners.name",
+              valueField: "banners.banners.name",
+              displayFields: "banners.banners.name",
+            }
 
       # PROGRAM PAGE
       - file: "src/pages/programma/index.md"
@@ -192,6 +201,24 @@ collections:
                 {label: Title, name: title, widget: string},
                 {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
               ],
+            }
+          - {
+              label: "Footer left banner",
+              name: bannerLeft,
+              widget: "relation",
+              collection: "pages",
+              searchFields: "banners.banners.name",
+              valueField: "banners.banners.name",
+              displayFields: "banners.banners.name",
+            }
+          - {
+              label: "Footer right banner",
+              name: bannerRight,
+              widget: "relation",
+              collection: "pages",
+              searchFields: "banners.banners.name",
+              valueField: "banners.banners.name",
+              displayFields: "banners.banners.name",
             }
 
       # PROJECTS PAGE
@@ -264,6 +291,15 @@ collections:
                 {label: Alt, name: altImage, widget: string},
               ],
             }
+          - {
+              label: "Footer banner",
+              name: footerBanner,
+              widget: "relation",
+              collection: "pages",
+              searchFields: "banners.banners.name",
+              valueField: "banners.banners.name",
+              displayFields: "banners.banners.name",
+            }
 
       # STUDENTS PAGE
       - file: "src/pages/students/index.md"
@@ -293,6 +329,15 @@ collections:
                 {label: Games, name: games, widget: text, required: false},
               ],
             }
+          - {
+              label: "Footer banner",
+              name: footerBanner,
+              widget: "relation",
+              collection: "pages",
+              searchFields: "banners.banners.name",
+              valueField: "banners.banners.name",
+              displayFields: "banners.banners.name",
+            }
 
       # PARTNERS PAGE
       - file: "src/pages/partners/index.md"
@@ -319,7 +364,15 @@ collections:
                 {label: "Show in home", name: main, widget: boolean, required: false}
               ],
             }
-
+          - {
+              label: "Footer banner",
+              name: footerBanner,
+              widget: "relation",
+              collection: "pages",
+              searchFields: "banners.banners.name",
+              valueField: "banners.banners.name",
+              displayFields: "banners.banners.name",
+            }
       # TEACHERS PAGE
       - file: "src/pages/teachers/index.md"
         label: "Teachers list"
@@ -344,6 +397,15 @@ collections:
                 {label: Role, name: role, widget: string, required: false},
                 {label: Biography, name: bio, widget: string, required: false}
               ],
+            }
+          - {
+              label: "Footer banner",
+              name: footerBanner,
+              widget: "relation",
+              collection: "pages",
+              searchFields: "banners.banners.name",
+              valueField: "banners.banners.name",
+              displayFields: "banners.banners.name",
             }
 
       # BANNERS
@@ -372,7 +434,7 @@ collections:
               name: banners,
               widget: list,
               fields: [
-                {label: Name, name: name, widget: string, required: false},
+                {label: Name, name: name, widget: string, required: true},
                 {label: Image, name: image, widget: image, default: "/img/placeholder.png", required: false},
                 {label: Alt image, image: alt, widget: string, required: false},
                 {label: Banner title, name: title, widget: string},

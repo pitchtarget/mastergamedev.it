@@ -9,20 +9,28 @@ box:
   cta: Invia la candidatura
   link: https://www.scienzeingegneria.univr.it/?ent=iscrizionecs&cs=406
 banners:
+  - name: teachers
+    title: Un team di docenti professionisti nella loro materia
+    text: >
+      Ogni docente del master lavora nel ambito della propria materia che potrà strasferirvi non solo le conoscenze necessarie ma anche le modalità e i trucchi del mestiere.
+    cta: scopri chi sono
+    link: /docenti
+    image: /img/docenti.jpg
+    alt: docenti
   - name: students
     title: I risultati dei nostri studenti sono la nostra più grande soddisfazione
     text: >
       Al termine del master i nostri ragazzi intraprendono diversi percorsi di carriera chi all'interno di grandi company chi invece in aziende più piccole dal forte valore tecnologico.
     cta: studenti
-    link: /alumni/#students
-    image: /img/placeholder.png
-    alt: placeholder
+    link: /alumni
+    image: /img/studenti.jpg
+    alt: le loro storie
   - name: partners
     title: Mettiamo in contatto le migliori aziende di gaming con i talenti di domani
     text: >
       Crediamo nella collaborazione, non solo con talenti professionisti, ma anche con le migliori aziende del settore videoludico per creare un ponte tra formazione e il mondo del lavoro.
     cta: i nostri partner
-    link: /collaborazioni/#partners
+    link: /collaborazioni
     image: /img/classroom.jpg
     alt: partners
   - name: master
@@ -41,4 +49,12 @@ banners:
     link: /programma
     image: /img/scuola.jpg
     alt: scuola
+  - name: projects
+    title: I progetti dei ragazzi
+    text: >
+      Durante il master avrai modo di sviluppare diversi progetti per entrare nel vivo della realizzarzione di un gioco.
+    cta: il tuo primo videogame
+    link: /progetti
+    image: /img/work-3.jpg
+    alt: project work
 ---
