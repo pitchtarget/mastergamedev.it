@@ -174,11 +174,8 @@ collections:
           - {
               label: "Footer banner",
               name: footerBanner,
-              widget: "relation",
-              collection: "pages",
-              searchFields: "banners.*.name",
-              valueField: "banners.*.name",
-              displayFields: "banners.name",
+              widget: "select",
+              options: ["teachers", "students", "partners","master","program","projects"]
             }
 
       # PROGRAM PAGE
@@ -205,20 +202,14 @@ collections:
           - {
               label: "Footer left banner",
               name: bannerLeft,
-              widget: "relation",
-              collection: "pages",
-              searchFields: "banners.banners.name",
-              valueField: "banners.banners.name",
-              displayFields: "banners.banners.name",
+              widget: "select",
+              options: ["teachers", "students", "partners","master","program","projects"]
             }
-          - {
+            - {
               label: "Footer right banner",
               name: bannerRight,
-              widget: "relation",
-              collection: "pages",
-              searchFields: "banners.banners.name",
-              valueField: "banners.banners.name",
-              displayFields: "banners.banners.name",
+              widget: "select",
+              options: ["teachers", "students", "partners","master","program","projects"]
             }
 
       # PROJECTS PAGE
@@ -294,11 +285,8 @@ collections:
           - {
               label: "Footer banner",
               name: footerBanner,
-              widget: "relation",
-              collection: "pages",
-              searchFields: "banners.banners.name",
-              valueField: "banners.banners.name",
-              displayFields: "banners.banners.name",
+              widget: "select",
+              options: ["teachers", "students", "partners","master","program","projects"]
             }
 
       # STUDENTS PAGE
@@ -332,14 +320,11 @@ collections:
           - {
               label: "Footer banner",
               name: footerBanner,
-              widget: "relation",
-              collection: "pages",
-              searchFields: "banners.banners.name",
-              valueField: "banners.banners.name",
-              displayFields: "banners.banners.name",
+              widget: "select",
+              options: ["teachers", "students", "partners","master","program","projects"]
             }
 
-      # PARTNERS PAGE
+            # PARTNERS PAGE
       - file: "src/pages/partners/index.md"
         label: "Partners list"
         name: "partners"
@@ -367,13 +352,11 @@ collections:
           - {
               label: "Footer banner",
               name: footerBanner,
-              widget: "relation",
-              collection: "pages",
-              searchFields: "banners.banners.name",
-              valueField: "banners.banners.name",
-              displayFields: "banners.banners.name",
+              widget: "select",
+              options: ["teachers", "students", "partners","master","program","projects"]
             }
-      # TEACHERS PAGE
+
+            # TEACHERS PAGE
       - file: "src/pages/teachers/index.md"
         label: "Teachers list"
         name: "teachers"
@@ -401,11 +384,8 @@ collections:
           - {
               label: "Footer banner",
               name: footerBanner,
-              widget: "relation",
-              collection: "pages",
-              searchFields: "banners.banners.name",
-              valueField: "banners.banners.name",
-              displayFields: "banners.banners.name",
+              widget: "select",
+              options: ["teachers", "students", "partners","master","program","projects"]
             }
 
       # BANNERS
@@ -433,6 +413,7 @@ collections:
               label: Footer banner,
               name: banners,
               widget: list,
+              allow_add: false,
               fields: [
                 {label: Name, name: name, widget: string, required: true},
                 {label: Image, name: image, widget: image, default: "/img/placeholder.png", required: false},
