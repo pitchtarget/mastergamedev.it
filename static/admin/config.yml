@@ -176,9 +176,10 @@ collections:
               name: footerBanner,
               widget: "relation",
               collection: "pages",
-              searchFields: "banners.banners.name",
+              file: "src/pages/banners/index.md",
+              searchFields: "banners.banners.*.name",
+              displayFields: "banners.banners.*.name",
               valueField: "banners.banners.name",
-              displayFields: "banners.banners.name",
             }
 
       # PROGRAM PAGE
@@ -430,7 +431,7 @@ collections:
             }
           # ROWS
           - {
-              label: Banners,
+              label: Footer banner,
               name: banners,
               widget: list,
               fields: [
