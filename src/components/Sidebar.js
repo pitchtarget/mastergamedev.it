@@ -138,9 +138,9 @@ const Sidebar = class extends React.Component {
                 onClick={() => this.toggleHamburger()}>
                 Blog
               </Link>
-              {/* <a href="mailto:gamedev@ateneo.univr.it" className="navbar-item">
-                contatti
-              </a> */}
+              {<a href="mailto:gamedev@ateneo.univr.it" className="navbar-item">
+                Contatti
+              </a>}
             </div>
           </div>
         </div>

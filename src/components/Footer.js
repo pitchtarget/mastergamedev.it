@@ -65,7 +65,7 @@ const Footer = class extends React.Component {
                     Iscrizioni
                   </Link>
                   {<a href="mailto:gamedev@ateneo.univr.it" className="navbar-item">
-                    contatti
+                    Contatti
                   </a>}
                 </div>
               </div>
