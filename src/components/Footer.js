@@ -64,9 +64,9 @@ const Footer = class extends React.Component {
                   <Link className="navbar-item" to="/master/#iscrizioni">
                     Iscrizioni
                   </Link>
-                  {/* <a href="mailto:gamedev@ateneo.univr.it" className="navbar-item">
+                  {<a href="mailto:gamedev@ateneo.univr.it" className="navbar-item">
                     contatti
-                  </a> */}
+                  </a>}
                 </div>
               </div>
               <div className="column is-4-desktop is-6-widescreen">
