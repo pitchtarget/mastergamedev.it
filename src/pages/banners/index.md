@@ -6,10 +6,9 @@ box:
   image: /img/open-day.jpg
   link: 'https://www.scienzeingegneria.univr.it/?ent=iscrizionecs&cs=406'
   text: >
-    Le iscrizioni al master per l'anno accademico 2020-2021 sono aperte. Invia
-    la tua candidatura entro ottobre 2020. Il master avrà inizio a novembre
-    2020. Per Info gamedev@ateneo.univr.it
-  title: Master 2020-2021
+    Invia la tua candidatura entro ottobre 2020, il master avrà inizio a
+    novembre 2020. 
+  title: Le iscrizioni per l'anno accademico 2020-2021 sono aperte.
 banners:
   - cta: studenti
     image: /img/placeholder.png
