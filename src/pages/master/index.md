@@ -149,14 +149,6 @@ people:
       prime tre edizioni. <br><br> *Vice-direttore*
     title: Andrea Fusiello
   - description: >
-      Paola Cesari (Ph.D Penn State University 1999) è Professore Associato
-      presso l’università di Verona nel dipartimento di Scienze neurologiche e
-      della Visione. Insegna controllo motorio e bioingegneria presso la Facoltà
-      di Scienze Motorie. Dirige il laboratorio LAP (Laboratorio Azione
-      Percezione). La sua ricerca verte sullo studio del controllo
-      sensitive-motorio. <br><br> *Componente del Comitato Scientifico*
-    title: Paola Cesari
-  - description: >
       Matteo Cristani è Ricercatore Universitario dal 1997 a Verona. È stato
       visiting scholar presso l’Università di Rochester nel 1993-1994 epresso
       l’Università di Leeds nel 1999 e nel 2004. È autore di oltre
@@ -173,16 +165,6 @@ people:
       publishing di giochi mobile. <br><br> *Componente del Comitato
       Scientifico*
     title: Antonio Farina
-  - description: >
-      Lavora nel mondo dei videogiochi da 10 anni, seguendo sia aspetti tecnici
-      che commerciali. Socio fondatore del team di sviluppo di Idoru nel 2001,
-      nel corso degli anni si è occupato del game design e dell’organizzazione
-      dei vari progetti. Dal 2004, opera in Italia all’interno del network
-      Ingress Europa, struttura che rappresenta e collabora con diverse
-      strutture internazionali per lo sviluppo di special business e nuove
-      attività legate a progetti interattivi e multimediali. <br><br>
-      *Componente del Comitato Scientifico*
-    title: Paolo Giacomello
   - description: >
       Dario Migliavacca, laureato a Milano in Economia e Commercio, è entrato a
       far parte del gruppo Ubisoft nel 1996 in qualità di Sales Manager e, dopo
@@ -203,10 +185,6 @@ people:
       Uomo-Macchina ed Analisi di Immagini e dati volumetrici. I suoi interessi
       di ricerca riguardano l’elaborazione di immagini e dati 3D.
     title: Andrea Giachetti
-  - description: >
-      Responsabile di produzione e supervisore di Digital Tales SRL dove si
-      occupa anche del coordinamento dei collaboratori interni ed esterni
-    title: Andrea Martinoli
   - description: >
       Laurea in Informatica, è professore associato presso il Dipartimento di
       Informatica di Verona, dove si occupa di tecniche a supporto dello
