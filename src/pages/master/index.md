@@ -87,7 +87,6 @@ paragraphs:
       riservato ai laureati dell’Università degli studi di Verona.
     title: Iscrizioni
   - description: >-
-      Si noti che con la prossima edizione il master inizierà a novembre.</br>
       L’edizione per  l’anno accademico 2019/20 è a pieno regime: la scadenza
       per la pre-iscrizione è il 04/10/2020, con un costo di iscrizione al
       master fissato a 5016€ (marca da bollo da 16 euro all’atto della
