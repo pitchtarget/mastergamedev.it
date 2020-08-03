@@ -12,7 +12,6 @@ box:
 banners:
   - cta: studenti
     image: /img/placeholder.png
-    alt: placeholder
     link: '/alumni/#students'
     name: students
     text: >
@@ -24,7 +23,6 @@ banners:
     image: /img/classroom.jpg
     link: '/collaborazioni/#partners'
     name: partners
-    alt: partner
     text: >
       Crediamo nella collaborazione, non solo con talenti professionisti, ma
       anche con le migliori aziende del settore videoludico per creare un ponte
@@ -32,20 +30,21 @@ banners:
     title: Mettiamo in contatto le migliori aziende di gaming con i talenti di domani
   - cta: il master
     image: /img/master.jpg
-    alt: master
     link: /master
     name: master
     text: >
-      La facoltà di Scienze in particolare è stata insignita negli ultimi anni
-      di numerosi riconoscimenti per qualità di insegnamenti e ricerca. E’
-      presente tra gli altri un indirizzo ad orientamento multimediale
-      nell’ambito della laurea magistrale in Ingegneria e scienze informatiche.
+      Sono numerosi i riconoscimenti ricevuti negli ultimi anni dall'Università
+      degli studi di Verona e dal Dipartimento di Informatica per qualità degli
+      insegnamenti e della ricerca. Il master è organizzato per cogliere le
+      nuove opportunità di didattica telematica proponendo una modalità mista
+      che coniughi le esigenze di sicurezza del momento con i vantaggi legati
+      alle lezioni in presenza e ad un approfondimento delle relazioni
+      interpersonali.
     title: >-
       L’Università di Verona rappresenta garanzia di Didattica qualificata,
       Strutture e Ricerca.
   - cta: programma completo
     image: /img/scuola.jpg
-    alt: scuola
     link: /programma
     name: program
     text: >
