@@ -86,17 +86,17 @@ paragraphs:
       avvenire in teleconferenza.</br></br> Il 20% dei posti disponibili è
       riservato ai laureati dell’Università degli studi di Verona.
     title: Iscrizioni
-  - description: >
+  - description: >-
       Si noti che con la prossima edizione il master inizierà a novembre.</br>
       L’edizione per  l’anno accademico 2019/20 è a pieno regime: la scadenza
-      per la pre-iscrizione è il 07/10/19, con un costo di iscrizione al master
-      fissato a 5016€ (marca da bollo da 16 euro all’atto della pre-iscrizione,
-      3.000 euro entro il 22/10/2019 e 2.000 entro il 01/06/2020)</br></br> Non
-      è necessario aver già acquisito la laurea come requisito per iscriversi,
-      purchè ci si riesca entro l’anno accademico ovvero Marzo/Aprile
-      2020.</br></br> la scadenza per la pre-iscrizione è il 07/10/19</br>
-      colloquio di ammissione 15/10/19</br> pagamento prima rata 22/10/19</br>
-      inizio lezioni 08/11/19
+      per la pre-iscrizione è il 04/10/2020, con un costo di iscrizione al
+      master fissato a 5016€ (marca da bollo da 16 euro all’atto della
+      pre-iscrizione, 3.000 euro all'iscrizione definitiva e 2.000 entro il
+      01/06/2021)</br></br> Non è necessario aver già acquisito la laurea come
+      requisito per iscriversi, purchè ci si riesca entro l’anno accademico
+      ovvero Marzo/Aprile 2021.</br></br> la scadenza per la pre-iscrizione è il
+      04/10/2020</br> colloquio di ammissione Ottobre 2020</br> pagamento prima
+      rata Ottobre 2020</br> inizio lezioni Novembre 2020
     title: Costi
 serviceTitle: I nostri servizi
 services:
