@@ -1,10 +1,10 @@
 ---
 templateKey: blog-post
 title: Dal Corriere Innovazione
-date: 2020-08-03T15:08:49.448Z
+date: 2020-08-07T15:08:49.448Z
 description: Corriere Innovazione 31 Luglio 2020
 featuredpost: true
-featuredimage: /img/correreinnovazione_logo.jpg
+featuredimage: /img/corriereinnovazione_luglio2020.jpg
 tags:
   - info generali
 ---
