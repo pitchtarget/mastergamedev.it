@@ -12,6 +12,7 @@ box:
 banners:
   - cta: studenti
     image: /img/placeholder.png
+    alt: placeholder
     link: '/alumni/#students'
     name: students
     text: >
@@ -23,6 +24,7 @@ banners:
     image: /img/classroom.jpg
     link: '/collaborazioni/#partners'
     name: partners
+    alt: partner
     text: >
       Crediamo nella collaborazione, non solo con talenti professionisti, ma
       anche con le migliori aziende del settore videoludico per creare un ponte
@@ -30,6 +32,7 @@ banners:
     title: Mettiamo in contatto le migliori aziende di gaming con i talenti di domani
   - cta: il master
     image: /img/master.jpg
+    alt: master
     link: /master
     name: master
     text: >
@@ -45,6 +48,7 @@ banners:
       Strutture e Ricerca.
   - cta: programma completo
     image: /img/scuola.jpg
+    alt: scuola
     link: /programma
     name: program
     text: >
