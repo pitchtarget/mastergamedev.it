@@ -357,8 +357,8 @@ collections:
               name: box,
               widget: object,
               fields: [
-                {label: Image, name: image, widget: image, required: false},
-                {label: Alt image, name: alt, widget: string, required: false},
+                {label: Image, name: image, widget: image, default: "/img/placeholder.png", required: false},
+                {label: Alt image, name: alt, widget: string, default: "alt placeholder" , required: false},
                 {label: Title, name: title, widget: string},
                 {label: Text, name: text, widget: text, required: false},
                 {label: Call to action, name: cta, widget: string},
@@ -371,9 +371,9 @@ collections:
               name: banners,
               widget: list,
               fields: [
-                {label: Name, name: name, widget: string, required: false},
+                {label: Name, name: name, widget: string},
                 {label: Image, name: image, widget: image, default: "/img/placeholder.png", required: false},
-                {label: Alt image, image: alt, widget: string, required: false},
+                {label: Alt image, name: alt, widget: string, default: "alt placeholder" , required: false},
                 {label: Banner title, name: title, widget: string},
                 {label: Banner text, name: text, widget: text},
                 {label: Call to action, name: cta, widget: string},
