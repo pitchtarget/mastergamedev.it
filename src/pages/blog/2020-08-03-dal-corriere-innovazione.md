@@ -4,7 +4,7 @@ title: Dal Corriere Innovazione
 date: 2020-08-07T15:08:49.448Z
 description: Corriere Innovazione 31 Luglio 2020
 featuredpost: true
-featuredimage: /img/corriereinnovazione.png
+featuredimage: /img/corrierev2.png
 tags:
   - info generali
 ---
