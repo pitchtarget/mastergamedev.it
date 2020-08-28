@@ -5,7 +5,7 @@ title: >-
   dedicato!
 date: 2020-08-28T14:29:40.656Z
 description: Contatto diretto tra studenti e i docenti per domande e approfondimenti.
-featuredimage: /img/discord.png
+featuredimage: /img/discordmastersito.png
 tags:
   - '#MasterGameDev2021 #Discord'
 ---
@@ -14,7 +14,5 @@ Il canale Discord del MasterGameDev ha una linea dedicata agli studenti interess
 Lo scopo è di offrire un contatto diretto tra studenti e i docenti per domande e approfondimenti.
 
 Vi aspettiamo su Discord! -> <https://discord.com/invite/yQpYwqJ>
-
-
 
 ![](/img/discordmastergdev.png)
