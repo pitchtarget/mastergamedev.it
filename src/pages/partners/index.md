@@ -1,93 +1,144 @@
 ---
-templateKey: 'partners-page'
+templateKey: partners-page
 path: /collaborazioni
-title: Una esperienza di lavoro
-description: Il Master collabora con le più importanti aziende italiane del settore videoludico. Di seguito i nostri partner, presso i quali sarà possibile effettuare uno stage - obbligatorio e garantito - alla fine del percorso di formazione.
 image: /img/classroom.jpg
 altImage: programming
+title: Una esperienza di lavoro
+description: >-
+  Il Master collabora con le più importanti aziende italiane del settore
+  videoludico. Di seguito i nostri partner, presso i quali sarà possibile
+  effettuare uno stage - obbligatorio e garantito - alla fine del percorso di
+  formazione.
 partnersTitle: I Partners
 partners:
-- name: MILESTONE
-  main: true
-  image: /img/milestone.jpg
-  altImage: milestone
-  link: http://milestone.it/
-  description: Il famoso studio Milanese specializzato in giochi di corse, vanta oltre 100 dipendenti e molti titoli in particolare nel mondo della SuperBike e MotoGP.
-- name: UBISOFT
-  main: true
-  image: /img/ubisoft.jpg
-  altImage: ubisoft
-  link: https://www.ubisoft.com/it-IT/
-  description: Ubisoft Milan, studio Italiano del famoso gruppo Francese, con sede a Milano. Ha collaborato ad alcuni dei franchise più importanti di Ubisoft, tra i quali Splinter Cell, Just Dance e Assassin’s Creed. Negli ultimi anni ha sviluppato Mario + Rabbids Kingdom Battle in collaborazione con Nintendo
-- name: 3DFLOW
-  main: true
-  image: /img/3dflow.jpg
-  altImage: 3dflow
-  link: https://www.3dflow.net/
-  description: Azienda specializzata in computer vision con sede a Verona, è principalmente nota per il software “3DF Zephyr” per la realizzazione automatica di modelli 3D a partire da fotografie.
-- name: COREHAB
-  main: true
-  image: /img/corehab.jpg
-  altImage: corehab
-  link: https://www.corehab.it/it/
-  description: Giovane azienda con sede a Trento, nata nel 2012, è concentrata sull’applicazione dei videogiochi nel mondo della riabilitazione.
-- name: STUDIO EVIL
-  main: true
-  image: /img/studioevil.jpg
-  altImage: studio evil
-  link: http://www.studioevil.com/
-  description: Studio Bolognese nato nel 2011, si occupa principalmente di videogiochi PC. Di recente successo la campagna di crowdfunding per Super Cane Magic ZERO, in collaborazione con il cartoonist SIO.
-- name: DIGITAL TALES
-  main: true
-  image: /img/dtales.jpg
-  altImage: appfactory
-  link: https://www.dtales.it/
-  description: L’azienda, fondata nel 2006 con sede a Milano e con uffici a Roma e a Miami, si occupa di videogiochi ed e-learning. Di recente produzione, il videogioco “The Tudors” e SBK15.
-- name: DPSTUDIOS
-  main: true
-  image: /img/dpstudios.jpg
-  altImage: dpstudios
-  link: http://www.dpstudios.it/
-  description: Studio Italiano fondato nel 2006, si occupa esclusivamente di seguire il reparto audio nelle produzioni videoludiche. Collabora con diverse realtà videoludiche come ad esempio Ubisoft e Digital Tales.
-- name: FOOFA STUDIOS
-  main: true
-  image: /img/foofa.jpg
-  altImage: appfactory
-  link: http://www.foofastudios.com/wp/
-  description: L’azienda, con sede a Genova, nasce nel 2006 e si occupa della realizzazione di videogiochi e serious games sia in ambito mobile che web e pc.
-- name: FORGE REPLY
-  main: true
-  image: /img/forge.jpg
-  altImage: appfactory
-  link: https://www.reply.com/forge-reply/en/
-  description: Forge Reply, con sede a Milano, si occupa dello sviluppo di videogiochi B2B e B2C. Di particolare nota, Forge Reply vanta lo sviluppo del gioco di Lupo Solitario, tratto dai celebri librogame di Joe Dever.
-- name: JUSTY FUNNY GAMES
-  main: true
-  image: /img/justfunny.jpg
-  altImage: just funny games
-  link: http://justfunnygames.com/en/
-  description: Con sede a Imola, Just Funny Games si occupa di sviluppo di videogiochi in particolare in ambito mobile (Android ed Apple), PSP e Nintendo DS.
-- name: RORTOS
-  main: true
-  image: /img/rortos.jpg
-  altImage: rotos
-  link: http://www.rortos.it/
-  description: Fondata nel 2012 e con sede a Verona, Rortos si occupa dello sviluppo di Flight Simulation Entertainment Systems. Ad oggi, vanta più di 50 milioni di download complessivi.
-- name: GAMERA INTERACTIVE
-  main: true
-  image: /img/gamera.jpg
-  altImage: gamera interactive
-  link: http://www.gamerainteractive.it/
-  description: Nata nel 2016 con sede a Padova, Gamera Interactive vanta tra il suo staffa veterani che hanno partecipato allo sviluppo di titoli come Elder’s Scrolls ed Unreal Tournament.
-- name: MELAZETA
-  main: true
-  image: /img/melazeta.jpg
-  altImage: melazeta
-  link: http://www.melazeta.com/
-  description: Digital Agency con sedi a Milano e Modena, nasce nel 1998 e da allora ha creato oltre 600 giochi online e FB, circa 45 apps per iOS e Android devices, applicazioni in Augmented Reality e molto altro ancora.
-- name: ZURUTECH
-  main: true
-  image: /img/zurunew.jpg
-  altImage: zurutech
-  link: https://zuru.tech/
-  description: Zuru Tech a Modena sviluppa “serious gaming” utilizzando Unreal Engine 4 e Unity 3D. Sviluppiamo software di disegno architettonico BIM e software di pianificazione e simulazione della nostra fabbrica 4.0. Unisciti ad un team con più di 30 ingegneri verso il futuro dell’architettura!
+  - image: /img/milestone.jpg
+    altImage: milestone
+    description: >-
+      Il famoso studio Milanese specializzato in giochi di corse, vanta oltre
+      100 dipendenti e molti titoli in particolare nel mondo della SuperBike e
+      MotoGP.
+    link: 'http://milestone.it/'
+    main: true
+    name: MILESTONE
+  - image: /img/ubisoft.jpg
+    altImage: ubisoft
+    description: >-
+      Ubisoft Milan, studio Italiano del famoso gruppo Francese, con sede a
+      Milano. Ha collaborato ad alcuni dei franchise più importanti di Ubisoft,
+      tra i quali Splinter Cell, Just Dance e Assassin’s Creed. Negli ultimi
+      anni ha sviluppato Mario + Rabbids Kingdom Battle in collaborazione con
+      Nintendo
+    link: 'https://www.ubisoft.com/it-IT/'
+    main: true
+    name: UBISOFT
+  - image: /img/3dflow.jpg
+    altImage: 3dflow
+    description: >-
+      Azienda specializzata in computer vision con sede a Verona, è
+      principalmente nota per il software “3DF Zephyr” per la realizzazione
+      automatica di modelli 3D a partire da fotografie.
+    link: 'https://www.3dflow.net/'
+    main: true
+    name: 3DFLOW
+  - image: /img/corehab.jpg
+    altImage: corehab
+    description: >-
+      Giovane azienda con sede a Trento, nata nel 2012, è concentrata
+      sull’applicazione dei videogiochi nel mondo della riabilitazione.
+    link: 'https://www.corehab.it/it/'
+    main: true
+    name: COREHAB
+  - image: /img/studioevil.jpg
+    altImage: studio evil
+    description: >-
+      Studio Bolognese nato nel 2011, si occupa principalmente di videogiochi
+      PC. Di recente successo la campagna di crowdfunding per Super Cane Magic
+      ZERO, in collaborazione con il cartoonist SIO.
+    link: 'http://www.studioevil.com/'
+    main: true
+    name: STUDIO EVIL
+  - image: /img/dtales.jpg
+    altImage: appfactory
+    description: >-
+      L’azienda, fondata nel 2006 con sede a Milano e con uffici a Roma e a
+      Miami, si occupa di videogiochi ed e-learning. Di recente produzione, il
+      videogioco “The Tudors” e SBK15.
+    link: 'https://www.dtales.it/'
+    main: true
+    name: DIGITAL TALES
+  - image: /img/dpstudios.jpg
+    altImage: dpstudios
+    description: >-
+      Studio Italiano fondato nel 2006, si occupa esclusivamente di seguire il
+      reparto audio nelle produzioni videoludiche. Collabora con diverse realtà
+      videoludiche come ad esempio Ubisoft e Digital Tales.
+    link: 'http://www.dpstudios.it/'
+    main: true
+    name: DPSTUDIOS
+  - image: /img/foofa.jpg
+    altImage: appfactory
+    description: >-
+      L’azienda, con sede a Genova, nasce nel 2006 e si occupa della
+      realizzazione di videogiochi e serious games sia in ambito mobile che web
+      e pc.
+    link: 'http://www.foofastudios.com/wp/'
+    main: true
+    name: FOOFA STUDIOS
+  - image: /img/forge.jpg
+    altImage: appfactory
+    description: >-
+      Forge Reply, con sede a Milano, si occupa dello sviluppo di videogiochi
+      B2B e B2C. Di particolare nota, Forge Reply vanta lo sviluppo del gioco di
+      Lupo Solitario, tratto dai celebri librogame di Joe Dever.
+    link: 'https://www.reply.com/forge-reply/en/'
+    main: true
+    name: FORGE REPLY
+  - image: /img/justfunny.jpg
+    altImage: just funny games
+    description: >-
+      Con sede a Imola, Just Funny Games si occupa di sviluppo di videogiochi in
+      particolare in ambito mobile (Android ed Apple), PSP e Nintendo DS.
+    link: 'http://justfunnygames.com/en/'
+    main: true
+    name: JUSTY FUNNY GAMES
+  - image: /img/rortos.jpg
+    altImage: rotos
+    description: >-
+      Fondata nel 2012 e con sede a Verona, Rortos si occupa dello sviluppo di
+      Flight Simulation Entertainment Systems. Ad oggi, vanta più di 50 milioni
+      di download complessivi.
+    link: 'http://www.rortos.it/'
+    main: true
+    name: RORTOS
+  - image: /img/gamera.jpg
+    altImage: gamera interactive
+    description: >-
+      Nata nel 2016 con sede a Padova, Gamera Interactive vanta tra il suo
+      staffa veterani che hanno partecipato allo sviluppo di titoli come Elder’s
+      Scrolls ed Unreal Tournament.
+    link: 'http://www.gamerainteractive.it/'
+    main: true
+    name: GAMERA INTERACTIVE
+  - image: /img/melazeta.jpg
+    altImage: melazeta
+    description: >-
+      Digital Agency con sedi a Milano e Modena, nasce nel 1998 e da allora ha
+      creato oltre 600 giochi online e FB, circa 45 apps per iOS e Android
+      devices, applicazioni in Augmented Reality e molto altro ancora.
+    link: 'http://www.melazeta.com/'
+    main: true
+    name: MELAZETA
+  - image: /img/zuru_bianco.png
+    altImage: zurutech
+    description: >-
+      Zuru Tech a Modena sviluppa “serious gaming” utilizzando Unreal Engine4 e
+      tecnolgie NVIDIA. Sviluppiamo software BIM disegno architettonico, 3D e
+      real-time, per desktop e VR. Disegnare case e intere città non è mai stato
+      così semplice! Unisciti ad un team di ingegneri brillanti, amanti della
+      grafica 3D più strepitosa, e proièttati con noi verso il futuro
+      dell’architettura!
+    link: 'https://zuru.tech/'
+    main: true
+    name: ZURUTECH
+---
+
