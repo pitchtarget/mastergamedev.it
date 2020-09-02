@@ -135,7 +135,7 @@ partners:
       tecnolgie NVIDIA. Sviluppiamo software BIM disegno architettonico, 3D e
       real-time, per desktop e VR. Disegnare case e intere città non è mai stato
       così semplice! Unisciti ad un team di ingegneri brillanti, amanti della
-      grafica 3D più strepitosa, e proièttati con noi verso il futuro
+      grafica 3D più strepitosa, e proiettati con noi verso il futuro
       dell’architettura!
     link: 'https://zuru.tech/'
     main: true
