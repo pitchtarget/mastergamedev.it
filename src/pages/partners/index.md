@@ -144,11 +144,15 @@ partners:
     altImage: Italian Games Factory
     description: >-
       Italian Games Factory nasce dal connubio tra due realtà di produzione
-      differenti ma allo stesso tempo complementari:
-
-       IV Productions . Fin dagli albori dell’industria videoludica italiana si presenta come azienda produttrice di videogiochi per PC e Console sul mercato internazionale, annoverando numerosi successi su diverse piattaforme, come Riot: Civil Unrest, Progetto Ustica,Nicholas Eymerich: The Inquisitor.
-
-       iMasterArt . Realtà leader nell’ambito della Didattica rivolta all’industria artistica dell’intrattenimento con Master specialistici, unici del genere, che vanno dal Concept 2D fino alla produzione di cinematiche Full CG, Videogiochi e Post Produzione Cinematografica
+      differenti ma allo stesso tempo complementari: 1) IV Productions . Fin
+      dagli albori dell’industria videoludica italiana si presenta come azienda
+      produttrice di videogiochi per PC e Console sul mercato internazionale,
+      annoverando numerosi successi su diverse piattaforme, come Riot: Civil
+      Unrest, Progetto Ustica, Nicholas Eymerich: The Inquisitor. 2) iMasterArt
+      . Realtà leader nell’ambito della Didattica rivolta all’industria
+      artistica dell’intrattenimento con Master specialistici, unici del genere,
+      che vanno dal Concept 2D fino alla produzione di cinematiche Full CG,
+      Videogiochi e Post Produzione Cinematografica
     link: 'https://www.italiangamesfactory.com/'
     main: true
     name: ITALIAN GAMES FACTORY
