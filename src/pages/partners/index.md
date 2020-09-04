@@ -93,11 +93,9 @@ partners:
     link: 'https://www.reply.com/forge-reply/en/'
     main: true
     name: FORGE REPLY
-  - image: /img/justfunny.jpg
+  - image: /img/jfg_logo_10years_high_white.png
     altImage: just funny games
-    description: >-
-      Con sede a Imola, Just Funny Games si occupa di sviluppo di videogiochi in
-      particolare in ambito mobile (Android ed Apple), PSP e Nintendo DS.
+    description: "Just Funny Games realizza giochi da oltre 10 anni su mercati globali.\r I nostri servizi professionali conto terzi vanno dal Game Design, alla Progettazione di UI/UX, allo Sviluppo e Porting di videogiochi multipiattaforma, allo sviluppo in realtà virtuale / aumentata / mista. La società ha auto-prodotto e rilasciato 6 giochi su piattaforme PC/Mobile e oltre 40 titoli Business to Business, raggiungendo oltre 50 milioni di utenti Mobile in tutto il mondo."
     link: 'http://justfunnygames.com/en/'
     main: true
     name: JUSTY FUNNY GAMES
