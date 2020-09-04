@@ -95,7 +95,7 @@ partners:
     name: FORGE REPLY
   - image: /img/jfg_logo_10years_high_white.png
     altImage: just funny games
-    description: jfg
+    description: JFG
     link: 'http://justfunnygames.com/en/'
     main: true
     name: JUSTY FUNNY GAMES
