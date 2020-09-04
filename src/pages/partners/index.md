@@ -161,5 +161,18 @@ partners:
     link: 'https://www.italiangamesfactory.com/'
     main: true
     name: ITALIAN GAMES FACTORY
+  - image: /img/anothereality_square_black_rgb-1-.png
+    altImage: AnotheReality
+    description: >-
+      AnotheReality è una interactive spatial company specializzata in VR/XR e
+      games. Cresciuta in fretta come realtà pioniera nel XR design, nel 2016 ha
+      pubblicato Yon Paradox, uno dei primi giochi indie in realtà virtuale.
+      Specializzandosi in multiplatform e LBVR videogame, come Yon Blitz,
+      l'azienda ha esteso la propria attività realizzando business games e
+      collaborando con clienti come MSC, IBM, ASUS, senza mai perdere quel
+      “gaming” touch che caratterizza il DNA di AnotheReality. I board member
+      collaborano stabilmente con diverse design & gaming academy.
+    link: www.anothereality.io
+    name: ANOTHER REALITY
 ---
 
