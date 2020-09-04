@@ -95,7 +95,7 @@ partners:
     name: FORGE REPLY
   - image: /img/jfg_logo_10years_high_white.png
     altImage: just funny games
-    description: "Just Funny Games realizza giochi da oltre 10 anni su mercati globali.\r I nostri servizi professionali conto terzi vanno dal Game Design, alla Progettazione di UI/UX, allo Sviluppo e Porting di videogiochi multipiattaforma, allo sviluppo in realtà virtuale / aumentata / mista. La società ha auto-prodotto e rilasciato 6 giochi su piattaforme PC/Mobile e oltre 40 titoli Business to Business, raggiungendo oltre 50 milioni di utenti Mobile in tutto il mondo."
+    description: jfg
     link: 'http://justfunnygames.com/en/'
     main: true
     name: JUSTY FUNNY GAMES
