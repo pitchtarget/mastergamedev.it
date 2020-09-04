@@ -76,9 +76,10 @@ const Footer = class extends React.Component {
                         Dipartimento di Informatica
                       </strong><br/>
                       Università degli studi di Verona<br/>
-                      <small >
+                      <small>
                       Strada le Grazie 15 - 37134 Verona<br/>
-                      Italia
+                      Italia<br/>
+                      <a href="mailto:gamedev@ateneo.univr.it">gamedev@ateneo.univr.it</a>
                       </small>
                     </p>
                   </div>
