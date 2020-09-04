@@ -173,6 +173,6 @@ partners:
       “gaming” touch che caratterizza il DNA di AnotheReality. I board member
       collaborano stabilmente con diverse design & gaming academy.
     link: www.anothereality.io
-    name: ANOTHER REALITY
+    name: ANOTHEREALITY
 ---
 
