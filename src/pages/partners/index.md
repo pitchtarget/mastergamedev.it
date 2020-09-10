@@ -14,9 +14,11 @@ partners:
   - image: /img/milestone.jpg
     altImage: milestone
     description: >-
-      Il famoso studio Milanese specializzato in giochi di corse, vanta oltre
-      100 dipendenti e molti titoli in particolare nel mondo della SuperBike e
-      MotoGP.
+      Fondata nel 1996, Milestone è uno dei più importanti sviluppatori di
+      videogiochi racing al mondo. Un team di oltre 200 persone sviluppa e
+      commercializza alcune serie di successo come MotoGP™, MXGP–The Official
+      Motocross Videogame, Monster Energy Supercross – The Official Videogame,
+      oltre alle sue IP proprietarie RIDE e Gravel.
     link: 'http://milestone.it/'
     main: true
     name: MILESTONE
