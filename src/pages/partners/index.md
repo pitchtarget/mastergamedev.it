@@ -77,15 +77,6 @@ partners:
     link: 'http://www.dpstudios.it/'
     main: true
     name: DPSTUDIOS
-  - image: /img/foofa.jpg
-    altImage: appfactory
-    description: >-
-      L’azienda, con sede a Genova, nasce nel 2006 e si occupa della
-      realizzazione di videogiochi e serious games sia in ambito mobile che web
-      e pc.
-    link: 'http://www.foofastudios.com/wp/'
-    main: true
-    name: FOOFA STUDIOS
   - image: /img/forge.jpg
     altImage: appfactory
     description: >-
