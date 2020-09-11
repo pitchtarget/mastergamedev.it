@@ -109,7 +109,7 @@ partners:
     main: true
     name: JUSTY FUNNY GAMES
   - image: /img/rortos.jpg
-    altImage: rotos
+    altImage: rortos
     description: >-
       Fondata nel 2012 e con sede a Verona, Rortos si occupa dello sviluppo di
       Flight Simulation Entertainment Systems. Ad oggi, vanta più di 50 milioni
@@ -177,5 +177,24 @@ partners:
     link: www.anothereality.io
     main: true
     name: ANOTHEREALITY
+  - image: /img/3dclouds.png
+    altImage: 3DClouds
+    description: >-
+      Nata nel 2014 3DClouds è un'azienda che sviluppa videogame oltre ad essere
+      specializzata in servizi multimediali, computer grafica e soluzioni di
+      gamification.Pubblicato nel 2018 All-Star Fruit Racing, racing game, ha
+      fatto debuttare 3DClouds nel mondo del videogaming rendendolo disponibile
+      su PC, PlayStation 4, Xbox One e Switch. L’anno successivo l’azienda ha
+      rilasciato ben tre titoli differenti: Xenon Racer, in primavera, un
+      ulteriore esempio di innovazione per il design proposto all’interno della
+      categoria racing; Race With Ryan, a novembre, sviluppato per uno dei
+      canali youtube più famosi al mondo “Ryan's Toy Reviews”; CARRUMBLE,
+      rilasciato verso la fine dell’anno, ovvero una versione completamente
+      nuova del genere dei brawler disponibile su pc. Il 2020 vede invece
+      l’azienda lanciata verso un nuovo genere rispetto ai precedenti: King of
+      Seas, un gioco di avventura single player.
+    link: 'https://www.3dclouds.it/'
+    main: true
+    name: 3DCLOUDS
 ---
 
