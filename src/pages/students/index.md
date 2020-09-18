@@ -26,8 +26,7 @@ students:
     compLink: 'https://www.ubisoft.com'
     company: Ubisoft Milano
     fullName: Riccardo Stucchi
-    games: >-
-      Ghost Recon: Wildlands, Mario + Rabbids: Kingdom Battle
+    games: 'Ghost Recon: Wildlands, Mario + Rabbids: Kingdom Battle'
     image: /img/riccardo-stucchi.jpg
     linkedin: 'https://www.linkedin.com/in/riccardo-stucchi-66296896/'
     main: true
@@ -57,7 +56,7 @@ students:
     games: >-
       Battlefield V, Star Wars: Battlefront II, Total War: Warhammer, Tom
       Clancy's Ghost Recon: Wildlands
-    image: /img/jacopo-vezzosi.jpg
+    image: /img/thumbnail_img-20200915-wa0008.jpg
     linkedin: 'https://www.linkedin.com/in/jvezzosi'
     main: true
     master: 2013
@@ -71,7 +70,8 @@ students:
     company: Codemasters
     fullName: Andrea Cavicchia
     games: >-
-      Ride, MotoGP™15, Sébastien Loeb Rally Evo, MXGP2 The Official, Motocross Videogame, Valentino Rossi The Game,  Ride 2, MotoGP™17, F1® 2019
+      Ride, MotoGP™15, Sébastien Loeb Rally Evo, MXGP2 The Official, Motocross
+      Videogame, Valentino Rossi The Game,  Ride 2, MotoGP™17, F1® 2019
     image: /img/andrea-cavicchia.jpg
     linkedin: 'https://www.linkedin.com/in/andrea-cavicchia-b4a45482/'
     main: true
@@ -86,9 +86,8 @@ students:
     company: Activision Blizzard - King Berlin
     fullName: Dario Zampini
     games: >-
-      CalciAmo, TapTalpa, Rubbish!, CineMaster, Santa Claus
-      Zombie, Cupets, Soccer hero, Drakensang, Candy Crush
-      Jelly Saga
+      CalciAmo, TapTalpa, Rubbish!, CineMaster, Santa Claus Zombie, Cupets,
+      Soccer hero, Drakensang, Candy Crush Jelly Saga
     image: /img/dario-zampini.jpg
     linkedin: 'http://linkedin.com/in/dariozampini'
     main: true
@@ -102,8 +101,7 @@ students:
     compLink: 'https://www.rockstarnorth.com'
     company: Rockstar North
     fullName: Simone Straccia
-    games: >-
-      Red Dead Redemption, Mario + Rabbids: Kingdom Battle
+    games: 'Red Dead Redemption, Mario + Rabbids: Kingdom Battle'
     image: /img/simone-straccia.jpg
     linkedin: 'https://www.linkedin.com/in/simone-straccia-93ab1224/'
     main: true
@@ -113,8 +111,7 @@ students:
     compLink: 'https://www.reply.com/forge-reply/en/'
     company: Forge Reply
     fullName: Fabio di Giorgi
-    games: |-
-      Joe Dever’s Lone Wolf, In Space We Brawl, Aloha from Hawaii
+    games: 'Joe Dever’s Lone Wolf, In Space We Brawl, Aloha from Hawaii'
     image: /img/0.jpg
     linkedin: 'https://www.linkedin.com/in/fabio-di-giorgi-67698361'
     master: 2011
@@ -122,3 +119,4 @@ students:
       “Siate curiosi... Sperimentate!!! Quello che imparerete al master sarà
       solo la punta dell’iceberg... :)”
 ---
+
