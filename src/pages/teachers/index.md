@@ -11,11 +11,13 @@ teachers:
   - fullName: Umberto Castellani
     image: /img/castellani.jpg
     altImage: Umberto Castellani
-    bio: >
-      Ricercatore del Dipartimento di Informatica dell‘Università di Verona.
-      Direttore del master, i suo interessi di ricerca riguardano l’elaborazione
-      di dati 3D, l’addestramento statistico e l’elaborazione di dati
-      biomedicali.
+    bio: >-
+      Direttore del master e Professore Associato del Dipartimento di
+      Informatica dell‘Università di Verona. I suo interessi di ricerca
+      riguardano l’elaborazione di dati 3D, ricostruzione 3D da immagini tramite
+      tecniche di fotogrammetria, modellazione automatica di oggetti non rigidi,
+      concentrandosi sulle metodologie a cavallo tra la computer vision,
+      computer graphics e machine learning.
     role: Fondamenti di interazione uomo-macchina
   - fullName: Marco Tarini
     image: /img/tarini.jpg
