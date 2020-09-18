@@ -22,21 +22,23 @@ teachers:
   - fullName: Marco Tarini
     image: /img/tarini.jpg
     altImage: Marco Tarini
-    bio: >
-      Docente del corso avanzato di grafica, Marco Tarini è autore di diversi
-      paper a livello internazionale, in particolare nell’ambito del rendering
-      real time e della grafica 3D in generale. E’ attualmente professore
-      associato all’Università degli Studi
+    bio: >-
+      Professore Associato del Dipartimento di Informatica dell'Università
+      Statale di Milano. Docente del corso avanzato di grafica, i suoi interessi
+      di ricerca riguardano il rendering e l'animazione real time e della
+      grafica 3D in generale. I suo lavori sono regolarmente pubblicate
+      nell'ambito di eventi internazionali come SIGGRAPH.
     link: 'https://it.linkedin.com/pub/dir/Marco/Tarini'
     role: Advanced Graphics programming
   - fullName: Andrea Giachetti
     image: /img/giachetti.jpg
     altImage: Andrea Giachetti
-    bio: >
+    bio: >-
       Professore associato presso il Dipartimento di Informatica dell’Università
       di Verona ove è docente nei corsi di Grafica al Calcolatore,  Interazione
-      Uomo-Macchina ed Analisi di Immagini e dati volumetrici. I suoi interessi
-      di ricerca riguardano l’elaborazione di immagini e dati 3D.
+      Uomo-Macchina. I suoi interessi di ricerca riguardano l’elaborazione di
+      immagini e dati 3D e l'interazione immersiva per applicazioni di Realtà
+      Virtuale.
     link: 'https://it.linkedin.com/in/andrea-giachetti-50b2531'
     role: Fondamenti di Computer Graphics
   - fullName: Davide Pensato
@@ -72,20 +74,24 @@ teachers:
   - fullName: Matteo Cristani
     image: /img/cristani.jpg
     altImage: Matteo Cristani
-    bio: >
-      Ricercatore all’Università di Verona dal 1997. È stato visiting scholar
-      presso l’Università di Rochester nel 1993-1994 e presso l’Università di
-      Leeds nel 1999 e nel 2004.
+    bio: >-
+      Professore Associato del Dipartimento di Informatica dell’Università di
+      Verona. È stato visiting scholar presso l’Università di Rochester nel
+      1993-1994 e presso l’Università di Leeds nel 1999 e nel 2004. I suoi
+      interessi di ricerca riguardano l'intelligenza artificiale orientata al
+      data-mining soprattutto per l'analisi di dati su web.
     link: 'https://www.linkedin.com/in/matteo-cristani-3573575'
     role: Fondamenti di Intelligenza Artificiale
   - fullName: Fabio Pellacini
     image: /img/pellacini.jpg
     altImage: Fabio Pellacini
-    bio: >
-      Professore associato all’unversità “La Sapienza” di Roma dal 2011, vanta
-      diverse collaborazioni sia in ambito accademico e industriale, di rilievo
-      una collaborazione con Pixar Animation Studios, si occupa del corso di
-      Physics programming.
+    bio: >-
+      Professore Ordinario del Dipartimento di Informatica dell'Università “La
+      Sapienza” di Roma. Ha conseguito il PhD presso la Cornell University ed è
+      stato Professore Associato a Dartmouth.  E' stato ricercatore presso Pixar
+      Animation Studios contribuendo a produzioni di rilievo come Monster’s
+      Inc., Finding Nemo, The Incredibles, Cars. Si occupa del corso di Physics
+      programming.
     link: 'https://www.linkedin.com/in/fabio-pellacini-a153a91'
     role: Physics programming
   - fullName: Devis Rossini
@@ -128,7 +134,7 @@ teachers:
       Forza Motosport o Pay Day sotto le vesti di Programmatore Grafico, dopo
       aver lavorato diversi anni per grandi case ha deciso di crearsi il suo
       futuro come lavoratore autonomo e Freelancer.
-    role: 'C++, Graphics Programming'
+    role: Graphics Programming
   - fullName: Andrea Rossini
     image: /img/andrea-rossini.jpg
     altImage: Andrea Rossini
@@ -139,5 +145,17 @@ teachers:
       italiane. Nel 2016 fonda 3Go Games con cui continua attualmente la sua
       attivita’.
     role: Ai Programming
+  - fullName: Jacopo Vezzosi
+    image: /img/thumbnail_img-20200915-wa0008.jpg
+    altImage: Jacopo Vezzosi
+    bio: >-
+      Laureato con lode in Ingegneria Informatica presso l'Università degli
+      Studi di Siena, frequenta il Master in Computer Games Development a Verona
+      nel 2014. Da allora ha collaborato con diverse aziende come Ubisoft, King
+      e Creative Assembly in veste di gameplay/AI programmer allo sviluppo di
+      diversi titoli AAA come Ghost Recon, Star Wars Battlefront 2, Battlefield
+      5 e Total War. Attualmente lavora per Electronic Arts come Team Lead nella
+      divisione di Frostbite AI Systems.
+    role: C++ programming
 ---
 
