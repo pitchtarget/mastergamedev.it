@@ -74,7 +74,7 @@ paragraphs:
       del curriculum vitae et studiorum  e di un colloquio e verranno valutati i
       seguenti elementi: <ul class="markdown-list">
         <li>Voto di Laurea (30 punti)</li>
-        <li>Attinenza del curriculum studiorum con con le tematiche del Master (10 punti</li>
+        <li>Attinenza del curriculum studiorum con con le tematiche del Master (10 punti)</li>
         <li>Colloquio motivazionale (10 punti)</li>
         <li>Portfolio (5 punti)</li>
         <li>Altri titoli (5 punti)</li>
