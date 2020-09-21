@@ -56,10 +56,11 @@ paragraphs:
       il Dipartimento di Informatica dell’Università di Verona come Dipartimento
       Eccellente.
     title: Strutture
-  - description: >
+  - description: >-
       Il Master prevede un numero minimo di 15 iscritti regolari per essere
       attivato ed un numero massimo di 20.</br></br> I requisiti di accesso
       sono: <ul class="markdown-list">
+
         <li>Laurea (pre D.M. 509/99) in Scienze dell’informazione, Informatica, Ingegneria informatica, Ingegneria dell’informazione.</li>
         <li>Laurea nella classe  delle Scienze e tecnologie informatiche  (classe L-31 nell’ordinamento del D.M. 270/04 e classe 26 nell’ordinamento del D.M. 509/99).</li>
         <li>Altre lauree in discipline scientifiche nel cui piano delle attività formative siamo previsti almeno 78 CFU esplicitamente attribuiti ad attività didattiche nei settori INF/01 o ING-INF/05.</li>
@@ -82,8 +83,7 @@ paragraphs:
       ammissione. Tale commissione viene nominata dal Comitato Scientifico o dal
       Direttore con delibera d’urganza.</br></br> Per gli studenti stranieri
       l’ammissione è subordinata alla conoscenza della lingua italiana, da
-      accertarsi durante il colloquio. Per questi ultimi il colloquio può
-      avvenire in teleconferenza.</br></br> Il 20% dei posti disponibili è
+      accertarsi durante il colloquio. </br></br> Il 20% dei posti disponibili è
       riservato ai laureati dell’Università degli studi di Verona.
     title: Iscrizioni
   - description: >-
@@ -94,8 +94,9 @@ paragraphs:
       01/06/2021)</br></br> Non è necessario aver già acquisito la laurea come
       requisito per iscriversi, purchè ci si riesca entro l’anno accademico
       ovvero Marzo/Aprile 2021.</br></br> la scadenza per la pre-iscrizione è il
-      04/10/2020</br> colloquio di ammissione: 15 Ottobre 2020 ore 14,00</br>
-      pagamento prima rata: Ottobre 2020</br> inizio lezioni: Novembre 2020
+      04/10/2020</br> colloquio di ammissione: 15 Ottobre 2020 ore 14,00 in
+      forma telematica</br> pagamento prima rata: Ottobre 2020</br> inizio
+      lezioni: Novembre 2020
 
 
       Per iscrizione occorre seguire il seguente
