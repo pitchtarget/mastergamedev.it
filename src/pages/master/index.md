@@ -94,8 +94,12 @@ paragraphs:
       01/06/2021)</br></br> Non è necessario aver già acquisito la laurea come
       requisito per iscriversi, purchè ci si riesca entro l’anno accademico
       ovvero Marzo/Aprile 2021.</br></br> la scadenza per la pre-iscrizione è il
-      04/10/2020</br> colloquio di ammissione: Ottobre 2020</br> pagamento prima
-      rata: Ottobre 2020</br> inizio lezioni: Novembre 2020
+      04/10/2020</br> colloquio di ammissione: 15 Ottobre 2020 ore 14,00</br>
+      pagamento prima rata: Ottobre 2020</br> inizio lezioni: Novembre 2020
+
+
+      Per iscrizione occorre seguire il seguente
+      [link](https://www.scienzeingegneria.univr.it/?ent=iscrizionecs&cs=406)
     title: Costi
 serviceTitle: I nostri servizi
 services:
