@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
 title: >-
-  Hai domane per l'anno accademico 2020-2021? Da oggi è attivo il canale Discord
-  dedicato!
+  Hai domande per l'anno accademico 2020-2021? Da oggi è attivo il canale
+  Discord dedicato!
 date: 2020-08-28T14:29:40.656Z
 description: Contatto diretto tra studenti e i docenti per domande e approfondimenti.
 featuredimage: /img/discordmastersito.png
