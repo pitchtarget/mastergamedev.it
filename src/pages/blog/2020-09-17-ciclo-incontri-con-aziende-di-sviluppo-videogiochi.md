@@ -28,6 +28,8 @@ Che possibilità ci sono nell'ambito dello sviluppo dei videogiochi in Italia? Q
 
 10,30 – 11,00	JustFunnyGames&DigitalTales
 
+11,00 - 11,30  Api
+
 - - -
 
 **Giovedì 8 Ottobre**
