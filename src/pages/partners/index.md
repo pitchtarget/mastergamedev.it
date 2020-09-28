@@ -187,5 +187,19 @@ partners:
     link: 'https://www.3dclouds.it/'
     main: true
     name: 3DCLOUDS
+  - image: /img/logo_2020_gr.png
+    altImage: Api
+    description: >-
+      Fondata nel 1985, porta innovazione digitale in vari settori curando
+      l’armonia tra aspetti tecnologici, economici e sociali. Realtà dinamica
+      specializzata nello sviluppo di soluzioni digitali creative, immersive e
+      taylor-made, sfruttando Realtà Aumentata, Realtà Virtuale e Gamification.
+      Lo sviluppo dei videogiochi è attualmente orientato al rendere la
+      formazione e l’arte più coinvolgenti e disponibili a tutti. L’ultimo
+      videogioco realizzato è un adventure game per facilitare l’onboarding di
+      nuovi assunti in una multinazionale del settore energetico.
+    link: 'https://www.api-srl.com'
+    main: true
+    name: API
 ---
 
