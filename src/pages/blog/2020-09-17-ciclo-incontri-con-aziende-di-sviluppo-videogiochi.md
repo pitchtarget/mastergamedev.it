@@ -20,7 +20,7 @@ Che possibilità ci sono nell'ambito dello sviluppo dei videogiochi in Italia? Q
 
 - - -
 
-**Giovedì 1 Ottobre**
+**Giovedì 1 Ottobre:** _link Zoom_ [_qui_](https://univr.zoom.us/j/87545170353?pwd=RlVkWnY0TVhxbFlZRUJxeGtSRzNrdz09)__
 
 09,30 – 10,00	Italian Games Factory
 
