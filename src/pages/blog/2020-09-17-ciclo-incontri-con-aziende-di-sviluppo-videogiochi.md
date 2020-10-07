@@ -32,7 +32,7 @@ Che possibilità ci sono nell'ambito dello sviluppo dei videogiochi in Italia? Q
 
 - - -
 
-**Giovedì 8 Ottobre**
+**Giovedì 8 Ottobre:** _link Zoom_ [_qui_](https://univr.zoom.us/j/86045892013?pwd=Q3lxNXhQUkE3Qy9oQjRya2daWGZFQT09)
 
 09,30 – 10,00	Zuru
 
