@@ -6,13 +6,13 @@ box:
   image: /img/open-day.jpg
   link: 'https://www.scienzeingegneria.univr.it/?ent=iscrizionecs&cs=406'
   text: >
-    Invia la tua candidatura entro ottobre 2020, il master avrà inizio a
+    Ci sono ancora gli ultimi posti disponibili, il master avrà inizio a
     novembre 2020. 
   title: Le iscrizioni per l'anno accademico 2020-2021 sono aperte.
 banners:
-  - cta: studenti
+  - alt: placeholder
+    cta: studenti
     image: /img/placeholder.png
-    alt: placeholder
     link: '/alumni/#students'
     name: students
     text: >
@@ -20,19 +20,19 @@ banners:
       carriera chi all'interno di grandi company chi invece in aziende più
       piccole dal forte valore tecnologico.
     title: I risultati dei nostri studenti sono la nostra più grande soddisfazione
-  - cta: i nostri partner
+  - alt: partner
+    cta: i nostri partner
     image: /img/classroom.jpg
     link: '/collaborazioni/#partners'
     name: partners
-    alt: partner
     text: >
       Crediamo nella collaborazione, non solo con talenti professionisti, ma
       anche con le migliori aziende del settore videoludico per creare un ponte
       tra formazione e il mondo del lavoro.
     title: Mettiamo in contatto le migliori aziende di gaming con i talenti di domani
-  - cta: il master
+  - alt: master
+    cta: il master
     image: /img/master.jpg
-    alt: master
     link: /master
     name: master
     text: >
@@ -46,9 +46,9 @@ banners:
     title: >-
       L’Università di Verona rappresenta garanzia di Didattica qualificata,
       Strutture e Ricerca.
-  - cta: programma completo
+  - alt: scuola
+    cta: programma completo
     image: /img/scuola.jpg
-    alt: scuola
     link: /programma
     name: program
     text: >
