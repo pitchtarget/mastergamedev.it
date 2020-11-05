@@ -39,6 +39,14 @@ Da alcune edizioni seguo il corso di network programming, aspetto molto rilevant
 
 Lavoro in quest'ambito come programmatore da oltre vent'anni, con alti e bassi. Mi piace molto l'abito didattico e spero di continuare a collaborare con il master. Manca però alla mia esperienza lo sviluppo di un titolo AAA, obiettivo che non ho ancora accantonato del tutto, pur se l'età avanza
 
+
+
+Maggiori **informazioni** **sul master** [a questo link](https://www.mastergamedev.it/master)
+
+Per avere un **contatto diretto con i docenti -->** [Entra nel canale Discord](https://discord.com/invite/yQpYwqJ)
+
+
+
 ![](/img/diego_zamprogno.jpg)
 
 > Laureato presso l’Università di Padova in Ingegneria Informatica ed Automatica nel 1997, fonda nel 2001 Idoru S.r.l. di cui diviene Lead Programmer, con il quale pubblica numerosi giochi sportivi, specializzandosi in intelligenza artificiale e gestione del gameplay.
