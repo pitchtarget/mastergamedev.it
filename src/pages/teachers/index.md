@@ -20,7 +20,7 @@ teachers:
       computer graphics e machine learning.
     role: Fondamenti di interazione uomo-macchina
   - fullName: Marco Tarini
-    image: /img/tarini.jpg
+    image: /img/unnamed-9-.jpg
     altImage: Marco Tarini
     bio: >-
       Professore Associato del Dipartimento di Informatica dell'Università
@@ -31,7 +31,7 @@ teachers:
     link: 'https://it.linkedin.com/pub/dir/Marco/Tarini'
     role: Advanced Graphics programming
   - fullName: Andrea Giachetti
-    image: /img/giachetti.jpg
+    image: /img/schermata-2021-01-25-alle-20.33.34.png
     altImage: Andrea Giachetti
     bio: >-
       Professore associato presso il Dipartimento di Informatica dell’Università
@@ -62,7 +62,7 @@ teachers:
     link: 'https://it.linkedin.com/in/fausto-spoto-65171'
     role: Fondamenti di Ingegneria del Software
   - fullName: Diego Zamprogno
-    image: /img/zamprogno.jpg
+    image: /img/image2.jpg
     altImage: Diego Zamprogno
     bio: >
       Laureato presso l’Università di Padova in Ingegneria Informatica ed
