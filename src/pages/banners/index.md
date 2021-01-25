@@ -2,13 +2,12 @@
 templateKey: banners
 box:
   alt: open day
-  cta: Invia la candidatura
+  cta: Informazioni Master 2021/2022
   image: /img/open-day.jpg
-  link: 'https://www.scienzeingegneria.univr.it/?ent=iscrizionecs&cs=406'
-  text: >
-    Ci sono ancora gli ultimi posti disponibili, il master avrà inizio a
-    novembre 2020. 
-  title: Le iscrizioni per l'anno accademico 2020-2021 sono aperte.
+  link: 'https://discord.com/invite/yQpYwqJ'
+  text: |
+    Entra nel nostro canale Discord per aggiornamenti sulla prossima edizione!
+  title: 'Le iscrizioni sono chiuse, il master è in corso. '
 banners:
   - alt: placeholder
     cta: studenti
