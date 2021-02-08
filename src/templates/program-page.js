@@ -12,10 +12,8 @@ export const ProgramPageTemplate = ({
   description,
   titleParagraphs,
   paragraphs,
-  scientificCommittee,
-  people,
-  bannerStudents,
-  bannerMaster,
+  bannerRight,
+  bannerLeft,
 }) => {
   return (
     <>
@@ -42,20 +40,20 @@ export const ProgramPageTemplate = ({
           </div>
         </div>
       </section>
-      { !!bannerStudents && !!bannerMaster &&
+      { !!bannerRight && !!bannerLeft &&
         <section className="section has-double-background">
           <div className="container is-horizontal-spaced">
             <div className="columns is-tablet is-vcentered">
               <div className="column">
                 <div className="has-text-primary-invert" style={{padding: '5%'}}>
                   <h3 className="title is-2 is-spaced is-size-3-mobile is-size-2-tablet">
-                      {bannerStudents.title}
+                      {bannerLeft.title}
                   </h3>
                   <p className="description">
-                    {bannerStudents.text}
+                    {bannerLeft.text}
                   </p>
                   <Button
-                    text={bannerStudents.cta} link={bannerStudents.link}
+                    text={bannerLeft.cta} link={bannerLeft.link}
                     styles={`cta cta-large cta__invert`}
                   />
                 </div>
@@ -63,13 +61,13 @@ export const ProgramPageTemplate = ({
               <div className="column">
                 <div className="has-text-primary" style={{padding: '5%'}}>
                   <h3 className="title is-2 is-spaced has-text-primary is-size-3-mobile is-size-2-tablet">
-                      {bannerMaster.title}
+                      {bannerRight.title}
                   </h3>
                   <p className="description">
-                    {bannerMaster.text}
+                    {bannerRight.text}
                   </p>
                   <Button
-                    text={bannerMaster.cta} link={bannerMaster.link}
+                    text={bannerRight.cta} link={bannerRight.link}
                     styles={`cta cta-large cta__primary`}
                   />
                 </div>
@@ -87,8 +85,8 @@ ProgramPageTemplate.propTypes = {
   subtitle: PropTypes.string,
   description: PropTypes.string,
   titleParagraphs: PropTypes.string,
-  bannerStudents: PropTypes.object,
-  bannerMaster: PropTypes.object,
+  bannerRight: PropTypes.object,
+  bannerLeft: PropTypes.object,
   paragraphs: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -99,8 +97,8 @@ ProgramPageTemplate.propTypes = {
 
 const ProgramPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const bannerMaster = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'master')
-  const bannerStudents = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'partners')
+  const bannerRight = data.bannersData.frontmatter.banners.filter(banner => banner.name === frontmatter.bannerRight)
+  const bannerLeft = data.bannersData.frontmatter.banners.filter(banner => banner.name === frontmatter.bannerLeft)
   return (
     <Layout>
       <ProgramPageTemplate
@@ -109,8 +107,8 @@ const ProgramPage = ({ data }) => {
         description={frontmatter.description}
         titleParagraphs={frontmatter.titleParagraphs}
         paragraphs={frontmatter.paragraphs}
-        bannerMaster={bannerMaster[0]}
-        bannerStudents={bannerStudents[0]}
+        bannerRight={bannerRight[0]}
+        bannerLeft={bannerLeft[0]}
       />
     </Layout>
   )
@@ -143,6 +141,8 @@ export const masterPageQuery = graphql`
           title
           description
         }
+        bannerRight
+        bannerLeft
       }
     }
     bannersData: markdownRemark(frontmatter: { templateKey: { eq: "banners"}}) {

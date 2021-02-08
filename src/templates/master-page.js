@@ -156,6 +156,7 @@ MasterPageTemplate.propTypes = {
   serviceTitle: PropTypes.string,
   paragraphs: PropTypes.array,
   services: PropTypes.array,
+  footerBanner: PropTypes.string,
   scientificCommittee: PropTypes.shape({
     title: PropTypes.string,
     description: PropTypes.string,
@@ -172,7 +173,7 @@ MasterPageTemplate.propTypes = {
 const MasterPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   const banner = data.bannersData.frontmatter.banners.filter(
-    (banner) => banner.name === "program"
+    (banner) => banner.name === frontmatter.footerBanner
   );
 
   return (
@@ -248,6 +249,7 @@ export const masterPageQuery = graphql`
             }
           }
         }
+        footerBanner
       }
     }
     bannersData: markdownRemark(

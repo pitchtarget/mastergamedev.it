@@ -6,6 +6,7 @@ description: >
   La sezione alumni raccoglie consigli e testimonianze di ex studenti che oggi lavorano nella industry.
 image: /img/scuola.jpg
 altImage: cover
+footerBanner: teachers
 titleLabProjects: I progetti di laboratorio
 labProjects:
   - altVideo: video

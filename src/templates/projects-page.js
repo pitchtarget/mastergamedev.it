@@ -312,7 +312,7 @@ ProjectsPageTemplate.propTypes = {
 
 const ProjectsPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === 'partners')
+  const banner = data.bannersData.frontmatter.banners.filter(banner => banner.name === frontmatter.footerBanner)
   return (
     <Layout>
       <ProjectsPageTemplate
@@ -363,6 +363,7 @@ export const projectsPageQuery = graphql`
             }
           }
         }
+        footerBanner
         titleLabProjects
         labProjects {
           title

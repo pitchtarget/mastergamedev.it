@@ -7,6 +7,7 @@ description: >
 image: /img/docenti.jpg
 altImage: docente in classe
 teachersTitle: I docenti
+footerBanner: partners
 teachers:
   - fullName: Umberto Castellani
     role: Fondamenti di interazione uomo-macchina

@@ -171,6 +171,12 @@ collections:
                 {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
               ],
             }
+          - {
+              label: "Footer banner",
+              name: footerBanner,
+              widget: "select",
+              options: ["teachers", "students", "partners","master","program","projects"]
+            }
 
       # PROGRAM PAGE
       - file: "src/pages/programma/index.md"
@@ -193,6 +199,18 @@ collections:
                 {label: Description, name: description, widget: markdown, buttons: [bold, italic, code, link, code-block, bulleted-list]},
               ],
             }
+          - {
+              label: "Footer left banner",
+              name: bannerLeft,
+              widget: "select",
+              options: ["teachers", "students", "partners","master","program","projects"]
+            }
+          - {
+            label: "Footer right banner",
+            name: bannerRight,
+            widget: "select",
+            options: ["teachers", "students", "partners","master","program","projects"]
+          }
 
       # PROJECTS PAGE
       - file: "src/pages/projects/index.md"
@@ -264,6 +282,12 @@ collections:
                 {label: Alt, name: altImage, widget: string},
               ],
             }
+          - {
+              label: "Footer banner",
+              name: footerBanner,
+              widget: "select",
+              options: ["teachers", "students", "partners","master","program","projects"]
+            }
 
       # STUDENTS PAGE
       - file: "src/pages/students/index.md"
@@ -293,8 +317,14 @@ collections:
                 {label: Games, name: games, widget: text, required: false},
               ],
             }
+          - {
+              label: "Footer banner",
+              name: footerBanner,
+              widget: "select",
+              options: ["teachers", "students", "partners","master","program","projects"]
+            }
 
-      # PARTNERS PAGE
+            # PARTNERS PAGE
       - file: "src/pages/partners/index.md"
         label: "Partners list"
         name: "partners"
@@ -319,8 +349,14 @@ collections:
                 {label: "Show in home", name: main, widget: boolean, required: false}
               ],
             }
+          - {
+              label: "Footer banner",
+              name: footerBanner,
+              widget: "select",
+              options: ["teachers", "students", "partners","master","program","projects"]
+            }
 
-      # TEACHERS PAGE
+            # TEACHERS PAGE
       - file: "src/pages/teachers/index.md"
         label: "Teachers list"
         name: "teachers"
@@ -345,6 +381,12 @@ collections:
                 {label: Biography, name: bio, widget: string, required: false}
               ],
             }
+          - {
+              label: "Footer banner",
+              name: footerBanner,
+              widget: "select",
+              options: ["teachers", "students", "partners","master","program","projects"]
+            }
 
       # BANNERS
       - file: "src/pages/banners/index.md"
@@ -368,11 +410,12 @@ collections:
             }
           # ROWS
           - {
-              label: Banners,
+              label: Footer banner,
               name: banners,
               widget: list,
+              allow_add: false,
               fields: [
-                {label: Name, name: name, widget: string, required: false},
+                {label: Name, name: name, widget: string, required: true},
                 {label: Image, name: image, widget: image, default: "/img/placeholder.png", required: false},
                 {label: Alt image, image: alt, widget: string, required: false},
                 {label: Banner title, name: title, widget: string},

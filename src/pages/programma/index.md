@@ -8,6 +8,8 @@ description: >
   Il master mira a soddisfare le esigenze di formazione elevata nell’ambito dello sviluppo di applicazioni videoludiche, si svolge in stretto contatto con le principali aziende videoludiche italiane e in particolare con l’Associazione Editori e Sviluppatori Videogiochi Italiani (AESVI). Le competenze acquisite durante il master sono immediatamente spendibili al termine del percorso formativo.
   <br><br>
   Le lezioni sono a frequenza obbligatoria e si terranno principalmente nei giorni di venerdi e sabato (per esigenze organizzative saranno eventualmente coinvolti anche altri giorni).
+bannerRight: teachers
+bannerLeft: partners
 
 titleParagraphs: Il programma nel dettaglio
 paragraphs:

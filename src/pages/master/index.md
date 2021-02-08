@@ -5,6 +5,7 @@ redirect_from:
 title: Il master 2019
 image: /img/master-cover.jpg
 altImage: programming
+footerBanner: program
 paragraphs:
   - description: >
       L’enorme sviluppo dei videogiochi trova sicuramente il suo elemento
