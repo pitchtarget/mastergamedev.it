@@ -2,12 +2,13 @@
 templateKey: banners
 box:
   alt: open day
-  cta: Informazioni Master 2021/2022
+  cta: Iscrizioni Master 2021/2022
   image: /img/open-day.jpg
-  link: 'https://discord.com/invite/yQpYwqJ'
+  link: >-
+    https://www.corsi.univr.it/?ent=cs&id=406&menu=iscriversi&tab=comeiscriversi&lang=it
   text: |
-    Entra nel nostro canale Discord per aggiornamenti sulla prossima edizione!
-  title: 'Le iscrizioni sono chiuse, il master è in corso. '
+    Entra nel nostro canale Discord per aggiornamenti !
+  title: Stiamo organizzando la prossima edizione del master
 banners:
   - alt: placeholder
     cta: studenti
