@@ -2,7 +2,7 @@
 templateKey: master-page
 redirect_from:
   - /il-master
-title: Il master 2020
+title: Il master 2021
 image: /img/master-cover.jpg
 altImage: programming
 paragraphs:
