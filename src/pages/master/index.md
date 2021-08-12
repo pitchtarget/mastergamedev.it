@@ -87,20 +87,19 @@ paragraphs:
       riservato ai laureati dell’Università degli studi di Verona.
     title: Iscrizioni
   - description: >-
-      L’edizione per  l’anno accademico 2019/20 è a pieno regime: la scadenza
-      per la pre-iscrizione è il 04/10/2020, con un costo di iscrizione al
+      Stiamo organizzando l’edizione per  l’anno accademico 2021/22: la scadenza
+      per la pre-iscrizione è il 04/10/2021, con un costo di iscrizione al
       master fissato a 5016€ (marca da bollo da 16 euro all’atto della
       pre-iscrizione, 3.000 euro all'iscrizione definitiva e 2.000 entro il
-      01/06/2021)</br></br> Non è necessario aver già acquisito la laurea come
+      01/06/2022)</br></br> Non è necessario aver già acquisito la laurea come
       requisito per iscriversi, purchè ci si riesca entro l’anno accademico
-      ovvero Marzo/Aprile 2021.</br></br>**LE ISCRIZIONI SONO ANCORA
-      APERTE**</br> colloquio di ammissione: 15 Ottobre 2020 ore 14,00 in forma
-      telematica</br> pagamento prima rata: Ottobre 2020</br> inizio lezioni:
-      Novembre 2020
+      ovvero Marzo/Aprile 2022.</br></br>**LE ISCRIZIONI SONO  APERTE**</br>
+      colloquio di ammissione: Ottobre 2021  in forma telematica</br> pagamento
+      prima rata: Ottobre 2021</br> inizio lezioni: Novembre 2020
 
 
       Per iscrizione occorre seguire il seguente
-      [link](https://www.scienzeingegneria.univr.it/?ent=iscrizionecs&cs=406)
+      [link](https://www.corsi.univr.it/?ent=cs&id=406&menu=iscriversi&tab=comeiscriversi&lang=it)
     title: Costi
 serviceTitle: I nostri servizi
 services:
