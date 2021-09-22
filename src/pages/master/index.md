@@ -96,7 +96,7 @@ paragraphs:
       requisito per iscriversi, purchè ci si riesca entro l’anno accademico
       ovvero Marzo/Aprile 2022.</br></br>**LE ISCRIZIONI SONO  APERTE**</br>
       colloquio di ammissione: Ottobre 2021  in forma telematica</br> pagamento
-      prima rata: Ottobre 2021</br> inizio lezioni: Novembre 2021
+      prima rata: Ottobre 2021</br> inizio lezioni: venerdì 5 Novembre 2021
 
 
       Per iscrizione occorre seguire il seguente
