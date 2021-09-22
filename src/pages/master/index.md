@@ -58,8 +58,9 @@ paragraphs:
     title: Strutture
   - description: >-
       Il Master prevede un numero minimo di 15 iscritti regolari per essere
-      attivato ed un numero massimo di 20.</br></br> I requisiti di accesso
-      sono: <ul class="markdown-list">
+      attivato ed un numero massimo di 20.</br></br>Per questa edizione del
+      Master è prevista la modalità mista. (da remoto e in presenza)</br> </br>
+      I requisiti di accesso sono: <ul class="markdown-list">
 
         <li>Laurea (pre D.M. 509/99) in Scienze dell’informazione, Informatica, Ingegneria informatica, Ingegneria dell’informazione.</li>
         <li>Laurea nella classe  delle Scienze e tecnologie informatiche  (classe L-31 nell’ordinamento del D.M. 270/04 e classe 26 nell’ordinamento del D.M. 509/99).</li>
