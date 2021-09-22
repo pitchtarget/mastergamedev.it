@@ -4,7 +4,7 @@ box:
   alt: open day
   cta: Iscrizioni Master 2021/2022
   image: /img/open-day.jpg
-  link: 'https://www.mastergamedev.it/master'
+  link: /master
   text: |
     Entra nel nostro canale Discord per aggiornamenti !
   title: Stiamo organizzando la prossima edizione del master
