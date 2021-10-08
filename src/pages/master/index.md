@@ -95,8 +95,9 @@ paragraphs:
       01/06/2022)</br></br> Non è necessario aver già acquisito la laurea come
       requisito per iscriversi, purchè ci si riesca entro l’anno accademico
       ovvero Marzo/Aprile 2022.</br></br>**LE ISCRIZIONI SONO  APERTE**</br>
-      colloquio di ammissione: Ottobre 2021  in forma telematica</br> pagamento
-      prima rata: Ottobre 2021</br> inizio lezioni: venerdì 5 Novembre 2021
+      colloquio di ammissione: 13 Ottobre 2021 ore 14,00 (in presenza o in forma
+      telematica)</br> pagamento prima rata: Ottobre 2021</br> inizio lezioni:
+      venerdì 5 Novembre 2021
 
 
       Per iscrizione occorre seguire il seguente
