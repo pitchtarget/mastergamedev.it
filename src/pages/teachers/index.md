@@ -126,15 +126,6 @@ teachers:
       Funny Games Srl.
     link: 'https://www.linkedin.com/in/nicholasroncatti/'
     role: 'Mobile Programming, Unity'
-  - fullName: Daniele Colombo
-    image: /img/daniele-colombo.jpg
-    altImage: Daniele Colombo
-    bio: >
-      Professionista nel campo video ludico ha partecipato a grandi titoli come
-      Forza Motosport o Pay Day sotto le vesti di Programmatore Grafico, dopo
-      aver lavorato diversi anni per grandi case ha deciso di crearsi il suo
-      futuro come lavoratore autonomo e Freelancer.
-    role: Graphics Programming
   - fullName: Andrea Rossini
     image: /img/andrea-rossini.jpg
     altImage: Andrea Rossini
