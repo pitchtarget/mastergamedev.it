@@ -69,14 +69,16 @@ paragraphs:
       sviluppo in Unity e la programmazione C#. </br>La fase finale del corso
       prevede la progettazione e lo sviluppo di un minigame.
   - title: C++ programming
-    description: >
-      Lo scopo dell’insegnamento è quello di fornire allo studente gli strumenti
-      indispensabili per produrre codice C++ di qualità. Tematiche di design:
-      polimorfismo statico (template) e dinamico (ereditarietà), generic
-      programming, design patterns, policy-based design, parallelismo.
-      </br>Caratteristiche specifiche del C++: I/O e Streaming, exception
-      handling, C++ standard, C++ Idioms (RAII, The Rule of Three, DRY, YAGNI,
-      SFINAE ).
+    description: >-
+      Lo scopo dell’insegnamento è quello di fornire allo studente le basi
+      indispensabili per produrre codice C++ di qualità. Il corso copre
+      argomenti fondamentali quali il funzionamento del build system e le
+      direttive del pre-processore, i tipi fondamentali del C++, il polimorfismo
+      statico (template) e dinamico (ereditarietà) nonche' alcuni argomenti piu'
+      avanzati come ad esempio il policy-based design, l'idioma PIMPL e gli
+      use-cases per le strutture dati messe a disposizione dalla STL. Il corso
+      e' principalmente teorico ma include anche sessioni pratiche ed esercizi
+      di programmazione.
   - title: Physics programming
     description: >
       Obiettivo dell’insegnamento è quello di fornire le conoscenze di base per
