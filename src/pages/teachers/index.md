@@ -146,16 +146,16 @@ teachers:
       attivita’.
     role: Ai Programming
   - fullName: Jacopo Vezzosi
-    image: /img/thumbnail_img-20200915-wa0008.jpg
+    image: /img/jacopo-vezzosi.png
     altImage: Jacopo Vezzosi
     bio: >-
       Laureato con lode in Ingegneria Informatica presso l'Università degli
-      Studi di Siena, frequenta il Master in Computer Games Development a Verona
-      nel 2014. Da allora ha collaborato con diverse aziende come Ubisoft, King
-      e Creative Assembly in veste di gameplay/AI programmer allo sviluppo di
-      diversi titoli AAA come Ghost Recon, Star Wars Battlefront 2, Battlefield
-      5 e Total War. Attualmente lavora per Electronic Arts come Team Lead nella
-      divisione di Frostbite AI Systems.
+      Studi di Siena e diplomato al Master in Computer Games Development nel
+      2014. Attualmente guida un team di sviluppo in veste di Principal AI
+      Engineer per Zynga UK su Star Wars: Hunters. In precedenza ha collaborato
+      per diverse aziende internazionali (EA, Ubisoft, King e Creative Assembly)
+      allo sviluppo di diversi titoli come Ghost Recon, Star Wars - Battlefront
+      2, Battlefield 5 e Total War: Warhammer e di engines come Frostbite.
     role: C++ programming
 ---
 
