@@ -56,7 +56,7 @@ students:
     games: >-
       Battlefield V, Star Wars: Battlefront II, Total War: Warhammer, Tom
       Clancy's Ghost Recon: Wildlands
-    image: /img/thumbnail_img-20200915-wa0008.jpg
+    image: /img/jacopo-vezzosi.png
     linkedin: 'https://www.linkedin.com/in/jvezzosi'
     main: true
     master: 2013
