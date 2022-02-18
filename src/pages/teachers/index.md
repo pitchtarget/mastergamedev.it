@@ -156,5 +156,14 @@ teachers:
       verranno presentate le fasi e le tecniche di sviluppo software; le
       tecniche di testing del software; i design pattern generali e specifici
       per videogiochi; la gestione dei repository software.
+  - fullName: Stefano Sperandii
+    image: /img/img_0144.jpg
+    altImage: Stefano Sperandii
+    bio: >-
+      Laureato in ingegneria informatica all’università La Sapienza di Roma,
+      programmatore con oltre 12 anni di esperienza nell’industria dei videogame
+      è attualmente Head of Studio di Rortos. È stato Lead 3D Programmer di
+      Milestone per molti anni prima di passare allo sviluppo di prodotti per il
+      mercato mobile.
 ---
 
