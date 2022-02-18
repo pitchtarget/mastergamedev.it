@@ -148,5 +148,13 @@ teachers:
       allo sviluppo di diversi titoli come Ghost Recon, Star Wars - Battlefront
       2, Battlefield 5 e Total War: Warhammer e di engines come Frostbite.
     role: C++ programming
+  - fullName: Mariano Ceccato
+    image: /img/ceccato.jpg
+    altImage: Mariano Ceccato
+    bio: >-
+      Ricercatore del Dipartimento di Informatica dell’Università di Verona. 
+      verranno presentate le fasi e le tecniche di sviluppo software; le
+      tecniche di testing del software; i design pattern generali e specifici
+      per videogiochi; la gestione dei repository software.
 ---
 
