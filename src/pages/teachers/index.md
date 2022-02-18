@@ -129,12 +129,12 @@ teachers:
   - fullName: Andrea Rossini
     image: /img/andrea-rossini.jpg
     altImage: Andrea Rossini
-    bio: >
+    bio: >-
       Laureato presso l’Universita’ degli Studi di Trento. Inizia a lavorare nel
       game development collaborando con vari studi, principalmente su titoli
       mobile. Negli ultimi anni partecipa a diverse produzioni tripla AAA
-      italiane. Nel 2016 fonda 3Go Games con cui continua attualmente la sua
-      attivita’.
+      italiane. Nel 2016 fonda 3Go Games. Dal 2019 inizia a collaborare con
+      Rortos nel reparto di ricerca e sviluppo, rapporto che prosegue tutto' ora
     role: Ai Programming
   - fullName: Jacopo Vezzosi
     image: /img/jacopo-vezzosi.png
