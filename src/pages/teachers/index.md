@@ -165,5 +165,6 @@ teachers:
       è attualmente Head of Studio di Rortos. È stato Lead 3D Programmer di
       Milestone per molti anni prima di passare allo sviluppo di prodotti per il
       mercato mobile.
+    role: Graphics Programming
 ---
 
