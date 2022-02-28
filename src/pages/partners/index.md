@@ -203,17 +203,7 @@ partners:
     name: API
   - image: /img/cap_gemini.png
     altImage: capgemini engineering
-    description: >-
-      World leader in engineering and R&D services, Capgemini Engineering
-      combines its broad industry knowledge and cutting-edge technologies in
-      digital and software to support the convergence of the physical and
-      digital worlds. Coupled with the capabilities of the rest of the Group, it
-      helps clients to accelerate their journey towards Intelligent Industry.
-      Capgemini Engineering has more than 55,000 engineer and scientist team
-      members in over 30 countries across sectors including Aeronautics, Space,
-      Defense, Naval, Automotive, Rail, Infrastructure & Transportation, Energy,
-      Utilities & Chemicals, Life Sciences, Communications, Semiconductor &
-      Electronics, Industrial & Consumer, Software & Internet.
+    description: "World leader in engineering and R&D services, Capgemini Engineering combines its broad industry knowledge and cutting-edge technologies in digital and software to support the convergence of the physical and digital worlds. Coupled with the capabilities of the rest of the Group, it helps clients to accelerate their journey towards Intelligent Industry. Capgemini Engineering has more than 55,000 engineer and scientist team members in over 30 countries across sectors including Aeronautics, Space, Defense, Naval, Automotive, Rail, Infrastructure & Transportation, Energy, Utilities & Chemicals, Life Sciences, Communications, Semiconductor & Electronics, Industrial & Consumer, Software & Internet.\n\nCapgemini Engineering is an integral part of the Capgemini Group, a global leader in partnering with companies to transform and manage their business by harnessing the power of technology. The Group is guided every day by its purpose of unleashing human energy through technology for an inclusive and sustainable future. It is a responsible and diverse organization of over 325,000 team members in more than 50 countries. With its strong 55-year heritage and deep industry expertise, Capgemini is trusted by its clients to address the entire breadth of their business needs, from strategy and design to operations, fueled by the fast evolving and innovative world of cloud, data, AI, connectivity, software, digital engineering and platforms. The Group reported in 2021 global revenues of €18 billion.\r\n\nGet the Future You Want"
     link: www.capgemini.com
     main: true
     name: CAPGEMINI ENGINEERING
