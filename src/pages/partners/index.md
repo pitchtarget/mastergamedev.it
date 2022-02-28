@@ -201,5 +201,21 @@ partners:
     link: 'https://www.api-srl.com'
     main: true
     name: API
+  - image: /img/cap_gemini.png
+    altImage: capgemini engineering
+    description: >-
+      World leader in engineering and R&D services, Capgemini Engineering
+      combines its broad industry knowledge and cutting-edge technologies in
+      digital and software to support the convergence of the physical and
+      digital worlds. Coupled with the capabilities of the rest of the Group, it
+      helps clients to accelerate their journey towards Intelligent Industry.
+      Capgemini Engineering has more than 55,000 engineer and scientist team
+      members in over 30 countries across sectors including Aeronautics, Space,
+      Defense, Naval, Automotive, Rail, Infrastructure & Transportation, Energy,
+      Utilities & Chemicals, Life Sciences, Communications, Semiconductor &
+      Electronics, Industrial & Consumer, Software & Internet.
+    link: www.capgemini.com
+    main: true
+    name: CAPGEMINI ENGINEERING
 ---
 
