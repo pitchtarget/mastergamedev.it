@@ -7,6 +7,10 @@ featuredimage: /img/hackaton_sito.jpg
 tags:
   - '#videogames #realtàaumentata #augmentedreality #ar #unity #hackaton'
 ---
+![](/img/hackaton_sito.jpg)
+
+
+
 Hackathon su Realtà aumentata e videogiochi
 
 Come funziona la realtà aumentata (AR) e come è possibile integrarla in un videogioco per migliorare l’esperienza immersiva e videoludica su dispositivi mobile?
