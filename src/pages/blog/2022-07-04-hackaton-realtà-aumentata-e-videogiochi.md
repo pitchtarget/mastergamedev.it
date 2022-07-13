@@ -9,8 +9,6 @@ tags:
 ---
 ![](/img/hackaton_sito.jpg)
 
-
-
 Hackathon su Realtà aumentata e videogiochi
 
 Come funziona la realtà aumentata (AR) e come è possibile integrarla in un videogioco per migliorare l’esperienza immersiva e videoludica su dispositivi mobile?
@@ -31,14 +29,12 @@ PAUSA
 
 15,30 – 22,30 AR Game jam: sviluppo di un minigioco in AR in 6 ore
 
-
-
-
-
-
-
 Per info: gamedev@ateneo.univr.it
 
-
-
 Per iscriversi all'evento: https://www.eventbrite.it/e/biglietti-hackaton-realta-aumentata-e-videogiochi-377869687407
+
+
+
+Requisiti tecnici per partecipare:
+
+https://awesome-lobster-f62.notion.site/UniVR-Hackaton-AR-16-Luglio-2022-2ef91a4537504f4b9390daea8293bd8c
