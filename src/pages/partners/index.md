@@ -210,7 +210,7 @@ partners:
     name: CAPGEMINI ENGINEERING
   - image: /img/untold_games.png
     altImage: Untold_games
-    description: ' D'
+    description: 'https://untoldgames.com'
     name: Untold Games
 ---
 
