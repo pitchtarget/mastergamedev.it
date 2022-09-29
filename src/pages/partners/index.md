@@ -208,5 +208,9 @@ partners:
     link: www.capgemini.com
     main: true
     name: CAPGEMINI ENGINEERING
+  - image: /img/untold_games.png
+    altImage: Untold_games
+    description: ' D'
+    name: Untold Games
 ---
 
