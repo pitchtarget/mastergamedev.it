@@ -210,7 +210,15 @@ partners:
     name: CAPGEMINI ENGINEERING
   - image: /img/untold_games.png
     altImage: Untold_games
-    description: 'https://untoldgames.com'
+    description: "Con quasi 10 anni di esperienza nella creazione di contenuti e nella consulenza per le industrie creative con Unreal Engine, Untold Games crea giochi per PC e console con una narrazione profonda e un forte impatto emotivo. Oltre a sviluppare i propri titoli, la società fornisce anche servizi di sviluppo per terze parti, dalla prototipazione rapida allo sviluppo di giochi multipiattaforma completi ed esperienze immersive, o porting per le principali console di gioco.\r\n\nAlcuni dei progetti a cui abbiamo lavorato più recentemente sono il porting per Switch di Journey to the Savage Planet, Control per Game Pass PC, il porting per PS5 e XSX|S di Assetto Corsa Competizione."
+    link: 'https://untoldgames.com'
+    main: true
     name: Untold Games
+  - image: /img/naconstudiomilan_logo_final.jpg
+    altImage: Nacon Studio
+    description: "NACON STUDIO MILAN IS AN ITALIAN VIDEO GAME DEVELOPER CREATING STATE-OF-THE-ART GAMES.\r\n\nDriven by principles that ensure excellence at a company level and a highly rewarding professional environment, Nacon Studio Milan is crafting unforgettable gaming experiences. The studio boasts cutting-edge technology and a team of veterans that all bring experience, skills and passion to their work."
+    link: 'https://www.naconstudiomilan.com'
+    main: true
+    name: Nacon Studio
 ---
 
