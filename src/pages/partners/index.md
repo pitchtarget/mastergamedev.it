@@ -15,10 +15,11 @@ partners:
     altImage: milestone
     description: >-
       Fondata nel 1996, Milestone è uno dei più importanti sviluppatori di
-      videogiochi racing al mondo. Un team di oltre 200 persone sviluppa e
-      commercializza alcune serie di successo come MotoGP™, MXGP–The Official
-      Motocross Videogame, Monster Energy Supercross – The Official Videogame,
-      oltre alle sue IP proprietarie RIDE e Gravel.
+      videogiochi di racing al mondo. Con un team di 260 talenti, Milestone
+      sviluppa e pubblica worldwide videogiochi multipiattaforma. Nella sua
+      line-up sono presenti sia titoli basati su licenze prestigiose come
+      MotoGP, MXGP The Official Motocross Videogame, Monster Energy Supercross
+      e  Hot Wheels Unleashed che IP proprietarie come Ride.
     link: 'http://milestone.it/'
     main: true
     name: MILESTONE
