@@ -5,7 +5,7 @@ date: 2022-07-04T13:34:18.637Z
 description: "Nel mese di ottobre 3 incontri dalle 10.00 alle 13.00 dedicati alle aziende partner del Master in GameDev! \U0001F47E\U0001F47E\U0001F47E\n\n\nVuoi partecipare e scoprire tutte le opportunità legate al nostro percorso?\U0001F3AE\U0001F3AE\U0001F3AE\n\n\n\nJoin us!"
 featuredimage: /img/3820360.jpg
 tags:
-  - '#videogames #realtàaumentata #augmentedreality #ar #unity #hackaton'
+  - '#videogames #aziende #partner #meeting #job'
 ---
 Nel mese di ottobre 3 incontri dalle 10.00 alle 13.00 dedicati alle aziende partner del Master in GameDev! 👾👾👾
 
