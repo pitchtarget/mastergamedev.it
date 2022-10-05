@@ -59,8 +59,8 @@ paragraphs:
   - description: >-
       Il Master prevede un numero minimo di 15 iscritti regolari per essere
       attivato ed un numero massimo di 20.</br></br>Per questa edizione del
-      Master è prevista la modalità mista. (da remoto e in presenza)</br> </br>
-      I requisiti di accesso sono: <ul class="markdown-list">
+      Master si torna alla **modalità in presenza**.</br> </br> I requisiti di
+      accesso sono: <ul class="markdown-list">
 
         <li>Laurea (pre D.M. 509/99) in Scienze dell’informazione, Informatica, Ingegneria informatica, Ingegneria dell’informazione.</li>
         <li>Laurea nella classe  delle Scienze e tecnologie informatiche  (classe L-31 nell’ordinamento del D.M. 270/04 e classe 26 nell’ordinamento del D.M. 509/99).</li>
@@ -94,14 +94,13 @@ paragraphs:
       pre-iscrizione, 3.000 euro all'iscrizione definitiva e 2.000 entro il
       01/06/2022)</br></br> Non è necessario aver già acquisito la laurea come
       requisito per iscriversi, purchè ci si riesca entro l’anno accademico
-      ovvero Marzo/Aprile 2022.</br></br>**LE ISCRIZIONI SONO  APERTE**</br>
-      colloquio di ammissione: 13 Ottobre 2021 ore 14,00 (in presenza o in forma
-      telematica)</br> pagamento prima rata: Ottobre 2021</br> inizio lezioni:
-      venerdì 5 Novembre 2021
+      ovvero Marzo/Aprile 2022.</br></br>**PROCEDURA PER ISCRIZIONI (DA
+      CONFERMARE)**</br> Apertura bando: Dicembre 2022</br></br> colloquio di
+      ammissione: Febbraio 2023</br> inizio lezioni: Marzo 2023
 
 
       Per iscrizione occorre seguire il seguente
-      [link](https://www.corsi.univr.it/?ent=cs&id=406&menu=iscriversi&tab=comeiscriversi&lang=it)
+      [link](https://www.univr.it/it/post-laurea/2022-2023/tutte-le-aree/masterk)
     title: Costi
 serviceTitle: I nostri servizi
 services:
