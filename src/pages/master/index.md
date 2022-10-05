@@ -100,6 +100,7 @@ paragraphs:
 
       Per iscrizione occorre seguire il seguente
       [link](https://www.univr.it/it/post-laurea/2022-2023/tutte-le-aree/masterk)
+      (non è ancora attivo).
     title: Costi
 serviceTitle: I nostri servizi
 services:
