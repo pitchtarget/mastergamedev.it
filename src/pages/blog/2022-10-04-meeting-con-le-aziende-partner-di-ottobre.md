@@ -9,23 +9,9 @@ tags:
 ---
 Nel mese di ottobre 3 incontri dalle 10.00 alle 13.00 dedicati alle aziende partner del Master in GameDev! 👾👾👾
 
-
-
-
-
 Vuoi partecipare e scoprire tutte le opportunità legate al nostro percorso?🎮🎮🎮
 
-
-
-
-
-
-
-
-
 **Programma**
-
-
 
 **Giovedì 06 Ottobre**
 
@@ -33,33 +19,25 @@ Vuoi partecipare e scoprire tutte le opportunità legate al nostro percorso?🎮
 
 pausa			
 
-11,30-12,10	API	|   12,10-12,50	Nacon
-
- 
-
-
+11,30-12,10	API	      |   12,10-12,50	Nacon
 
 **Giovedì 13 Ottobre**
 
-10,00-10,40	Ubisoft  |    10,40-11,20	Euleria
+10,00-10,40	Ubisoft   |    10,40-11,20	Euleria
 
 pausa			
 
-11,30-12,10	JFG+Digital Tales   |   12,10-12,50	Rortos
-
-
+11,30-12,10 Rortos	       |   12,10-12,50	JFG+Digital Tales
 
 **Giovedì 20 Ottobre**
 
-10,00-10,40	UCMR  |  10,40-11,20	Zuru
+10,00-10,40	UCMR    |  10,40-11,20 Zuru
 
 pausa			
 
 11,30-12,10	Capgemini  |  12,10-12,50	UntoldGames
 
-
-
-****
+- - -
 
 **Join us!**
 
