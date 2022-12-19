@@ -3,8 +3,9 @@ templateKey: projects-page
 path: /progetti
 title: Progetti
 description: >
-  La sezione alumni raccoglie consigli e testimonianze di ex studenti che oggi lavorano nella industry.
-image: /img/scuola.jpg
+  La sezione alumni raccoglie consigli e testimonianze di ex studenti che oggi
+  lavorano nella industry.
+image: /img/dsc_0309.jpg
 altImage: cover
 titleLabProjects: I progetti di laboratorio
 labProjects:
