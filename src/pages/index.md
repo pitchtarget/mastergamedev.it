@@ -1,10 +1,12 @@
 ---
 templateKey: index-page
 mainCover:
-  cta: Diventa un game developer
-  heading: Inizia la tua carriera con il master universitario certificato in game development
-  image: /img/main-cover.jpg
   altImage: copertina di pagina
+  cta: Diventa un game developer
+  heading: >-
+    Inizia la tua carriera con il master universitario certificato in game
+    development
+  image: /img/main-cover.jpg
   link: /master
   subheading: >-
     Specializzati nella programmazione di videogiochi e applicazioni
@@ -18,6 +20,7 @@ partnersSection:
     Crediamo nella collaborazione, non solo con talenti professionisti, ma anche
     con le migliori aziende del settore videoludico
 schoolSection:
+  altImage: studenti in classe
   bullet:
     - cta: continua
       heading: Un master universitario
@@ -39,8 +42,7 @@ schoolSection:
         settore
   cta: Dimmi di più
   heading: Un percorso formativo completo e all'avanguardia
-  image: /img/scuola.jpg
-  altImage: studenti in classe
+  image: /img/dsc_0308.jpg
   link: /programma
   subheading: >
     C’è differenza tra saper fare, e saper fare bene: specializzati per
