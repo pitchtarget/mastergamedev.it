@@ -3,7 +3,7 @@ templateKey: banners
 box:
   alt: open day
   cta: Iscrizioni Master 2022/2023
-  image: /img/open-day.jpg
+  image: /img/dsc_0310.jpg
   link: 'https://www.mastergamedev.it/master/#iscrizioni'
   text: |
     Entra nel nostro canale Discord per aggiornamenti !
