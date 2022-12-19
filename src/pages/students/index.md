@@ -5,7 +5,7 @@ title: Cosa dicono coloro che ti hanno preceduto
 description: >
   La sezione alumni raccoglie consigli e testimonianze di ex studenti che oggi
   lavorano nella industry.
-image: /img/scuola.jpg
+image: /img/dsc_0310.jpg
 altImage: students
 students:
   - altImage: Riccardo Reffato
