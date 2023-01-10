@@ -98,9 +98,8 @@ paragraphs:
       ammissione: Febbraio 2023</br> Inizio lezioni: Marzo 2023
 
 
-      Per iscrizione occorre seguire il seguente
-      [link](https://www.univr.it/it/post-laurea/2022-2023/tutte-le-aree/masterk)
-      (non è ancora attivo).
+      Per iscrizione occorre seguire il seguente[
+      link](https://www.corsi.univr.it/?ent=cs&id=406).
     title: Costi
 serviceTitle: I nostri servizi
 services:
