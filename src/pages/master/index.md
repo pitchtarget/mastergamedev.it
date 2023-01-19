@@ -21,11 +21,11 @@ paragraphs:
       videogiochi sia un’attività profondamente multidisciplinare, che tocca
       diverse aree dell’informatica (programmazione, ingegneria del software,
       grafica, elaborazione dei suoni, interazione uomo-macchina, intelligenza
-      artificiale) e  richiede solide basi in discipline matematiche e fisiche.
-      </br></br>Il master ha l’obiettivo di formare sviluppatori di videogiochi
-      e/o applicazioni multimediali avanzate, focalizzandosi sulle tecnologie
-      più recenti e con una particolare attenzione alle problematiche di lavoro
-      in gruppo.
+      artificiale) e  richiede solide basi in discipline matematiche e
+      fisiche.</br></br>Il master ha l’obiettivo di formare sviluppatori di
+      videogiochi e/o applicazioni multimediali avanzate, focalizzandosi sulle
+      tecnologie più recenti e con una particolare attenzione alle problematiche
+      di lavoro in gruppo.
     title: Obbiettivi del Master
   - description: >
       Il master offre l’opportunità di stage in più di 15 aziende convenzionate.
@@ -195,4 +195,3 @@ people:
       software.
     title: Fausto Spoto
 ---
-
