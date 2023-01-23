@@ -2,7 +2,7 @@
 templateKey: master-page
 redirect_from:
   - /il-master
-title: Il master 2021
+title: Il master 2023-2024
 image: /img/master-cover.jpg
 altImage: programming
 paragraphs:
@@ -88,12 +88,12 @@ paragraphs:
       riservato ai laureati dell’Università degli studi di Verona.
     title: Iscrizioni
   - description: >-
-      Stiamo organizzando l’edizione per  l’anno accademico 2022/23:  il costo
+      Stiamo organizzando l’edizione per  l’anno accademico 2023/24:  il costo
       di iscrizione al master è fissato a 5016€ (marca da bollo da 16 euro
       all’atto della pre-iscrizione, 3.000 euro all'iscrizione definitiva e
       2.000 entro il 01/06/2022).</br></br> Non è necessario aver già acquisito
       la laurea come requisito per iscriversi, purchè ci si riesca entro l’anno
-      accademico ovvero Marzo/Aprile 2022.</br></br>**PROCEDURA PER ISCRIZIONI
+      accademico ovvero Marzo/Aprile 2023.</br></br>**PROCEDURA PER ISCRIZIONI
       (DA CONFERMARE)**</br> Apertura bando: Dicembre 2022</br>Colloquio di
       ammissione: Febbraio 2023</br> Inizio lezioni: Marzo 2023
 
